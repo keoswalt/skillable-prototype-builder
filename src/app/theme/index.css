@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Theme System
+   1. Base theme
+   2. Dark theme overrides
+   3. System preferences
+   ========================================================================== */
+
+@import './base.css';
+@import './dark.css';
+
+/* System preference detection */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    color-scheme: dark;
+  }
+}

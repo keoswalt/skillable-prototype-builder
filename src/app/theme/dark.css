@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Dark Theme Overrides
+   ========================================================================== */
+
+.dark {
+  /* Translucent Colors */
+  --softgrey-translucent: rgb(var(--grey-600));
+  --components-backdrop-fill: #4A4A4AB2;
+  --components-rating-activefill: #FFB400FF;
+
+  /* Primary Colors */
+  --primary-main: rgb(var(--lightgreen-700));
+  --primary-dark: rgb(var(--lightgreen-900));
+  --primary-light: rgb(var(--lightgreen-500));
+  --primary-soft: rgb(var(--lightgreen-50));
+  --primary-contrast: rgb(var(--grey-900));
+
+  /* Secondary Colors */
+  --secondary-main: rgb(var(--purple-200));
+  --secondary-dark: rgb(var(--purple-400));
+  --secondary-light: rgb(var(--purple-50));
+  --secondary-soft: rgb(var(--purple-50));
+  --secondary-contrast: rgb(var(--grey-900));
+
+  /* Accent Colors */
+  --accent-main: rgb(var(--lightgreen-700));
+  --accent-dark: rgb(var(--lightgreen-900));
+  --accent-light: rgb(var(--lightgreen-50));
+  --accent-contrast: rgb(var(--grey-900));
+
+  /* Grey Scales */
+  --softgrey-main: rgb(var(--grey-700));
+  --softgrey-dark: rgb(var(--grey-800));
+  --softgrey-light: rgb(var(--grey-600));
+  --softgrey-contrast: rgb(var(--grey-50));
+
+  --hardgrey-main: rgb(var(--grey-50));
+  --hardgrey-dark: rgb(var(--grey-200));
+  --hardgrey-light: rgb(var(--grey-50));
+  --hardgrey-contrast: rgb(var(--grey-900));
+
+  --whiteblack-main: rgb(var(--grey-800));
+  --whiteblack-contrast: rgb(var(--grey-50));
+
+  /* Status Colors */
+  --success-main: rgb(var(--green-400));
+  --success-dark: rgb(var(--green-700));
+  --success-light: rgb(var(--green-300));
+  --success-soft: rgb(var(--green-100));
+  --success-contrast: rgb(var(--grey-900));
+
+  --warning-main: rgb(var(--orange-400));
+  --warning-dark: rgb(var(--orange-700));
+  --warning-light: rgb(var(--orange-200));
+  --warning-soft: rgb(var(--orange-100));
+  --warning-contrast: rgb(var(--grey-900));
+
+  --critical-main: rgb(var(--orange-700));
+  --critical-dark: rgb(var(--orange-700));
+  --critical-light: rgb(var(--orange-200));
+  --critical-soft: rgb(var(--orange-100));
+  --critical-contrast: rgb(var(--grey-900));
+
+  --error-main: rgb(var(--red-700));
+  --error-dark: rgb(var(--red-800));
+  --error-light: rgb(var(--red-300));
+  --error-soft: rgb(var(--red-100));
+  --error-contrast: rgb(var(--grey-50));
+  --error-textonly: rgb(var(--red-500));
+
+  /* Common Colors */
+  --common-black-main: rgb(var(--grey-900));
+  --common-black-contrast: rgb(var(--grey-50));
+  --common-white-main: rgb(var(--grey-50));
+  --common-white-contrast: rgb(var(--grey-900));
+
+  /* Component-specific Colors */
+  --components-alert-critical-color: rgb(var(--grey-900));
+  --components-alert-high-color: rgb(var(--grey-900));
+  --components-alert-high-background: rgb(var(--orange-100));
+  --components-alert-critical-background: rgb(var(--red-50));
+  --components-alert-medium-color: rgb(var(--grey-900));
+  --components-alert-medium-background: rgb(var(--orange-50));
+  --components-alert-success-color: rgb(var(--grey-900));
+  --components-alert-success-background: rgb(var(--green-50));
+
+  --components-avatar-fill: rgb(var(--grey-400));
+  --components-background-default: rgb(var(--grey-900));
+  --components-background-contrast-xs: rgb(var(--grey-900));
+  --components-background-contrast-sm: rgb(var(--grey-800));
+  --components-background-contrast-md: rgb(var(--grey-700));
+  --components-background-disabled: rgb(var(--grey-500));
+  --components-chip-defaultclosefill: rgb(var(--grey-50));
+  --components-divider-main: rgb(var(--grey-50));
+  --components-text-primary: rgb(var(--grey-50));
+  --components-text-secondary: rgb(var(--grey-50));
+  --components-text-light: rgb(var(--grey-50));
+  --components-rating-enabledborder: rgb(var(--grey-600));
+  --components-stepper-connector: rgb(var(--grey-600));
+  --components-tooltip-fill: rgb(var(--grey-700));
+
+  /* Native Elements */
+  --native-scrollbar-bg: rgb(var(--grey-400));
+} 

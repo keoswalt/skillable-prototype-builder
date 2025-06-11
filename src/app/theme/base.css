@@ -1,0 +1,297 @@
+/* ==========================================================================
+   Base Theme System
+   Table of Contents:
+   1. Typography
+      - Font Families
+      - Font Sizes
+      - Font Weights
+      - Line Heights
+      - Letter Spacing
+   2. Shape
+      - Border Radius
+   3. Color Palettes
+      - Darkgreen
+      - Lightgreen
+      - Purple
+      - Green
+      - Red
+      - Orange
+      - Grey
+      - Yellow
+   4. Semantic Colors
+      - Primary
+      - Secondary
+      - Accent
+      - Success/Error States
+   5. Translucent Colors
+   6. Color Applications
+      - Primary Colors
+      - Secondary Colors
+      - Accent Colors
+      - Grey Scales
+      - Status Colors
+      - Common Colors
+   7. Component-specific Colors
+      - Alert Variations
+      - UI Elements (Avatar, Background, Chip, etc.)
+      - Native Elements
+   ========================================================================== */
+
+:root {
+  /* Typography System */
+  --fontfamily-primary: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --fontfamily-headline: var(--font-lora), Georgia, 'Times New Roman', serif;
+
+  /* Font Sizes - with responsive clamp() values */
+  --fontsize-heading-xxl: clamp(4rem, 8vw, 6rem);        /* 64px - 96px */
+  --fontsize-heading-xl: clamp(3rem, 6vw, 3.75rem);      /* 48px - 60px */
+  --fontsize-heading-lg: clamp(2.5rem, 5vw, 3rem);       /* 40px - 48px */
+  --fontsize-heading-md: clamp(1.75rem, 4vw, 2rem);      /* 28px - 32px */
+  --fontsize-heading-sm: clamp(1.25rem, 3vw, 1.5rem);    /* 20px - 24px */
+  --fontsize-heading-xs: clamp(1.125rem, 2vw, 1.25rem);  /* 18px - 20px */
+  
+  --fontsize-body-xl: clamp(1.25rem, 3vw, 1.5rem);       /* 20px - 24px */
+  --fontsize-body-lg: clamp(1.125rem, 2vw, 1.25rem);     /* 18px - 20px */
+  --fontsize-body-md: clamp(1rem, 1.5vw, 1.125rem);      /* 16px - 18px */
+  --fontsize-body-sm: 1rem;                              /* 16px */
+  --fontsize-body-xs: 0.875rem;                          /* 14px */
+  --fontsize-body-xxs: 0.75rem;                          /* 12px */
+
+  /* Font Weights */
+  --fontweight-regular: 400;
+  --fontweight-medium: 500;
+  --fontweight-semibold: 600;
+
+  /* Line Heights */
+  --lineheight-tight: 1.1;
+  --lineheight-normal: 1.5;
+  --lineheight-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --letterspacing-tight: -0.025em;
+  --letterspacing-normal: 0;
+  --letterspacing-wide: 0.025em;
+
+  /* Shape System */
+  --borderradius: 5px;
+  --borderradius-none: 0px;
+
+  /* Darkgreen */
+  --darkgreen-50: 223, 240, 235;
+  --darkgreen-100: 177, 217, 205;
+  --darkgreen-200: 129, 193, 173;
+  --darkgreen-300: 83, 168, 142;
+  --darkgreen-400: 53, 150, 121;
+  --darkgreen-500: 33, 132, 102;
+  --darkgreen-600: 30, 120, 91;
+  --darkgreen-700: 19, 105, 69;
+  --darkgreen-800: 19, 89, 65;
+  --darkgreen-900: 10, 62, 40;
+
+  /* Lightgreen */
+  --lightgreen-50: 224, 255, 241;
+  --lightgreen-100: 179, 255, 221;
+  --lightgreen-200: 114, 255, 198;
+  --lightgreen-300: 36, 237, 155;
+  --lightgreen-400: 0, 246, 159;
+  --lightgreen-500: 0, 240, 142;
+  --lightgreen-600: 0, 222, 129;
+  --lightgreen-700: 0, 202, 114;
+  --lightgreen-800: 0, 183, 101;
+  --lightgreen-900: 0, 149, 77;
+
+  /* Purple */
+  --purple-50: 241, 230, 255;
+  --purple-100: 217, 193, 254;
+  --purple-200: 190, 151, 255;
+  --purple-300: 182, 125, 255;
+  --purple-400: 138, 66, 255;
+  --purple-500: 112, 0, 255;
+  --purple-600: 97, 0, 249;
+  --purple-700: 76, 0, 241;
+  --purple-800: 49, 0, 236;
+  --purple-900: 0, 0, 232;
+
+  /* Green */
+  --green-50: 232, 245, 233;
+  --green-100: 200, 230, 201;
+  --green-200: 165, 214, 167;
+  --green-300: 129, 199, 132;
+  --green-400: 102, 187, 106;
+  --green-500: 76, 175, 80;
+  --green-600: 67, 160, 71;
+  --green-700: 56, 142, 60;
+  --green-800: 46, 125, 50;
+  --green-900: 27, 94, 32;
+
+  /* Red */
+  --red-50: 254, 230, 232;
+  --red-100: 254, 205, 210;
+  --red-200: 239, 154, 154;
+  --red-300: 229, 115, 115;
+  --red-400: 239, 83, 80;
+  --red-500: 244, 67, 54;
+  --red-600: 229, 57, 53;
+  --red-700: 211, 47, 47;
+  --red-800: 198, 40, 40;
+  --red-900: 183, 28, 28;
+
+  /* Orange */
+  --orange-50: 255, 243, 224;
+  --orange-100: 255, 224, 178;
+  --orange-200: 255, 204, 128;
+  --orange-300: 255, 183, 77;
+  --orange-400: 255, 167, 38;
+  --orange-500: 255, 152, 0;
+  --orange-600: 251, 140, 0;
+  --orange-700: 245, 124, 0;
+  --orange-800: 239, 108, 0;
+  --orange-900: 230, 81, 0;
+
+  /* Grey */
+  --grey-50: 255, 255, 255;
+  --grey-75: 251, 251, 251;
+  --grey-100: 242, 242, 242;
+  --grey-200: 231, 231, 231;
+  --grey-300: 210, 210, 210;
+  --grey-400: 177, 177, 177;
+  --grey-500: 141, 141, 141;
+  --grey-600: 103, 103, 103;
+  --grey-700: 74, 74, 74;
+  --grey-800: 51, 51, 51;
+  --grey-900: 20, 20, 20;
+
+  /* Yellow */
+  --yellow-50: 255, 252, 241;
+  --yellow-100: 255, 239, 188;
+  --yellow-200: 255, 227, 139;
+
+  /* Semantic color RGB values with fallbacks */
+  --primary-main-rgb: var(--darkgreen-700, 19, 105, 69);
+  --primary-dark-rgb: var(--darkgreen-900, 10, 62, 40);
+  --primary-light-rgb: var(--darkgreen-400, 53, 150, 121);
+  --primary-soft-rgb: var(--darkgreen-50, 223, 240, 235);
+  --primary-contrast-rgb: var(--grey-50, 255, 255, 255);
+
+  --secondary-main-rgb: var(--purple-500, 112, 0, 255);
+  --secondary-dark-rgb: var(--purple-700, 76, 0, 241);
+  --secondary-light-rgb: var(--purple-300, 182, 125, 255);
+  --secondary-soft-rgb: var(--purple-50, 241, 230, 255);
+  --secondary-contrast-rgb: var(--grey-50, 255, 255, 255);
+
+  --accent-main-rgb: var(--lightgreen-700, 0, 202, 114);
+  --accent-dark-rgb: var(--lightgreen-900, 0, 149, 77);
+  --accent-light-rgb: var(--lightgreen-50, 224, 255, 241);
+  --accent-contrast-rgb: var(--grey-900, 20, 20, 20);
+
+  --success-main-rgb: var(--green-800, 46, 125, 50);
+  --success-dark-rgb: var(--green-900, 27, 94, 32);
+  --success-light-rgb: var(--green-500, 76, 175, 80);
+  --success-soft-rgb: var(--green-50, 232, 245, 233);
+  --success-contrast-rgb: var(--grey-50, 255, 255, 255);
+
+  --error-main-rgb: var(--red-700, 211, 47, 47);
+  --error-dark-rgb: var(--red-800, 198, 40, 40);
+  --error-light-rgb: var(--red-400, 239, 83, 80);
+  --error-soft-rgb: var(--red-50, 254, 230, 232);
+  --error-contrast-rgb: var(--grey-50, 255, 255, 255);
+
+  /* Translucent Colors */
+  --softgrey-translucent: #F2F2F280;
+  --components-backdrop-fill: #141414B2;
+  --components-rating-activefill: #FFB400FF;
+
+  /* Primary Colors */
+  --primary-main: rgb(var(--primary-main-rgb));
+  --primary-dark: rgb(var(--primary-dark-rgb));
+  --primary-light: rgb(var(--primary-light-rgb));
+  --primary-soft: rgb(var(--primary-soft-rgb));
+  --primary-contrast: rgb(var(--primary-contrast-rgb));
+
+  /* Secondary Colors */
+  --secondary-main: rgb(var(--secondary-main-rgb));
+  --secondary-dark: rgb(var(--secondary-dark-rgb));
+  --secondary-light: rgb(var(--secondary-light-rgb));
+  --secondary-soft: rgb(var(--secondary-soft-rgb));
+  --secondary-contrast: rgb(var(--secondary-contrast-rgb));
+
+  /* Accent Colors */
+  --accent-main: rgb(var(--accent-main-rgb));
+  --accent-dark: rgb(var(--accent-dark-rgb));
+  --accent-light: rgb(var(--accent-light-rgb));
+  --accent-contrast: rgb(var(--accent-contrast-rgb));
+
+  /* Grey Scales */
+  --softgrey-main: rgb(var(--grey-200));
+  --softgrey-dark: rgb(var(--grey-300));
+  --softgrey-light: rgb(var(--grey-100));
+  --softgrey-contrast: rgb(var(--grey-900));
+
+  --hardgrey-main: rgb(var(--grey-800));
+  --hardgrey-dark: rgb(var(--grey-900));
+  --hardgrey-light: rgb(var(--grey-500));
+  --hardgrey-contrast: rgb(var(--grey-50));
+
+  --whiteblack-main: rgb(var(--grey-50));
+  --whiteblack-contrast: rgb(var(--grey-900));
+
+  /* Status Colors */
+  --success-main: rgb(var(--success-main-rgb));
+  --success-dark: rgb(var(--success-dark-rgb));
+  --success-light: rgb(var(--success-light-rgb));
+  --success-soft: rgb(var(--success-soft-rgb));
+  --success-contrast: rgb(var(--success-contrast-rgb));
+
+  --warning-main: rgb(var(--orange-400));
+  --warning-dark: rgb(var(--orange-700));
+  --warning-light: rgb(var(--orange-200));
+  --warning-soft: rgb(var(--orange-50));
+  --warning-contrast: rgb(var(--grey-900));
+
+  --critical-main: rgb(var(--orange-700));
+  --critical-dark: rgb(var(--orange-700));
+  --critical-light: rgb(var(--orange-200));
+  --critical-soft: rgb(var(--orange-50));
+  --critical-contrast: rgb(var(--grey-900));
+
+  --error-main: rgb(var(--error-main-rgb));
+  --error-dark: rgb(var(--error-dark-rgb));
+  --error-light: rgb(var(--error-light-rgb));
+  --error-soft: rgb(var(--error-soft-rgb));
+  --error-contrast: rgb(var(--error-contrast-rgb));
+  --error-textonly: rgb(var(--red-700));
+
+  /* Common Colors */
+  --common-black-main: rgb(var(--grey-900));
+  --common-black-contrast: rgb(var(--grey-50));
+  --common-white-main: rgb(var(--grey-50));
+  --common-white-contrast: rgb(var(--grey-900));
+
+  /* Component-specific Colors */
+  --components-alert-critical-color: rgb(var(--grey-900));
+  --components-alert-high-color: rgb(var(--grey-900));
+  --components-alert-high-background: rgb(var(--orange-100));
+  --components-alert-critical-background: rgb(var(--red-50));
+  --components-alert-medium-color: rgb(var(--grey-900));
+  --components-alert-medium-background: rgb(var(--orange-50));
+  --components-alert-success-color: rgb(var(--grey-900));
+  --components-alert-success-background: rgb(var(--green-50));
+
+  --components-avatar-fill: rgb(var(--grey-500));
+  --components-background-default: rgb(var(--grey-50));
+  --components-background-contrast-xs: rgb(var(--grey-75));
+  --components-background-contrast-sm: rgb(var(--grey-100));
+  --components-background-contrast-md: rgb(var(--grey-100));
+  --components-background-disabled: rgb(var(--grey-200));
+  --components-chip-defaultclosefill: rgb(var(--grey-600));
+  --components-divider-main: rgb(var(--grey-300));
+  --components-text-primary: rgb(var(--grey-900));
+  --components-text-secondary: rgb(var(--grey-700));
+  --components-text-light: rgb(var(--grey-600));
+  --components-rating-enabledborder: rgb(var(--grey-300));
+  --components-stepper-connector: rgb(var(--grey-400));
+  --components-tooltip-fill: rgb(var(--grey-200));
+
+  /* Native Elements */
+  --native-scrollbar-bg: rgb(var(--grey-200));
+} 
