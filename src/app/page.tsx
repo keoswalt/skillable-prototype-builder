@@ -6,6 +6,21 @@ import { Chip } from '../components/info/Chip';
 import DataTableExample from '../components/data/DataTableExample';
 
 export default function Home() {
+  const findMenuItems = [
+    { label: 'Lab profiles', onClick: () => console.log('Find lab profile') },
+    { label: 'Lab instances', onClick: () => console.log('Find lab instance') },
+    { label: 'Lab series', onClick: () => console.log('Find lab series') },
+    { label: 'Organizations', onClick: () => console.log('Find organization') },
+    { label: 'Users', onClick: () => console.log('Find user') },
+  ];
+
+  const createMenuItems = [
+    { label: 'New lab profile', onClick: () => console.log('Create new lab profile') },
+    { label: 'New lab series', onClick: () => console.log('Create new lab series') },
+    { label: 'New virtual machine', onClick: () => console.log('Create new VM') },
+    { label: 'New script template', onClick: () => console.log('Create new script template') },
+  ];
+
   return (
     <main className="min-h-screen p-8">
      
@@ -19,14 +34,14 @@ export default function Home() {
           <SplitButton
             icon={<Icon icon={Icons.search} className="size-4" />}
             label="Find"
-            onClick={() => console.log('Main button clicked')}
-            onDropdownClick={() => console.log('Dropdown clicked')}
+            onClick={() => console.log('Main find button clicked')}
+            menuItems={findMenuItems}
           />
           <SplitButton
             icon={<Icon icon={Icons.add} className="size-4" />}
             label="Create"
-            onClick={() => console.log('Main button clicked')}
-            onDropdownClick={() => console.log('Dropdown clicked')}
+            onClick={() => console.log('Main create button clicked')}
+            menuItems={createMenuItems}
             variant={'primary'}
           />
         </div>

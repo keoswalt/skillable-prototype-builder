@@ -19,7 +19,7 @@ export const TabNavigation: React.FC<TabNavigationProps> = ({
   onMenuClick,
 }) => {
   return (
-    <div className="flex justify-between items-center border-b border-_components-divider">
+    <div className="bg-_components-background-contrast-sm rounded-t-lg flex justify-between items-center border-b border-_components-divider">
       <div className="flex">
         {tabs.map((tab) => (
           <button
