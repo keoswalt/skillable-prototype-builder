@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## About
 
-## Getting Started
+This is a private repository built for internal Skillable use by senior product designer [Kim Oswalt] (mailto:kim.oswalt@skillable.com). It's a working project with the goal of prototyping new experiences and preparing production-ready UI.
 
-First, run the development server:
+### Status
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project currently includes:
+- [x] Design token implementation for colors and typography in `app/theme` directory
+- [x] Light / dark mode theme using Tailwind's class-based approach
+- [x] Chip component with all variants (see `designSystemDemo/page.tsx`)
+- [x] Button component with all variants (see `designSystemDemo/page.tsx`)
+- [x] Split button component with all variants (see `designSystemDemo/page.tsx`)
+- [x] Menu component that accepts functions or href for `onClick` events (connected to split button component)
+- [x] Primary navigation component
+- [x] Data table initial implementation and styling (not connected to data yet)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project was built as a Next.js app using Tailwind and TypeScript.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How To
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Run the development server:**
+From your terminal, use the command `npm run dev` to start the development server.
