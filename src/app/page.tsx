@@ -3,6 +3,7 @@
 import SplitButton from '../components/buttons/SplitButton';
 import { Icon, Icons } from '../components/Icon';
 import { Chip } from '../components/info/Chip';
+import ButtonExample from '../components/0_demo/ButtonExample';
 
 export default function Home() {
   return (
@@ -10,11 +11,11 @@ export default function Home() {
      
       <section className="flex flex-row justify-between items-center py-6">
         <div className="flex items-center gap-2">
-                      <h1 className="font-headline text-heading-md">Welcome back, Kim.</h1>
+          <h1 className="font-headline text-heading-md">Welcome back, Kim.</h1>
           <Chip size="small" variant="warning">8 Lab Advisor Recommendations</Chip>
         </div>
         
-                  <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
           <SplitButton
             icon={<Icon icon={Icons.search} className="size-4" />}
             label="Find"
@@ -29,6 +30,11 @@ export default function Home() {
             variant={'primary'}
           />
         </div>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-lg mb-6">Button Component Examples</h2>
+        <ButtonExample />
       </section>
 
     </main>

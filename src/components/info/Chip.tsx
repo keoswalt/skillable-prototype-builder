@@ -11,6 +11,7 @@ interface ChipProps {
   variant?: ChipVariant;
   size?: ChipSize;
   icon?: IconName | LucideIcon;
+  onClick?: () => void;
   onDelete?: () => void;
   className?: string;
 }
@@ -46,6 +47,7 @@ export const Chip: React.FC<ChipProps> = ({
   variant = 'default',
   size = 'default',
   icon,
+  onClick,
   onDelete,
   className = '',
 }) => {
@@ -55,10 +57,12 @@ export const Chip: React.FC<ChipProps> = ({
 
   return (
     <div
+      onClick={onClick}
       className={`
         inline-flex items-center rounded-full font-medium
         ${sizeStyle.container}
         ${variantStyles[variant]}
+        ${onClick ? 'cursor-pointer hover:opacity-90' : ''}
         ${className}
       `}
     >
