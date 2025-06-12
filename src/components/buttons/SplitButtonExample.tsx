@@ -1,5 +1,5 @@
 import React from 'react';
-import SplitButton from '../buttons/SplitButton';
+import SplitButton from './SplitButton';
 import { Icon, Icons } from '../Icon';
 
 export const SplitButtonExample: React.FC = () => {

@@ -8,12 +8,18 @@ import {
   X,
   ChevronDown,
   ChevronRight,
+  ChevronLeft,
+  ChevronUp,
+  GraduationCap,
   Plus,
   Trash,
   Edit,
   Check,
   AlertCircle,
   Info,
+  SaveAll,
+  Star,
+  ExternalLink,
   LucideIcon,
   LucideProps
 } from 'lucide-react';
@@ -26,7 +32,9 @@ export const Icons = {
   menu: Menu,
   close: X,
   chevronDown: ChevronDown,
+  chevronUp: ChevronUp,
   chevronRight: ChevronRight,
+  chevronLeft: ChevronLeft,
   
   // Actions
   settings: Settings,
@@ -34,11 +42,15 @@ export const Icons = {
   delete: Trash,
   edit: Edit,
   check: Check,
+  star: Star,
+  saveAll: SaveAll,
+  externalLink: ExternalLink,
   
   // UI Elements
   search: Search,
   user: User,
   bell: Bell,
+  gradCap: GraduationCap,
   
   // Status/Feedback
   alert: AlertCircle,

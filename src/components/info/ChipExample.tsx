@@ -1,5 +1,5 @@
 import React from 'react';
-import Chip from '../info/Chip';
+import Chip from './Chip';
 
 export const ChipExample: React.FC = () => {
   const handleDelete = () => {

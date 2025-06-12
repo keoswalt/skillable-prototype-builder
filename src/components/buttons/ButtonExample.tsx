@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../buttons/Button';
+import { Button } from './Button';
 
 export const ButtonExample: React.FC = () => {
   const handleClick = () => {

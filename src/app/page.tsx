@@ -3,7 +3,7 @@
 import SplitButton from '../components/buttons/SplitButton';
 import { Icon, Icons } from '../components/Icon';
 import { Chip } from '../components/info/Chip';
-import ButtonExample from '../components/0_demo/ButtonExample';
+import DataTableExample from '../components/data/DataTableExample';
 
 export default function Home() {
   return (
@@ -32,9 +32,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-lg mb-6">Button Component Examples</h2>
-        <ButtonExample />
+      <section className="py-4">
+        <DataTableExample />
       </section>
 
     </main>
