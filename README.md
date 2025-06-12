@@ -1,6 +1,6 @@
 ## About
 
-This is a private repository built for internal Skillable use by senior product designer [Kim Oswalt] (mailto:kim.oswalt@skillable.com). It's a working project with the goal of prototyping new experiences and preparing production-ready UI.
+This is a private repository built for internal Skillable use by senior product designer Kim Oswalt (<kim.oswalt@skillable.com>). It's a working project with the goal of prototyping new experiences and preparing production-ready UI.
 
 ### Status
 
