@@ -19,7 +19,9 @@ import {
   Info,
   SaveAll,
   Star,
+  Eye,
   ExternalLink,
+  SquarePlus,
   LucideIcon,
   LucideProps
 } from 'lucide-react';
@@ -45,7 +47,8 @@ export const Icons = {
   star: Star,
   saveAll: SaveAll,
   externalLink: ExternalLink,
-  
+  eye: Eye,
+  squarePlus: SquarePlus,
   // UI Elements
   search: Search,
   user: User,
