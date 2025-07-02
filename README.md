@@ -5,14 +5,16 @@ This is a private repository built for internal Skillable use by senior product 
 ### Status
 
 The project currently includes:
-- [x] Design token implementation for colors and typography in `app/theme` directory
-- [x] Light / dark mode theme using Tailwind's class-based approach
-- [x] Chip component with all variants (see `designSystemDemo/page.tsx`)
-- [x] Button component with all variants (see `designSystemDemo/page.tsx`)
-- [x] Split button component with all variants (see `designSystemDemo/page.tsx`)
-- [x] Menu component that accepts functions or href for `onClick` events (connected to split button component)
-- [x] Primary navigation component
-- [x] Data table initial implementation and styling (not connected to data yet)
+- [X] Design token implementation for colors and typography in `app/theme` directory
+- [X] Light / dark mode theme using Tailwind's class-based approach
+- [X] Chip component with all variants (see `designSystemDemo/page.tsx`)
+- [X] Button component with all variants (see `designSystemDemo/page.tsx`)
+- [X] Split button component with all variants (see `designSystemDemo/page.tsx`)
+- [X] Menu component that accepts functions or href for `onClick` events (connected to split button component)
+- [X] Primary navigation component
+- [X] Data table initial implementation and styling (not connected to data yet)
+- [X] Cursor rules added for component and prototype creation
+- [X] Dashboard card component (see `designSystemDemo/page.tsx`)
 
 ### Tech Stack
 
