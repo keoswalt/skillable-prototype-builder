@@ -82,27 +82,6 @@ export default function PrimaryNav() {
 
           {/* Right side controls */}
           <div className="hidden md:flex items-center space-x-4">
-            <button
-              onClick={() => toggleMenu('isCustomerDropdownOpen')}
-              className="text-[var(--components-text-primary)] hover:text-[var(--primary-main)] px-[5px] py-1 text-[var(--fontsize-body-xs)] font-[var(--fontweight-medium)] flex items-center rounded-[5px]"
-            >
-              <span className="font-[var(--fontfamily-primary)] tracking-[var(--letterspacing-wide)]">Customer</span>
-              <svg
-                className={`ml-2 h-4 w-4 transform ${
-                  menuState.isCustomerDropdownOpen ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
 
             <button
               onClick={() => toggleMenu('isUserDropdownOpen')}
