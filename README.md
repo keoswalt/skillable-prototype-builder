@@ -19,6 +19,7 @@ Completed Components:
 - [X] Data table initial implementation and styling (not connected to data yet)
 - [X] Dashboard card component
 - [X] Basic dialog component
+- [X] Text field input component
 
 See `designSystemDemo/page.tsx` for examples of completed components.
 
