@@ -20,3 +20,4 @@ When you're creating the prototype, be sure to follow all of these rules every t
 * Use Tailwind CSS, Next JS, and Typescript to create the prototype.
 * DO NOT use any external libraries.
 * If the user gives you images with inspiration, don't pay attention to their styling. Just look at them for big picture layout, content, structure, and context.
+* Use your best judgment to adjust the properties and variants used for each component in the design.

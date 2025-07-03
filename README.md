@@ -20,6 +20,7 @@ Completed Components:
 - [X] Dashboard card component
 - [X] Basic dialog component
 - [X] Text field input component
+- [X] Switch component
 
 See `designSystemDemo/page.tsx` for examples of completed components.
 

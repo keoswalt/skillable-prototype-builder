@@ -6,6 +6,7 @@ import SplitButtonExample from '../../components/buttons/SplitButtonExample';
 import { DashboardCardExample } from '@/components/cards/DashboardCardExample';
 import { BasicDialogExample } from '@/components/dialogs/BasicDialogExample';
 import TextFieldExample from '@/components/inputs/TextFieldExample';
+import SwitchExample from '@/components/inputs/SwitchExample';
 
 export default function Home() {
   return (
@@ -46,7 +47,10 @@ export default function Home() {
         <TextFieldExample />
       </section>
 
-
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Switch Component Examples</h2>
+        <SwitchExample />
+      </section>
 
 
       </main>
