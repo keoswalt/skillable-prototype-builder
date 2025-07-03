@@ -14,7 +14,7 @@ export const BasicDialogExample: React.FC = () => {
   const close = () => setOpenVariant(null);
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-row gap-4">
       <Button onClick={() => setOpenVariant('default')}>Open Default Dialog</Button>
       <Button variant="warning" onClick={() => setOpenVariant('warning')}>
         Open Warning Dialog
