@@ -21,8 +21,8 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "My App",
-  description: "A clean Next.js application",
+  title: "Skillable Prototype Builder",
+  description: "Product design resource for the internal Skillable team",
 };
 
 export default function RootLayout({
