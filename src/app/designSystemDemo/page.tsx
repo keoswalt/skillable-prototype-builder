@@ -1,13 +1,10 @@
 'use client';
-
-import SplitButton from '../../components/buttons/SplitButton';
-import { Icon, Icons } from '../../components/Icon';
-import { Chip } from '../../components/info/Chip';
 import ButtonExample from '../../components/buttons/ButtonExample';
 import DataTableExample from '../../components/data/DataTableExample';
 import ChipExample from '@/components/info/ChipExample';
 import SplitButtonExample from '../../components/buttons/SplitButtonExample';
-import LabProfileCardExample, { DashboardCardExample } from '../../components/cards/DashboardCardExample';
+import { DashboardCardExample } from '@/components/cards/DashboardCardExample';
+import { BasicDialogExample } from '@/components/dialogs/BasicDialogExample';
 
 export default function Home() {
   return (
@@ -37,6 +34,13 @@ export default function Home() {
         <h2 className="font-headline text-heading-sm mb-6">Lab Profile Card Component Examples</h2>
         <DashboardCardExample />
       </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Basic Dialog Component Examples</h2>
+        <BasicDialogExample />
+      </section>
+
+
 
       </main>
   );
