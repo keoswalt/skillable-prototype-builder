@@ -349,7 +349,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
 
       {/* Metadata grid */}
       {metaItems.length > 0 && (
-        <dl className="mt-4 grid gap-y-3 gap-x-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8">
+        <dl className="mt-4 grid gap-y-3 gap-x-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-8">
           {metaItems.map(({ key, label, value, href }) => (
             <MetaItem key={key} label={label} value={value} href={href} />
           ))}

@@ -3,6 +3,9 @@ import { DataTable } from '.';
 import { Icons } from '../Icon';
 import { Row, CellData } from './types';
 
+// Use a fixed ISO timestamp to ensure server- and client-side render produce identical output, preventing hydration mismatch.
+const FIXED_TIMESTAMP = '2025-06-05T12:00:00.000Z';
+
 const createSampleRow = (id: string, name: string, isFavorited = false): Row => ({
   id,
   isFavorited,
@@ -23,7 +26,7 @@ const createSampleRow = (id: string, name: string, isFavorited = false): Row => 
     },
     {
       type: 'date',
-      value: new Date().toISOString(),
+      value: FIXED_TIMESTAMP,
       columnKey: 'lastModified'
     },
     {
