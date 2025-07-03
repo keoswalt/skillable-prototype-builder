@@ -5,6 +5,7 @@ import ChipExample from '@/components/info/ChipExample';
 import SplitButtonExample from '../../components/buttons/SplitButtonExample';
 import { DashboardCardExample } from '@/components/cards/DashboardCardExample';
 import { BasicDialogExample } from '@/components/dialogs/BasicDialogExample';
+import TextFieldExample from '@/components/inputs/TextFieldExample';
 
 export default function Home() {
   return (
@@ -39,6 +40,12 @@ export default function Home() {
         <h2 className="font-headline text-heading-sm mb-6">Basic Dialog Component Examples</h2>
         <BasicDialogExample />
       </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Text Field Component Examples</h2>
+        <TextFieldExample />
+      </section>
+
 
 
 
