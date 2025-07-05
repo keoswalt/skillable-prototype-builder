@@ -8,6 +8,7 @@ import { BasicDialogExample } from '@/components/dialogs/BasicDialogExample';
 import TextFieldExample from '@/components/inputs/TextFieldExample';
 import SwitchExample from '@/components/inputs/SwitchExample';
 import TabsExample from '@/components/navigation/TabsExample';
+import TooltipExample from '@/components/info/TooltipExample';
 
 export default function Home() {
   return (
@@ -58,7 +59,11 @@ export default function Home() {
         <TabsExample />
       </section>
 
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Tooltip Component Examples</h2>
+        <TooltipExample />
+      </section>
 
-      </main>
+    </main>
   );
 }

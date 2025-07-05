@@ -22,6 +22,7 @@ Completed Components:
 - [X] Text field input component
 - [X] Switch component
 - [X] Tabs component
+- [X] Tooltip component
 
 See `designSystemDemo/page.tsx` for examples of completed components.
 

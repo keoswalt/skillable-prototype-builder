@@ -17,7 +17,7 @@ export default function TabsExample() {
   }));
 
   return (
-    <div className="space-y-12 max-w-4xl mx-auto mt-8">
+    <div className="space-y-12 mx-auto mt-8">
       {/* Horizontal */}
       <div>
         <h2 className="text-heading-md font-headline mb-4">Horizontal Tabs</h2>
