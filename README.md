@@ -21,6 +21,7 @@ Completed Components:
 - [X] Basic dialog component
 - [X] Text field input component
 - [X] Switch component
+- [X] Tabs component
 
 See `designSystemDemo/page.tsx` for examples of completed components.
 
