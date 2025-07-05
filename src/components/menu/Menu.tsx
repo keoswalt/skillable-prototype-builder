@@ -41,10 +41,12 @@ export const Menu: React.FC<MenuProps> = ({
 
   if (!isOpen) return null;
 
-  const menuStyle = anchorEl ? {
-    position: 'absolute' as const,
-    top: `${anchorEl.getBoundingClientRect().bottom + 4}px`,
-    right: `${window.innerWidth - anchorEl.getBoundingClientRect().right}px`,
+  const rect = anchorEl?.getBoundingClientRect();
+  const menuStyle = rect ? {
+    position: 'fixed' as const,
+    top: `${rect.bottom + 4}px`,
+    left: `${rect.left}px`,
+    minWidth: `${rect.width}px`,
   } : {};
 
   return (

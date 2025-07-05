@@ -23,6 +23,7 @@ Completed Components:
 - [X] Switch component
 - [X] Tabs component
 - [X] Tooltip component
+- [X] Dropdown select component
 
 See `designSystemDemo/page.tsx` for examples of completed components.
 
