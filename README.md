@@ -1,39 +1,38 @@
-## About
+# About
 
 This is a private repository built for internal Skillable use by senior product designer Kim Oswalt (<kim.oswalt@skillable.com>). It's a working project with the goal of prototyping new experiences and preparing production-ready UI.
 
-### Status
+## Design System
 
-Basics:
+### Theme
 - [X] Design token implementation for colors and typography in `app/theme` directory
 - [X] Light / dark mode theme using Tailwind's class-based approach
-- [X] Cursor rules added for component and prototype creation
 
-Completed Components:
+### Component Library
 
-- [X] Chip component with all variants
-- [X] Button component with all variants
-- [X] Split button component with all variants
-- [X] Menu component that accepts functions or href for `onClick` events (connected to split button component)
-- [X] Primary navigation component
-- [X] Data table initial implementation and styling (not connected to data yet)
-- [X] Dashboard card component
-- [X] Basic dialog component
-- [X] Text field input component
-- [X] Switch component
-- [X] Tabs component
-- [X] Tooltip component
-- [X] Dropdown select component
+- [X] Chip
+- [X] Button
+- [X] Split button
+- [X] Menu
+- [X] Primary navigation bar
+- [X] Data table
+- [X] Dashboard card
+- [X] Basic dialog
+- [X] Text field input
+- [X] Switch
+- [X] Tabs
+- [X] Tooltip
+- [X] Dropdown select
 
-See `designSystemDemo/page.tsx` for examples of completed components.
+> See `designSystemDemo/page.tsx` for examples of completed components.
 
-### Tech Stack
+## Tech Stack
 
-This project was built as a Next.js app using Tailwind and TypeScript.
+This project was built as a Next.js app using Tailwind and TypeScript. It's intended for use with Cursor using rules for new component creation and prototype development that live in the `.cursor/rules` directory. (Learn more about[Cursor rules here](https://docs.cursor.com/context/rules).)
 
-## How To Use
+# How To Use
 
-### ✅ Getting Set Up
+## ✅ Getting Set Up
 
 > Prereqs: Install [Cursor](https://cursor.com/en) and [GitHub Desktop](https://desktop.github.com/download/) on your local machine. If you haven't done development work before, you will need to install npm and Node.js by opening your terminal and running the command `npm install -g npm`. [Learn more](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
@@ -53,7 +52,7 @@ The repository should now appear in GitHub Desktop with an option to open in you
 
 From your terminal, use the command `npm run dev` to start the development server. (You will do this every time you open the project.) Command + click the local host link that appears in the terminal to open the preview in your browser.
 
-### 🛠️ Creating Prototypes
+## 🛠️ Creating Prototypes
 
 **Step 1: Add the "new prototype" rule**
 
