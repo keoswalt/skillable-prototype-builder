@@ -26,6 +26,7 @@ This is a private repository built for internal Skillable use by senior product 
 - [X] Checkbox item
 - [X] Radio list
 - [X] Stepper
+- [X] Accordion
 
 > See `designSystemDemo/page.tsx` for examples of completed components.
 
