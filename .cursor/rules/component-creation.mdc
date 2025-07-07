@@ -36,3 +36,5 @@ When a user provides you with an image and asks you to create a component, follo
 8. Once the user has confirmed the plan, proceed with creating the component.
 9. When you've finished creating the component, add a comment at the top of the file explaining the component's purpose, available properties, and instructions for use.
 10. Create a file with an example of the component titled `ComponentNameExample.tsx`
+11. Add an instrance of the example component to [page.tsx](mdc:src/app/designSystemDemo/page.tsx) for the design system demo
+12. Add a checked item to [README.md](mdc:README.md) list under `## Component Library` with the name of the new component
