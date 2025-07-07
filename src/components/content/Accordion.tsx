@@ -135,7 +135,12 @@ export const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
           isLast && 'rounded-b-[var(--borderradius)]',
           detailsElement.props.className,
         ),
-        children: [summary, contentWrapper],
+        children: (
+          <>
+            {summary}
+            {contentWrapper}
+          </>
+        ),
       });
     });
 

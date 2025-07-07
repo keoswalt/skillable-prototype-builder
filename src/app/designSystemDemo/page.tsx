@@ -15,6 +15,7 @@ import RadioListExample from '@/components/inputs/RadioListExample';
 import StepperExample from '@/components/navigation/StepperExample';
 import AccordionExample from '@/components/content/AccordionExample';
 import StateToggleExample from '@/components/navigation/StateToggleExample';
+import FormattingToolbarExample from '@/components/editor/FormattingToolbarExample';
 
 export default function Home() {
   return (
@@ -98,6 +99,11 @@ export default function Home() {
       <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">State Toggle Component Examples</h2>
         <StateToggleExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Formatting Toolbar Component Examples</h2>
+        <FormattingToolbarExample />
       </section>
 
     </main>
