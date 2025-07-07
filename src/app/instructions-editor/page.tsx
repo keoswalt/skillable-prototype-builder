@@ -1,11 +1,9 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import Tabs, { TabItem } from '@/components/navigation/Tabs';
-import { Button } from '@/components/buttons/Button';
-import { DropdownSelect } from '@/components/inputs/DropdownSelect';
-import StateToggle from '@/components/navigation/StateToggle';
-import { Switch } from '@/components/inputs/Switch';
+import type { TabItem } from '@/components/navigation/Tabs';
+import InstructionsEditorHeader from '@/components/editor/InstructionsEditorHeader';
+import InstructionsEditorFooter from '@/components/editor/InstructionsEditorFooter';
 
 export default function InstructionsEditorPage() {
   // Percentage width of the left pane
@@ -47,34 +45,7 @@ export default function InstructionsEditorPage() {
   return (
     <div className="flex min-h-screen flex-col pt-14">
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full h-14 shrink-0 bg-_components-background-contrast-sm border-b border-softgrey-main text-_components-text-primary px-4 flex items-center justify-between shadow-md z-20">
-        {/* Left side: Tabs + Settings */}
-        <div className="flex items-baseline">
-          <Tabs
-            items={tabs}
-            className="[&_[role=tabpanel]]:hidden" // Hide the panels when used inside header
-          />
-          <Button
-            variant="icon"
-            leftIcon="settings"
-            className="mt-2"
-            aria-label="Settings"
-          />
-        </div>
-
-        {/* Right side: Dropdown + Close */}
-        <div className="flex items-center gap-2">
-          <DropdownSelect
-            options={[{ label: 'Base Instructions Set (en)', value: '' }]}
-            maxWidth="sm"
-          />
-          <Button
-            variant="icon"
-            leftIcon="close"
-            aria-label="Close"
-          />
-        </div>
-      </header>
+      <InstructionsEditorHeader tabs={tabs} />
 
       {/* Body */}
       <main ref={containerRef} className="flex flex-1 overflow-hidden">
@@ -102,34 +73,13 @@ export default function InstructionsEditorPage() {
         </section>
       </main>
 
-      {/* Footer (fixed to viewport bottom) */}
-      <footer className="fixed bottom-0 left-0 w-full h-14 bg-_components-background-contrast-sm border-t border-softgrey-main px-4 flex items-center justify-between z-20">
-        {/* Left: StateToggle */}
-        <StateToggle
-          label="Editor"
-          options={[
-            { id: 'code', label: 'Code' },
-            { id: 'visual', label: 'Visual' },
-          ]}
-          value={viewMode}
-          onChange={(id) => setViewMode(id as 'code' | 'visual')}
-        />
-
-        {/* Right: Autosave Switch & Button */}
-        <div className="flex items-center gap-4">
-          <Switch
-            label="Autosave"
-            checked={isAutosave}
-            onChange={(e) => setIsAutosave(e.currentTarget.checked)}
-          />
-          <Button
-            variant="primary"
-            disabled={isAutosave}
-          >
-            Save Changes
-          </Button>
-        </div>
-      </footer>
+      {/* Footer */}
+      <InstructionsEditorFooter
+        isAutosave={isAutosave}
+        onToggleAutosave={(value) => setIsAutosave(value)}
+        viewMode={viewMode}
+        onChangeViewMode={(id) => setViewMode(id as 'code' | 'visual')}
+      />
     </div>
   );
 }
