@@ -1,0 +1,18 @@
+---
+description: Instructions for using icons
+globs: 
+alwaysApply: false
+---
+# How to use icons in this codebase
+
+## Rules:
+* Use Lucide icons for all icons in the project
+* Do not import icons from Lucide anywhere except [Icon.tsx](mdc:src/components/Icon.tsx) 
+
+## Instructions:
+When a user asks for a component or design that requires icons, do the following:
+1. Identify the type of icon needed
+2. Check if that icon has already been imported to [Icon.tsx](mdc:src/components/Icon.tsx) 
+3. If yes, use the existing icon
+4. If no, determine which icon from the Lucide icon set would be most appropriate and import it into to [Icon.tsx](mdc:src/components/Icon.tsx) 
+5. Use the new icon in your component or design
