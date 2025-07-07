@@ -16,7 +16,7 @@ Follow these steps when they ask you to create a new prototype:
 8. If new components are needed, create them in the page file itself (do not create a separate file or add it to the `/components` directory).
 9. Assemble the prototype for the screen they requested on the page using components from the `src/components` folder as well as any components you created in the page file already.
 10. Share the prototype with the user, along with instructions on how to adjust the component properties if needed.
-11. Ask the user if they would like to extract any components you created into separate, reusable components. If they say yes, use [create-component.mdc](mdc:.cursor/rules/create-component.mdc) to set up the component.
+11. Ask the user if they would like to extract any components you created into separate, reusable components. If they say yes, use [create-component.mdc](mdc:.cursor/rules/create-component.mdc) to set up the component (subtituting the design you've already created for the reference image usually required by that flow).
 
 Be sure to follow all of these rules every time:
 * Use any components from the project library that are needed for the prototype.
