@@ -175,8 +175,34 @@ export const ButtonExample: React.FC = () => {
           </div>
         </div>
       </div>
+{/* Icon Only */}
+        <div className="flex gap-4 flex-wrap items-center">
+                <div className="flex flex-col gap-4 p-4">
+              <h3 className="font-headline text-heading-xs mb-4">Icon-only Buttons</h3>
+                <div className="flex gap-4 flex-wrap items-center">
+                  <Button variant="icon" size="small" leftIcon="add" aria-label="Add" />
+                  <Button variant="icon" size="medium" leftIcon="user" aria-label="User" />
+                  <Button variant="icon" size="large" leftIcon="check" aria-label="Confirm" />
+                  <Button variant="icon" size="medium" leftIcon="alert" disabled aria-label="Alert" />
+                </div>
+            </div>
+        </div>
     </div>
   );
 };
 
-export default ButtonExample; 
+export default ButtonExample;
+
+// Icon-only buttons preview – quickly showcase the new variant
+// (Placed here to keep the example component self-contained)
+export const IconOnlyButtonPreview: React.FC = () => (
+  <div className="flex flex-col gap-4 p-4">
+    <h3 className="font-headline text-heading-xs mb-4">Icon-only Buttons</h3>
+    <div className="flex gap-4 flex-wrap items-center">
+      <Button variant="icon" size="small" leftIcon="add" aria-label="Add" />
+      <Button variant="icon" size="medium" leftIcon="user" aria-label="User" />
+      <Button variant="icon" size="large" leftIcon="check" aria-label="Confirm" />
+      <Button variant="icon" size="medium" leftIcon="alert" disabled aria-label="Alert" />
+    </div>
+  </div>
+); 
