@@ -14,6 +14,7 @@ import CheckboxItemExample from '@/components/inputs/CheckboxItemExample';
 import RadioListExample from '@/components/inputs/RadioListExample';
 import StepperExample from '@/components/navigation/StepperExample';
 import AccordionExample from '@/components/content/AccordionExample';
+import StateToggleExample from '@/components/navigation/StateToggleExample';
 
 export default function Home() {
   return (
@@ -92,6 +93,11 @@ export default function Home() {
       <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">Accordion Component Examples</h2>
         <AccordionExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">State Toggle Component Examples</h2>
+        <StateToggleExample />
       </section>
 
     </main>

@@ -27,6 +27,7 @@ This is a private repository built for internal Skillable use by senior product 
 - [X] Radio list
 - [X] Stepper
 - [X] Accordion
+- [X] State toggle
 
 > See `designSystemDemo/page.tsx` for examples of completed components.
 
