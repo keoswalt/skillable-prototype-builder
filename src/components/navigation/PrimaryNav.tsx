@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 interface NavItem {
   label: string;
@@ -24,6 +25,13 @@ const navItems: NavItem[] = [
 ];
 
 export default function PrimaryNav() {
+  const pathname = usePathname();
+
+  // Don't show the nav on the instructions editor page
+  if (pathname.startsWith('/instructions-editor')) {
+    return null;
+  }
+
   const [menuState, setMenuState] = useState<MenuState>({
     isMobileMenuOpen: false,
     isCustomerDropdownOpen: false,

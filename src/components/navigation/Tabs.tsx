@@ -162,7 +162,7 @@ export const Tabs: React.FC<TabsProps> = ({
           aria-orientation={orientation}
           className={`
             scroll-smooth no-scrollbar
-            ${isHorizontal ? 'flex overflow-x-auto space-x-6 pl-8 pr-8' : 'flex flex-col items-start overflow-y-auto space-y-4 pt-8 pb-8'}
+            ${isHorizontal ? 'flex overflow-x-auto space-x-6 pl-2 pr-2' : 'flex flex-col items-start overflow-y-auto space-y-4 pt-8 pb-8'}
           `}
         >
           {items.map((tab, index) => {
@@ -183,7 +183,7 @@ export const Tabs: React.FC<TabsProps> = ({
                 onKeyDown={(e) => onKeyDown(e, index)}
                 className={`
                   ${common}
-                  ${isHorizontal ? 'pt-5 pb-4 mb-[-1px]' : 'pt-2 pb-2 pr-4 mr-[-1px] text-left'}
+                  ${isHorizontal ? 'pt-5 pb-3 mb-[-1px]' : 'pt-2 pb-2 pr-4 mr-[-1px] text-left'}
                   ${isActive ? `text-_components-text-primary ${activeBorder}` : 'border-transparent text-_components-text-primary hover:text-hardgrey-dark'}
                 `}
               >

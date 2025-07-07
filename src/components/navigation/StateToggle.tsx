@@ -92,7 +92,7 @@ const StateToggle = React.forwardRef<HTMLDivElement, StateToggleProps>(({
   };
 
   return (
-    <div ref={ref} className={cn('inline-flex items-center gap-2', className)}>
+    <div ref={ref} className={cn('inline-flex items-center gap-3', className)}>
       {label && (
         <span id={`${groupId}-label`} className="font-primary text-body-sm select-none">
           {label}
@@ -116,7 +116,7 @@ const StateToggle = React.forwardRef<HTMLDivElement, StateToggleProps>(({
               aria-pressed={isSelected}
               tabIndex={isSelected ? 0 : -1}
               className={cn(
-                'px-2 py-1 font-primary text-body-sm transition-colors rounded-[5px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-main',
+                'px-2 py-1 font-primary text-body-xs transition-colors rounded-[5px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-main',
                 isSelected
                   ? 'bg-primary-main text-primary-contrast'
                   : 'text-_components-text-primary hover:bg-softgrey-light',
