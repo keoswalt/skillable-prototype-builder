@@ -2,7 +2,7 @@
 
 This is a private repository built for internal Skillable use by senior product designer Kim Oswalt (<kim.oswalt@skillable.com>). It's a working project with the goal of prototyping new experiences and preparing production-ready UI.
 
-## Design System
+## 🎨 Design System
 
 ### Theme
 - [X] Design token implementation for colors and typography in `app/theme` directory
@@ -23,14 +23,14 @@ This is a private repository built for internal Skillable use by senior product 
 - [X] Tabs
 - [X] Tooltip
 - [X] Dropdown select
+- [X] Checkbox item
 
 > See `designSystemDemo/page.tsx` for examples of completed components.
 
-## Tech Stack
+## 🖥️ Tech Stack
 
-This project was built as a Next.js app using Tailwind and TypeScript. It's intended for use with Cursor using rules for new component creation and prototype development that live in the `.cursor/rules` directory. (Learn more about[Cursor rules here](https://docs.cursor.com/context/rules).)
+This project was built as a Next.js app using Tailwind and TypeScript. It's intended for use with Cursor using rules for new component creation and prototype development that live in the `.cursor/rules` directory. (Learn more about [Cursor rules here](https://docs.cursor.com/context/rules).)
 
-# How To Use
 
 ## ✅ Getting Set Up
 
