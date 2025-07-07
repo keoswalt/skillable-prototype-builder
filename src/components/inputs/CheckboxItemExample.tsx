@@ -31,7 +31,7 @@ export const CheckboxItemExample: React.FC = () => {
     {/* Error */}
     <section className="flex flex-col gap-3 max-w-lg">
     <h3 className="font-headline text-heading-xs">Interactive</h3>
-    <CheckboxItem label="Empty" onChange={() => {}} />
+    <CheckboxItem label="Click me!" onChange={() => {}} />
   </section>
 </div>
   );

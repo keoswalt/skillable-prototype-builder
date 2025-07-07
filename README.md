@@ -24,6 +24,7 @@ This is a private repository built for internal Skillable use by senior product 
 - [X] Tooltip
 - [X] Dropdown select
 - [X] Checkbox item
+- [X] Radio list
 
 > See `designSystemDemo/page.tsx` for examples of completed components.
 
