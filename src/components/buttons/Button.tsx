@@ -37,9 +37,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     // Square dimensions for icon-only buttons
     const iconOnlySizeClasses = {
-      small: 'h-7 w-7 p-0',
-      medium: 'h-8 w-8 p-0',
-      large: 'h-10 w-10 p-0',
+      small: 'h-7 w-7 aspect-square p-0',
+      medium: 'h-8 w-8 aspect-square p-0',
+      large: 'h-10 w-10 aspect-square p-0',
     } as const;
 
     const variantClasses = {

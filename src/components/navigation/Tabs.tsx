@@ -162,15 +162,13 @@ export const Tabs: React.FC<TabsProps> = ({
           aria-orientation={orientation}
           className={`
             scroll-smooth no-scrollbar
-            ${isHorizontal ? 'flex overflow-x-auto space-x-6 pl-2 pr-2' : 'flex flex-col items-start overflow-y-auto space-y-4 pt-8 pb-8'}
+            ${isHorizontal ? 'flex overflow-x-auto space-x-0 pl-2 pr-2' : 'flex flex-col items-start overflow-y-auto space-y-4 pt-8 pb-8'}
           `}
         >
           {items.map((tab, index) => {
             const isActive = index === activeIndex;
             const common = `whitespace-nowrap font-primary font-medium text-body-sm transition-colors focus:outline-none`;
-            const activeBorder = isHorizontal
-              ? 'border-b-2 border-primary-main'
-              : 'border-r-2 border-primary-main';
+            const baseBorder = isHorizontal ? 'border-b-2' : 'border-r-2';
 
             return (
               <button
@@ -183,8 +181,9 @@ export const Tabs: React.FC<TabsProps> = ({
                 onKeyDown={(e) => onKeyDown(e, index)}
                 className={`
                   ${common}
-                  ${isHorizontal ? 'pt-5 pb-3 mb-[-1px]' : 'pt-2 pb-2 pr-4 mr-[-1px] text-left'}
-                  ${isActive ? `text-_components-text-primary ${activeBorder}` : 'border-transparent text-_components-text-primary hover:text-hardgrey-dark'}
+                  ${isHorizontal ? 'pt-5 pb-3 px-4' : 'pt-2 pb-2 px-4 text-left'}
+                  ${baseBorder}
+                  ${isActive ? 'border-primary-main text-_components-text-primary' : 'border-transparent text-_components-text-primary hover:text-hardgrey-dark'}
                 `}
               >
                 {tab.label}

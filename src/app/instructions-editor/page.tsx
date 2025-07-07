@@ -47,9 +47,9 @@ export default function InstructionsEditorPage() {
   return (
     <div className="flex min-h-screen flex-col pt-14">
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full h-14 shrink-0 bg-_components-background border-b border-softgrey-main text-_components-text-primary px-4 flex items-center justify-between shadow-md z-20">
+      <header className="fixed top-0 left-0 w-full h-14 shrink-0 bg-_components-background-contrast-sm border-b border-softgrey-main text-_components-text-primary px-4 flex items-center justify-between shadow-md z-20">
         {/* Left side: Tabs + Settings */}
-        <div className="flex items-baseline gap-2">
+        <div className="flex items-baseline">
           <Tabs
             items={tabs}
             className="[&_[role=tabpanel]]:hidden" // Hide the panels when used inside header
@@ -57,6 +57,7 @@ export default function InstructionsEditorPage() {
           <Button
             variant="icon"
             leftIcon="settings"
+            className="mt-2"
             aria-label="Settings"
           />
         </div>
@@ -70,7 +71,6 @@ export default function InstructionsEditorPage() {
           <Button
             variant="icon"
             leftIcon="close"
-            className="text-white"
             aria-label="Close"
           />
         </div>
@@ -103,7 +103,7 @@ export default function InstructionsEditorPage() {
       </main>
 
       {/* Footer (fixed to viewport bottom) */}
-      <footer className="fixed bottom-0 left-0 w-full h-14 bg-[var(--components-background-default)] border-t border-softgrey-main px-4 flex items-center justify-between z-20">
+      <footer className="fixed bottom-0 left-0 w-full h-14 bg-_components-background-contrast-sm border-t border-softgrey-main px-4 flex items-center justify-between z-20">
         {/* Left: StateToggle */}
         <StateToggle
           label="Editor"
