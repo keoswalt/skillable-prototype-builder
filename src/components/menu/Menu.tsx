@@ -45,7 +45,7 @@ export const Menu: React.FC<MenuProps> = ({
   const menuStyle = rect ? {
     position: 'fixed' as const,
     top: `${rect.bottom + 4}px`,
-    left: `${rect.left}px`,
+    right: `${window.innerWidth - rect.right}px`,
     minWidth: `${rect.width}px`,
   } : {};
 
