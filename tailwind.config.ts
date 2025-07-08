@@ -7,6 +7,9 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: 'class', // Enable dark mode based on class
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   theme: {
     extend: {
       maxWidth: {
@@ -217,21 +220,8 @@ const config: Config = {
           },
         },
       },
-      // Rich Text Editor Style Customization (Prose)
-      typography: (theme: (path: string) => string) => ({
-        DEFAULT: {
-          css: {
-            '--tw-prose-body': 'var(--components-text-primary)',
-            '--tw-prose-headings': 'var(--components-text-primary)',
-            '--tw-prose-bold': 'var(--fontweight-semibold)',
-          },
-        },
-      }),
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
 };
 
 export default config; 

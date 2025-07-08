@@ -1,0 +1,109 @@
+@tailwind components;
+
+/* ==========================================================================
+   Prose Overrides for Tiptap Editor
+========================================================================== */
+
+/* ----------------------
+   Base Prose Styles
+   ---------------------- */
+@layer components {
+.prose {
+  --tw-prose-body: var(--components-text-primary);
+  --tw-prose-headings: var(--components-text-primary);
+  --tw-prose-lead: var(--components-text-secondary);
+  --tw-prose-links: var(--primary-main);
+  --tw-prose-bold: var(--components-text-primary);
+  --tw-prose-counters: var(--components-text-light);
+  --tw-prose-bullets: var(--components-text-light);
+  --tw-prose-hr: var(--components-divider-main);
+  --tw-prose-quotes: var(--components-text-primary);
+  --tw-prose-quote-borders: var(--primary-main);
+  --tw-prose-captions: var(--components-text-light);
+  --tw-prose-code: var(--secondary-main);
+  --tw-prose-pre-code: var(--secondary-contrast);
+  --tw-prose-pre-bg: var(--secondary-main);
+  --tw-prose-th-borders: var(--components-divider-main);
+  --tw-prose-td-borders: var(--components-divider-main);
+}
+
+/* ----------------------
+   Dark Theme Prose Overrides
+   ---------------------- */
+.dark .prose {
+  --tw-prose-body: var(--components-text-primary);
+  --tw-prose-headings: var(--components-text-primary);
+  --tw-prose-links: var(--primary-main);
+  --tw-prose-bold: var(--components-text-primary);
+  --tw-prose-quotes: var(--components-text-primary);
+  --tw-prose-code: var(--accent-main);
+  --tw-prose-pre-code: var(--accent-contrast);
+  --tw-prose-pre-bg: var(--accent-main);
+}
+}
+
+/* ----------------------
+   Code Block Specific Styles
+   ---------------------- */
+
+/* Inline code styles */
+.prose code {
+  color: var(--tw-prose-code) !important;
+  background-color: var(--components-background-contrast-sm, #f2f2f2); /* Fallback for base */
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+/* Ensure inline code in dark mode has the right background */
+.dark .prose code {
+    background-color: var(--components-background-contrast-sm, #333); /* Fallback for dark */
+}
+
+
+/* Code block wrapper styles */
+.prose pre {
+  background-color: var(--tw-prose-pre-bg) !important;
+  color: var(--tw-prose-pre-code) !important;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+/* Reset styles for code inside a code block */
+.prose pre code {
+  background-color: transparent !important;
+  padding: 0;
+  color: inherit !important;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ==========================================================================
+   Tiptap & Tippy.js Custom Styles
+   ========================================================================== */
+
+/* Custom Tippy.js theme for the slash command menu */
+.tippy-box[data-theme~='slash-command'] {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+/* Custom styles for the Tiptap editor */
+.tiptap-editor .ProseMirror:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.tiptap-editor ul,
+.tiptap-editor ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+.tiptap-editor li {
+  margin: 0.25rem 0;
+  line-height: 100%;
+} 

@@ -11,27 +11,3 @@
     display: none; /* Chrome, Safari, Opera */
   }
 }
-
-/* Custom Tippy.js theme for the slash command menu */
-.tippy-box[data-theme~='slash-command'] {
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-} 
-
-/* Custom styles for the Tiptap editor */
-.tiptap-editor .ProseMirror:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border-color: transparent !important;
-}
-
-.tiptap-editor ul,
-.tiptap-editor ol {
-  margin: 0.5rem 0;
-  padding-left: 1.5rem;
-}
-.tiptap-editor li {
-  margin: 0.25rem 0;
-  line-height: 100%;
-}

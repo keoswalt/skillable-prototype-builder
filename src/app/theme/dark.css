@@ -109,15 +109,4 @@
 
   /* Native Elements */
   --native-scrollbar-bg: rgb(var(--grey-400));
-}
-
-.dark .prose {
-  --tw-prose-body: var(--components-text-primary);
-  --tw-prose-headings: var(--components-text-primary);
-  --tw-prose-links: var(--primary-main);
-  --tw-prose-bold: var(--components-text-primary);
-  --tw-prose-quotes: var(--components-text-primary);
-  --tw-prose-code: var(--accent-main);
-  --tw-prose-pre-code: var(--accent-contrast);
-  --tw-prose-pre-bg: var(--accent-main);
 } 
