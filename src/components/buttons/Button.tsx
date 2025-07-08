@@ -49,7 +49,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       error: 'bg-error-main text-error-contrast hover:bg-error-dark',
       success: 'bg-success-main text-success-contrast hover:bg-success-dark',
       outline: 'border border-common-white-contrast bg-common-white-main text-common-white-contrast hover:bg-accent-light',
-      icon: 'bg-transparent text-primary-main hover:bg-primary-soft',
+      icon: 'bg-transparent text-primary-main hover:bg-primary-contrast',
     } as const;
 
     const iconSize = {
