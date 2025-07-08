@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Icon, IconName, Icons } from '../Icon';
+import { Tooltip, TooltipDirection } from '../info/Tooltip';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'small' | 'medium' | 'large';
@@ -15,6 +16,14 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   leftIcon?: IconName;
   rightIcon?: IconName;
   children?: React.ReactNode; // text is optional for icon-only buttons
+  /**
+   * Optional tooltip content to display on hover
+   */
+  tooltip?: React.ReactNode;
+  /**
+   * Direction for the tooltip (default: 'top')
+   */
+  tooltipDirection?: TooltipDirection;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -26,6 +35,8 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     children,
     className = '',
     disabled,
+    tooltip,
+    tooltipDirection = 'top',
     ...props
   }, ref) => {
     // Standard button dimensions
@@ -58,7 +69,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       large: 18,
     };
 
-    return (
+    const buttonElement = (
       <button
         ref={ref}
         disabled={disabled}
@@ -89,6 +100,17 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         )}
       </button>
     );
+
+    // Wrap with tooltip if tooltip content is provided
+    if (tooltip) {
+      return (
+        <Tooltip content={tooltip} direction={tooltipDirection}>
+          {buttonElement}
+        </Tooltip>
+      );
+    }
+
+    return buttonElement;
   }
 );
 

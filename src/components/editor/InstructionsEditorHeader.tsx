@@ -20,6 +20,8 @@ const InstructionsEditorHeader: React.FC<InstructionsEditorHeaderProps> = ({ tab
         leftIcon="circleQuestionMark"
         className="mt-4"
         aria-label="Help"
+        tooltip="Help"
+        tooltipDirection="bottom"
       />
     </div>
 
@@ -29,6 +31,8 @@ const InstructionsEditorHeader: React.FC<InstructionsEditorHeaderProps> = ({ tab
         variant="icon"
         leftIcon="settings"
         aria-label="Settings"
+        tooltip="Settings"
+        tooltipDirection="bottom"
       />
       <DropdownSelect
         options={[{ label: 'Base Instructions Set (en)', value: '' }]}
@@ -38,6 +42,8 @@ const InstructionsEditorHeader: React.FC<InstructionsEditorHeaderProps> = ({ tab
         variant="icon"
         leftIcon="close"
         aria-label="Close"
+        tooltip="Close editor"
+        tooltipDirection="left"
       />
     </div>
   </header>

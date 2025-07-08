@@ -9,7 +9,7 @@ import RichTextEditor from '@/components/editor/RichTextEditor';
 
 export default function InstructionsEditorPage() {
   // Percentage width of the left pane
-  const [leftWidth, setLeftWidth] = useState(50);
+  const [leftWidth, setLeftWidth] = useState(70);
   const [isAutosave, setIsAutosave] = useState(true);
   const [viewMode, setViewMode] = useState<'code' | 'visual'>('code');
   const containerRef = useRef<HTMLDivElement>(null);
