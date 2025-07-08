@@ -40,7 +40,7 @@ export default function InstructionsEditorPage() {
   const tabs: TabItem[] = [
     { id: 'editor', label: 'Editor', content: <></> },
     { id: 'activities', label: 'Activities', content: <></> },
-    { id: 'help', label: 'Help', content: <></> },
+    { id: 'rules', label: 'Rules', content: <></> },
   ];
 
   return (
@@ -56,7 +56,7 @@ export default function InstructionsEditorPage() {
           style={{ width: `${leftWidth}%` }}
         >
           {/* Editor Panel */}
-          <div className="p-2 w-full">
+          <div className="p-2 w-full sticky top-0 z-10">
             <FormattingToolbar />
           </div>
         </section>

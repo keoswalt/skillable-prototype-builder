@@ -46,6 +46,7 @@ import {
   FilePlus,
   BookOpen,
   Camera,
+  HelpCircle,
   LucideIcon,
   LucideProps
 } from 'lucide-react';
@@ -78,7 +79,7 @@ export const Icons = {
   user: User,
   bell: Bell,
   gradCap: GraduationCap,
-  
+  circleQuestionMark: HelpCircle,
   // Status/Feedback
   alert: AlertCircle,
   info: Info,
