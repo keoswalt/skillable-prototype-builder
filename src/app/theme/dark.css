@@ -99,6 +99,25 @@
   --components-stepper-connector: rgb(var(--grey-600));
   --components-tooltip-fill: rgb(var(--grey-700));
 
+  /* Editor & Prose Colors */
+  --editor-selection-background: rgb(var(--primary-dark-rgb));
+  --editor-selection-text: rgb(var(--primary-contrast-rgb));
+  --editor-slash-command-background: rgb(var(--grey-800));
+  --editor-slash-command-text: rgb(var(--grey-50));
+  --editor-slash-command-hover-background: rgb(var(--grey-700));
+  --editor-slash-command-selected-background: rgb(var(--grey-600));
+
   /* Native Elements */
   --native-scrollbar-bg: rgb(var(--grey-400));
+}
+
+.dark .prose {
+  --tw-prose-body: var(--components-text-primary);
+  --tw-prose-headings: var(--components-text-primary);
+  --tw-prose-links: var(--primary-main);
+  --tw-prose-bold: var(--components-text-primary);
+  --tw-prose-quotes: var(--components-text-primary);
+  --tw-prose-code: var(--accent-main);
+  --tw-prose-pre-code: var(--accent-contrast);
+  --tw-prose-pre-bg: var(--accent-main);
 } 

@@ -6,7 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class',
+  darkMode: 'class', // Enable dark mode based on class
   theme: {
     extend: {
       maxWidth: {
@@ -52,8 +52,8 @@ const config: Config = {
         }],
       },
       fontFamily: {
-        primary: 'var(--fontfamily-primary)',
-        headline: 'var(--fontfamily-headline)',
+        primary: ['var(--fontfamily-primary)'],
+        headline: ['var(--fontfamily-headline)'],
       },
       fontWeight: {
         regular: 'var(--fontweight-regular)',
@@ -72,13 +72,20 @@ const config: Config = {
       },
       // Color System
       colors: {
-        "primary": {
-          main: 'var(--primary-main)',
-          dark: 'var(--primary-dark)',
-          light: 'var(--primary-light)',
-          soft: 'var(--primary-soft)',
-          contrast: 'var(--primary-contrast)',
-        },
+        // --- Editor & Prose ---
+        'editor-selection-background': 'var(--editor-selection-background)',
+        'editor-selection-text': 'var(--editor-selection-text)',
+        'editor-slash-command-background': 'var(--editor-slash-command-background)',
+        'editor-slash-command-text': 'var(--editor-slash-command-text)',
+        'editor-slash-command-hover-background': 'var(--editor-slash-command-hover-background)',
+        'editor-slash-command-selected-background': 'var(--editor-slash-command-selected-background)',
+
+        // --- Primary ---
+        'primary-main': 'var(--primary-main)',
+        'primary-dark': 'var(--primary-dark)',
+        'primary-light': 'var(--primary-light)',
+        'primary-soft': 'var(--primary-soft)',
+        'primary-contrast': 'var(--primary-contrast)',
         "secondary": {
           main: 'var(--secondary-main)',
           dark: 'var(--secondary-dark)',
@@ -210,9 +217,21 @@ const config: Config = {
           },
         },
       },
+      // Rich Text Editor Style Customization (Extends Prose)
+      typography: (theme: (path: string) => string) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-body': 'var(--components-text-primary)',
+            '--tw-prose-headings': 'var(--components-text-primary)',
+            '--tw-prose-bold': 'var(--fontweight-semibold)',
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
 
 export default config; 

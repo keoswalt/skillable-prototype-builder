@@ -10,4 +10,11 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+}
+
+/* Custom Tippy.js theme for the slash command menu */
+.tippy-box[data-theme~='slash-command'] {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 } 

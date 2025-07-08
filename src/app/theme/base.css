@@ -248,18 +248,18 @@
   --warning-soft: rgb(var(--orange-50));
   --warning-contrast: rgb(var(--grey-900));
 
-  --critical-main: rgb(var(--orange-700));
-  --critical-dark: rgb(var(--orange-700));
+  --critical-main: rgb(var(--orange-500));
+  --critical-dark: rgb(var(--orange-800));
   --critical-light: rgb(var(--orange-200));
   --critical-soft: rgb(var(--orange-50));
   --critical-contrast: rgb(var(--grey-900));
 
-  --error-main: rgb(var(--error-main-rgb));
-  --error-dark: rgb(var(--error-dark-rgb));
-  --error-light: rgb(var(--error-light-rgb));
-  --error-soft: rgb(var(--error-soft-rgb));
-  --error-contrast: rgb(var(--error-contrast-rgb));
-  --error-textonly: rgb(var(--red-700));
+  --error-main: rgb(var(--red-500));
+  --error-dark: rgb(var(--red-800));
+  --error-light: rgb(var(--red-300));
+  --error-soft: rgb(var(--red-50));
+  --error-contrast: rgb(var(--grey-50));
+  --error-textonly: rgb(var(--red-500));
 
   /* Common Colors */
   --common-black-main: rgb(var(--grey-900));
@@ -268,30 +268,60 @@
   --common-white-contrast: rgb(var(--grey-900));
 
   /* Component-specific Colors */
-  --components-alert-critical-color: rgb(var(--grey-900));
+  --components-alert-critical-color: rgb(var(--grey-50));
+  --components-alert-critical-background: rgb(var(--red-500));
   --components-alert-high-color: rgb(var(--grey-900));
-  --components-alert-high-background: rgb(var(--orange-100));
-  --components-alert-critical-background: rgb(var(--red-50));
+  --components-alert-high-background: rgb(var(--orange-200));
   --components-alert-medium-color: rgb(var(--grey-900));
   --components-alert-medium-background: rgb(var(--orange-50));
   --components-alert-success-color: rgb(var(--grey-900));
-  --components-alert-success-background: rgb(var(--green-50));
-
-  --components-avatar-fill: rgb(var(--grey-500));
+  --components-alert-success-background: rgb(var(--green-100));
+  
+  --components-avatar-fill: rgb(var(--grey-400));
   --components-background-default: rgb(var(--grey-50));
   --components-background-contrast-xs: rgb(var(--grey-75));
   --components-background-contrast-sm: rgb(var(--grey-100));
-  --components-background-contrast-md: rgb(var(--grey-100));
-  --components-background-disabled: rgb(var(--grey-200));
-  --components-chip-defaultclosefill: rgb(var(--grey-600));
+  --components-background-contrast-md: rgb(var(--grey-200));
+  --components-background-disabled: rgb(var(--grey-300));
+  --components-chip-defaultclosefill: rgb(var(--grey-500));
   --components-divider-main: rgb(var(--grey-300));
   --components-text-primary: rgb(var(--grey-900));
-  --components-text-secondary: rgb(var(--grey-700));
-  --components-text-light: rgb(var(--grey-600));
-  --components-rating-enabledborder: rgb(var(--grey-300));
+  --components-text-secondary: rgb(var(--grey-600));
+  --components-text-light: rgb(var(--grey-400));
+  --components-rating-enabledborder: rgb(var(--grey-400));
   --components-stepper-connector: rgb(var(--grey-400));
-  --components-tooltip-fill: rgb(var(--grey-200));
+  --components-tooltip-fill: rgb(var(--grey-900));
+
+  /* Editor & Prose Colors */
+  --editor-selection-background: rgb(var(--primary-soft-rgb));
+  --editor-selection-text: rgb(var(--primary-contrast-rgb));
+  --editor-slash-command-background: var(--components-background-contrast-sm);
+  --editor-slash-command-text: rgb(var(--grey-900));
+  --editor-slash-command-hover-background: var(--components-background-contrast-md);
+  --editor-slash-command-selected-background: var(--components-background-contrast-md);
 
   /* Native Elements */
-  --native-scrollbar-bg: rgb(var(--grey-200));
+  --native-scrollbar-bg: rgb(var(--grey-400));
+}
+
+/* ==========================================================================
+   Prose Overrides for Tiptap
+   ========================================================================== */
+.prose {
+  --tw-prose-body: var(--components-text-primary);
+  --tw-prose-headings: var(--components-text-primary);
+  --tw-prose-lead: var(--components-text-secondary);
+  --tw-prose-links: var(--primary-main);
+  --tw-prose-bold: var(--components-text-primary);
+  --tw-prose-counters: var(--components-text-light);
+  --tw-prose-bullets: var(--components-text-light);
+  --tw-prose-hr: var(--components-divider-main);
+  --tw-prose-quotes: var(--components-text-primary);
+  --tw-prose-quote-borders: var(--primary-main);
+  --tw-prose-captions: var(--components-text-light);
+  --tw-prose-code: var(--secondary-main);
+  --tw-prose-pre-code: var(--secondary-contrast);
+  --tw-prose-pre-bg: var(--secondary-main);
+  --tw-prose-th-borders: var(--components-divider-main);
+  --tw-prose-td-borders: var(--components-divider-main);
 } 

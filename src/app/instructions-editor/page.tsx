@@ -5,6 +5,7 @@ import type { TabItem } from '@/components/navigation/Tabs';
 import InstructionsEditorHeader from '@/components/editor/InstructionsEditorHeader';
 import InstructionsEditorFooter from '@/components/editor/InstructionsEditorFooter';
 import FormattingToolbar from '@/components/editor/FormattingToolbar';
+import RichTextEditor from '@/components/editor/RichTextEditor';
 
 export default function InstructionsEditorPage() {
   // Percentage width of the left pane
@@ -55,10 +56,11 @@ export default function InstructionsEditorPage() {
           className="min-w-0 overflow-auto"
           style={{ width: `${leftWidth}%` }}
         >
-          {/* Editor Panel */}
-          <div className="p-2 w-full sticky top-0 z-10">
-            <FormattingToolbar />
-          </div>
+          <RichTextEditor className="p-4">
+            <div className="p-2 w-full sticky top-0 z-10">
+              <FormattingToolbar />
+            </div>
+          </RichTextEditor>
         </section>
 
         {/* Grabber */}

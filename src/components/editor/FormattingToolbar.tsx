@@ -26,31 +26,23 @@
 
 'use client';
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Icon, Icons, IconName } from '../Icon';
 import Tooltip from '../info/Tooltip';
-
-export interface ToolbarButtonProps {
-  icon: IconName;
-  label: string;
-  hasDropdown?: boolean;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-}
-
-interface FormattingToolbarProps {
-  buttons?: (ToolbarButtonProps | 'separator')[];
-  className?: string;
-}
+import { useTiptapEditor } from './RichTextEditor';
+import { ToolbarButtonProps, FormattingToolbarProps } from './types';
 
 const ToolbarButton: React.FC<ToolbarButtonProps> = ({
   icon,
   label,
   hasDropdown = false,
+  active = false,
   onClick,
 }) => {
   const baseClasses = `relative inline-flex h-8 w-8 items-center justify-center rounded transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-main`;
-  const stateClasses =
-    'text-_components-text-secondary hover:bg-primary-soft hover:text-primary-contrast';
+  const stateClasses = active
+    ? 'bg-primary-main text-primary-contrast'
+    : 'text-_components-text-secondary hover:bg-primary-soft hover:text-primary-contrast';
 
   return (
     <Tooltip content={label} direction="bottom">
@@ -78,41 +70,70 @@ export const FormattingToolbar: React.FC<FormattingToolbarProps> = ({
   buttons,
   className = '',
 }) => {
-  const defaultButtons: (ToolbarButtonProps | 'separator')[] = [
-    // Basic formatting
-    { icon: 'bold', label: 'Bold' },
-    { icon: 'italic', label: 'Italic' },
-    { icon: 'strikethrough', label: 'Strikethrough' },
-    'separator',
+  const { editor } = useTiptapEditor();
 
-    // Headings & blocks
-    { icon: 'heading', label: 'Heading', hasDropdown: true },
-    { icon: 'layout', label: 'Blocks', hasDropdown: true },
-    { icon: 'link', label: 'Link' },
-    { icon: 'code', label: 'Code', hasDropdown: true },
-    'separator',
+  const defaultButtons: (ToolbarButtonProps | 'separator')[] = useMemo(() => {
+    return [
+      // Basic formatting
+      {
+        icon: 'bold',
+        label: 'Bold',
+        active: !!editor?.isActive('bold'),
+        onClick: () => editor?.chain().focus().toggleBold().run(),
+      },
+      {
+        icon: 'italic',
+        label: 'Italic',
+        active: !!editor?.isActive('italic'),
+        onClick: () => editor?.chain().focus().toggleItalic().run(),
+      },
+      {
+        icon: 'strikethrough',
+        label: 'Strikethrough',
+        active: !!editor?.isActive('strike'),
+        onClick: () => editor?.chain().focus().toggleStrike().run(),
+      },
+      'separator',
 
-    // Lists & indent
-    { icon: 'list', label: 'Bulleted List' },
-    { icon: 'listOrdered', label: 'Numbered List' },
-    { icon: 'listChecks', label: 'Task List' },
-    { icon: 'outdent', label: 'Decrease Indent' },
-    { icon: 'indent', label: 'Increase Indent' },
-    'separator',
+      // Headings & blocks
+      { icon: 'heading', label: 'Heading', hasDropdown: true },
+      { icon: 'layout', label: 'Blocks', hasDropdown: true },
+      { icon: 'link', label: 'Link' },
+      { icon: 'code', label: 'Code', hasDropdown: true },
+      'separator',
 
-    // Insert menu, table, AI
-    { icon: 'filePlus', label: 'Insert', hasDropdown: true },
-    { icon: 'table', label: 'Table', hasDropdown: true },
-    { icon: 'sparkles', label: 'AI', hasDropdown: true },
-    'separator',
+      // Lists & indent
+      {
+        icon: 'list',
+        label: 'Bulleted List',
+        active: !!editor?.isActive('bulletList'),
+        onClick: () => editor?.chain().focus().toggleBulletList().run(),
+      },
+      {
+        icon: 'listOrdered',
+        label: 'Numbered List',
+        active: !!editor?.isActive('orderedList'),
+        onClick: () => editor?.chain().focus().toggleOrderedList().run(),
+      },
+      { icon: 'listChecks', label: 'Task List' },
+      { icon: 'outdent', label: 'Decrease Indent' },
+      { icon: 'indent', label: 'Increase Indent' },
+      'separator',
 
-    // Authoring widgets
-    { icon: 'type', label: 'Type Text', hasDropdown: true },
-    { icon: 'input', label: 'Input Field' },
-    { icon: 'comment', label: 'Author Comment' },
-    { icon: 'book', label: 'Include Instructions' },
-    { icon: 'upload', label: 'Upload Media' },
-  ];
+      // Insert menu, table, AI
+      { icon: 'filePlus', label: 'Insert', hasDropdown: true },
+      { icon: 'table', label: 'Table', hasDropdown: true },
+      { icon: 'sparkles', label: 'AI', hasDropdown: true },
+      'separator',
+
+      // Authoring widgets
+      { icon: 'type', label: 'Type Text', hasDropdown: true },
+      { icon: 'input', label: 'Input Field' },
+      { icon: 'comment', label: 'Author Comment' },
+      { icon: 'book', label: 'Include Instructions' },
+      { icon: 'upload', label: 'Upload Media' },
+    ];
+  }, [editor]);
 
   const items = buttons ?? defaultButtons;
 
