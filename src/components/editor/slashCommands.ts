@@ -40,7 +40,10 @@ export function createSlashCommandFromEditorCommand(
     description: editorCommand.description,
     keywords: [editorCommand.name.toLowerCase(), ...(editorCommand.description?.toLowerCase().split(' ') || [])],
     category: category || SLASH_COMMAND_CATEGORIES.TEXT,
-    command: ({ editor }: SlashCommandArgs) => {
+    command: ({ editor, range }: SlashCommandArgs) => {
+      // First, delete the text that triggered the command
+      editor.chain().focus().deleteRange(range).run();
+      // Then, execute the command's action
       editorCommand.execute(editor);
     },
   };

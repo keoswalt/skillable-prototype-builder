@@ -293,10 +293,10 @@
   --components-tooltip-fill: rgb(var(--grey-900));
 
   /* Editor & Prose Colors */
-  --editor-selection-background: rgb(var(--primary-soft-rgb));
-  --editor-selection-text: rgb(var(--primary-contrast-rgb));
+  --editor-selection-background: var(--components-background-contrast-sm);
+  --editor-selection-text: var(--components-text-primary);
   --editor-slash-command-background: var(--components-background-contrast-sm);
-  --editor-slash-command-text: rgb(var(--grey-900));
+  --editor-slash-command-text: var(--components-text-primary);
   --editor-slash-command-hover-background: var(--components-background-contrast-md);
   --editor-slash-command-selected-background: var(--components-background-contrast-md);
 
