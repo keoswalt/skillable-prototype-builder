@@ -1,12 +1,6 @@
 import React, { useRef, useState } from 'react';
-import Tabs, { TabItem } from '@/components/navigation/Tabs';
-import { Button } from '@/components/buttons/Button';
-import { DropdownSelect } from '@/components/inputs/DropdownSelect';
-import AdvancedMenu, { AdvancedMenuSection } from '@/components/menu/AdvancedMenu';
-
-interface InstructionsEditorHeaderProps {
-  tabs: TabItem[];
-}
+import AdvancedMenu, { AdvancedMenuItem, AdvancedMenuSection } from './AdvancedMenu';
+import { Button } from '../buttons/Button';
 
 const initialSettings = {
   learnerPreview: true,
@@ -19,10 +13,10 @@ const initialSettings = {
   autoCheck: true,
 };
 
-const InstructionsEditorHeader: React.FC<InstructionsEditorHeaderProps> = ({ tabs }) => {
+export const AdvancedMenuExample: React.FC = () => {
   const [settings, setSettings] = useState(initialSettings);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const settingsBtnRef = useRef<HTMLButtonElement>(null);
+  const anchorRef = useRef<HTMLButtonElement>(null);
+  const [open, setOpen] = useState(false);
 
   const handleChange = (key: keyof typeof settings, value: any) => {
     setSettings(prev => ({ ...prev, [key]: value }));
@@ -94,54 +88,22 @@ const InstructionsEditorHeader: React.FC<InstructionsEditorHeaderProps> = ({ tab
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full h-14 shrink-0 bg-_components-background-contrast-sm text-_components-text-primary flex items-center justify-between shadow-md z-20">
-      {/* Left side: Tabs + Settings */}
-      <div className="flex items-baseline">
-        <Tabs
-          items={tabs}
-          className="[&_[role=tabpanel]]:hidden" // Hide the panels when used inside header
-        />
-         <Button
-          variant="icon"
-          leftIcon="circleQuestionMark"
-          className="mt-4"
-          aria-label="Help"
-          tooltip="Help"
-          tooltipDirection="bottom"
-        />
-      </div>
-
-      {/* Right side: Dropdown + Close */}
-      <div className="flex items-center gap-2 pr-2">
-        <Button
-          ref={settingsBtnRef}
-          variant="icon"
-          leftIcon="settings"
-          aria-label="Settings"
-          tooltip="Settings"
-          tooltipDirection="bottom"
-          onClick={() => setMenuOpen(open => !open)}
-        />
-        <DropdownSelect
-          options={[{ label: 'Base Instructions Set (en)', value: '' }]}
-          maxWidth="sm"
-        />
-        <Button
-          variant="icon"
-          leftIcon="close"
-          aria-label="Close"
-          tooltip="Close editor"
-          tooltipDirection="left"
-        />
-        <AdvancedMenu
-          isOpen={menuOpen}
-          onClose={() => setMenuOpen(false)}
-          sections={sections}
-          anchorEl={settingsBtnRef.current}
-        />
-      </div>
-    </header>
+    <div className="flex flex-col items-start gap-4">
+      <Button
+        ref={anchorRef}
+        variant="primary"
+        onClick={() => setOpen(o => !o)}
+      >
+        Open Advanced Menu
+      </Button>
+      <AdvancedMenu
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        sections={sections}
+        anchorEl={anchorRef.current}
+      />
+    </div>
   );
 };
 
-export default InstructionsEditorHeader; 
+export default AdvancedMenuExample; 

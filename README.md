@@ -29,6 +29,7 @@ This is a private repository built for internal Skillable use by senior product 
 - [X] Accordion
 - [X] State toggle
 - [X] Formatting toolbar
+- [X] Advanced menu
 
 > See `design-system-demo/page.tsx` for examples of completed components.
 

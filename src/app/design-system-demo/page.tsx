@@ -16,10 +16,16 @@ import StepperExample from '@/components/navigation/StepperExample';
 import AccordionExample from '@/components/content/AccordionExample';
 import StateToggleExample from '@/components/navigation/StateToggleExample';
 import FormattingToolbarExample from '@/components/editor/FormattingToolbarExample';
+import AdvancedMenuExample from '../../components/menu/AdvancedMenuExample';
 
 export default function Home() {
   return (
     <main className="min-h-screen p-8">
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Advanced Menu Component Example</h2>
+        <AdvancedMenuExample />
+      </section>
 
       <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">Button Component Examples</h2>
