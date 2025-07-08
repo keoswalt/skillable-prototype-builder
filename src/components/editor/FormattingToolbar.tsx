@@ -112,7 +112,6 @@ export const FormattingToolbar: React.FC<FormattingToolbarProps> = ({
     { icon: 'comment', label: 'Author Comment' },
     { icon: 'book', label: 'Include Instructions' },
     { icon: 'upload', label: 'Upload Media' },
-    { icon: 'camera', label: 'Screenshot' },
   ];
 
   const items = buttons ?? defaultButtons;
