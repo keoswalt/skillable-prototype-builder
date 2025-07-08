@@ -20,6 +20,12 @@
 } 
 
 /* Custom styles for the Tiptap editor */
+.tiptap-editor .ProseMirror:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
 .tiptap-editor ul,
 .tiptap-editor ol {
   margin: 0.5rem 0;

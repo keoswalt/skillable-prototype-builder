@@ -56,10 +56,10 @@ export default function InstructionsEditorPage() {
           className="min-w-0 overflow-auto"
           style={{ width: `${leftWidth}%` }}
         >
-          <RichTextEditor className="p-4">
-            <div className="p-2 w-full sticky top-0 z-10">
+          <div className="w-full sticky top-0 z-10 p-2">
               <FormattingToolbar />
             </div>
+          <RichTextEditor className="px-4 pb-4">
           </RichTextEditor>
         </section>
 
