@@ -119,7 +119,7 @@ export const FormattingToolbar: React.FC<FormattingToolbarProps> = ({
 
   return (
     <div
-      className={`inline-flex items-center gap-1 rounded bg-_components-background-contrast-sm p-1 ${className}`}
+      className={`flex flex-wrap items-center gap-1 rounded bg-_components-background-contrast-sm p-1 w-full ${className}`}
     >
       {items.map((item, idx) => {
         if (item === 'separator') {

@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import type { TabItem } from '@/components/navigation/Tabs';
 import InstructionsEditorHeader from '@/components/editor/InstructionsEditorHeader';
 import InstructionsEditorFooter from '@/components/editor/InstructionsEditorFooter';
+import FormattingToolbar from '@/components/editor/FormattingToolbar';
 
 export default function InstructionsEditorPage() {
   // Percentage width of the left pane
@@ -54,8 +55,10 @@ export default function InstructionsEditorPage() {
           className="min-w-0 overflow-auto"
           style={{ width: `${leftWidth}%` }}
         >
-          {/* Placeholder content */}
-          <div className="p-4">Left Pane</div>
+          {/* Editor Panel */}
+          <div className="p-2 w-full">
+            <FormattingToolbar />
+          </div>
         </section>
 
         {/* Grabber */}
