@@ -79,7 +79,7 @@ export default function PrimaryNav() {
                   <Link
                     key={item.label}
                     href={item.href}
-                    className="text-[var(--components-text-primary)] hover:text-[var(--primary-main)] px-0 py-2 text-[var(--fontsize-body-md)] font-[var(--fontweight-medium)] font-[var(--fontfamily-primary)] tracking-[var(--letterspacing-normal)]"
+                    className="px-0 py-2 text-body-sm text-_components-text-primary hover:text-[var(--primary-main)]"
                   >
                     {item.label}
                   </Link>
@@ -93,9 +93,12 @@ export default function PrimaryNav() {
 
             <button
               onClick={() => toggleMenu('isUserDropdownOpen')}
-              className="text-[var(--primary-main)] hover:text-[var(--primary-light)] px-[5px] py-1 text-[var(--fontsize-body-xs)] font-[var(--fontweight-medium)] flex items-center rounded-[5px]"
+              className="px-[5px] py-1 text-body-xs text-primary-main hover:text-[var(--primary-light)] flex items-center rounded-[5px]"
             >
-              <span className="font-[var(--fontfamily-primary)] tracking-[var(--letterspacing-wide)]">User Name</span>
+              <span style={{
+                fontFamily: 'var(--fontfamily-primary)',
+                letterSpacing: 'var(--letterspacing-wide)'
+              }}>User Name</span>
               <svg
                 className={`ml-2 h-4 w-4 transform ${
                   menuState.isUserDropdownOpen ? 'rotate-180' : ''
@@ -158,8 +161,7 @@ export default function PrimaryNav() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-[var(--fontsize-body-md)] font-[var(--fontweight-medium)] text-[var(--components-text-primary)] hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]"
-              >
+                className="block px-3 py-2 rounded-md text-primary-main text-body-sm hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]" >
                 {item.label}
               </Link>
             ))}
@@ -168,13 +170,13 @@ export default function PrimaryNav() {
             <div className="px-2 space-y-1">
               <button
                 onClick={() => toggleMenu('isCustomerDropdownOpen')}
-                className="block w-full text-left px-3 py-2 rounded-md text-[var(--fontsize-body-md)] font-[var(--fontweight-medium)] text-[var(--components-text-primary)] hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]"
+                className="block w-full text-left px-3 py-2 rounded-md text-primary-main text-body-sm hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]"
               >
                 Customer
               </button>
               <button
                 onClick={() => toggleMenu('isUserDropdownOpen')}
-                className="block w-full text-left px-3 py-2 rounded-md text-[var(--fontsize-body-md)] font-[var(--fontweight-medium)] text-[var(--primary-main)] hover:text-[var(--primary-light)] hover:bg-[var(--components-background-contrast-sm)]"
+                className="block w-full text-left px-3 py-2 text-body-sm text-primary-main rounded-md hover:text-[var(--primary-light)] hover:bg-[var(--components-background-contrast-sm)]"
               >
                 User Name
               </button>
