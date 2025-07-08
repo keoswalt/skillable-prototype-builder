@@ -16,7 +16,7 @@ const InstructionsEditorFooter: React.FC<InstructionsEditorFooterProps> = ({
   viewMode,
   onChangeViewMode,
 }) => (
-  <footer className="fixed bottom-0 left-0 w-full h-14 bg-_components-background-contrast-sm border-t border-softgrey-main px-4 flex items-center justify-between z-20">
+  <footer className="fixed bottom-0 left-0 w-full h-14 bg-_components-background-contrast-sm  px-4 flex items-center justify-between z-20">
     {/* Left: StateToggle */}
     <StateToggle
       label="Editor"

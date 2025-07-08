@@ -75,14 +75,6 @@ const config: Config = {
       },
       // Color System
       colors: {
-        // --- Editor & Prose ---
-        'editor-selection-background': 'var(--editor-selection-background)',
-        'editor-selection-text': 'var(--editor-selection-text)',
-        'editor-slash-command-background': 'var(--editor-slash-command-background)',
-        'editor-slash-command-text': 'var(--editor-slash-command-text)',
-        'editor-slash-command-hover-background': 'var(--editor-slash-command-hover-background)',
-        'editor-slash-command-selected-background': 'var(--editor-slash-command-selected-background)',
-
         // --- Primary ---
         'primary-main': 'var(--primary-main)',
         'primary-dark': 'var(--primary-dark)',

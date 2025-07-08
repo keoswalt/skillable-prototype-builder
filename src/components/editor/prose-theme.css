@@ -5,6 +5,19 @@
 ========================================================================== */
 
 /* ----------------------
+   Editor & Prose Utility Classes
+   ---------------------- */
+   @layer components {
+    .bg-editor-selection-background { background-color: var(--editor-selection-background); }
+    .text-editor-selection-text { color: var(--editor-selection-text); }
+    .bg-editor-slash-command-background { background-color: var(--editor-slash-command-background); }
+    .text-editor-slash-command-text { color: var(--editor-slash-command-text); }
+    .bg-editor-slash-command-hover-background { background-color: var(--editor-slash-command-hover-background); }
+    .hover\\:bg-editor-slash-command-hover-background:hover { background-color: var(--editor-slash-command-hover-background); }
+    .bg-editor-slash-command-selected-background { background-color: var(--editor-slash-command-selected-background); }
+  } 
+  
+/* ----------------------
    Base Prose Styles
    ---------------------- */
 @layer components {

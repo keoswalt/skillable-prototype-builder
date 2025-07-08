@@ -8,7 +8,7 @@ interface InstructionsEditorHeaderProps {
 }
 
 const InstructionsEditorHeader: React.FC<InstructionsEditorHeaderProps> = ({ tabs }) => (
-  <header className="fixed top-0 left-0 w-full h-14 shrink-0 bg-_components-background-contrast-sm border-b border-softgrey-main text-_components-text-primary flex items-center justify-between shadow-md z-20">
+  <header className="fixed top-0 left-0 w-full h-14 shrink-0 bg-_components-background-contrast-sm text-_components-text-primary flex items-center justify-between shadow-md z-20">
     {/* Left side: Tabs + Settings */}
     <div className="flex items-baseline">
       <Tabs
