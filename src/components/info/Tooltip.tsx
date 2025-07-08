@@ -70,7 +70,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
       <div
         id={id}
         role="tooltip"
-        className={`pointer-events-none absolute z-10 whitespace-nowrap rounded-md bg-_components-tooltip-fill px-3 py-1 text-body-xs text-_components-text-light opacity-0 transition-opacity duration-200 delay-0 group-hover:opacity-100 ${bubblePosition[direction]} ${className}`}
+        className={`pointer-events-none absolute z-10 whitespace-nowrap rounded-md bg-_components-tooltip-fill px-3 py-1 text-body-xs text-_components-text-secondary opacity-0 transition-opacity duration-200 delay-0 group-hover:opacity-100 ${bubblePosition[direction]} ${className}`}
       >
         {content}
         {/* Arrow */}
