@@ -82,7 +82,10 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
       Strike,
       // --- Additional Extensions ---
       Placeholder.configure({
-        placeholder,
+        placeholder: 'Start writing or use \'/\' for commands',
+        showOnlyWhenEditable: true,
+        showOnlyCurrent: true,
+        includeChildren: false,
       }),
       Link.configure({
         openOnClick: false,

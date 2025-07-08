@@ -119,4 +119,28 @@
 .tiptap-editor li {
   margin: 0.25rem 0;
   line-height: 100%;
+}
+
+/* ==========================================================================
+   Placeholder Styles
+   ========================================================================== */
+
+/* Tiptap placeholder styling */
+.tiptap-editor .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--components-text-light);
+  pointer-events: none;
+  height: 0;
+  font-style: italic;
+}
+
+/* Ensure placeholder appears on empty paragraphs */
+.tiptap-editor .ProseMirror p.is-empty::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--components-text-light);
+  pointer-events: none;
+  height: 0;
+  font-style: italic;
 } 
