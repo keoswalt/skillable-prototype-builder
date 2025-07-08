@@ -117,11 +117,13 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
     immediatelyRender: false,
   });
 
+  // Set editor-specific styles in globals.css
+
   return (
     <EditorContext.Provider value={{ editor }}>
       {children}
       {editor && (
-        <div className={`prose max-w-none focus:outline-none ${className}`}>
+        <div className={`prose tiptap-editor max-w-none focus:outline-none ${className}`}>
           <EditorContent editor={editor} />
         </div>
       )}

@@ -217,7 +217,7 @@ const config: Config = {
           },
         },
       },
-      // Rich Text Editor Style Customization (Extends Prose)
+      // Rich Text Editor Style Customization (Prose)
       typography: (theme: (path: string) => string) => ({
         DEFAULT: {
           css: {
