@@ -39,7 +39,7 @@ const ToolbarButton: React.FC<ToolbarButtonProps> = ({
   active = false,
   onClick,
 }) => {
-  const baseClasses = `relative inline-flex h-8 w-8 items-center justify-center rounded transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-main`;
+  const baseClasses = `relative inline-flex h-8 min-w-8 px-2 items-center justify-center rounded transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-main`;
   const stateClasses = active
     ? 'bg-primary-main text-primary-contrast'
     : 'text-_components-text-secondary hover:bg-primary-soft hover:text-primary-contrast';
@@ -52,15 +52,17 @@ const ToolbarButton: React.FC<ToolbarButtonProps> = ({
         className={`${baseClasses} ${stateClasses}`}
         onClick={onClick}
       >
-        <Icon icon={Icons[icon]} size={16} strokeWidth={1.8} />
-        {hasDropdown && (
-          <Icon
-            icon={Icons['chevronDown']}
-            size={10}
-            className="absolute bottom-0.5 right-0.5"
-            strokeWidth={2}
-          />
-        )}
+        <div className="flex items-center justify-center w-full h-full gap-1">
+          <Icon icon={Icons[icon]} size={16} strokeWidth={1.8} />
+          {hasDropdown && (
+            <Icon
+              icon={Icons['chevronDown']}
+              size={10}
+              className="relative"
+              strokeWidth={2}
+            />
+          )}
+        </div>
       </button>
     </Tooltip>
   );
