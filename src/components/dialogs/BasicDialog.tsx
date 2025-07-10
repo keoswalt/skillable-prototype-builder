@@ -136,7 +136,7 @@ export const BasicDialog: React.FC<BasicDialogProps> = ({
         </button>
 
         {/* Title */}
-        <h2 id="dialog-title" className="text-heading-xs font-headline text-heading-md text-_components-text-primary">
+        <h2 id="dialog-title" className="text-heading-sm font-headline text-_components-text-primary">
           {title}
         </h2>
 

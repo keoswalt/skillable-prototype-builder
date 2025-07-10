@@ -5,6 +5,7 @@ export type InstanceCardProps = Omit<InstanceData, 'variant'> & {
   actions?: CardAction[];
   metaLinks?: Record<string, string>;
   className?: string;
+  // Note: InstanceCard does not support starring functionality
 };
 
 export const InstanceCard: React.FC<InstanceCardProps> = (props) => {

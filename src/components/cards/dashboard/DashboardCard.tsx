@@ -6,8 +6,9 @@
 // ---------------------------------------------------------------------------
 // • variant – Discriminator for the card content: "instance" | "profile" | "series" | "template".
 // • Each variant has a dedicated data shape (see interfaces below).
-// • starred? – Whether the card is marked as a favorite (renders a star icon on the left).
-// • onStarToggle? – Callback when the star icon is toggled.
+// • starred & onStarToggle – Optional star functionality (both must be provided together).
+//   When provided, renders a star icon that toggles between filled (favorited) and outlined (not favorited).
+//   Note: Instance cards do not support starring functionality.
 // • actions? – Optional cluster of icon–buttons on the right side of the header.
 //
 // USAGE
@@ -25,6 +26,8 @@
 //   platform="Azure"
 //   created="June 2, 2025"
 //   modified="June 5, 2025"
+//   starred={true}
+//   onStarToggle={() => console.log('star toggled')}
 //   actions={[{ icon: 'edit', label: 'Edit', onClick: () => console.log('edit') }]}
 // />
 //
@@ -69,10 +72,6 @@ export interface CardAction {
 
 // Base props shared by all variants
 interface BaseCardProps {
-  /** Adds a colored star icon on the far-left */
-  starred?: boolean;
-  /** Toggle handler when star icon is clicked */
-  onStarToggle?: () => void;
   /** Optional array of icon buttons displayed on the right-hand side */
   actions?: CardAction[];
   /** Map of data keys (e.g. "instanceId", "series") to URL strings. If provided, the corresponding value renders as an <a>. */
@@ -81,16 +80,27 @@ interface BaseCardProps {
   className?: string;
 }
 
+// Star functionality props - must be provided together or not at all
+interface StarProps {
+  /** Whether the card is marked as a favorite (renders a filled star icon) */
+  starred: boolean;
+  /** Toggle handler when star icon is clicked */
+  onStarToggle: () => void;
+}
+
+// Combined base props with optional star functionality
+type BaseCardPropsWithStar = BaseCardProps & (StarProps | {});
+
 // ────────────────────────────────────────────────────────────────────────────
 // Variant-specific data props – kept separate so we get exhaustive typing.
 // The `variant` key is used as a discriminant.
 // ────────────────────────────────────────────────────────────────────────────
 
 export type DashboardCardProps =
-  | (InstanceData & BaseCardProps)
-  | (ProfileData & BaseCardProps)
-  | (SeriesData & BaseCardProps)
-  | (TemplateData & BaseCardProps);
+  | (InstanceData & BaseCardPropsWithStar)
+  | (ProfileData & BaseCardPropsWithStar)
+  | (SeriesData & BaseCardPropsWithStar)
+  | (TemplateData & BaseCardPropsWithStar);
 
 /* ======================= Instance ======================= */
 export interface InstanceData {
@@ -185,14 +195,18 @@ const MetaItem: React.FC<MetaItemProps> = ({ label, value, href }) => (
 
 export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
   // Extract common props first
-  const { starred, onStarToggle, actions, metaLinks, className = '' } = props;
+  const { actions, metaLinks, className = '' } = props;
+  
+  // Extract star props if they exist
+  const starred = 'starred' in props ? props.starred : undefined;
+  const onStarToggle = 'onStarToggle' in props ? props.onStarToggle : undefined;
 
   /* --------------------------- Build header --------------------------- */
   const renderHeader = () => {
     const headerChildren: React.ReactNode[] = [];
 
-    // Optional star
-    if (typeof starred !== 'undefined' || onStarToggle) {
+    // Optional star - only show when both starred state and toggle handler are provided
+    if (typeof starred !== 'undefined' && onStarToggle) {
       const StarIcon = Icons.star;
       headerChildren.push(
         <button

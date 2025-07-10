@@ -53,6 +53,7 @@ export default function Home() {
     statusLabel: "In Development",
     statusTone: 'warning' as ChipVariant,
     starred: i < 2,
+    onStarToggle: () => console.log(`Toggle star for profile ${i}`),
   }));
 
   const mockSeries = Array.from({ length: 5 }).map((_, i) => ({
@@ -65,6 +66,7 @@ export default function Home() {
     created: "June 2, 2025",
     modified: "June 5, 2025",
     starred: i < 2,
+    onStarToggle: () => console.log(`Toggle star for series ${i}`),
   }));
 
   const mockTemplates = Array.from({ length: 5 }).map((_, i) => ({
@@ -79,6 +81,7 @@ export default function Home() {
     statusLabel: i % 2 === 0 ? "Active" : "Draft",
     statusTone: (i % 2 === 0 ? 'success' : 'warning') as ChipVariant,
     starred: i < 2,
+    onStarToggle: () => console.log(`Toggle star for template ${i}`),
   }));
 
   const tabItems = [
