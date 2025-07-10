@@ -61,7 +61,7 @@ export interface SortConfig {
 // Sort field options for each card type
 export const SORT_OPTIONS = {
   instance: [
-    { label: 'Title', value: 'title' },
+    { label: 'Name', value: 'name' },
     { label: 'Instance ID', value: 'instanceId' },
     { label: 'Lab Profile', value: 'labProfile' },
     { label: 'Series', value: 'series' },
@@ -71,7 +71,7 @@ export const SORT_OPTIONS = {
     { label: 'Duration', value: 'duration' },
   ],
   profile: [
-    { label: 'Title', value: 'title' },
+    { label: 'Name', value: 'name' },
     { label: 'Number', value: 'number' },
     { label: 'Series Name', value: 'seriesName' },
     { label: 'Organization', value: 'organization' },
@@ -81,7 +81,7 @@ export const SORT_OPTIONS = {
     { label: 'Modified', value: 'modified' },
   ],
   series: [
-    { label: 'Title', value: 'title' },
+    { label: 'Name', value: 'name' },
     { label: 'Organization', value: 'organization' },
     { label: 'Lab Profiles', value: 'labProfiles' },
     { label: 'Virtual Machines', value: 'virtualMachines' },
@@ -90,7 +90,7 @@ export const SORT_OPTIONS = {
     { label: 'Modified', value: 'modified' },
   ],
   template: [
-    { label: 'Title', value: 'title' },
+    { label: 'Name', value: 'name' },
     { label: 'Number', value: 'number' },
     { label: 'Series Name', value: 'seriesName' },
     { label: 'Organization', value: 'organization' },
@@ -103,10 +103,10 @@ export const SORT_OPTIONS = {
 
 // Default sort configurations for each card type
 export const DEFAULT_SORT_CONFIGS: Record<string, SortConfig> = {
-  instance: { field: 'lastActivity', direction: 'desc' },
-  profile: { field: 'modified', direction: 'desc' },
-  series: { field: 'modified', direction: 'desc' },
-  template: { field: 'modified', direction: 'desc' },
+  instance: { field: 'name', direction: 'asc' },
+  profile: { field: 'name', direction: 'asc' },
+  series: { field: 'name', direction: 'asc' },
+  template: { field: 'name', direction: 'asc' },
 };
 
 
@@ -262,11 +262,11 @@ export default function Home() {
   // Mock data for each card type with varied values for better sorting testing
   const mockInstances = Array.from({ length: 5 }).map((_, i) => ({
     id: i,
-    title: `Lab Profile ${String.fromCharCode(65 + i)} (User ${i + 1})`,
+    name: `Lab Profile ${String.fromCharCode(65 + i)} (User ${i + 1})`,
     instanceId: `10${i}3453`,
     labProfile: `Profile ${String.fromCharCode(65 + i)}`,
     series: `Series ${String.fromCharCode(65 + i)}`,
-    user: `User ${String.fromCharCode(65 + i)}`,
+    student: `User ${String.fromCharCode(65 + i)}`,
     instructionSet: "Base instruction set (en)",
     duration: `${(i % 3) + 1}:${((i * 7) % 60).toString().padStart(2, '0')}`,
     lastActivity: `June ${(i % 30) + 1}, 2025`,
@@ -275,7 +275,7 @@ export default function Home() {
 
   const mockProfiles = Array.from({ length: 5 }).map((_, i) => ({
     id: i,
-    title: `Lab Profile ${String.fromCharCode(65 + i)}`,
+    name: `Lab Profile ${String.fromCharCode(65 + i)}`,
     number: `KO_00${i + 1}`,
     seriesName: `Series ${String.fromCharCode(65 + i)}`,
     organization: `Organization ${String.fromCharCode(65 + i)}`,
@@ -290,7 +290,7 @@ export default function Home() {
 
   const mockSeries = Array.from({ length: 5 }).map((_, i) => ({
     id: i,
-    title: `Lab Series ${String.fromCharCode(65 + i)}`,
+    name: `Lab Series ${String.fromCharCode(65 + i)}`,
     organization: `Organization ${String.fromCharCode(65 + i)}`,
     labProfiles: `${i + 3} Profiles`,
     virtualMachines: `${i + 2} VMs`,
@@ -303,7 +303,7 @@ export default function Home() {
 
   const mockTemplates = Array.from({ length: 5 }).map((_, i) => ({
     id: i,
-    title: `Template ${String.fromCharCode(65 + i)}`,
+    name: `Template ${String.fromCharCode(65 + i)}`,
     number: `TEMP_00${i + 1}`,
     seriesName: `Template Series ${String.fromCharCode(65 + i)}`,
     organization: `Organization ${String.fromCharCode(65 + i)}`,

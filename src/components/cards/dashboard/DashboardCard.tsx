@@ -50,7 +50,7 @@
 //   instanceId="1053453"
 //   labProfile="Lab Profile Name"
 //   series="Lab Series Name"
-//   user="Kim Oswalt"
+//   student="Kim Oswalt"
 //   instructionSet="Base instruction set (en)"
 //   duration="1:10"
 //   lastActivity="June 5, 2025"
@@ -114,13 +114,12 @@ export type DashboardCardProps =
 /* ======================= Instance ======================= */
 export interface InstanceData {
   variant: 'instance';
-  /** Card title – typically the lab profile name with user */
-  title: string;
+  /** Card name – typically the lab profile name with student */
+  name: string;
   instanceId: string;
   labProfile: string;
   series: string;
-  user: string;
-  instructionSet: string;
+  student: string;
   duration: string;
   lastActivity: string;
   state: string;
@@ -129,7 +128,7 @@ export interface InstanceData {
 /* ======================= Profile ======================== */
 export interface ProfileData {
   variant: 'profile';
-  title: string;
+  name: string;
   /** Optional colored status chip */
   statusLabel?: string;
   /** Chip variant (color) – defaults to 'default' */
@@ -145,7 +144,7 @@ export interface ProfileData {
 /* ======================== Series ======================== */
 export interface SeriesData {
   variant: 'series';
-  title: string;
+  name: string;
   organization: string;
   labProfiles: string;
   virtualMachines: string;
@@ -157,7 +156,7 @@ export interface SeriesData {
 /* ======================= Template ======================= */
 export interface TemplateData {
   variant: 'template';
-  title: string;
+  name: string;
   statusLabel?: string;
   statusTone?: ChipVariant;
   number: string;
@@ -231,11 +230,11 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
       );
     }
 
-    // Title + optional chip (for profile / template)
+    // Name + optional chip (for profile / template)
     const titleContent: React.ReactNode[] = [];
     titleContent.push(
       <span key="title" className="font-semibold text-h6 text-_components-text-primary">
-        {props.title}
+        {props.name}
       </span>
     );
 
@@ -271,9 +270,8 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
           i('instanceId', 'Instance ID', p.instanceId),
           i('labProfile', 'Lab Profile', p.labProfile),
           i('series', 'Series', p.series),
-          i('user', 'User', p.user),
-          i('instructionSet', 'Instruction Set', p.instructionSet),
-          i('duration', 'Duration', p.duration),
+          i('student', 'student', p.student),
+          i('duration', 'Run Time', p.duration),
           i('lastActivity', 'Last Activity', p.lastActivity),
           i('state', 'State', p.state),
         ];
