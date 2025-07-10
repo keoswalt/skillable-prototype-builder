@@ -9,6 +9,18 @@ import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/component
 import { DropdownSelect } from "@/components/inputs";
 import { Button } from '@/components/buttons/Button';
 
+// Utility function to sort items by starred status (starred items first)
+const sortByStarredStatus = <T extends { starred?: boolean }>(items: T[]): T[] => {
+  return [...items].sort((a, b) => {
+    const aStarred = a.starred || false;
+    const bStarred = b.starred || false;
+    
+    if (aStarred && !bStarred) return -1; // a comes first
+    if (!aStarred && bStarred) return 1;  // b comes first
+    return 0; // maintain original order for items with same starred status
+  });
+};
+
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
   
@@ -121,7 +133,7 @@ export default function Home() {
     { 
       id: "lab-profiles", 
       label: "Lab Profiles", 
-      content: mockProfiles.map((profile) => (
+      content: sortByStarredStatus(mockProfiles).map((profile) => (
         <ProfileCard
           key={profile.id}
           {...profile}
@@ -137,7 +149,7 @@ export default function Home() {
     { 
       id: "lab-series", 
       label: "Lab Series", 
-      content: mockSeries.map((series) => (
+      content: sortByStarredStatus(mockSeries).map((series) => (
         <SeriesCard
           key={series.id}
           {...series}
@@ -152,7 +164,7 @@ export default function Home() {
     { 
       id: "templates", 
       label: "Templates", 
-      content: mockTemplates.map((template) => (
+      content: sortByStarredStatus(mockTemplates).map((template) => (
         <TemplateCard
           key={template.id}
           {...template}
