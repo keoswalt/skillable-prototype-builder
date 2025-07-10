@@ -43,6 +43,7 @@ export interface TabsProps {
   defaultIndex?: number;
   onChange?(index: number, id: string): void;
   className?: string;
+  panelClassName?: string;
 }
 
 // --------------------------------------------------
@@ -54,6 +55,7 @@ export const Tabs: React.FC<TabsProps> = ({
   defaultIndex = 0,
   onChange,
   className = '',
+  panelClassName = '',
 }) => {
   const [activeIndex, setActiveIndex] = useState(defaultIndex);
   const listRef = useRef<HTMLDivElement>(null);
@@ -216,7 +218,7 @@ export const Tabs: React.FC<TabsProps> = ({
       <div
         id={`${items[activeIndex].id}-panel`}
         role="tabpanel"
-        className={isHorizontal ? 'mt-4 w-full' : 'ml-6 mt-6 flex-1'}
+        className={`${isHorizontal ? 'mt-4 w-full' : 'ml-6 mt-6 flex-1'} ${panelClassName}`}
       >
         {items[activeIndex].content}
       </div>

@@ -1,14 +1,17 @@
 'use client';
 
+import { useState } from 'react';
 import SplitButton from '../components/buttons/SplitButton';
 import { Icon, Icons } from '../components/Icon';
-import { Chip } from '../components/info/Chip';
+import { Chip, ChipVariant } from '../components/info/Chip';
 import { Tabs } from '@/components/navigation';
-import { ProfileCard } from '@/components/cards/dashboard';
+import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/components/cards/dashboard';
 import { DropdownSelect } from "@/components/inputs";
 import { Button } from '@/components/buttons/Button';
 
 export default function Home() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const findMenuItems = [
     { label: 'Lab instances', onClick: () => console.log('Find lab instance') },
     { label: 'Lab profiles', onClick: () => console.log('Find lab profile') },
@@ -24,25 +27,129 @@ export default function Home() {
     { label: 'New script template', onClick: () => console.log('Create new script template') },
   ];
 
-  const tabItems = [
-    { id: "lab-instances", label: "Lab Instances", content: null },
-    { id: "lab-profiles", label: "Lab Profiles", content: null },
-    { id: "lab-series", label: "Lab Series", content: null },
-    { id: "templates", label: "Templates", content: null },
-  ];
-
-  const labProfiles = Array.from({ length: 5 }).map((_, i) => ({
+  // Mock data for each card type
+  const mockInstances = Array.from({ length: 5 }).map((_, i) => ({
     id: i,
-    name: "Lab Profile Name",
-    number: "KO_001",
-    series: "My Lab Series",
-    org: "Skillable - Production",
+    title: `Lab Profile Name (User ${i + 1})`,
+    instanceId: `10${i}3453`,
+    labProfile: "Lab Profile Name",
+    series: "Lab Series Name",
+    user: `User ${i + 1}`,
+    instructionSet: "Base instruction set (en)",
+    duration: "1:10",
+    lastActivity: "June 5, 2025",
+    state: i % 2 === 0 ? "Running" : "Off"
+  }));
+
+  const mockProfiles = Array.from({ length: 5 }).map((_, i) => ({
+    id: i,
+    title: "Lab Profile Name",
+    number: `KO_00${i + 1}`,
+    seriesName: "My Lab Series",
+    organization: "Skillable - Production",
     platform: "Azure",
     created: "June 2, 2025",
     modified: "June 5, 2025",
-    status: "In Development",
+    statusLabel: "In Development",
+    statusTone: 'warning' as ChipVariant,
     starred: i < 2,
   }));
+
+  const mockSeries = Array.from({ length: 5 }).map((_, i) => ({
+    id: i,
+    title: `Lab Series ${i + 1}`,
+    organization: "Skillable - Production",
+    labProfiles: `${i + 3} Profiles`,
+    virtualMachines: `${i + 2} VMs`,
+    apiConsumers: `${i} Consumers`,
+    created: "June 2, 2025",
+    modified: "June 5, 2025",
+    starred: i < 2,
+  }));
+
+  const mockTemplates = Array.from({ length: 5 }).map((_, i) => ({
+    id: i,
+    title: `Template ${i + 1}`,
+    number: `TEMP_00${i + 1}`,
+    seriesName: "Template Series",
+    organization: "Skillable - Production",
+    platform: "Azure",
+    created: "June 2, 2025",
+    modified: "June 5, 2025",
+    statusLabel: i % 2 === 0 ? "Active" : "Draft",
+    statusTone: (i % 2 === 0 ? 'success' : 'warning') as ChipVariant,
+    starred: i < 2,
+  }));
+
+  const tabItems = [
+    { 
+      id: "lab-instances", 
+      label: "Lab Instances", 
+      content: mockInstances.map((instance) => (
+        <InstanceCard
+          key={instance.id}
+          {...instance}
+          actions={[
+            { icon: "externalLink", label: "Open", onClick: () => {} },
+            { icon: "edit", label: "Edit", onClick: () => {} },
+            { icon: "delete", label: "Delete", onClick: () => {} },
+          ]}
+        />
+      ))
+    },
+    { 
+      id: "lab-profiles", 
+      label: "Lab Profiles", 
+      content: mockProfiles.map((profile) => (
+        <ProfileCard
+          key={profile.id}
+          {...profile}
+          actions={[
+            { icon: "externalLink", label: "Open", onClick: () => {} },
+            { icon: "edit", label: "Edit", onClick: () => {} },
+            { icon: "saveAll", label: "Clone", onClick: () => {} },
+            { icon: "delete", label: "Delete", onClick: () => {} },
+          ]}
+        />
+      ))
+    },
+    { 
+      id: "lab-series", 
+      label: "Lab Series", 
+      content: mockSeries.map((series) => (
+        <SeriesCard
+          key={series.id}
+          {...series}
+          actions={[
+            { icon: "externalLink", label: "Open", onClick: () => {} },
+            { icon: "edit", label: "Edit", onClick: () => {} },
+            { icon: "delete", label: "Delete", onClick: () => {} },
+          ]}
+        />
+      ))
+    },
+    { 
+      id: "templates", 
+      label: "Templates", 
+      content: mockTemplates.map((template) => (
+        <TemplateCard
+          key={template.id}
+          {...template}
+          actions={[
+            { icon: "externalLink", label: "Open", onClick: () => {} },
+            { icon: "edit", label: "Edit", onClick: () => {} },
+            { icon: "saveAll", label: "Clone", onClick: () => {} },
+            { icon: "delete", label: "Delete", onClick: () => {} },
+          ]}
+        />
+      ))
+    },
+  ];
+
+  const activeTabContent = tabItems[activeIndex]?.content;
+
+  // Debug: log the structure of activeTabContent
+  console.log('activeTabContent', activeTabContent);
 
   return (
     <main className="min-h-screen p-8">
@@ -72,37 +179,19 @@ export default function Home() {
 
       <section>
          {/* Tabs */}
-         <Tabs items={tabItems} className="mb-4" />
-         {/* Lab Profiles List */}
-        <div className="space-y-4">
-          {labProfiles.map((profile, idx) => (
-            <ProfileCard
-              key={profile.id}
-              title={profile.name}
-              statusLabel={profile.status}
-              statusTone="default"
-              number={profile.number}
-              seriesName={profile.series}
-              organization={profile.org}
-              platform={profile.platform}
-              created={profile.created}
-              modified={profile.modified}
-              starred={profile.starred}
-              actions={[
-                { icon: "externalLink", label: "Open", onClick: () => {} },
-                { icon: "edit", label: "Edit", onClick: () => {} },
-                { icon: "saveAll", label: "Clone", onClick: () => {} },
-                { icon: "delete", label: "Delete", onClick: () => {} },
-              ]}
-              className="bg-_components-background-default border border-_components-divider-main shadow"
-            />
-          ))}
-        </div>
+         <Tabs 
+           items={tabItems} 
+           defaultIndex={activeIndex} 
+           onChange={(index) => setActiveIndex(index)} 
+           className="mb-4" 
+           panelClassName="space-y-4"
+         />
+         {/* Card List is now rendered by Tabs with correct spacing */}
 
         {/* Pagination */}
         <div className="flex items-center justify-between mt-6 text-body-sm text-_components-text-secondary">
           <span>
-            Profiles per page: <DropdownSelect options={[{label: '10', value: '10'}]} value="10" />
+            Items per page: <DropdownSelect options={[{label: '10', value: '10'}]} value="10" />
           </span>
           <span>1-5 of 13</span>
           <div className="flex gap-1">
