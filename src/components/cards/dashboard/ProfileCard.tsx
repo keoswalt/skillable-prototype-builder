@@ -5,6 +5,7 @@ export type ProfileCardProps = Omit<ProfileData, 'variant'> & {
   actions?: CardAction[];
   metaLinks?: Record<string, string>;
   className?: string;
+  // Default actions are automatically included unless overridden by the actions prop
 } & (
   | {
       starred: boolean;
@@ -17,7 +18,49 @@ export type ProfileCardProps = Omit<ProfileData, 'variant'> & {
 );
 
 export const ProfileCard: React.FC<ProfileCardProps> = (props) => {
-  return <DashboardCard variant="profile" {...props} />;
+  // Define default actions for profile cards
+  const defaultActions: CardAction[] = [
+    {
+      icon: 'externalLink',
+      label: 'Open',
+      onClick: () => {
+        alert('Launches lab client (if multiple instruction sets, shows dropdown to choose)');
+      },
+    },
+    {
+      icon: 'gradCap',
+      label: 'Edit Instructions',
+      onClick: () => {
+        alert('If 1 instruction set, opens edit instructions page. If multiple, shows dropdown to choose instruction set.');
+      },
+    },
+    {
+      icon: 'edit',
+      label: 'Edit',
+      onClick: () => {
+        alert('Opens edit profile page');
+      },
+    },
+    {
+      icon: 'saveAll',
+      label: 'Clone',
+      onClick: () => {
+        alert('Navigates to edit profile page, opens "save as" dialog');
+      },
+    },
+    {
+      icon: 'delete',
+      label: 'Delete',
+      onClick: () => {
+        alert('Opens confirmation dialog');
+      },
+    },
+  ];
+
+  // Use custom actions if provided, otherwise use defaults
+  const finalActions = props.actions || defaultActions;
+
+  return <DashboardCard variant="profile" {...props} actions={finalActions} />;
 };
 
 export default ProfileCard; 

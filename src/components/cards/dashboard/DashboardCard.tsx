@@ -10,11 +10,13 @@
 //   When provided, renders a star icon that toggles between filled (favorited) and outlined (not favorited).
 //   Note: Instance cards do not support starring functionality.
 // • actions? – Optional cluster of icon–buttons on the right side of the header.
+//   Each card variant provides its own default actions, but these can be overridden.
 //
 // USAGE
 // ---------------------------------------------------------------------------
 // import { DashboardCard } from '@/components/cards/dashboard';
 //
+// // With default actions (provided by each card variant)
 // <DashboardCard
 //   variant="profile"
 //   title="Lab Profile Name"
@@ -28,6 +30,13 @@
 //   modified="June 5, 2025"
 //   starred={true}
 //   onStarToggle={() => console.log('star toggled')}
+// />
+//
+// // With custom actions
+// <DashboardCard
+//   variant="profile"
+//   title="Lab Profile Name"
+//   // ... other props
 //   actions={[{ icon: 'edit', label: 'Edit', onClick: () => console.log('edit') }]}
 // />
 //

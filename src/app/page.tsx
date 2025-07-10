@@ -9,6 +9,44 @@ import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/component
 import { DropdownSelect } from "@/components/inputs";
 import { Button } from '@/components/buttons/Button';
 
+/*
+ * CARD COMPONENT USAGE EXAMPLES:
+ * 
+ * Default Actions (Automatic):
+ * Each card variant comes with predefined default actions that are automatically included.
+ * 
+ * <InstanceCard
+ *   title="Lab Instance"
+ *   instanceId="12345"
+ *   // ... other props
+ *   // Default actions: Open, Edit, Delete (automatically included)
+ * />
+ * 
+ * <ProfileCard
+ *   title="Lab Profile"
+ *   number="KO_001"
+ *   // ... other props
+ *   // Default actions: Open, Edit, Clone, Delete (automatically included)
+ * />
+ * 
+ * Custom Actions (Override defaults):
+ * <InstanceCard
+ *   title="Lab Instance"
+ *   instanceId="12345"
+ *   // ... other props
+ *   actions={[
+ *     { icon: 'eye', label: 'View', onClick: () => console.log('view') },
+ *     { icon: 'settings', label: 'Configure', onClick: () => console.log('configure') }
+ *   ]}
+ * />
+ * 
+ * Each card variant provides its own set of default actions:
+ * - InstanceCard: Open, Edit, Delete
+ * - ProfileCard: Open, Edit, Clone, Delete
+ * - SeriesCard: Open, Edit, Delete
+ * - TemplateCard: Open, Edit, Clone, Delete
+ */
+
 // Utility function to sort items by starred status (starred items first)
 const sortByStarredStatus = <T extends { starred?: boolean }>(items: T[]): T[] => {
   return [...items].sort((a, b) => {
@@ -122,11 +160,6 @@ export default function Home() {
         <InstanceCard
           key={instance.id}
           {...instance}
-          actions={[
-            { icon: "externalLink", label: "Open", onClick: () => {} },
-            { icon: "edit", label: "Edit", onClick: () => {} },
-            { icon: "delete", label: "Delete", onClick: () => {} },
-          ]}
         />
       ))
     },
@@ -137,12 +170,6 @@ export default function Home() {
         <ProfileCard
           key={profile.id}
           {...profile}
-          actions={[
-            { icon: "externalLink", label: "Open", onClick: () => {} },
-            { icon: "edit", label: "Edit", onClick: () => {} },
-            { icon: "saveAll", label: "Clone", onClick: () => {} },
-            { icon: "delete", label: "Delete", onClick: () => {} },
-          ]}
         />
       ))
     },
@@ -153,11 +180,6 @@ export default function Home() {
         <SeriesCard
           key={series.id}
           {...series}
-          actions={[
-            { icon: "externalLink", label: "Open", onClick: () => {} },
-            { icon: "edit", label: "Edit", onClick: () => {} },
-            { icon: "delete", label: "Delete", onClick: () => {} },
-          ]}
         />
       ))
     },
@@ -168,12 +190,6 @@ export default function Home() {
         <TemplateCard
           key={template.id}
           {...template}
-          actions={[
-            { icon: "externalLink", label: "Open", onClick: () => {} },
-            { icon: "edit", label: "Edit", onClick: () => {} },
-            { icon: "saveAll", label: "Clone", onClick: () => {} },
-            { icon: "delete", label: "Delete", onClick: () => {} },
-          ]}
         />
       ))
     },
