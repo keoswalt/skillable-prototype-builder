@@ -69,7 +69,7 @@ export default function Home() {
     created: "June 2, 2025",
     modified: "June 5, 2025",
     statusLabel: "In Development",
-    statusTone: 'warning' as ChipVariant,
+    statusTone: 'default' as ChipVariant,
     starred: starredItems[`profile-${i}`] || false,
     onStarToggle: () => toggleStar('profile', i),
   }));
@@ -97,7 +97,7 @@ export default function Home() {
     created: "June 2, 2025",
     modified: "June 5, 2025",
     statusLabel: i % 2 === 0 ? "Active" : "Draft",
-    statusTone: (i % 2 === 0 ? 'success' : 'warning') as ChipVariant,
+    statusTone: 'default' as ChipVariant,
     starred: starredItems[`template-${i}`] || false,
     onStarToggle: () => toggleStar('template', i),
   }));
