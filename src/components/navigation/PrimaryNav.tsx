@@ -17,7 +17,7 @@ interface MenuState {
 }
 
 const navItems: NavItem[] = [
-  { label: 'Dashboard', href: '/dashboard' },
+  { label: 'Dashboard', href: '/' },
   { label: 'Admin', href: '/admin' },
   { label: 'News', href: '/news' },
   { label: 'Community', href: '/community' },
