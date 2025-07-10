@@ -1,4 +1,4 @@
-// src/components/cards/DashboardCard.tsx
+// src/components/cards/dashboard/DashboardCard.tsx
 // PURPOSE: A flexible card component for the Skillable design system that renders four
 // different data-card variants: lab instance, lab profile, lab series, and template.
 //
@@ -12,7 +12,7 @@
 //
 // USAGE
 // ---------------------------------------------------------------------------
-// import { DashboardCard } from '../cards/DashboardCard';
+// import { DashboardCard } from '@/components/cards/dashboard';
 //
 // <DashboardCard
 //   variant="profile"
@@ -50,12 +50,11 @@
 //   }}
 // />
 //
-// The accompanying DashboardCardExample.tsx file shows concrete examples for each variant.
 // ---------------------------------------------------------------------------
 
 import React from 'react';
-import { Icon, IconName, Icons } from '../Icon';
-import { Chip, ChipVariant } from '../info/Chip';
+import { Icon, IconName, Icons } from '../../Icon';
+import { Chip, ChipVariant } from '../../info/Chip';
 
 /*************************
  * Type & Prop Definitions
@@ -88,10 +87,10 @@ interface BaseCardProps {
 // ────────────────────────────────────────────────────────────────────────────
 
 export type DashboardCardProps =
-  | InstanceData & BaseCardProps
-  | ProfileData & BaseCardProps
-  | SeriesData & BaseCardProps
-  | TemplateData & BaseCardProps;
+  | (InstanceData & BaseCardProps)
+  | (ProfileData & BaseCardProps)
+  | (SeriesData & BaseCardProps)
+  | (TemplateData & BaseCardProps);
 
 /* ======================= Instance ======================= */
 export interface InstanceData {
@@ -219,12 +218,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
 
     if ('statusLabel' in props && props.statusLabel) {
       titleContent.push(
-        <Chip
-          key="status"
-          size="small"
-          variant={props.statusTone || 'secondary'}
-          className="ml-2"
-        >
+        <Chip key="status" size="small" variant={props.statusTone || 'secondary'} className="ml-2">
           {props.statusLabel}
         </Chip>
       );

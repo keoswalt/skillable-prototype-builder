@@ -1,10 +1,12 @@
-// src/components/cards/DashboardCardExample.tsx
-// This file provides a simple showcase of the four DashboardCard variants.
-// Import it into a page (e.g. designSystemDemo/page.tsx) to visually verify styling.
+// src/components/cards/dashboard/DashboardCardExample.tsx
+// Demonstrates each specialized Dashboard card wrapper component.
 
 import React, { useState } from 'react';
-import DashboardCard from './DashboardCard';
 import { CardAction } from './DashboardCard';
+import { InstanceCard } from './InstanceCard';
+import { ProfileCard } from './ProfileCard';
+import { SeriesCard } from './SeriesCard';
+import { TemplateCard } from './TemplateCard';
 
 const dummyActions: CardAction[] = [
   { icon: 'externalLink', label: 'Open', onClick: () => alert('Open clicked') },
@@ -17,7 +19,7 @@ const dummyActions: CardAction[] = [
 ];
 
 export const DashboardCardExample: React.FC = () => {
-  // Maintain independent "starred" state per card using an object keyed by a unique id
+  // Maintain independent "starred" state per card.
   const [starState, setStarState] = useState<Record<string, boolean>>({
     instance: false,
     profile: false,
@@ -25,15 +27,12 @@ export const DashboardCardExample: React.FC = () => {
     template: false,
   });
 
-  const toggleStar = (id: string) => {
-    setStarState((prev) => ({ ...prev, [id]: !prev[id] }));
-  };
+  const toggleStar = (id: string) => setStarState((prev) => ({ ...prev, [id]: !prev[id] }));
 
   return (
     <div className="flex flex-col gap-6 mx-auto">
       {/* Instance */}
-      <DashboardCard
-        variant="instance"
+      <InstanceCard
         title="Lab Profile Name (Kim Oswalt)"
         instanceId="1053453"
         labProfile="Lab Profile Name"
@@ -53,9 +52,8 @@ export const DashboardCardExample: React.FC = () => {
       />
 
       {/* Profile */}
-      <DashboardCard
+      <ProfileCard
         starred={starState['profile']}
-        variant="profile"
         title="Lab Profile Name"
         statusLabel="In Development"
         statusTone="warning"
@@ -69,16 +67,15 @@ export const DashboardCardExample: React.FC = () => {
         metaLinks={{
           number: '/instances/1053453',
           organization: '/profiles/Kim-Oswalt',
-          seriesName: '/series/lab-series-name'
+          seriesName: '/series/lab-series-name',
         }}
         onStarToggle={() => toggleStar('profile')}
       />
 
       {/* Series */}
-      <DashboardCard
+      <SeriesCard
         starred={starState['series']}
         onStarToggle={() => toggleStar('series')}
-        variant="series"
         title="Lab Series Name"
         organization="Skillable – Production"
         labProfiles="2"
@@ -90,14 +87,14 @@ export const DashboardCardExample: React.FC = () => {
         metaLinks={{
           labProfiles: '/instances/1053453',
           virtualMachines: '/profiles/Kim-Oswalt',
-          apiConsumers: '/series/lab-series-name'
+          apiConsumers: '/series/lab-series-name',
         }}
       />
 
       {/* Template */}
-      <DashboardCard
+      <TemplateCard
         starred={starState['template']}
-        variant="template"
+        onStarToggle={() => toggleStar('template')}
         title="Template Name"
         statusLabel="Complete"
         statusTone="success"
@@ -111,9 +108,8 @@ export const DashboardCardExample: React.FC = () => {
         metaLinks={{
           number: '/instances/1053453',
           organization: '/profiles/Kim-Oswalt',
-          seriesName: '/series/lab-series-name'
+          seriesName: '/series/lab-series-name',
         }}
-        onStarToggle={() => toggleStar('template')}
       />
     </div>
   );

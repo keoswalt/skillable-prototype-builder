@@ -4,7 +4,7 @@ import SplitButton from '../components/buttons/SplitButton';
 import { Icon, Icons } from '../components/Icon';
 import { Chip } from '../components/info/Chip';
 import { Tabs } from '@/components/navigation';
-import { DashboardCard } from '@/components/cards/DashboardCard';
+import { ProfileCard } from '@/components/cards/dashboard';
 import { DropdownSelect } from "@/components/inputs";
 import { Button } from '@/components/buttons/Button';
 
@@ -76,9 +76,8 @@ export default function Home() {
          {/* Lab Profiles List */}
         <div className="space-y-4">
           {labProfiles.map((profile, idx) => (
-            <DashboardCard
+            <ProfileCard
               key={profile.id}
-              variant="profile"
               title={profile.name}
               statusLabel={profile.status}
               statusTone="default"

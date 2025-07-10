@@ -7,8 +7,9 @@
 
 'use client';
 
-import React, { useState } from 'react';
-import FormattingToolbar, { ToolbarButtonProps } from './FormattingToolbar';
+import React from 'react';
+import FormattingToolbar from './FormattingToolbar';
+import { ToolbarButtonProps } from './types';
 
 const defaultButtons: (ToolbarButtonProps | 'separator')[] = [
   // Basic formatting

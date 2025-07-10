@@ -3,7 +3,7 @@ import ButtonExample from '../../components/buttons/ButtonExample';
 import DataTableExample from '../../components/data/DataTableExample';
 import ChipExample from '@/components/info/ChipExample';
 import SplitButtonExample from '../../components/buttons/SplitButtonExample';
-import { DashboardCardExample } from '@/components/cards/DashboardCardExample';
+import { DashboardCardExample } from '@/components/cards/dashboard/DashboardCardExample';
 import { BasicDialogExample } from '@/components/dialogs/BasicDialogExample';
 import TextFieldExample from '@/components/inputs/TextFieldExample';
 import SwitchExample from '@/components/inputs/SwitchExample';

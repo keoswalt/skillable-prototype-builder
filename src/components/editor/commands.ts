@@ -287,7 +287,7 @@ export const increaseIndentCommand: FormatCommand = {
   isAvailable: () => true,
   isActive: () => false,
   execute: (editor) => {
-    editor.chain().focus().indent().run();
+    (editor.chain().focus() as any).indent().run();
   },
 };
 
@@ -303,7 +303,7 @@ export const decreaseIndentCommand: FormatCommand = {
   isAvailable: () => true,
   isActive: () => false,
   execute: (editor) => {
-    editor.chain().focus().outdent().run();
+    (editor.chain().focus() as any).outdent().run();
   },
 };
 
