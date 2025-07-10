@@ -11,6 +11,24 @@ import { Button } from '@/components/buttons/Button';
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
+  
+  // State for managing starred items
+  const [starredItems, setStarredItems] = useState<Record<string, boolean>>({
+    'profile-0': true,
+    'profile-1': true,
+    'series-0': true,
+    'series-1': true,
+    'template-0': true,
+    'template-1': true,
+  });
+
+  const toggleStar = (itemType: string, itemId: number) => {
+    const key = `${itemType}-${itemId}`;
+    setStarredItems(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
 
   const findMenuItems = [
     { label: 'Lab instances', onClick: () => console.log('Find lab instance') },
@@ -52,8 +70,8 @@ export default function Home() {
     modified: "June 5, 2025",
     statusLabel: "In Development",
     statusTone: 'warning' as ChipVariant,
-    starred: i < 2,
-    onStarToggle: () => console.log(`Toggle star for profile ${i}`),
+    starred: starredItems[`profile-${i}`] || false,
+    onStarToggle: () => toggleStar('profile', i),
   }));
 
   const mockSeries = Array.from({ length: 5 }).map((_, i) => ({
@@ -65,8 +83,8 @@ export default function Home() {
     apiConsumers: `${i} Consumers`,
     created: "June 2, 2025",
     modified: "June 5, 2025",
-    starred: i < 2,
-    onStarToggle: () => console.log(`Toggle star for series ${i}`),
+    starred: starredItems[`series-${i}`] || false,
+    onStarToggle: () => toggleStar('series', i),
   }));
 
   const mockTemplates = Array.from({ length: 5 }).map((_, i) => ({
@@ -80,8 +98,8 @@ export default function Home() {
     modified: "June 5, 2025",
     statusLabel: i % 2 === 0 ? "Active" : "Draft",
     statusTone: (i % 2 === 0 ? 'success' : 'warning') as ChipVariant,
-    starred: i < 2,
-    onStarToggle: () => console.log(`Toggle star for template ${i}`),
+    starred: starredItems[`template-${i}`] || false,
+    onStarToggle: () => toggleStar('template', i),
   }));
 
   const tabItems = [
@@ -150,9 +168,6 @@ export default function Home() {
   ];
 
   const activeTabContent = tabItems[activeIndex]?.content;
-
-  // Debug: log the structure of activeTabContent
-  console.log('activeTabContent', activeTabContent);
 
   return (
     <main className="min-h-screen p-8">
