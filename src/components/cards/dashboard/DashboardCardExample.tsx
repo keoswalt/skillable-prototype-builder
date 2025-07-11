@@ -33,28 +33,27 @@ export const DashboardCardExample: React.FC = () => {
     <div className="flex flex-col gap-6 mx-auto">
       {/* Instance */}
       <InstanceCard
-        title="Lab Profile Name (Kim Oswalt)"
+        name="Lab Profile Name (Kim Oswalt)"
         instanceId="1053453"
         labProfile="Lab Profile Name"
         series="Lab Series Name"
-        user="Kim Oswalt"
-        instructionSet="Base instruction set (en)"
+        student="Kim Oswalt"
         duration="1:10"
         lastActivity="June 5, 2025"
         state="Off"
         actions={dummyActions}
         metaLinks={{
-          instanceId: '/instances/1053453',
-          labProfile: '/profiles/Kim-Oswalt',
-          series: '/series/lab-series-name',
-          user: '/users/Kim-Oswalt',
+          instanceId: { message: "Instance ID: 1053453 - This is a custom message!" },
+          labProfile: true, // uses default alert (shows the value)
+          series: { message: "Series link clicked! This is the lab series." },
+          student: { message: "Student: Kim Oswalt - Clicked on student field" },
         }}
       />
 
       {/* Profile */}
       <ProfileCard
         starred={starState['profile']}
-        title="Lab Profile Name"
+        name="Lab Profile Name"
         statusLabel="In Development"
         statusTone="warning"
         number="KO_001"
@@ -65,9 +64,9 @@ export const DashboardCardExample: React.FC = () => {
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[1], dummyActions[2], dummyActions[3], dummyActions[4]]}
         metaLinks={{
-          number: '/instances/1053453',
-          organization: '/profiles/Kim-Oswalt',
-          seriesName: '/series/lab-series-name',
+          number: { message: "Profile Number: KO_001" },
+          organization: true, // uses default alert (shows the value)
+          seriesName: { message: "Series Name: My Lab Series - Custom message!" },
         }}
         onStarToggle={() => toggleStar('profile')}
       />
@@ -76,7 +75,7 @@ export const DashboardCardExample: React.FC = () => {
       <SeriesCard
         starred={starState['series']}
         onStarToggle={() => toggleStar('series')}
-        title="Lab Series Name"
+        name="Lab Series Name"
         organization="Skillable – Production"
         labProfiles="2"
         virtualMachines="5"
@@ -85,9 +84,9 @@ export const DashboardCardExample: React.FC = () => {
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[3], dummyActions[4]]}
         metaLinks={{
-          labProfiles: '/instances/1053453',
-          virtualMachines: '/profiles/Kim-Oswalt',
-          apiConsumers: '/series/lab-series-name',
+          labProfiles: { message: "This series contains 2 lab profiles" },
+          virtualMachines: { message: "Virtual Machines: 5 - Custom alert!" },
+          apiConsumers: true, // uses default alert (shows the value)
         }}
       />
 
@@ -95,7 +94,7 @@ export const DashboardCardExample: React.FC = () => {
       <TemplateCard
         starred={starState['template']}
         onStarToggle={() => toggleStar('template')}
-        title="Template Name"
+        name="Template Name"
         statusLabel="Complete"
         statusTone="success"
         number="KO_001"
@@ -106,9 +105,9 @@ export const DashboardCardExample: React.FC = () => {
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[5], dummyActions[2], dummyActions[6]]}
         metaLinks={{
-          number: '/instances/1053453',
-          organization: '/profiles/Kim-Oswalt',
-          seriesName: '/series/lab-series-name',
+          number: { message: "Template Number: KO_001 - This is a template!" },
+          organization: { message: "Organization: Skillable – Production" },
+          seriesName: true, // uses default alert (shows the value)
         }}
       />
     </div>

@@ -1,9 +1,9 @@
 import React from 'react';
-import DashboardCard, { CardAction, ProfileData } from './DashboardCard';
+import DashboardCard, { CardAction, ProfileData, MetaLinkConfig } from './DashboardCard';
 
 export type ProfileCardProps = Omit<ProfileData, 'variant'> & {
   actions?: CardAction[];
-  metaLinks?: Record<string, string>;
+  metaLinks?: Record<string, MetaLinkConfig>;
   className?: string;
   // Default actions are automatically included unless overridden by the actions prop
 } & (
