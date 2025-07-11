@@ -7,7 +7,9 @@ import { usePathname } from 'next/navigation';
 
 interface NavItem {
   label: string;
-  href: string;
+  href?: string;
+  action?: 'alert' | 'link';
+  alertMessage?: string;
 }
 
 interface MenuState {
@@ -17,11 +19,11 @@ interface MenuState {
 }
 
 const navItems: NavItem[] = [
-  { label: 'Dashboard', href: '/' },
-  { label: 'Admin', href: '/admin' },
-  { label: 'News', href: '/news' },
-  { label: 'Community', href: '/community' },
-  { label: 'Help', href: '/help' },
+  { label: 'Dashboard', href: '/', action: 'link' },
+  { label: 'Admin', action: 'alert', alertMessage: 'Opens Admin page' },
+  { label: 'News', action: 'alert', alertMessage: 'Opens release notes page' },
+  { label: 'Community', action: 'alert', alertMessage: 'Opens Slack community login page' },
+  { label: 'Help', action: 'alert', alertMessage: 'Opens docs page' },
 ];
 
 export default function PrimaryNav() {
@@ -43,6 +45,64 @@ export default function PrimaryNav() {
       ...prev,
       [menuKey]: !prev[menuKey]
     }));
+  };
+
+  const handleNavItemClick = (item: NavItem) => {
+    if (item.action === 'alert' && item.alertMessage) {
+      alert(item.alertMessage);
+    }
+  };
+
+  const renderNavItem = (item: NavItem) => {
+    const commonClasses = "px-0 py-2 text-body-sm text-_components-text-primary hover:text-[var(--primary-main)]";
+    
+    if (item.action === 'alert') {
+      return (
+        <button
+          key={item.label}
+          onClick={() => handleNavItemClick(item)}
+          className={commonClasses}
+        >
+          {item.label}
+        </button>
+      );
+    }
+    
+    return (
+      <Link
+        key={item.label}
+        href={item.href || '#'}
+        className={commonClasses}
+      >
+        {item.label}
+      </Link>
+    );
+  };
+
+  const renderMobileNavItem = (item: NavItem) => {
+    const commonClasses = "block px-3 py-2 rounded-md text-_components-text-primary text-body-sm hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]";
+    
+    if (item.action === 'alert') {
+      return (
+        <button
+          key={item.label}
+          onClick={() => handleNavItemClick(item)}
+          className={commonClasses}
+        >
+          {item.label}
+        </button>
+      );
+    }
+    
+    return (
+      <Link
+        key={item.label}
+        href={item.href || '#'}
+        className={commonClasses}
+      >
+        {item.label}
+      </Link>
+    );
   };
 
   return (
@@ -75,15 +135,7 @@ export default function PrimaryNav() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center ml-10">
               <div className="flex space-x-6">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="px-0 py-2 text-body-sm text-_components-text-primary hover:text-[var(--primary-main)]"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+                {navItems.map(renderNavItem)}
               </div>
             </div>
           </div>
@@ -157,14 +209,7 @@ export default function PrimaryNav() {
         {/* Mobile menu */}
         <div className={`${menuState.isMobileMenuOpen ? 'block' : 'hidden'} md:hidden`}>
           <div className="px-2 pt-2 pb-3 space-y-1">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="block px-3 py-2 rounded-md text-_components-text-primary text-body-sm hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]" >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map(renderMobileNavItem)}
           </div>
           <div className="pt-4 pb-3 border-t border-[var(--components-divider-main)]">
             <div className="px-2 space-y-1">
