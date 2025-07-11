@@ -29,7 +29,7 @@ export default function FilterMenuExample() {
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className="max-w-2xl mx-auto my-8">
+    <div className="mx-auto my-8">
       <Button
         ref={buttonRef}
         variant="primary"
