@@ -1,8 +1,8 @@
 'use client';
-import ButtonExample from '../../components/buttons/ButtonExample';
-import DataTableExample from '../../components/data/DataTableExample';
+import ButtonExample from '@/components/buttons/ButtonExample';
+import DataTableExample from '@/components/data/DataTableExample';
 import ChipExample from '@/components/info/ChipExample';
-import SplitButtonExample from '../../components/buttons/SplitButtonExample';
+import SplitButtonExample from '@/components/buttons/SplitButtonExample';
 import { DashboardCardExample } from '@/components/cards/dashboard/DashboardCardExample';
 import { BasicDialogExample } from '@/components/dialogs/BasicDialogExample';
 import TextFieldExample from '@/components/inputs/TextFieldExample';
@@ -16,8 +16,8 @@ import StepperExample from '@/components/navigation/StepperExample';
 import AccordionExample from '@/components/content/AccordionExample';
 import StateToggleExample from '@/components/navigation/StateToggleExample';
 import FormattingToolbarExample from '@/components/editor/FormattingToolbarExample';
-import AdvancedMenuExample from '../../components/menu/AdvancedMenuExample';
-import FilterMenuExample from '../../components/menu/FilterMenuExample';
+import AdvancedMenuExample from '@/components/menu/AdvancedMenuExample';
+import FilterMenuExample from '@/components/menu/FilterMenuExample';
 
 export default function Home() {
   return (
