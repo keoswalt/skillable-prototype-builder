@@ -17,6 +17,7 @@ import AccordionExample from '@/components/content/AccordionExample';
 import StateToggleExample from '@/components/navigation/StateToggleExample';
 import FormattingToolbarExample from '@/components/editor/FormattingToolbarExample';
 import AdvancedMenuExample from '../../components/menu/AdvancedMenuExample';
+import FilterMenuExample from '../../components/menu/FilterMenuExample';
 
 export default function Home() {
   return (
@@ -25,6 +26,11 @@ export default function Home() {
       <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">Advanced Menu Component Example</h2>
         <AdvancedMenuExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Filter Menu Component Example</h2>
+        <FilterMenuExample />
       </section>
 
       <section className="mt-8">

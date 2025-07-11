@@ -175,6 +175,72 @@ export const ButtonExample: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* Text-only Variant */}
+      <div>
+        <h3 className="font-headline text-heading-xs mb-4">Text-only Variant</h3>
+        <div className="flex flex-col gap-4">
+          {/* Large Size */}
+          <div>
+            <div className="mb-2 font-medium">Large</div>
+            <div className="flex gap-4 flex-wrap">
+              <Button size="large" variant="text" color="primary">Primary</Button>
+              <Button size="large" variant="text" color="secondary">Secondary</Button>
+              <Button size="large" variant="text" color="warning">Warning</Button>
+              <Button size="large" variant="text" color="error">Error</Button>
+              <Button size="large" variant="text" color="success">Success</Button>
+              <Button size="large" variant="text" color="outline">Outline</Button>
+            </div>
+            <div className="flex gap-4 flex-wrap mt-2">
+              <Button size="large" variant="text" color="primary" leftIcon="add">Primary</Button>
+              <Button size="large" variant="text" color="secondary" leftIcon="user">Secondary</Button>
+              <Button size="large" variant="text" color="warning" leftIcon="alert">Warning</Button>
+              <Button size="large" variant="text" color="error" leftIcon="alert">Error</Button>
+              <Button size="large" variant="text" color="success" leftIcon="check">Success</Button>
+              <Button size="large" variant="text" color="outline" leftIcon="check">Outline</Button>
+            </div>
+          </div>
+          {/* Medium Size */}
+          <div>
+            <div className="mb-2 font-medium">Medium</div>
+            <div className="flex gap-4 flex-wrap">
+              <Button variant="text" color="primary">Primary</Button>
+              <Button variant="text" color="secondary">Secondary</Button>
+              <Button variant="text" color="warning">Warning</Button>
+              <Button variant="text" color="error">Error</Button>
+              <Button variant="text" color="success">Success</Button>
+              <Button variant="text" color="outline">Outline</Button>
+            </div>
+            <div className="flex gap-4 flex-wrap mt-2">
+              <Button variant="text" color="primary" leftIcon="add">Primary</Button>
+              <Button variant="text" color="secondary" leftIcon="user">Secondary</Button>
+              <Button variant="text" color="warning" leftIcon="alert">Warning</Button>
+              <Button variant="text" color="error" leftIcon="alert">Error</Button>
+              <Button variant="text" color="success" leftIcon="check">Success</Button>
+              <Button variant="text" color="outline" leftIcon="check">Outline</Button>
+            </div>
+          </div>
+          {/* Small Size */}
+          <div>
+            <div className="mb-2 font-medium">Small</div>
+            <div className="flex gap-4 flex-wrap">
+              <Button size="small" variant="text" color="primary">Primary</Button>
+              <Button size="small" variant="text" color="secondary">Secondary</Button>
+              <Button size="small" variant="text" color="warning">Warning</Button>
+              <Button size="small" variant="text" color="error">Error</Button>
+              <Button size="small" variant="text" color="success">Success</Button>
+              <Button size="small" variant="text" color="outline">Outline</Button>
+            </div>
+            <div className="flex gap-4 flex-wrap mt-2">
+              <Button size="small" variant="text" color="primary" leftIcon="add">Primary</Button>
+              <Button size="small" variant="text" color="secondary" leftIcon="user">Secondary</Button>
+              <Button size="small" variant="text" color="warning" leftIcon="alert">Warning</Button>
+              <Button size="small" variant="text" color="error" leftIcon="alert">Error</Button>
+              <Button size="small" variant="text" color="success" leftIcon="check">Success</Button>
+              <Button size="small" variant="text" color="outline" leftIcon="check">Outline</Button>
+            </div>
+          </div>
+        </div>
+      </div>
 {/* Icon Only */}
         <div className="flex gap-4 flex-wrap items-center">
                 <div className="flex flex-col gap-4 p-4">

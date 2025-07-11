@@ -11,8 +11,13 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
    * - primary, secondary, warning, error, success: colored buttons with text (default)
    * - outline: transparent background with border
    * - icon: square icon-only button (no text required)
+   * - text: text-only button (no background or border)
    */
-  variant?: 'primary' | 'secondary' | 'warning' | 'error' | 'success' | 'outline' | 'icon';
+  variant?: 'primary' | 'secondary' | 'warning' | 'error' | 'success' | 'outline' | 'icon' | 'text';
+  /**
+   * For the 'text' variant, specify the color style (primary, secondary, warning, error, success)
+   */
+  color?: 'primary' | 'secondary' | 'warning' | 'error' | 'success' | 'outline';
   leftIcon?: IconName;
   rightIcon?: IconName;
   children?: React.ReactNode; // text is optional for icon-only buttons
@@ -61,6 +66,14 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       success: 'bg-success-main text-success-contrast hover:bg-success-dark',
       outline: 'border border-common-white-contrast bg-common-white-main text-common-white-contrast hover:bg-accent-light',
       icon: 'bg-transparent text-primary-main hover:bg-primary-contrast',
+      text: {
+        primary: 'bg-transparent border-none text-primary-main hover:text-primary-dark',
+        secondary: 'bg-transparent border-none text-secondary-main hover:text-secondary-dark',
+        warning: 'bg-transparent border-none text-warning-main hover:text-warning-dark',
+        error: 'bg-transparent border-none text-error-main hover:text-error-dark',
+        success: 'bg-transparent border-none text-success-main hover:text-success-dark',
+        outline: 'bg-transparent border-none text-_components-text-primary hover:text-primary-main',
+      },
     } as const;
 
     const iconSize = {
@@ -68,6 +81,14 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       medium: 16,
       large: 18,
     };
+
+    // Determine text color for text variant
+    let textVariantColor = '';
+    if (variant === 'text') {
+      // Default to primary if not specified
+      const color = (props.color as keyof typeof variantClasses.text) || 'primary';
+      textVariantColor = variantClasses.text[color];
+    }
 
     const buttonElement = (
       <button
@@ -78,7 +99,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           transition-colors duration-200
           disabled:opacity-50 disabled:cursor-not-allowed
           ${(variant === 'icon' ? iconOnlySizeClasses[size] : sizeClasses[size])}
-          ${variantClasses[variant]}
+          ${variant === 'text'
+            ? textVariantColor
+            : variantClasses[variant as keyof typeof variantClasses]}
           ${className}
         `}
         {...props}

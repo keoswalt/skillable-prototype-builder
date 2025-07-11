@@ -105,9 +105,9 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(({
       return 'bg-transparent border-softgrey-light text-hardgrey-light placeholder-hardgrey-light cursor-not-allowed';
     }
     if (error) {
-      return 'border-error-main text-[var(--components-text-primary)] placeholder-error-light focus:border-error-main focus:ring-1 focus:ring-error-main';
+      return 'bg-transparent border-error-main text-[var(--components-text-primary)] placeholder-error-light focus:border-error-main focus:ring-1 focus:ring-error-main';
     }
-    return 'border-softgrey-light text-[var(--components-text-primary)] placeholder-[var(--components-text-secondary)] focus:border-accent-main focus:ring-1 focus:ring-accent-main';
+    return 'bg-transparent border-softgrey-light text-[var(--components-text-primary)] placeholder-[var(--components-text-secondary)] focus:border-accent-main focus:ring-1 focus:ring-accent-main';
   })();
 
   const inputClasses = cn(baseInput, colorClasses);

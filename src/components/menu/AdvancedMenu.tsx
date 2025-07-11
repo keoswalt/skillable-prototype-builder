@@ -4,6 +4,7 @@ import { Switch } from '../inputs/Switch';
 import { CheckboxItem } from '../inputs/CheckboxItem';
 import { DropdownSelect } from '../inputs/DropdownSelect';
 import { Icon, Icons } from '../Icon';
+import { useScrollLock } from './useScrollLock';
 
 /**
  * AdvancedMenu – A settings menu supporting sections, headers, dividers, and advanced menu items (Switch, CheckboxItem, DropdownSelect, slider, icon, helper text, etc.).
@@ -99,6 +100,9 @@ export const AdvancedMenu: React.FC<AdvancedMenuProps> = ({ isOpen, onClose, sec
   const menuRef = React.useRef<HTMLDivElement>(null);
   const [menuStyle, setMenuStyle] = useState<React.CSSProperties>({});
   const [hasMeasured, setHasMeasured] = useState(false);
+
+  // Lock scroll when menu is open
+  useScrollLock(isOpen);
 
   React.useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

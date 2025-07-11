@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useScrollLock } from './useScrollLock';
 
 interface MenuProps {
   isOpen: boolean;
@@ -18,6 +19,9 @@ export const Menu: React.FC<MenuProps> = ({
   anchorEl,
 }) => {
   const menuRef = useRef<HTMLDivElement>(null);
+
+  // Lock scroll when menu is open
+  useScrollLock(isOpen);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
