@@ -64,17 +64,17 @@ export function DashboardGrid({
           
           {/* Sort and Filter Controls - aligned right with responsive wrapping */}
           <div className="flex items-center gap-4">
+          <SortControls
+              options={sortOptions}
+              currentConfig={currentSortConfig}
+              onFieldChange={onSortFieldChange}
+              onDirectionChange={onSortDirectionChange}
+            />
             <FilterControls
               columns={filterColumns}
               filters={currentFilters}
               onFiltersChange={onFiltersChange}
               operatorsByType={operatorsByType}
-            />
-            <SortControls
-              options={sortOptions}
-              currentConfig={currentSortConfig}
-              onFieldChange={onSortFieldChange}
-              onDirectionChange={onSortDirectionChange}
             />
           </div>
         </div>

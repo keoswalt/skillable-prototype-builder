@@ -31,6 +31,10 @@ export function FilterControls({
     setIsFilterMenuOpen(!isFilterMenuOpen);
   };
 
+  const handleClearFilters = () => {
+    onFiltersChange([]);
+  };
+
   return (
     <div className="flex items-center gap-2 text-body-sm text-_components-text-secondary shrink-0">
       <Button 
@@ -41,8 +45,21 @@ export function FilterControls({
         leftIcon="listFilter"
         className={filters.length > 0 ? "border-primary-main text-primary-main" : ""}
       >
-        {filters.length > 0 ? `${filters.length} active` : "Filter"}
+        {filters.length > 0 ? `${filters.length} active` : "Filters"}
       </Button>
+      
+      {filters.length > 0 && (
+        <Button
+          variant="text"
+          color="primary"
+          size="small"
+          leftIcon="close"
+          onClick={handleClearFilters}
+          aria-label="Clear all filters"
+        >
+          Clear filters
+        </Button>
+      )}
       
       <FilterMenu
         columns={columns}

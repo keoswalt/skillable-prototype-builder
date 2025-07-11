@@ -31,15 +31,13 @@ export function SortControls({
         maxWidth="sm"
       />
       <Button 
-        variant="icon" 
+        variant="outline" 
         size="small"
         onClick={onDirectionChange}
+        leftIcon={currentConfig.direction === 'asc' ? 'chevronUp' : 'chevronDown'}
         aria-label={`Sort ${currentConfig.direction === 'asc' ? 'descending' : 'ascending'}`}
       >
-        <Icon 
-          icon={currentConfig.direction === 'asc' ? Icons.chevronUp : Icons.chevronDown} 
-          className="text-primary-main" 
-        />
+        {currentConfig.direction === 'asc' ? 'Ascending' : 'Descending'}
       </Button>
     </div>
   );
