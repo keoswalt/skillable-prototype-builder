@@ -4,4 +4,5 @@
 
 export * from './useLocalStorage';
 export * from './useSorting';
-export * from './useDashboardState'; 
+export * from './useDashboardState';
+export * from './useFiltering'; 

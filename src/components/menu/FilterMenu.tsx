@@ -19,7 +19,7 @@
 // />
 
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useLayoutEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { DropdownSelect } from '../inputs/DropdownSelect';
 import { TextField } from '../inputs/TextField';
@@ -66,6 +66,8 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({
   triggerRef,
 }) => {
   const menuRef = useRef<HTMLDivElement>(null);
+  const [menuStyle, setMenuStyle] = useState<React.CSSProperties>({});
+  const [hasMeasured, setHasMeasured] = useState(false);
 
   // Lock scroll when menu is open
   useScrollLock(isOpen);
@@ -93,18 +95,44 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({
     };
   }, [isOpen, onClose, anchorEl]);
 
-  // Positioning
-  let menuStyle: React.CSSProperties = { minWidth: 320 };
-  if (anchorEl) {
-    const rect = anchorEl.getBoundingClientRect();
-    menuStyle = {
+  // Smart positioning logic
+  useLayoutEffect(() => {
+    if (!isOpen || !anchorEl || !menuRef.current) return;
+    
+    // On first render, menu is offscreen, so measure and reposition
+    const anchorRect = anchorEl.getBoundingClientRect();
+    const menuRect = menuRef.current.getBoundingClientRect();
+    const spacing = 4;
+    let top = anchorRect.bottom + spacing;
+    let left = anchorRect.left;
+    let minWidth = anchorRect.width;
+
+    // Flip up if overflowing bottom
+    if (top + menuRect.height > window.innerHeight) {
+      top = anchorRect.top - menuRect.height - spacing;
+    }
+    // Flip left if overflowing right
+    if (left + menuRect.width > window.innerWidth) {
+      left = anchorRect.right - menuRect.width;
+    }
+    // Prevent negative left
+    if (left < 0) left = 0;
+    // Prevent negative top
+    if (top < 0) top = 0;
+
+    setMenuStyle({
       position: 'fixed',
-      top: `${rect.bottom + 4}px`,
-      left: `${rect.left}px`,
-      minWidth: `${rect.width}px`,
+      top: `${top}px`,
+      left: `${left}px`,
+      minWidth: `${minWidth}px`,
       zIndex: 9999,
-    };
-  }
+    });
+    setHasMeasured(true);
+  }, [isOpen, anchorEl]);
+
+  useEffect(() => {
+    if (!isOpen) setHasMeasured(false);
+  }, [isOpen]);
 
   // Focus trap
   useEffect(() => {
@@ -166,13 +194,22 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({
 
   if (!isOpen) return null;
 
+  // On first open, render offscreen so we can measure
+  const initialStyle = {
+    position: 'fixed' as 'fixed',
+    top: '-9999px',
+    left: '-9999px',
+    minWidth: anchorEl ? `${anchorEl.getBoundingClientRect().width}px` : undefined,
+    zIndex: 9999,
+  };
+
   const menuContent = (
     <div
       ref={menuRef}
       role="dialog"
       aria-modal="true"
       className={`bg-_components-background-default border border-_components-text-primary rounded-xl p-4 flex flex-col gap-4 w-full max-w-lg shadow-xl ${className}`}
-      style={menuStyle}
+      style={hasMeasured ? menuStyle : initialStyle}
       tabIndex={-1}
     >
       {filters.length === 0 && (

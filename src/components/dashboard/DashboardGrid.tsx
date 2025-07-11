@@ -4,11 +4,13 @@
 
 import { Tabs } from '@/components/navigation';
 import { SortControls } from './SortControls';
+import { FilterControls } from './FilterControls';
 import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/components/cards/dashboard';
 import { DropdownSelect } from '@/components/inputs';
 import { Button } from '@/components/buttons/Button';
 import { Icon, Icons } from '@/components/Icon';
 import { SortConfig, SortOption } from '@/types/sorting';
+import { Filter } from '@/config/filtering';
 import { DashboardItem } from '@/types/dashboard';
 
 interface DashboardGridProps {
@@ -18,6 +20,10 @@ interface DashboardGridProps {
   currentSortConfig: SortConfig;
   onSortFieldChange: (field: string) => void;
   onSortDirectionChange: () => void;
+  filterColumns: Array<{ label: string; value: string; type?: 'text' | 'select' | 'boolean'; options?: { label: string; value: string }[] }>;
+  currentFilters: Array<{ column: string; operator: string; value: any }>;
+  onFiltersChange: (filters: Array<{ column: string; operator: string; value: any }>) => void;
+  operatorsByType: Record<string, { label: string; value: string }[]>;
   tabItems: Array<{
     id: string;
     label: string;
@@ -32,6 +38,10 @@ export function DashboardGrid({
   currentSortConfig,
   onSortFieldChange,
   onSortDirectionChange,
+  filterColumns,
+  currentFilters,
+  onFiltersChange,
+  operatorsByType,
   tabItems,
 }: DashboardGridProps) {
   const activeTabContent = tabItems[activeTabIndex]?.content;
@@ -52,13 +62,21 @@ export function DashboardGrid({
             />
           </div>
           
-          {/* Sort Controls - aligned right with responsive wrapping */}
-          <SortControls
-            options={sortOptions}
-            currentConfig={currentSortConfig}
-            onFieldChange={onSortFieldChange}
-            onDirectionChange={onSortDirectionChange}
-          />
+          {/* Sort and Filter Controls - aligned right with responsive wrapping */}
+          <div className="flex items-center gap-4">
+            <FilterControls
+              columns={filterColumns}
+              filters={currentFilters}
+              onFiltersChange={onFiltersChange}
+              operatorsByType={operatorsByType}
+            />
+            <SortControls
+              options={sortOptions}
+              currentConfig={currentSortConfig}
+              onFieldChange={onSortFieldChange}
+              onDirectionChange={onSortDirectionChange}
+            />
+          </div>
         </div>
         
         {/* Tab content rendered separately */}

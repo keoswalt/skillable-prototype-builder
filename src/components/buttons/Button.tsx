@@ -64,7 +64,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       warning: 'bg-warning-main text-warning-contrast hover:bg-warning-dark',
       error: 'bg-error-main text-error-contrast hover:bg-error-dark',
       success: 'bg-success-main text-success-contrast hover:bg-success-dark',
-      outline: 'border border-common-white-contrast bg-common-white-main text-common-white-contrast hover:bg-accent-light',
+      outline: 'border border-_components-text-primary bg-_components-background-default text-_components-text-primary hover:bg-_components-background-contrast-sm',
       icon: 'bg-transparent text-primary-main hover:bg-primary-contrast',
       text: {
         primary: 'bg-transparent border-none text-primary-main hover:text-primary-dark',
@@ -95,7 +95,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={disabled}
         className={`
-          inline-flex items-center justify-center rounded-[5px] font-primary font-medium
+          inline-flex items-center justify-center rounded-[5px] font-primary
           transition-colors duration-200
           disabled:opacity-50 disabled:cursor-not-allowed
           ${(variant === 'icon' ? iconOnlySizeClasses[size] : sizeClasses[size])}

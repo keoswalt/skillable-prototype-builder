@@ -5,6 +5,7 @@
 export const APP_CONSTANTS = {
   STORAGE_KEYS: {
     SORT_CONFIGS: 'skillable-ds-sort-configs',
+    FILTER_CONFIGS: 'skillable-ds-filter-configs',
     THEME: 'skillable-ds-theme',
   },
   DEFAULT_STARRED_ITEMS: {

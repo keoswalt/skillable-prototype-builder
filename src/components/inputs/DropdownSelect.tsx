@@ -130,7 +130,7 @@ export const DropdownSelect = forwardRef<HTMLSelectElement, DropdownSelectProps>
     if (isOpen) {
       return 'border-accent-main text-[var(--components-text-primary)] ring-1 ring-accent-main';
     }
-    return 'border-softgrey-light text-[var(--components-text-primary)] placeholder-[var(--components-text-secondary)] hover:border-accent-main';
+    return 'border-_components-border-primary text-[var(--components-text-primary)] placeholder-[var(--components-text-secondary)] hover:border-accent-main';
   })();
 
   const fieldClasses = cn(baseField, colorClasses, 'relative');
