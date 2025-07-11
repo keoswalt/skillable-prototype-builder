@@ -46,8 +46,8 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   }, ref) => {
     // Standard button dimensions
     const sizeClasses = {
-      small: 'h-7 px-2 text-body-sm gap-1',
-      medium: 'h-8 px-3 text-sm gap-1.5',
+      small: 'h-7 px-2 text-body-xs gap-1',
+      medium: 'h-8 px-3 text-body-sm gap-1.5',
       large: 'h-10 px-4 text-body-md gap-2',
     };
 

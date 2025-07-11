@@ -23,18 +23,20 @@ import Menu from '../menu/Menu';
  *  • error?: boolean – Shows error styling and sets `aria-invalid`.
  *  • disabled?: boolean – Greys out the field and blocks interaction.
  *  • orientation?: 'vertical' | 'horizontal' (default 'vertical').
+ *  • size?: 'small' | 'medium' | 'large' (default 'medium') – Size variant matching Button component.
  *  • maxWidth?: one of Tailwind's max-width keys ('none' | 'xs' | 'sm' | ... | '7xl' | 'full').
  *  • options?: { label: React.ReactNode; value: string | number; disabled?: boolean }[] – Convenience list of options. Ignored if `children` are provided.
  *  • className?: string – Additional classes for the outer wrapper.
  *  • ...rest – All native <select> props (onChange, value, etc.).
  */
 
-export interface DropdownSelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface DropdownSelectProps extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'size'> {
   label?: React.ReactNode;
   required?: boolean;
   helperText?: React.ReactNode;
   error?: boolean;
   orientation?: 'vertical' | 'horizontal';
+  size?: 'small' | 'medium' | 'large';
   maxWidth?:
     | 'none'
     | 'xs'
@@ -63,6 +65,7 @@ export const DropdownSelect = forwardRef<HTMLSelectElement, DropdownSelectProps>
   error = false,
   disabled = false,
   orientation = 'vertical',
+  size = 'medium',
   className,
   maxWidth,
   options,
@@ -114,11 +117,25 @@ export const DropdownSelect = forwardRef<HTMLSelectElement, DropdownSelectProps>
       return { label: String(child), value: String(child) };
     });
 
+  // Size classes that match Button component
+  const sizeClasses = {
+    small: 'h-7 px-2 text-body-xs',
+    medium: 'h-8 px-2 text-body-sm',
+    large: 'h-10 px-3 text-body-md',
+  } as const;
+
+  // Icon sizes that match Button component
+  const iconSize = {
+    small: 14,
+    medium: 16,
+    large: 18,
+  } as const;
+
   const labelBase = 'font-primary text-body-sm';
   const labelColor = error ? 'text-error-main' : 'text-[var(--components-text-secondary)]';
   const labelClasses = cn(labelBase, labelColor, 'block');
 
-  const baseField = 'flex w-full items-center px-3 py-2 font-primary text-body-sm rounded-[var(--borderradius)] border transition-colors duration-200 outline-none pr-8'; // pr-8 for icon space
+  const baseField = `flex w-full items-center font-primary rounded-[5px] border transition-colors duration-200 outline-none pr-8 ${sizeClasses[size]}`; // pr-8 for icon space
 
   const colorClasses = (() => {
     if (disabled) {
@@ -228,9 +245,9 @@ export const DropdownSelect = forwardRef<HTMLSelectElement, DropdownSelectProps>
           </span>
           <Icon
             icon={Icons.chevronDown}
-            size={16}
+            size={iconSize[size]}
             className={cn(
-              'pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 transition-transform duration-200',
+              'pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 transition-transform duration-200',
               isOpen && '-rotate-180',
               iconColor,
             )}

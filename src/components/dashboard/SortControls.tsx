@@ -24,6 +24,7 @@ export function SortControls({
     <div className="flex items-center gap-2 text-body-sm text-_components-text-secondary shrink-0">
       <span>Sort by:</span>
       <DropdownSelect 
+        size="small"
         options={options}
         value={currentConfig.field}
         onChange={(e) => onFieldChange(e.target.value)}
