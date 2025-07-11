@@ -57,10 +57,20 @@ export const ProfileCard: React.FC<ProfileCardProps> = (props) => {
     },
   ];
 
+  // Define default metalinks for profile cards
+  const defaultMetaLinks: Record<string, MetaLinkConfig> = {
+    number: { message: "Opens lab profile details page" },
+    seriesName: { message: "Opens lab series details page" },
+    organization: { message: "Opens organization details page" },
+  };
+
   // Use custom actions if provided, otherwise use defaults
   const finalActions = props.actions || defaultActions;
+  
+  // Merge custom metalinks with defaults (custom takes precedence)
+  const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
-  return <DashboardCard variant="profile" {...props} actions={finalActions} />;
+  return <DashboardCard variant="profile" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
 };
 
 export default ProfileCard; 

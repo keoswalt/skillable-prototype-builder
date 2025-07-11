@@ -31,7 +31,7 @@ export const DashboardCardExample: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-6 mx-auto">
-      {/* Instance */}
+      {/* Instance - Uses default metalinks */}
       <InstanceCard
         name="Lab Profile Name (Kim Oswalt)"
         instanceId="1053453"
@@ -42,15 +42,10 @@ export const DashboardCardExample: React.FC = () => {
         lastActivity="June 5, 2025"
         state="Off"
         actions={dummyActions}
-        metaLinks={{
-          instanceId: { message: "Instance ID: 1053453 - This is a custom message!" },
-          labProfile: true, // uses default alert (shows the value)
-          series: { message: "Series link clicked! This is the lab series." },
-          student: { message: "Student: Kim Oswalt - Clicked on student field" },
-        }}
+        // No metaLinks prop - uses defaults automatically
       />
 
-      {/* Profile */}
+      {/* Profile - Overrides some default metalinks */}
       <ProfileCard
         starred={starState['profile']}
         name="Lab Profile Name"
@@ -64,14 +59,17 @@ export const DashboardCardExample: React.FC = () => {
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[1], dummyActions[2], dummyActions[3], dummyActions[4]]}
         metaLinks={{
-          number: { message: "Profile Number: KO_001" },
-          organization: true, // uses default alert (shows the value)
-          seriesName: { message: "Series Name: My Lab Series - Custom message!" },
+          // Override default message for number
+          number: { message: "Custom Profile Number Message: KO_001" },
+          // Override default message for platform
+          platform: { message: "Platform: Azure - Custom message!" },
+          // Add a new clickable field that wasn't in defaults
+          created: { message: "Created Date: June 2, 2025" },
         }}
         onStarToggle={() => toggleStar('profile')}
       />
 
-      {/* Series */}
+      {/* Series - Uses default metalinks */}
       <SeriesCard
         starred={starState['series']}
         onStarToggle={() => toggleStar('series')}
@@ -83,14 +81,10 @@ export const DashboardCardExample: React.FC = () => {
         created="June 2, 2025"
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[3], dummyActions[4]]}
-        metaLinks={{
-          labProfiles: { message: "This series contains 2 lab profiles" },
-          virtualMachines: { message: "Virtual Machines: 5 - Custom alert!" },
-          apiConsumers: true, // uses default alert (shows the value)
-        }}
+        // No metaLinks prop - uses defaults automatically
       />
 
-      {/* Template */}
+      {/* Template - Disables some default metalinks */}
       <TemplateCard
         starred={starState['template']}
         onStarToggle={() => toggleStar('template')}
@@ -105,9 +99,12 @@ export const DashboardCardExample: React.FC = () => {
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[5], dummyActions[2], dummyActions[6]]}
         metaLinks={{
-          number: { message: "Template Number: KO_001 - This is a template!" },
-          organization: { message: "Organization: Skillable – Production" },
-          seriesName: true, // uses default alert (shows the value)
+          // Override default message for number
+          number: { message: "Template Number: KO_001 - Custom template message!" },
+          // Disable platform link by setting to false
+          platform: false,
+          // Add a new clickable field
+          modified: { message: "Last Modified: June 5, 2025" },
         }}
       />
     </div>

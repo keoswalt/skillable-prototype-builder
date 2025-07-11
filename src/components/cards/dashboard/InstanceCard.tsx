@@ -22,11 +22,22 @@ export const InstanceCard: React.FC<InstanceCardProps> = (props) => {
     }
   ];
 
+  // Define default metalinks for instance cards
+  const defaultMetaLinks: Record<string, MetaLinkConfig> = {
+    instanceId: { message: "Opens the lab instance details page" },
+    labProfile: { message: "Opens the lab profile details page" },
+    series: { message: "Opens the lab series details page" },
+    student: { message: "Opens the student details page" },
+  };
+
   // Use custom actions if provided, otherwise use defaults
   const finalActions = props.actions || defaultActions;
+  
+  // Merge custom metalinks with defaults (custom takes precedence)
+  const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
   // Don't pass starred or onStarToggle props to hide the star completely
-  return <DashboardCard variant="instance" {...props} actions={finalActions} />;
+  return <DashboardCard variant="instance" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
 };
 
 export default InstanceCard; 

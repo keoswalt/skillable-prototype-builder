@@ -43,10 +43,21 @@ export const SeriesCard: React.FC<SeriesCardProps> = (props) => {
     },
   ];
 
+  // Define default metalinks for series cards
+  const defaultMetaLinks: Record<string, MetaLinkConfig> = {
+    organization: { message: "Opens organization details page" },
+    labProfiles: { message: "Opens series details page, scrolls to lab profiles section" },
+    virtualMachines: { message: "Opens series details page, scrolls to virtual machines section" },
+    apiConsumers: { message: "Opens edit series page on 'Publish' tab" },
+  };
+
   // Use custom actions if provided, otherwise use defaults
   const finalActions = props.actions || defaultActions;
+  
+  // Merge custom metalinks with defaults (custom takes precedence)
+  const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
-  return <DashboardCard variant="series" {...props} actions={finalActions} />;
+  return <DashboardCard variant="series" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
 };
 
 export default SeriesCard; 

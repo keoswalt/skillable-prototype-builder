@@ -57,10 +57,20 @@ export const TemplateCard: React.FC<TemplateCardProps> = (props) => {
     },
   ];
 
+  // Define default metalinks for template cards
+  const defaultMetaLinks: Record<string, MetaLinkConfig> = {
+    number: { message: "Opens lab profile detail page" },
+    seriesName: { message: "Opens series detail page" },
+    organization: { message: "Opens organization detail page" },
+  };
+
   // Use custom actions if provided, otherwise use defaults
   const finalActions = props.actions || defaultActions;
+  
+  // Merge custom metalinks with defaults (custom takes precedence)
+  const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
-  return <DashboardCard variant="template" {...props} actions={finalActions} />;
+  return <DashboardCard variant="template" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
 };
 
 export default TemplateCard; 
