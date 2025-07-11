@@ -9,7 +9,7 @@ alwaysApply: false
 
 You are tasked with adding to this project's library of reusable React components, which live in subfolders within the `src/components` directory.
 
-The user will provide you with an image or Figma link showing the component they want you to create. Try to match the provided image as closely as possible. If you don't understand something, explain your confusion to the user and ask for their assistance. Only create something new if it's absolutely necessary. We want our library to be as modular as possible, not relying on one-off components or ad-hoc implementations. Remember to use only custom-made components and Tailwind CSS classes. Do not use any external libraries or pre-built components. Strive to match the visual design in the screenshot as closely as possible while maintaining good coding practices and component reusability.
+The user will provide you with an image or Figma link showing the component they want you to create. Try to match the provided image as closely as possible. Always use the correct semantic design tokens from the theme defined in [tailwind.config.ts](mdc:tailwind.config.ts) and the `/src/app/theme` directory. Always use existing atomic components (like buttons, inputs, etc.) where possible instead of creating everything from scratch. We want our library to be as modular as possible, not relying on one-off components or ad-hoc implementations. Remember to use only custom-made components and Tailwind CSS classes. Do not use any external libraries or pre-built components. Strive to match the visual design in the screenshot as closely as possible while maintaining good coding practices and component reusability.
 
 ## Steps to Follow
 
@@ -26,7 +26,7 @@ When a user provides you with an image and asks you to create a component, follo
    5. Chips / tags
    6. Links
 5. Identify any existing components from the library that should be used in the new component.
-6. Create a plan for implementing the new component using NextJs, React, Tailwind CSS, and the design tokens for the project found in [tailwind.config.ts](mdc:tailwind.config.ts) and the `/src/app/theme directory`. The plan should include all steps necessary to:
+6. Create a plan for implementing the new component using NextJs, React, Tailwind CSS, and the design tokens for the project found in [tailwind.config.ts](mdc:tailwind.config.ts) and the `/src/app/theme` directory. The plan should include all steps necessary to:
    1. Ensure the component is responsive and accessible
    2. Allow scalable, flexible implementation of the component in future designs
    3. Add all relevant properties to the component for customization
