@@ -1,6 +1,6 @@
 # Dashboard Cards
 
-This directory contains flexible card components for the Skillable design system that render different data-card variants.
+This directory contains flexible card components for the Skillable Studio user dashboard.
 
 ## Components
 
