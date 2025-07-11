@@ -161,19 +161,13 @@ export default function PrimaryNav() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-primary-main text-body-sm hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]" >
+                className="block px-3 py-2 rounded-md text-_components-text-primary text-body-sm hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]" >
                 {item.label}
               </Link>
             ))}
           </div>
           <div className="pt-4 pb-3 border-t border-[var(--components-divider-main)]">
             <div className="px-2 space-y-1">
-              <button
-                onClick={() => toggleMenu('isCustomerDropdownOpen')}
-                className="block w-full text-left px-3 py-2 rounded-md text-primary-main text-body-sm hover:text-[var(--primary-main)] hover:bg-[var(--components-background-contrast-sm)]"
-              >
-                Customer
-              </button>
               <button
                 onClick={() => toggleMenu('isUserDropdownOpen')}
                 className="block w-full text-left px-3 py-2 text-body-sm text-primary-main rounded-md hover:text-[var(--primary-light)] hover:bg-[var(--components-background-contrast-sm)]"
