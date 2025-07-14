@@ -94,6 +94,7 @@ export const SplitButton: React.FC<SplitButtonProps> = ({
           onClose={() => setIsMenuOpen(false)}
           items={menuItems}
           anchorEl={dropdownButtonRef.current}
+          preferredAlignment="right"
         />
       )}
     </>
