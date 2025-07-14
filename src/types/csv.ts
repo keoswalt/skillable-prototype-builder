@@ -27,23 +27,22 @@ export interface LabProfileData {
 export interface LabSeriesData {
   series: string;
   organization: string;
+  distinct_lab_profiles: string;
+  distinct_vms: string;
+  distinct_api_consumers: string;
   created: string;
   last_modified: string;
-  status: string;
-  platform: string;
 }
 
 export interface LabInstanceData {
+  id: string;
   lab_profile: string;
-  organization: string;
-  number: string;
   series: string;
-  virtualization_platform: string;
-  cloud_platform: string;
-  created: string;
-  last_modified: string;
-  status: string;
-  platform: string;
+  user_id: string;
+  last_activity_time: string;
+  state_id: string;
+  duration: string;
+  student: string;
 }
 
 // Union type for all CSV data types

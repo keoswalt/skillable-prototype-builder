@@ -9,10 +9,18 @@ import { getFilterOptions, OPERATORS_BY_TYPE } from '@/config/filtering';
 import { useDashboardState } from '@/hooks/useDashboardState';
 import { useSorting } from '@/hooks/useSorting';
 import { useFiltering } from '@/hooks/useFiltering';
-import { generateMockInstances, generateMockProfiles, generateMockSeries, generateMockTemplates } from '@/data/mockData';
 import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/components/cards/dashboard';
+import { useLabProfileData, useLabSeriesData, useLabInstanceData, useTemplateData } from '@/hooks/useCSVData';
+import { 
+  transformLabProfileToProfileItem, 
+  transformLabSeriesToSeriesItem, 
+  transformLabInstanceToInstanceItem,
+  transformTemplateToTemplateItem
+} from '@/utils/dataTransformers';
 
 export default function DashboardPage() {
+  // ALL HOOKS MUST BE CALLED FIRST, BEFORE ANY CONDITIONAL LOGIC
+  
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
@@ -41,8 +49,29 @@ export default function DashboardPage() {
     isLoaded: isFilteringLoaded,
   } = useFiltering();
 
-  // Don't render until all data is loaded to prevent hydration mismatches
-  if (!isDashboardLoaded || !isSortingLoaded || !isFilteringLoaded) {
+  // Load CSV data for all card types - MUST be called before any conditional returns
+  const { data: csvProfiles, loading: profilesLoading, error: profilesError } = useLabProfileData({
+    cache: true,
+    clean: true
+  });
+
+  const { data: csvSeries, loading: seriesLoading, error: seriesError } = useLabSeriesData({
+    cache: true,
+    clean: true
+  });
+
+  const { data: csvInstances, loading: instancesLoading, error: instancesError } = useLabInstanceData({
+    cache: true,
+    clean: true
+  });
+
+  const { data: csvTemplates, loading: templatesLoading, error: templatesError } = useTemplateData({
+    cache: true,
+    clean: true
+  });
+
+  // NOW we can have conditional logic and early returns
+  if (!isSortingLoaded || !isFilteringLoaded) {
     return (
       <div className="min-h-screen p-8">
         <div className="flex items-center justify-center h-64">
@@ -56,11 +85,22 @@ export default function DashboardPage() {
     );
   }
 
-  // Generate mock data with current starred state
-  const mockInstances = generateMockInstances(starredItems, toggleStar);
-  const mockProfiles = generateMockProfiles(starredItems, toggleStar);
-  const mockSeries = generateMockSeries(starredItems, toggleStar);
-  const mockTemplates = generateMockTemplates(starredItems, toggleStar);
+  // Transform CSV data to dashboard item format
+  const mockProfiles = csvProfiles && csvProfiles.length > 0 
+    ? transformLabProfileToProfileItem(csvProfiles, starredItems, toggleStar)
+    : [];
+
+  const mockSeries = csvSeries && csvSeries.length > 0
+    ? transformLabSeriesToSeriesItem(csvSeries, starredItems, toggleStar)
+    : [];
+
+  const mockInstances = csvInstances && csvInstances.length > 0
+    ? transformLabInstanceToInstanceItem(csvInstances, starredItems, toggleStar)
+    : [];
+
+  const mockTemplates = csvTemplates && csvTemplates.length > 0
+    ? transformTemplateToTemplateItem(csvTemplates, starredItems, toggleStar)
+    : [];
 
   // Get current sort and filter configuration
   const currentCardType = getCurrentCardType();
@@ -150,6 +190,24 @@ export default function DashboardPage() {
 
   const currentTabData = getCurrentTabData();
   const totalItems = currentTabData.length;
+
+  // Handle CSV data loading error - after all hooks have been called
+  if (profilesError || seriesError || instancesError || templatesError) {
+    return (
+      <div className="min-h-screen p-8">
+        <div className="flex items-center justify-center h-64">
+          <div className="text-center">
+            <h2 className="text-xl font-semibold mb-2 text-red-600">Error Loading Data</h2>
+            <p className="text-gray-600 mb-4">Failed to load dashboard data.</p>
+            {profilesError && <p className="text-sm text-gray-500">Profiles: {profilesError}</p>}
+            {seriesError && <p className="text-sm text-gray-500">Series: {seriesError}</p>}
+            {instancesError && <p className="text-sm text-gray-500">Instances: {instancesError}</p>}
+            {templatesError && <p className="text-sm text-gray-500">Templates: {templatesError}</p>}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <main className="min-h-screen p-8">
