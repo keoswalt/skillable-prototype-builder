@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { DashboardHeader } from '@/components/dashboard/DashboardHeader';
 import { DashboardGrid } from '@/components/dashboard/DashboardGrid';
 import { FIND_MENU_ITEMS, CREATE_MENU_ITEMS, TAB_CONFIG } from '@/config/navigation';
@@ -20,16 +20,14 @@ import {
 
 export default function DashboardPage() {
   // ALL HOOKS MUST BE CALLED FIRST, BEFORE ANY CONDITIONAL LOGIC
-  
-  // Pagination state
-  const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
 
   const {
     activeTabIndex,
     setActiveTabIndex,
     starredItems,
     toggleStar,
+    paginationState,
+    updatePagination,
     getCurrentCardType,
     isLoaded: isDashboardLoaded,
   } = useDashboardState();
@@ -128,49 +126,18 @@ export default function DashboardPage() {
       value: filter.value,
     }));
     updateFilterConfig(currentCardType, convertedFilters);
+    // Reset to first page when filters change
+    updatePagination({ currentPage: 1 });
   };
 
   // Handle pagination changes
   const handlePageChange = (page: number) => {
-    setCurrentPage(page);
+    updatePagination({ currentPage: page });
   };
 
   const handlePageSizeChange = (newPageSize: number) => {
-    setPageSize(newPageSize);
-    setCurrentPage(1); // Reset to first page when changing page size
+    updatePagination({ pageSize: newPageSize, currentPage: 1 });
   };
-
-  // Create tab items with sorted and filtered content
-  const tabItems = [
-    { 
-      id: "lab-instances", 
-      label: "Lab Instances", 
-      content: applyFilters(sortItems(mockInstances, getCurrentSortConfig('instance')), getCurrentFilterConfig('instance')).map((instance) => (
-        <InstanceCard key={instance.id} {...instance} />
-      ))
-    },
-    { 
-      id: "lab-profiles", 
-      label: "Lab Profiles", 
-      content: applyFilters(sortItems(mockProfiles, getCurrentSortConfig('profile')), getCurrentFilterConfig('profile')).map((profile) => (
-        <ProfileCard key={profile.id} {...profile} />
-      ))
-    },
-    { 
-      id: "lab-series", 
-      label: "Lab Series", 
-      content: applyFilters(sortItems(mockSeries, getCurrentSortConfig('series')), getCurrentFilterConfig('series')).map((series) => (
-        <SeriesCard key={series.id} {...series} />
-      ))
-    },
-    { 
-      id: "templates", 
-      label: "Templates", 
-      content: applyFilters(sortItems(mockTemplates, getCurrentSortConfig('template')), getCurrentFilterConfig('template')).map((template) => (
-        <TemplateCard key={template.id} {...template} />
-      ))
-    },
-  ];
 
   // Get current tab data for pagination
   const getCurrentTabData = () => {
@@ -190,6 +157,48 @@ export default function DashboardPage() {
 
   const currentTabData = getCurrentTabData();
   const totalItems = currentTabData.length;
+
+  // Calculate pagination
+  const totalPages = Math.ceil(totalItems / paginationState.pageSize);
+  const startIndex = (paginationState.currentPage - 1) * paginationState.pageSize;
+  const endIndex = startIndex + paginationState.pageSize;
+  const paginatedData = currentTabData.slice(startIndex, endIndex);
+
+  // Ensure current page is valid
+  const validCurrentPage = Math.min(Math.max(1, paginationState.currentPage), totalPages || 1);
+  if (validCurrentPage !== paginationState.currentPage) {
+    updatePagination({ currentPage: validCurrentPage });
+  }
+
+  // Create paginated tab items
+  const createPaginatedContent = (data: any[], CardComponent: any) => {
+    return paginatedData.map((item) => (
+      <CardComponent key={item.id} {...item} />
+    ));
+  };
+
+  const tabItems = [
+    { 
+      id: "lab-instances", 
+      label: "Lab Instances", 
+      content: createPaginatedContent(paginatedData, InstanceCard)
+    },
+    { 
+      id: "lab-profiles", 
+      label: "Lab Profiles", 
+      content: createPaginatedContent(paginatedData, ProfileCard)
+    },
+    { 
+      id: "lab-series", 
+      label: "Lab Series", 
+      content: createPaginatedContent(paginatedData, SeriesCard)
+    },
+    { 
+      id: "templates", 
+      label: "Templates", 
+      content: createPaginatedContent(paginatedData, TemplateCard)
+    },
+  ];
 
   // Handle CSV data loading error - after all hooks have been called
   if (profilesError || seriesError || instancesError || templatesError) {
@@ -232,8 +241,8 @@ export default function DashboardPage() {
         onFiltersChange={handleFiltersChange}
         operatorsByType={OPERATORS_BY_TYPE}
         tabItems={tabItems}
-        currentPage={currentPage}
-        pageSize={pageSize}
+        currentPage={validCurrentPage}
+        pageSize={paginationState.pageSize}
         totalItems={totalItems}
         onPageChange={handlePageChange}
         onPageSizeChange={handlePageSizeChange}

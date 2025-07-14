@@ -7,6 +7,11 @@ import { useLocalStorage } from './useLocalStorage';
 import { APP_CONSTANTS } from '@/config/constants';
 import { CardType } from '@/config/sorting';
 
+interface PaginationState {
+  currentPage: number;
+  pageSize: number;
+}
+
 export function useDashboardState() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   
@@ -16,11 +21,24 @@ export function useDashboardState() {
     APP_CONSTANTS.DEFAULT_STARRED_ITEMS
   );
 
+  // State for managing pagination - persist in localStorage
+  const [paginationState, setPaginationState, isPaginationLoaded] = useLocalStorage<PaginationState>(
+    'skillable-ds-pagination',
+    { currentPage: 1, pageSize: 25 }
+  );
+
   const toggleStar = (itemType: string, itemId: number) => {
     const key = `${itemType}-${itemId}`;
     setStarredItems(prev => ({
       ...prev,
       [key]: !prev[key]
+    }));
+  };
+
+  const updatePagination = (updates: Partial<PaginationState>) => {
+    setPaginationState(prev => ({
+      ...prev,
+      ...updates
     }));
   };
 
@@ -34,7 +52,9 @@ export function useDashboardState() {
     setActiveTabIndex,
     starredItems,
     toggleStar,
+    paginationState,
+    updatePagination,
     getCurrentCardType,
-    isLoaded: isStarredItemsLoaded,
+    isLoaded: isStarredItemsLoaded && isPaginationLoaded,
   };
 } 
