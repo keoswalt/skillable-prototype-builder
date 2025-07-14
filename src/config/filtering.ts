@@ -19,7 +19,7 @@ export const FILTER_OPTIONS = {
     { label: 'Instance ID', value: 'instanceId', type: 'text' as const },
     { label: 'Lab Profile', value: 'labProfile', type: 'text' as const },
     { label: 'Series', value: 'series', type: 'text' as const },
-    { label: 'User', value: 'user', type: 'text' as const },
+    { label: 'Student', value: 'student', type: 'text' as const },
     { label: 'State', value: 'state', type: 'select' as const, options: [
       { label: 'Running', value: 'running' },
       { label: 'Stopped', value: 'stopped' },
@@ -27,7 +27,7 @@ export const FILTER_OPTIONS = {
       { label: 'Error', value: 'error' }
     ]},
     { label: 'Last Activity', value: 'lastActivity', type: 'text' as const },
-    { label: 'Duration', value: 'duration', type: 'text' as const },
+    { label: 'Run Time', value: 'duration', type: 'text' as const },
   ],
   profile: [
     { label: 'Name', value: 'name', type: 'text' as const },

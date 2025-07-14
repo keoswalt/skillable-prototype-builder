@@ -18,10 +18,10 @@ export const SORT_OPTIONS = {
     { label: 'Instance ID', value: 'instanceId' },
     { label: 'Lab Profile', value: 'labProfile' },
     { label: 'Series', value: 'series' },
-    { label: 'User', value: 'user' },
+    { label: 'Student', value: 'student' },
     { label: 'State', value: 'state' },
     { label: 'Last Activity', value: 'lastActivity' },
-    { label: 'Duration', value: 'duration' },
+    { label: 'Run Time', value: 'duration' },
   ],
   profile: [
     { label: 'Name', value: 'name' },
