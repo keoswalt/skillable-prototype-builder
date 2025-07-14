@@ -5,12 +5,12 @@ import { DashboardGrid } from '@/components/dashboard/DashboardGrid';
 import { FIND_MENU_ITEMS, CREATE_MENU_ITEMS } from '@/config/navigation';
 import { getSortOptions } from '@/config/sorting';
 import { getFilterOptions, OPERATORS_BY_TYPE } from '@/config/filtering';
+import { getAllTabConfigurations, getTabConfigurationByIndex } from '@/config/tabs';
 import { useDashboardState } from '@/hooks/useDashboardState';
 import { useSorting } from '@/hooks/useSorting';
 import { useFiltering } from '@/hooks/useFiltering';
 import { useDataTransformation } from '@/hooks/useDataTransformation';
 import { usePagination } from '@/hooks/usePagination';
-import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/components/cards/dashboard';
 import { useLabProfileData, useLabSeriesData, useLabInstanceData, useTemplateData } from '@/hooks/useCSVData';
 
 export default function DashboardPage() {
@@ -41,6 +41,9 @@ export default function DashboardPage() {
     isLoaded: isFilteringLoaded,
   } = useFiltering();
 
+  // Get current tab configuration - MUST be called before any conditional returns
+  const currentTabConfig = getTabConfigurationByIndex(activeTabIndex);
+  
   // Load CSV data for all card types - MUST be called before any conditional returns
   const { data: csvProfiles, loading: profilesLoading, error: profilesError } = useLabProfileData({
     cache: true,
@@ -81,26 +84,37 @@ export default function DashboardPage() {
 
   // Get current tab data for pagination - MUST be called before any conditional returns
   const getCurrentTabData = (): unknown[] => {
-    switch (currentCardType) {
+    if (!currentTabConfig) return [];
+    
+    const cardType = currentTabConfig.cardType;
+    let data: unknown[] = [];
+    
+    switch (cardType) {
       case 'instance':
-        return applyFilters(sortItems(mockInstances, getCurrentSortConfig('instance')), getCurrentFilterConfig('instance'));
+        data = mockInstances;
+        break;
       case 'profile':
-        return applyFilters(sortItems(mockProfiles, getCurrentSortConfig('profile')), getCurrentFilterConfig('profile'));
+        data = mockProfiles;
+        break;
       case 'series':
-        return applyFilters(sortItems(mockSeries, getCurrentSortConfig('series')), getCurrentFilterConfig('series'));
+        data = mockSeries;
+        break;
       case 'template':
-        return applyFilters(sortItems(mockTemplates, getCurrentSortConfig('template')), getCurrentFilterConfig('template'));
+        data = mockTemplates;
+        break;
       default:
-        return [];
+        data = [];
     }
+    
+    return applyFilters(sortItems(data as any[], getCurrentSortConfig(cardType)), getCurrentFilterConfig(cardType));
   };
 
-  const currentTabData = getCurrentTabData();
-  const totalItems = currentTabData.length;
+  const processedTabData = getCurrentTabData();
+  const totalItems = processedTabData.length;
 
   // Calculate pagination using custom hook - MUST be called before any conditional returns
   const { paginatedData, validCurrentPage } = usePagination({
-    data: currentTabData,
+    data: processedTabData,
     paginationState,
     updatePagination
   });
@@ -152,35 +166,18 @@ export default function DashboardPage() {
     updatePagination({ pageSize: newPageSize, currentPage: 1 });
   };
 
-  // Create paginated tab items
+  // Create paginated tab items using tab configuration
   const createPaginatedContent = (data: unknown[], CardComponent: React.ComponentType<any>) => {
     return paginatedData.map((item) => (
       <CardComponent key={(item as any).id} {...(item as any)} />
     ));
   };
 
-  const tabItems = [
-    { 
-      id: "lab-instances", 
-      label: "Lab Instances", 
-      content: createPaginatedContent(paginatedData, InstanceCard)
-    },
-    { 
-      id: "lab-profiles", 
-      label: "Lab Profiles", 
-      content: createPaginatedContent(paginatedData, ProfileCard)
-    },
-    { 
-      id: "lab-series", 
-      label: "Lab Series", 
-      content: createPaginatedContent(paginatedData, SeriesCard)
-    },
-    { 
-      id: "templates", 
-      label: "Templates", 
-      content: createPaginatedContent(paginatedData, TemplateCard)
-    },
-  ];
+  const tabItems = getAllTabConfigurations().map(tabConfig => ({
+    id: tabConfig.id,
+    label: tabConfig.label,
+    content: createPaginatedContent(paginatedData, tabConfig.cardComponent)
+  }));
 
   // Handle CSV data loading error - after all hooks have been called
   if (profilesError || seriesError || instancesError || templatesError) {
