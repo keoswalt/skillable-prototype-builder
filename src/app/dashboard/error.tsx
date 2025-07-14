@@ -11,7 +11,7 @@ interface ErrorProps {
   reset: () => void;
 }
 
-export default function DashboardError({ error, reset }: ErrorProps) {
+export default function DashboardError({ reset }: ErrorProps) {
   return (
     <div className="min-h-screen p-8">
       <div className="flex items-center justify-center h-64">

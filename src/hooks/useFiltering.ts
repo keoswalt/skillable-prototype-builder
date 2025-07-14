@@ -3,9 +3,10 @@
  *************************/
 
 import { useLocalStorage } from './useLocalStorage';
-import { DEFAULT_FILTER_CONFIGS, type Filter, OPERATORS_BY_TYPE } from '@/config/filtering';
+import { DEFAULT_FILTER_CONFIGS, type Filter } from '@/config/filtering';
 import { type CardType } from '@/config/sorting';
 import { APP_CONSTANTS } from '@/config/constants';
+import { GenericFilterFunction, BaseItem } from '@/types/generic';
 
 export function useFiltering() {
   const [filterConfigs, setFilterConfigs, isFilterConfigsLoaded] = useLocalStorage<Record<CardType, Filter[]>>(
@@ -24,7 +25,7 @@ export function useFiltering() {
     return filterConfigs[cardType] || DEFAULT_FILTER_CONFIGS[cardType];
   };
 
-  const applyFilters = <T extends { starred?: boolean; [key: string]: any }>(
+  const applyFilters: GenericFilterFunction<BaseItem> = <T extends BaseItem>(
     items: T[], 
     filters: Filter[]
   ): T[] => {

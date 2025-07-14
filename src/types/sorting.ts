@@ -2,19 +2,14 @@
  * Sorting Types
  *************************/
 
+import { GenericSortConfig, GenericSortOption, GenericCardType } from './generic';
+
 export type SortDirection = 'asc' | 'desc';
 
-export interface SortConfig {
-  field: string;
-  direction: SortDirection;
-}
-
-export type CardType = 'instance' | 'profile' | 'series' | 'template';
-
-export interface SortOption {
-  label: string;
-  value: string;
-}
+// Use generic types directly instead of empty interfaces
+export type SortConfig = GenericSortConfig;
+export type CardType = GenericCardType;
+export type SortOption = GenericSortOption;
 
 export interface SortConfigs {
   instance: SortConfig;

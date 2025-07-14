@@ -32,7 +32,7 @@ export function useCSVData<T>(
   fileType: keyof typeof CSV_FILES,
   options: UseCSVDataOptions = {}
 ): UseCSVDataState<T> & { refetch: () => Promise<void> } {
-  const { cache = true, validate = false, requiredFields = [], clean = true } = options;
+  const { validate = false, requiredFields = [], clean = true } = options;
 
   // Memoize requiredFields to avoid unnecessary effect triggers
   const memoizedRequiredFields = useMemo(() => requiredFields, [JSON.stringify(requiredFields)]);

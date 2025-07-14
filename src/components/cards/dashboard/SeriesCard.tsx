@@ -17,7 +17,7 @@ export type SeriesCardProps = Omit<SeriesData, 'variant'> & {
     }
 );
 
-export const SeriesCard: React.FC<SeriesCardProps> = React.memo((props) => {
+const SeriesCardComponent: React.FC<SeriesCardProps> = React.memo((props) => {
   // Define default actions for series cards
   const defaultActions: CardAction[] = [
     {
@@ -60,4 +60,7 @@ export const SeriesCard: React.FC<SeriesCardProps> = React.memo((props) => {
   return <DashboardCard variant="series" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
 });
 
+SeriesCardComponent.displayName = 'SeriesCard';
+
+export const SeriesCard = SeriesCardComponent;
 export default SeriesCard; 

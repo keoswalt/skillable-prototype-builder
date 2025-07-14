@@ -10,12 +10,11 @@ export default function TestPage() {
       <div>
         <h2 className="text-xl font-semibold mb-2">Instance Card Test</h2>
         <InstanceCard
-          title="Test Instance"
+          name="Test Instance"
           instanceId="12345"
           labProfile="Test Profile"
           series="Test Series"
-          user="Test User"
-          instructionSet="Test Instructions"
+          student="Test User"
           duration="1:00"
           lastActivity="Today"
           state="Running"
@@ -28,7 +27,7 @@ export default function TestPage() {
       <div>
         <h2 className="text-xl font-semibold mb-2">Profile Card Test</h2>
         <ProfileCard
-          title="Test Profile"
+          name="Test Profile"
           number="TEST_001"
           seriesName="Test Series"
           organization="Test Org"

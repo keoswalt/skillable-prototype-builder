@@ -20,23 +20,24 @@ import {
   transformTemplateToTemplateItem
 } from '@/utils/dataTransformers';
 import { ProfileItem, SeriesItem, InstanceItem, TemplateItem } from '@/types/dashboard';
+import { BaseItem } from '@/types/generic';
 
 // Type for CSV data hooks
 type CSVDataHook = () => {
-  data: any[] | null;
+  data: Record<string, unknown>[] | null;
   loading: boolean;
   error: string | null;
 };
 
 // Type for transformation functions
 type TransformFunction = (
-  csvData: any[],
+  csvData: Record<string, unknown>[],
   starredItems: Record<string, boolean>,
   toggleStar: (itemType: string, itemId: number) => void
 ) => ProfileItem[] | SeriesItem[] | InstanceItem[] | TemplateItem[];
 
 // Type for card components
-type CardComponent = React.ComponentType<any>;
+type CardComponent = React.ComponentType<BaseItem>;
 
 export interface TabConfiguration {
   id: string;

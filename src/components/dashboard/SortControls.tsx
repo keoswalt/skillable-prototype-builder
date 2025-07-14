@@ -4,7 +4,6 @@
 
 import { Button } from '@/components/buttons/Button';
 import { DropdownSelect } from '@/components/inputs';
-import { Icon, Icons } from '@/components/Icon';
 import { SortConfig, SortOption } from '@/types/sorting';
 
 interface SortControlsProps {

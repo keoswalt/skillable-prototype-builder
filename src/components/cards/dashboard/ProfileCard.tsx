@@ -17,7 +17,7 @@ export type ProfileCardProps = Omit<ProfileData, 'variant'> & {
     }
 );
 
-export const ProfileCard: React.FC<ProfileCardProps> = React.memo((props) => {
+const ProfileCardComponent: React.FC<ProfileCardProps> = React.memo((props) => {
   // Define default actions for profile cards
   const defaultActions: CardAction[] = [
     {
@@ -73,4 +73,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = React.memo((props) => {
   return <DashboardCard variant="profile" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
 });
 
+ProfileCardComponent.displayName = 'ProfileCard';
+
+export const ProfileCard = ProfileCardComponent;
 export default ProfileCard; 

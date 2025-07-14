@@ -12,6 +12,7 @@ import {
   transformLabInstanceToInstanceItem,
   transformTemplateToTemplateItem
 } from '@/utils/dataTransformers';
+// DataTransformationError is not used in this file, removed to fix linter
 
 interface UseDataTransformationProps {
   csvProfiles: LabProfileData[] | null;
@@ -41,25 +42,25 @@ export function useDataTransformation({
   const transformedData = useMemo(() => {
     const profiles = csvProfiles && csvProfiles.length > 0 
       ? transformLabProfileToProfileItem(csvProfiles, starredItems, toggleStar)
-      : [];
+      : { success: true, data: [] as ProfileItem[] };
 
     const series = csvSeries && csvSeries.length > 0
       ? transformLabSeriesToSeriesItem(csvSeries, starredItems, toggleStar)
-      : [];
+      : { success: true, data: [] as SeriesItem[] };
 
     const instances = csvInstances && csvInstances.length > 0
       ? transformLabInstanceToInstanceItem(csvInstances, starredItems, toggleStar)
-      : [];
+      : { success: true, data: [] as InstanceItem[] };
 
     const templates = csvTemplates && csvTemplates.length > 0
       ? transformTemplateToTemplateItem(csvTemplates, starredItems, toggleStar)
-      : [];
+      : { success: true, data: [] as TemplateItem[] };
 
     return {
-      profiles,
-      series,
-      instances,
-      templates
+      profiles: profiles.success ? profiles.data : [],
+      series: series.success ? series.data : [],
+      instances: instances.success ? instances.data : [],
+      templates: templates.success ? templates.data : []
     };
   }, [csvProfiles, csvSeries, csvInstances, csvTemplates, starredItems, toggleStar]);
 

@@ -3,12 +3,10 @@
  *************************/
 
 import { ChipVariant } from '@/components/info/Chip';
+import { BaseItem } from './generic';
 
-export interface BaseDashboardItem {
-  id: number;
-  name: string;
-  starred: boolean;
-}
+// Use BaseItem directly instead of empty interface
+export type BaseDashboardItem = BaseItem;
 
 export interface InstanceItem extends BaseDashboardItem {
   instanceId: string;
@@ -60,7 +58,7 @@ export type DashboardItem = InstanceItem | ProfileItem | SeriesItem | TemplateIt
 export interface DashboardState {
   activeTabIndex: number;
   starredItems: Record<string, boolean>;
-  sortConfigs: Record<string, any>;
+  sortConfigs: Record<string, unknown>;
 }
 
 export interface PaginationState {

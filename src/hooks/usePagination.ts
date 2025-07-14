@@ -4,31 +4,32 @@
  *************************/
 
 import { useMemo } from 'react';
+import { BaseItem } from '@/types/generic';
 
 interface PaginationState {
   currentPage: number;
   pageSize: number;
 }
 
-interface PaginationCalculations {
+interface PaginationCalculations<T extends BaseItem> {
   totalPages: number;
   startIndex: number;
   endIndex: number;
-  paginatedData: unknown[];
+  paginatedData: T[];
   validCurrentPage: number;
 }
 
-interface UsePaginationProps {
-  data: unknown[];
+interface UsePaginationProps<T extends BaseItem> {
+  data: T[];
   paginationState: PaginationState;
   updatePagination: (updates: Partial<PaginationState>) => void;
 }
 
-export function usePagination({
+export function usePagination<T extends BaseItem>({
   data,
   paginationState,
   updatePagination
-}: UsePaginationProps): PaginationCalculations {
+}: UsePaginationProps<T>): PaginationCalculations<T> {
   
   const calculations = useMemo(() => {
     const totalItems = data.length;

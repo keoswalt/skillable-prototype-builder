@@ -37,7 +37,7 @@ export function useTabManagement({
     
     if (!configuration) {
       return {
-        configuration: null as any,
+        configuration: null as TabConfiguration | null,
         transformedData: [],
         loading: false,
         error: 'Invalid tab configuration'

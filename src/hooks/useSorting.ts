@@ -5,6 +5,7 @@
 import { useLocalStorage } from './useLocalStorage';
 import { DEFAULT_SORT_CONFIGS, type SortConfig, type CardType } from '@/config/sorting';
 import { APP_CONSTANTS } from '@/config/constants';
+import { GenericSortFunction, BaseItem } from '@/types/generic';
 
 export function useSorting() {
   const [sortConfigs, setSortConfigs, isSortConfigsLoaded] = useLocalStorage<Record<CardType, SortConfig>>(
@@ -36,7 +37,7 @@ export function useSorting() {
     return sortConfigs[cardType] || DEFAULT_SORT_CONFIGS[cardType];
   };
 
-  const sortItems = <T extends { starred?: boolean; [key: string]: any }>(
+  const sortItems: GenericSortFunction<BaseItem> = <T extends BaseItem>(
     items: T[], 
     sortConfig: SortConfig
   ): T[] => {

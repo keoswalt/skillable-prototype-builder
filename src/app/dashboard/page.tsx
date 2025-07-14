@@ -13,6 +13,8 @@ import { useFiltering } from '@/hooks/useFiltering';
 import { useDataTransformation } from '@/hooks/useDataTransformation';
 import { usePagination } from '@/hooks/usePagination';
 import { useLabProfileData, useLabSeriesData, useLabInstanceData, useTemplateData } from '@/hooks/useCSVData';
+import type { BaseItem } from '@/types/generic';
+import type { Filter, FilterOperator } from '@/config/filtering';
 
 export default function DashboardPage() {
   // ALL HOOKS MUST BE CALLED FIRST, BEFORE ANY CONDITIONAL LOGIC
@@ -46,22 +48,22 @@ export default function DashboardPage() {
   const currentTabConfig = useMemo(() => getTabConfigurationByIndex(activeTabIndex), [activeTabIndex]);
   
   // Load CSV data for all card types - MUST be called before any conditional returns
-  const { data: csvProfiles, loading: profilesLoading, error: profilesError } = useLabProfileData({
+  const { data: csvProfiles, error: profilesError } = useLabProfileData({
     cache: true,
     clean: true
   });
 
-  const { data: csvSeries, loading: seriesLoading, error: seriesError } = useLabSeriesData({
+  const { data: csvSeries, error: seriesError } = useLabSeriesData({
     cache: true,
     clean: true
   });
 
-  const { data: csvInstances, loading: instancesLoading, error: instancesError } = useLabInstanceData({
+  const { data: csvInstances, error: instancesError } = useLabInstanceData({
     cache: true,
     clean: true
   });
 
-  const { data: csvTemplates, loading: templatesLoading, error: templatesError } = useTemplateData({
+  const { data: csvTemplates, error: templatesError } = useTemplateData({
     cache: true,
     clean: true
   });
@@ -88,7 +90,7 @@ export default function DashboardPage() {
     if (!currentTabConfig) return [];
     
     const cardType = currentTabConfig.cardType;
-    let data: unknown[] = [];
+    let data: BaseItem[] = [];
     
     switch (cardType) {
       case 'instance':
@@ -107,7 +109,7 @@ export default function DashboardPage() {
         data = [];
     }
     
-    return applyFilters(sortItems(data as any[], getCurrentSortConfig(cardType)), getCurrentFilterConfig(cardType));
+    return applyFilters(sortItems(data, getCurrentSortConfig(cardType)), getCurrentFilterConfig(cardType));
   }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getCurrentSortConfig, getCurrentFilterConfig]);
 
   const totalItems = useMemo(() => processedTabData.length, [processedTabData]);
@@ -130,12 +132,12 @@ export default function DashboardPage() {
   }, [currentCardType, toggleSortDirection]);
 
   // Handle filter changes - MUST be called before any conditional returns
-  const handleFiltersChange = useCallback((filters: Array<{ column: string; operator: string; value: any }>) => {
+  const handleFiltersChange = useCallback((filters: Array<{ column: string; operator: string; value: unknown }>) => {
     // Convert FilterMenu Filter type to filtering config Filter type
-    const convertedFilters = filters.map(filter => ({
+    const convertedFilters: Filter[] = filters.map(filter => ({
       column: filter.column,
-      operator: filter.operator as any,
-      value: filter.value,
+      operator: filter.operator as FilterOperator,
+      value: filter.value as string | number | boolean,
     }));
     updateFilterConfig(currentCardType, convertedFilters);
     // Reset to first page when filters change
@@ -152,9 +154,9 @@ export default function DashboardPage() {
   }, [updatePagination]);
 
   // Create paginated tab items using tab configuration - MUST be called before any conditional returns
-  const createPaginatedContent = useCallback((data: unknown[], CardComponent: React.ComponentType<any>) => {
+  const createPaginatedContent = useCallback((data: BaseItem[], CardComponent: React.ComponentType<BaseItem>) => {
     return paginatedData.map((item) => (
-      <CardComponent key={(item as any).id} {...(item as any)} />
+      <CardComponent key={item.id} {...item} />
     ));
   }, [paginatedData]);
 

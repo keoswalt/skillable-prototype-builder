@@ -7,8 +7,6 @@ import { SortControls } from './SortControls';
 import { FilterControls } from './FilterControls';
 import { PaginationControls } from './PaginationControls';
 import { SortConfig, SortOption } from '@/types/sorting';
-import { Filter } from '@/config/filtering';
-import { DashboardItem } from '@/types/dashboard';
 
 interface DashboardGridProps {
   activeTabIndex: number;
@@ -18,8 +16,8 @@ interface DashboardGridProps {
   onSortFieldChange: (field: string) => void;
   onSortDirectionChange: () => void;
   filterColumns: Array<{ label: string; value: string; type?: 'text' | 'select' | 'boolean'; options?: { label: string; value: string }[] }>;
-  currentFilters: Array<{ column: string; operator: string; value: any }>;
-  onFiltersChange: (filters: Array<{ column: string; operator: string; value: any }>) => void;
+  currentFilters: Array<{ column: string; operator: string; value: unknown }>;
+  onFiltersChange: (filters: Array<{ column: string; operator: string; value: unknown }>) => void;
   operatorsByType: Record<string, { label: string; value: string }[]>;
   tabItems: Array<{
     id: string;

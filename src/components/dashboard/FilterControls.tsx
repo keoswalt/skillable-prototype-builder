@@ -4,13 +4,12 @@
 
 import React, { useState, useRef } from 'react';
 import { Button } from '@/components/buttons/Button';
-import { Icon, Icons } from '@/components/Icon';
 import { FilterMenu } from '@/components/menu/FilterMenu';
 
 interface FilterControlsProps {
   columns: Array<{ label: string; value: string; type?: 'text' | 'select' | 'boolean'; options?: { label: string; value: string }[] }>;
-  filters: Array<{ column: string; operator: string; value: any }>;
-  onFiltersChange: (filters: Array<{ column: string; operator: string; value: any }>) => void;
+  filters: Array<{ column: string; operator: string; value: unknown }>;
+  onFiltersChange: (filters: Array<{ column: string; operator: string; value: unknown }>) => void;
   operatorsByType: Record<string, { label: string; value: string }[]>;
 }
 

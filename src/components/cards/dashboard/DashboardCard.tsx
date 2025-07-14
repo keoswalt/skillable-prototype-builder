@@ -104,7 +104,7 @@ interface StarProps {
 }
 
 // Combined base props with optional star functionality
-type BaseCardPropsWithStar = BaseCardProps & (StarProps | {});
+type BaseCardPropsWithStar = BaseCardProps & Partial<StarProps>;
 
 // ────────────────────────────────────────────────────────────────────────────
 // Variant-specific data props – kept separate so we get exhaustive typing.
