@@ -17,7 +17,7 @@ export type TemplateCardProps = Omit<TemplateData, 'variant'> & {
     }
 );
 
-export const TemplateCard: React.FC<TemplateCardProps> = (props) => {
+export const TemplateCard: React.FC<TemplateCardProps> = React.memo((props) => {
   // Define default actions for template cards
   const defaultActions: CardAction[] = [
     {
@@ -71,6 +71,6 @@ export const TemplateCard: React.FC<TemplateCardProps> = (props) => {
   const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
   return <DashboardCard variant="template" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
-};
+});
 
 export default TemplateCard; 

@@ -9,7 +9,7 @@ export type InstanceCardProps = Omit<InstanceData, 'variant'> & {
   // Default actions are automatically included unless overridden by the actions prop
 };
 
-export const InstanceCard: React.FC<InstanceCardProps> = (props) => {
+export const InstanceCard: React.FC<InstanceCardProps> = React.memo((props) => {
   // Define default actions for instance cards
   const defaultActions: CardAction[] = [
     {
@@ -38,6 +38,6 @@ export const InstanceCard: React.FC<InstanceCardProps> = (props) => {
 
   // Don't pass starred or onStarToggle props to hide the star completely
   return <DashboardCard variant="instance" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
-};
+});
 
 export default InstanceCard; 
