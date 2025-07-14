@@ -7,6 +7,7 @@ import { DEFAULT_FILTER_CONFIGS, type Filter } from '@/config/filtering';
 import { type CardType } from '@/config/sorting';
 import { APP_CONSTANTS } from '@/config/constants';
 import { GenericFilterFunction, BaseItem } from '@/types/generic';
+import { getFilterOptions } from '@/config/filtering';
 
 export function useFiltering() {
   const [filterConfigs, setFilterConfigs, isFilterConfigsLoaded] = useLocalStorage<Record<CardType, Filter[]>>(
@@ -14,15 +15,113 @@ export function useFiltering() {
     DEFAULT_FILTER_CONFIGS
   );
 
+  // Validate filter configuration against data model
+  const validateFilterConfig = (cardType: CardType, filters: Filter[]): Filter[] => {
+    const validColumns = getFilterOptions(cardType).map(option => option.value);
+    
+    return filters.filter(filter => {
+      const isValidColumn = validColumns.includes(filter.column);
+      if (!isValidColumn) {
+        console.warn(`Invalid filter column "${filter.column}" for card type "${cardType}"`);
+      }
+      return isValidColumn;
+    });
+  };
+
+  // Synchronize filter configuration with data model
+  const synchronizeFilterConfig = (cardType: CardType, data: BaseItem[]): Filter[] => {
+    const currentFilters = filterConfigs[cardType] || DEFAULT_FILTER_CONFIGS[cardType];
+    
+    // Validate filters against available columns
+    const validatedFilters = validateFilterConfig(cardType, currentFilters);
+    
+    // Check if filter columns exist in data
+    if (data.length > 0) {
+      return validatedFilters.filter(filter => {
+        const columnExists = filter.column in data[0];
+        if (!columnExists) {
+          console.warn(`Filter column "${filter.column}" not found in data for card type "${cardType}"`);
+        }
+        return columnExists;
+      });
+    }
+    
+    return validatedFilters;
+  };
+
+  // Update filter configuration with validation
   const updateFilterConfig = (cardType: CardType, filters: Filter[]) => {
-    setFilterConfigs(prev => ({
-      ...prev,
-      [cardType]: filters,
-    }));
+    // Validate all filters before updating
+    const validatedFilters = validateFilterConfig(cardType, filters);
+    
+    // Only update if all filters are valid
+    if (validatedFilters.length === filters.length) {
+      setFilterConfigs(prev => ({
+        ...prev,
+        [cardType]: filters,
+      }));
+    } else {
+      console.warn(`Some filters were invalid for card type "${cardType}" and were not applied`);
+      // Update with only valid filters
+      setFilterConfigs(prev => ({
+        ...prev,
+        [cardType]: validatedFilters,
+      }));
+    }
   };
 
   const getCurrentFilterConfig = (cardType: CardType): Filter[] => {
     return filterConfigs[cardType] || DEFAULT_FILTER_CONFIGS[cardType];
+  };
+
+  // Get synchronized filter configuration for specific data
+  const getSynchronizedFilterConfig = (cardType: CardType, data: BaseItem[]): Filter[] => {
+    return synchronizeFilterConfig(cardType, data);
+  };
+
+  // Add a single filter
+  const addFilter = (cardType: CardType, filter: Filter) => {
+    const currentFilters = getCurrentFilterConfig(cardType);
+    const newFilters = [...currentFilters, filter];
+    updateFilterConfig(cardType, newFilters);
+  };
+
+  // Remove a filter by index
+  const removeFilter = (cardType: CardType, filterIndex: number) => {
+    const currentFilters = getCurrentFilterConfig(cardType);
+    const newFilters = currentFilters.filter((_, index) => index !== filterIndex);
+    updateFilterConfig(cardType, newFilters);
+  };
+
+  // Update a specific filter
+  const updateFilter = (cardType: CardType, filterIndex: number, filter: Filter) => {
+    const currentFilters = getCurrentFilterConfig(cardType);
+    const newFilters = [...currentFilters];
+    newFilters[filterIndex] = filter;
+    updateFilterConfig(cardType, newFilters);
+  };
+
+  // Clear all filters for a card type
+  const clearFilters = (cardType: CardType) => {
+    updateFilterConfig(cardType, []);
+  };
+
+  // Clear all filters for all card types
+  const clearAllFilters = () => {
+    setFilterConfigs(DEFAULT_FILTER_CONFIGS);
+  };
+
+  // Validate all filter configurations
+  const validateAllFilterConfigs = (): Record<CardType, boolean> => {
+    const validation: Record<CardType, boolean> = {} as Record<CardType, boolean>;
+    
+    Object.keys(filterConfigs).forEach(cardType => {
+      const currentFilters = filterConfigs[cardType as CardType];
+      const validatedFilters = validateFilterConfig(cardType as CardType, currentFilters);
+      validation[cardType as CardType] = validatedFilters.length === currentFilters.length;
+    });
+    
+    return validation;
   };
 
   const applyFilters: GenericFilterFunction<BaseItem> = <T extends BaseItem>(
@@ -79,6 +178,15 @@ export function useFiltering() {
     filterConfigs,
     updateFilterConfig,
     getCurrentFilterConfig,
+    getSynchronizedFilterConfig,
+    validateFilterConfig,
+    synchronizeFilterConfig,
+    addFilter,
+    removeFilter,
+    updateFilter,
+    clearFilters,
+    clearAllFilters,
+    validateAllFilterConfigs,
     applyFilters,
     isLoaded: isFilterConfigsLoaded,
   };

@@ -65,6 +65,19 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({
   anchorEl,
   triggerRef,
 }) => {
+  // Debug: Log filters prop on every render with full object structure
+  console.log('[FilterMenu] Render, filters:', JSON.stringify(filters, null, 2));
+  console.log('[FilterMenu] Render, filters array length:', filters.length);
+  if (filters.length > 0) {
+    console.log('[FilterMenu] First filter details:', {
+      column: filters[0].column,
+      operator: filters[0].operator,
+      value: filters[0].value,
+      columnType: typeof filters[0].column,
+      operatorType: typeof filters[0].operator,
+      valueType: typeof filters[0].value
+    });
+  }
   const menuRef = useRef<HTMLDivElement>(null);
   const [menuStyle, setMenuStyle] = useState<React.CSSProperties>({});
   const [hasMeasured, setHasMeasured] = useState(false);
@@ -148,14 +161,16 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({
     const firstCol = columns[0];
     const colType = firstCol?.type || 'text';
     const firstOp = operatorsByType[colType]?.[0]?.value || '';
-    onChange([
+    const newFilters = [
       ...filters,
       {
         column: firstCol?.value || '',
         operator: firstOp,
         value: '',
       },
-    ]);
+    ];
+    console.log('[FilterMenu] handleAdd, newFilters:', newFilters);
+    onChange(newFilters);
   };
 
   // Remove a filter row
@@ -165,14 +180,18 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({
 
   // Update a filter row
   const handleUpdate = (idx: number, key: keyof Filter, value: any) => {
+    console.log('[FilterMenu] handleUpdate called:', { idx, key, value, currentFilters: filters });
+    
     const updated = filters.map((f, i) =>
       i === idx ? { ...f, [key]: value } : f
     );
     // If column changes, reset operator and value
     if (key === 'column') {
+      console.log('[FilterMenu] Column changed, finding new column:', value);
       const col = columns.find((c) => c.value === value);
       const colType = col?.type || 'text';
       const firstOp = operatorsByType[colType]?.[0]?.value || '';
+      console.log('[FilterMenu] New column type:', colType, 'First operator:', firstOp);
       updated[idx] = {
         column: value,
         operator: firstOp,
@@ -186,6 +205,7 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({
         value: '',
       };
     }
+    console.log('[FilterMenu] handleUpdate result:', JSON.stringify(updated, null, 2));
     onChange(updated);
   };
 

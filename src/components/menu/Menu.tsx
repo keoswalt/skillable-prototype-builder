@@ -39,10 +39,10 @@ export const Menu: React.FC<MenuProps> = ({
       }
     };
     if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('click', handleClickOutside);
     }
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, [isOpen, onClose, anchorEl]);
 
@@ -101,20 +101,42 @@ export const Menu: React.FC<MenuProps> = ({
       ref={menuRef}
       className="z-50 min-w-[200px] py-1 rounded-md shadow-lg bg-_components-background-default border border-_components-text-primary"
       style={hasMeasured ? menuStyle : initialStyle}
+      onClick={(e) => {
+        console.log('[Menu] Menu container clicked:', e.target);
+      }}
+      onMouseDown={(e) => {
+        console.log('[Menu] Menu container mousedown:', e.target);
+      }}
     >
-      {items.map((item, index) => (
-        <div
-          key={index}
-          onClick={() => {
-            if (item.onClick) item.onClick();
-            if (item.href) window.location.href = item.href;
-            onClose();
-          }}
-          className="px-4 py-2 text-body-sm text-_components-text-primary hover:bg-_components-background-contrast-sm cursor-pointer"
-        >
-          {item.label}
-        </div>
-      ))}
+      {items.map((item, index) => {
+        console.log('[Menu] Rendering item:', { index, label: item.label });
+        return (
+          <div
+            key={index}
+            onClick={(e) => {
+              console.log('[Menu] Item clicked:', { index, label: item.label, target: e.target });
+              e.stopPropagation();
+              if (item.onClick) {
+                console.log('[Menu] Calling item.onClick');
+                item.onClick();
+              }
+              if (item.href) {
+                console.log('[Menu] Navigating to href:', item.href);
+                window.location.href = item.href;
+              }
+              console.log('[Menu] Closing menu');
+              onClose();
+            }}
+            onMouseDown={(e) => {
+              console.log('[Menu] Item mousedown:', { index, label: item.label, target: e.target });
+              e.stopPropagation();
+            }}
+            className="px-4 py-2 text-body-sm text-_components-text-primary hover:bg-_components-background-contrast-sm cursor-pointer"
+          >
+            {item.label}
+          </div>
+        );
+      })}
     </div>
   );
 

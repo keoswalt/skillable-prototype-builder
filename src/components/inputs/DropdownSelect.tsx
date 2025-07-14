@@ -186,14 +186,21 @@ export const DropdownSelect = forwardRef<HTMLSelectElement, DropdownSelectProps>
 
   // Handle selection from menu
   const handleSelect = (val: string | number) => {
+    console.log('[DropdownSelect] handleSelect called with value:', val);
+    console.log('[DropdownSelect] isControlled:', isControlled);
+    console.log('[DropdownSelect] currentValue:', currentValue);
+    
     if (!isControlled) setInternalValue(val);
 
     // Fire onChange similar to native select
     if (rest.onChange && typeof rest.onChange === 'function') {
+      console.log('[DropdownSelect] Calling onChange with value:', val);
       const syntheticEvent = {
         target: { value: val },
       } as unknown as React.ChangeEvent<HTMLSelectElement>;
       rest.onChange(syntheticEvent);
+    } else {
+      console.log('[DropdownSelect] No onChange handler provided');
     }
     setIsOpen(false);
   };
@@ -240,7 +247,14 @@ export const DropdownSelect = forwardRef<HTMLSelectElement, DropdownSelectProps>
           disabled={disabled}
           aria-haspopup="listbox"
           aria-expanded={isOpen}
-          onClick={() => !disabled && setIsOpen((prev) => !prev)}
+          onClick={() => {
+            console.log('[DropdownSelect] Button clicked, current isOpen:', isOpen);
+            if (!disabled) {
+              const newIsOpen = !isOpen;
+              console.log('[DropdownSelect] Setting isOpen to:', newIsOpen);
+              setIsOpen(newIsOpen);
+            }
+          }}
           className={fieldClasses}
         >
           <span className={currentValue ? undefined : 'text-[var(--components-text-secondary)]'}>

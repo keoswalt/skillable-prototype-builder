@@ -19,6 +19,19 @@ export function FilterControls({
   onFiltersChange,
   operatorsByType
 }: FilterControlsProps) {
+  // Debug: Log filters prop on every render with full object structure
+  console.log('[FilterControls] Render, filters:', JSON.stringify(filters, null, 2));
+  console.log('[FilterControls] Render, filters array length:', filters.length);
+  if (filters.length > 0) {
+    console.log('[FilterControls] First filter details:', {
+      column: filters[0].column,
+      operator: filters[0].operator,
+      value: filters[0].value,
+      columnType: typeof filters[0].column,
+      operatorType: typeof filters[0].operator,
+      valueType: typeof filters[0].value
+    });
+  }
   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
@@ -32,6 +45,12 @@ export function FilterControls({
 
   const handleClearFilters = () => {
     onFiltersChange([]);
+  };
+
+  // Debug: Wrap onFiltersChange to log new filters
+  const handleFiltersChange = (newFilters: Array<{ column: string; operator: string; value: unknown }>) => {
+    console.log('[FilterControls] onFiltersChange, newFilters:', JSON.stringify(newFilters, null, 2));
+    onFiltersChange(newFilters);
   };
 
   return (
@@ -63,7 +82,7 @@ export function FilterControls({
       <FilterMenu
         columns={columns}
         filters={filters}
-        onChange={onFiltersChange}
+        onChange={handleFiltersChange}
         operatorsByType={operatorsByType}
         isOpen={isFilterMenuOpen}
         onClose={handleFilterMenuClose}

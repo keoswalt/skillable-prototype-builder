@@ -56,4 +56,32 @@ export function usePagination<T extends BaseItem>({
   }, [data, paginationState, updatePagination]);
 
   return calculations;
+}
+
+// Enhanced pagination hook for per-tab pagination
+interface UsePerTabPaginationProps<T extends BaseItem> {
+  data: T[];
+  tabId: string;
+  getTabPagination: (tabId: string) => PaginationState;
+  updateTabPagination: (tabId: string, updates: Partial<PaginationState>) => void;
+}
+
+export function usePerTabPagination<T extends BaseItem>({
+  data,
+  tabId,
+  getTabPagination,
+  updateTabPagination
+}: UsePerTabPaginationProps<T>): PaginationCalculations<T> {
+  
+  const paginationState = getTabPagination(tabId);
+  
+  const updatePagination = (updates: Partial<PaginationState>) => {
+    updateTabPagination(tabId, updates);
+  };
+
+  return usePagination({
+    data,
+    paginationState,
+    updatePagination
+  });
 } 

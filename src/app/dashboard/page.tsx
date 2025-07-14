@@ -11,7 +11,7 @@ import { useDashboardState } from '@/hooks/useDashboardState';
 import { useSorting } from '@/hooks/useSorting';
 import { useFiltering } from '@/hooks/useFiltering';
 import { useDataTransformation } from '@/hooks/useDataTransformation';
-import { usePagination } from '@/hooks/usePagination';
+import { usePerTabPagination } from '@/hooks/usePagination';
 import { useLabProfileData, useLabSeriesData, useLabInstanceData, useTemplateData } from '@/hooks/useCSVData';
 import type { BaseItem } from '@/types/generic';
 import type { Filter, FilterOperator } from '@/config/filtering';
@@ -24,13 +24,24 @@ export default function DashboardPage() {
     setActiveTabIndex,
     starredItems,
     toggleStar,
+    // Per-tab pagination methods
+    getCurrentTabId,
+    getCurrentTabPagination,
+    updateCurrentTabPagination,
+    updateTabPagination,
+    getTabPagination,
+    resetCurrentTabPagination,
+    resetAllTabPagination,
+    // Backward compatibility
     paginationState,
     updatePagination,
     getCurrentCardType,
+    isLoaded: isDashboardStateLoaded,
   } = useDashboardState();
 
   const {
     getCurrentSortConfig,
+    getSynchronizedSortConfig,
     updateSortConfig,
     toggleSortDirection,
     sortItems,
@@ -39,6 +50,7 @@ export default function DashboardPage() {
 
   const {
     getCurrentFilterConfig,
+    getSynchronizedFilterConfig,
     updateFilterConfig,
     applyFilters,
     isLoaded: isFilteringLoaded,
@@ -46,6 +58,7 @@ export default function DashboardPage() {
 
   // Get current tab configuration - MUST be called before any conditional returns
   const currentTabConfig = useMemo(() => getTabConfigurationByIndex(activeTabIndex), [activeTabIndex]);
+  const currentTabId = useMemo(() => getCurrentTabId(), [getCurrentTabId]);
   
   // Load CSV data for all card types - MUST be called before any conditional returns
   const { data: csvProfiles, error: profilesError } = useLabProfileData({
@@ -80,9 +93,7 @@ export default function DashboardPage() {
 
   // Get current sort and filter configuration - MUST be called before any conditional returns
   const currentCardType = getCurrentCardType();
-  const currentSortConfig = useMemo(() => getCurrentSortConfig(currentCardType), [currentCardType]);
   const sortOptions = useMemo(() => getSortOptions(currentCardType), [currentCardType]);
-  const currentFilters = useMemo(() => getCurrentFilterConfig(currentCardType), [currentCardType]);
   const filterColumns = useMemo(() => getFilterOptions(currentCardType), [currentCardType]);
 
   // Get current tab data for pagination - MUST be called before any conditional returns
@@ -109,16 +120,21 @@ export default function DashboardPage() {
         data = [];
     }
     
-    return applyFilters(sortItems(data, getCurrentSortConfig(cardType)), getCurrentFilterConfig(cardType));
-  }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getCurrentSortConfig, getCurrentFilterConfig]);
+    // Use synchronized sort and filter configurations
+    const synchronizedSortConfig = getSynchronizedSortConfig(cardType, data);
+    const synchronizedFilterConfig = getSynchronizedFilterConfig(cardType, data);
+    
+    return applyFilters(sortItems(data, synchronizedSortConfig), synchronizedFilterConfig);
+  }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getSynchronizedSortConfig, getSynchronizedFilterConfig]);
 
   const totalItems = useMemo(() => processedTabData.length, [processedTabData]);
 
-  // Calculate pagination using custom hook - MUST be called before any conditional returns
-  const { paginatedData, validCurrentPage } = usePagination({
+  // Calculate pagination using per-tab pagination hook - MUST be called before any conditional returns
+  const { paginatedData, validCurrentPage, totalPages } = usePerTabPagination({
     data: processedTabData,
-    paginationState,
-    updatePagination
+    tabId: currentTabId,
+    getTabPagination,
+    updateTabPagination
   });
 
   // Handle sort field changes - MUST be called before any conditional returns
@@ -141,17 +157,17 @@ export default function DashboardPage() {
     }));
     updateFilterConfig(currentCardType, convertedFilters);
     // Reset to first page when filters change
-    updatePagination({ currentPage: 1 });
-  }, [currentCardType, updateFilterConfig, updatePagination]);
+    updateTabPagination(currentTabId, { currentPage: 1 });
+  }, [currentCardType, updateFilterConfig, updateTabPagination, currentTabId]);
 
   // Handle pagination changes - MUST be called before any conditional returns
   const handlePageChange = useCallback((page: number) => {
-    updatePagination({ currentPage: page });
-  }, [updatePagination]);
+    updateTabPagination(currentTabId, { currentPage: page });
+  }, [updateTabPagination, currentTabId]);
 
   const handlePageSizeChange = useCallback((newPageSize: number) => {
-    updatePagination({ pageSize: newPageSize, currentPage: 1 });
-  }, [updatePagination]);
+    updateTabPagination(currentTabId, { pageSize: newPageSize, currentPage: 1 });
+  }, [updateTabPagination, currentTabId]);
 
   // Create paginated tab items using tab configuration - MUST be called before any conditional returns
   const createPaginatedContent = useCallback((data: BaseItem[], CardComponent: React.ComponentType<BaseItem>) => {
@@ -168,15 +184,14 @@ export default function DashboardPage() {
     }));
   }, [createPaginatedContent, paginatedData]);
 
-  // Memoize currentFilters mapping - MUST be called before any conditional returns
-  const mappedCurrentFilters = useMemo(() => currentFilters.map(filter => ({
-    column: filter.column,
-    operator: filter.operator,
-    value: filter.value,
-  })), [currentFilters]);
+  // Get current filter config for UI (not synchronized)
+  const currentFilters = useMemo(
+    () => getCurrentFilterConfig(currentCardType),
+    [getCurrentFilterConfig, currentCardType]
+  );
 
   // NOW we can have conditional logic and early returns
-  if (!isSortingLoaded || !isFilteringLoaded) {
+  if (!isDashboardStateLoaded || !isSortingLoaded || !isFilteringLoaded) {
     return (
       <div className="min-h-screen p-8">
         <div className="flex items-center justify-center h-64">
@@ -208,6 +223,9 @@ export default function DashboardPage() {
     );
   }
 
+  // Get current tab pagination state for display
+  const currentTabPagination = getCurrentTabPagination();
+
   return (
     <main className="min-h-screen p-8">
       <DashboardHeader 
@@ -219,16 +237,16 @@ export default function DashboardPage() {
         activeTabIndex={activeTabIndex}
         onTabChange={setActiveTabIndex}
         sortOptions={sortOptions}
-        currentSortConfig={currentSortConfig}
+        currentSortConfig={getCurrentSortConfig(currentCardType)}
         onSortFieldChange={handleSortFieldChange}
         onSortDirectionChange={handleSortDirectionChange}
         filterColumns={filterColumns}
-        currentFilters={mappedCurrentFilters}
+        currentFilters={currentFilters}
         onFiltersChange={handleFiltersChange}
         operatorsByType={OPERATORS_BY_TYPE}
         tabItems={tabItems}
         currentPage={validCurrentPage}
-        pageSize={paginationState.pageSize}
+        pageSize={currentTabPagination.pageSize}
         totalItems={totalItems}
         onPageChange={handlePageChange}
         onPageSizeChange={handlePageSizeChange}
