@@ -42,8 +42,10 @@
 //
 // -- Clickable metadata values -------------------------------------------------
 // Pass a `metaLinks` prop whose keys correspond to the data-property names and
-// values are either booleans or objects with custom messages. Any matching metadata 
-// value will render as a clickable button that shows an alert.
+// values can be:
+// • URL strings - renders as <a> tags
+// • boolean values - renders as clickable buttons that show an alert with the value
+// • objects with message property - renders as clickable buttons that show custom alert
 //
 // <DashboardCard
 //   variant="instance"
@@ -56,9 +58,9 @@
 //   lastActivity="June 5, 2025"
 //   state="Off"
 //   metaLinks={{
-//     instanceId: { message: "This is the instance ID!" },
-//     labProfile: true, // uses default alert (shows the value)
-//     series: { message: "Series link clicked!" }
+//     instanceId: '/instances/1053453', // URL - renders as <a>
+//     labProfile: true, // boolean - shows alert with value
+//     series: { message: "Series link clicked!" } // object - shows custom alert
 //   }}
 // />
 //
@@ -79,15 +81,15 @@ export interface CardAction {
   onClick: () => void;
 }
 
-// MetaLink configuration type
-export type MetaLinkConfig = { message: string } | boolean;
+// MetaLink configuration type - supports URLs, booleans, and custom messages
+export type MetaLinkConfig = string | boolean | { message: string };
 
 // Base props shared by all variants
 interface BaseCardProps {
   /** Optional array of icon buttons displayed on the right-hand side */
   actions?: CardAction[];
-  /** Map of data keys (e.g. "instanceId", "series") to boolean values or custom message objects. 
-      If provided, the corresponding value renders as a clickable button that shows an alert. */
+  /** Map of data keys (e.g. "instanceId", "series") to URL strings, boolean values, or custom message objects. 
+      If string: renders as <a> tag. If boolean/object: renders as clickable button that shows an alert. */
   metaLinks?: Record<string, MetaLinkConfig>;
   /** Additional CSS classes for the root element */
   className?: string;
@@ -180,9 +182,10 @@ interface MetaItemProps {
   value: React.ReactNode;
   isClickable?: boolean;
   alertMessage?: string;
+  href?: string;
 }
 
-const MetaItem: React.FC<MetaItemProps> = ({ label, value, isClickable, alertMessage }) => {
+const MetaItem: React.FC<MetaItemProps> = ({ label, value, isClickable, alertMessage, href }) => {
   const handleClick = () => {
     if (alertMessage) {
       alert(alertMessage);
@@ -197,7 +200,16 @@ const MetaItem: React.FC<MetaItemProps> = ({ label, value, isClickable, alertMes
     <div className="flex flex-col gap-0.5">
       <dt className="uppercase text-body-xxs text-_components-text-secondary tracking-wider">{label}</dt>
       <dd className="text-body-sm text-_components-text-primary break-words">
-        {isClickable ? (
+        {href ? (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-main hover:underline focus:outline-none focus:ring-2 focus:ring-primary-main/40"
+          >
+            {value}
+          </a>
+        ) : isClickable ? (
           <button
             onClick={handleClick}
             className="text-primary-main hover:underline focus:outline-none focus:ring-2 focus:ring-primary-main/40 cursor-pointer"
@@ -271,13 +283,14 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
   };
 
   /* --------------------------- Build metadata --------------------------- */
-  const buildMeta = (): { key: string; label: string; value: React.ReactNode; isClickable?: boolean; alertMessage?: string }[] => {
+  const buildMeta = (): { key: string; label: string; value: React.ReactNode; isClickable?: boolean; alertMessage?: string; href?: string }[] => {
     switch (props.variant) {
       case 'instance': {
         const p = props as InstanceData;
         const i = (key: keyof InstanceData, label: string, val: React.ReactNode) => {
           const metaLinkConfig = metaLinks?.[key as string];
-          const isClickable = Boolean(metaLinkConfig);
+          const isUrl = typeof metaLinkConfig === 'string';
+          const isClickable = Boolean(metaLinkConfig) && !isUrl;
           const alertMessage = typeof metaLinkConfig === 'object' && metaLinkConfig !== null ? metaLinkConfig.message : undefined;
           
           return {
@@ -286,13 +299,14 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
             value: val,
             isClickable,
             alertMessage,
+            href: isUrl ? metaLinkConfig : undefined,
           };
         };
         return [
           i('instanceId', 'Instance ID', p.instanceId),
           i('labProfile', 'Lab Profile', p.labProfile),
           i('series', 'Series', p.series),
-          i('student', 'student', p.student),
+          i('student', 'Student', p.student),
           i('duration', 'Run Time', p.duration),
           i('lastActivity', 'Last Activity', p.lastActivity),
           i('state', 'State', p.state),
@@ -302,7 +316,8 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
         const p = props as ProfileData;
         const i = (key: keyof ProfileData, label: string, val: React.ReactNode) => {
           const metaLinkConfig = metaLinks?.[key as string];
-          const isClickable = Boolean(metaLinkConfig);
+          const isUrl = typeof metaLinkConfig === 'string';
+          const isClickable = Boolean(metaLinkConfig) && !isUrl;
           const alertMessage = typeof metaLinkConfig === 'object' && metaLinkConfig !== null ? metaLinkConfig.message : undefined;
           
           return {
@@ -311,6 +326,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
             value: val,
             isClickable,
             alertMessage,
+            href: isUrl ? metaLinkConfig : undefined,
           };
         };
         return [
@@ -326,7 +342,8 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
         const p = props as SeriesData;
         const i = (key: keyof SeriesData, label: string, val: React.ReactNode) => {
           const metaLinkConfig = metaLinks?.[key as string];
-          const isClickable = Boolean(metaLinkConfig);
+          const isUrl = typeof metaLinkConfig === 'string';
+          const isClickable = Boolean(metaLinkConfig) && !isUrl;
           const alertMessage = typeof metaLinkConfig === 'object' && metaLinkConfig !== null ? metaLinkConfig.message : undefined;
           
           return {
@@ -335,6 +352,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
             value: val,
             isClickable,
             alertMessage,
+            href: isUrl ? metaLinkConfig : undefined,
           };
         };
         return [
@@ -350,7 +368,8 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
         const p = props as TemplateData;
         const i = (key: keyof TemplateData, label: string, val: React.ReactNode) => {
           const metaLinkConfig = metaLinks?.[key as string];
-          const isClickable = Boolean(metaLinkConfig);
+          const isUrl = typeof metaLinkConfig === 'string';
+          const isClickable = Boolean(metaLinkConfig) && !isUrl;
           const alertMessage = typeof metaLinkConfig === 'object' && metaLinkConfig !== null ? metaLinkConfig.message : undefined;
           
           return {
@@ -359,6 +378,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
             value: val,
             isClickable,
             alertMessage,
+            href: isUrl ? metaLinkConfig : undefined,
           };
         };
         return [
@@ -408,8 +428,8 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
       {/* Metadata grid */}
       {metaItems.length > 0 && (
         <dl className="mt-4 grid gap-y-3 gap-x-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-8">
-          {metaItems.map(({ key, label, value, isClickable, alertMessage }) => (
-            <MetaItem key={key} label={label} value={value} isClickable={isClickable} alertMessage={alertMessage} />
+          {metaItems.map(({ key, label, value, isClickable, alertMessage, href }) => (
+            <MetaItem key={key} label={label} value={value} isClickable={isClickable} alertMessage={alertMessage} href={href} />
           ))}
         </dl>
       )}
