@@ -95,7 +95,7 @@ export function useCSVData<T>(
 
   useEffect(() => {
     loadData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+     
   }, [loadData]);
 
   const refetch = useCallback(async () => {

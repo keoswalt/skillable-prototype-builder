@@ -130,7 +130,7 @@ export const AdvancedMenu: React.FC<AdvancedMenuProps> = ({ isOpen, onClose, sec
     const spacing = 4;
     let top = anchorRect.bottom + spacing;
     let left = anchorRect.left;
-    let minWidth = anchorRect.width;
+    const minWidth = anchorRect.width;
 
     // Flip up if overflowing bottom
     if (top + menuRect.height > window.innerHeight) {
@@ -163,7 +163,7 @@ export const AdvancedMenu: React.FC<AdvancedMenuProps> = ({ isOpen, onClose, sec
 
   // On first open, render offscreen so we can measure
   const initialStyle = {
-    position: 'fixed' as 'fixed',
+    position: 'fixed' as const,
     top: '-9999px',
     left: '-9999px',
     minWidth: anchorEl ? `${anchorEl.getBoundingClientRect().width}px` : undefined,

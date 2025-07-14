@@ -53,7 +53,7 @@ export const Menu: React.FC<MenuProps> = ({
     const menuRect = menuRef.current.getBoundingClientRect();
     const spacing = 4;
     let top = anchorRect.bottom + spacing;
-    let minWidth = anchorRect.width;
+    const minWidth = anchorRect.width;
     let left = preferredAlignment === 'right'
       ? anchorRect.right - menuRect.width
       : anchorRect.left;
@@ -89,7 +89,7 @@ export const Menu: React.FC<MenuProps> = ({
 
   // On first open, render offscreen so we can measure
   const initialStyle = {
-    position: 'fixed' as 'fixed',
+    position: 'fixed' as const,
     top: '-9999px',
     left: '-9999px',
     minWidth: anchorEl ? `${anchorEl.getBoundingClientRect().width}px` : undefined,

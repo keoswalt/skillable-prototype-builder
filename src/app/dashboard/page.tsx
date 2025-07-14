@@ -1,22 +1,17 @@
 'use client';
 
-import { useState, useMemo } from 'react';
 import { DashboardHeader } from '@/components/dashboard/DashboardHeader';
 import { DashboardGrid } from '@/components/dashboard/DashboardGrid';
-import { FIND_MENU_ITEMS, CREATE_MENU_ITEMS, TAB_CONFIG } from '@/config/navigation';
+import { FIND_MENU_ITEMS, CREATE_MENU_ITEMS } from '@/config/navigation';
 import { getSortOptions } from '@/config/sorting';
 import { getFilterOptions, OPERATORS_BY_TYPE } from '@/config/filtering';
 import { useDashboardState } from '@/hooks/useDashboardState';
 import { useSorting } from '@/hooks/useSorting';
 import { useFiltering } from '@/hooks/useFiltering';
+import { useDataTransformation } from '@/hooks/useDataTransformation';
+import { usePagination } from '@/hooks/usePagination';
 import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/components/cards/dashboard';
 import { useLabProfileData, useLabSeriesData, useLabInstanceData, useTemplateData } from '@/hooks/useCSVData';
-import { 
-  transformLabProfileToProfileItem, 
-  transformLabSeriesToSeriesItem, 
-  transformLabInstanceToInstanceItem,
-  transformTemplateToTemplateItem
-} from '@/utils/dataTransformers';
 
 export default function DashboardPage() {
   // ALL HOOKS MUST BE CALLED FIRST, BEFORE ANY CONDITIONAL LOGIC
@@ -29,7 +24,6 @@ export default function DashboardPage() {
     paginationState,
     updatePagination,
     getCurrentCardType,
-    isLoaded: isDashboardLoaded,
   } = useDashboardState();
 
   const {
@@ -68,6 +62,49 @@ export default function DashboardPage() {
     clean: true
   });
 
+  // Transform CSV data to dashboard item format using custom hook - MUST be called before any conditional returns
+  const { profiles: mockProfiles, series: mockSeries, instances: mockInstances, templates: mockTemplates } = useDataTransformation({
+    csvProfiles,
+    csvSeries,
+    csvInstances,
+    csvTemplates,
+    starredItems,
+    toggleStar
+  });
+
+  // Get current sort and filter configuration - MUST be called before any conditional returns
+  const currentCardType = getCurrentCardType();
+  const currentSortConfig = getCurrentSortConfig(currentCardType);
+  const sortOptions = getSortOptions(currentCardType);
+  const currentFilters = getCurrentFilterConfig(currentCardType);
+  const filterColumns = getFilterOptions(currentCardType);
+
+  // Get current tab data for pagination - MUST be called before any conditional returns
+  const getCurrentTabData = (): unknown[] => {
+    switch (currentCardType) {
+      case 'instance':
+        return applyFilters(sortItems(mockInstances, getCurrentSortConfig('instance')), getCurrentFilterConfig('instance'));
+      case 'profile':
+        return applyFilters(sortItems(mockProfiles, getCurrentSortConfig('profile')), getCurrentFilterConfig('profile'));
+      case 'series':
+        return applyFilters(sortItems(mockSeries, getCurrentSortConfig('series')), getCurrentFilterConfig('series'));
+      case 'template':
+        return applyFilters(sortItems(mockTemplates, getCurrentSortConfig('template')), getCurrentFilterConfig('template'));
+      default:
+        return [];
+    }
+  };
+
+  const currentTabData = getCurrentTabData();
+  const totalItems = currentTabData.length;
+
+  // Calculate pagination using custom hook - MUST be called before any conditional returns
+  const { paginatedData, validCurrentPage } = usePagination({
+    data: currentTabData,
+    paginationState,
+    updatePagination
+  });
+
   // NOW we can have conditional logic and early returns
   if (!isSortingLoaded || !isFilteringLoaded) {
     return (
@@ -82,30 +119,6 @@ export default function DashboardPage() {
       </div>
     );
   }
-
-  // Transform CSV data to dashboard item format
-  const mockProfiles = csvProfiles && csvProfiles.length > 0 
-    ? transformLabProfileToProfileItem(csvProfiles, starredItems, toggleStar)
-    : [];
-
-  const mockSeries = csvSeries && csvSeries.length > 0
-    ? transformLabSeriesToSeriesItem(csvSeries, starredItems, toggleStar)
-    : [];
-
-  const mockInstances = csvInstances && csvInstances.length > 0
-    ? transformLabInstanceToInstanceItem(csvInstances, starredItems, toggleStar)
-    : [];
-
-  const mockTemplates = csvTemplates && csvTemplates.length > 0
-    ? transformTemplateToTemplateItem(csvTemplates, starredItems, toggleStar)
-    : [];
-
-  // Get current sort and filter configuration
-  const currentCardType = getCurrentCardType();
-  const currentSortConfig = getCurrentSortConfig(currentCardType);
-  const sortOptions = getSortOptions(currentCardType);
-  const currentFilters = getCurrentFilterConfig(currentCardType);
-  const filterColumns = getFilterOptions(currentCardType);
 
   // Handle sort field changes
   const handleSortFieldChange = (field: string) => {
@@ -139,41 +152,10 @@ export default function DashboardPage() {
     updatePagination({ pageSize: newPageSize, currentPage: 1 });
   };
 
-  // Get current tab data for pagination
-  const getCurrentTabData = () => {
-    switch (currentCardType) {
-      case 'instance':
-        return applyFilters(sortItems(mockInstances, getCurrentSortConfig('instance')), getCurrentFilterConfig('instance'));
-      case 'profile':
-        return applyFilters(sortItems(mockProfiles, getCurrentSortConfig('profile')), getCurrentFilterConfig('profile'));
-      case 'series':
-        return applyFilters(sortItems(mockSeries, getCurrentSortConfig('series')), getCurrentFilterConfig('series'));
-      case 'template':
-        return applyFilters(sortItems(mockTemplates, getCurrentSortConfig('template')), getCurrentFilterConfig('template'));
-      default:
-        return [];
-    }
-  };
-
-  const currentTabData = getCurrentTabData();
-  const totalItems = currentTabData.length;
-
-  // Calculate pagination
-  const totalPages = Math.ceil(totalItems / paginationState.pageSize);
-  const startIndex = (paginationState.currentPage - 1) * paginationState.pageSize;
-  const endIndex = startIndex + paginationState.pageSize;
-  const paginatedData = currentTabData.slice(startIndex, endIndex);
-
-  // Ensure current page is valid
-  const validCurrentPage = Math.min(Math.max(1, paginationState.currentPage), totalPages || 1);
-  if (validCurrentPage !== paginationState.currentPage) {
-    updatePagination({ currentPage: validCurrentPage });
-  }
-
   // Create paginated tab items
-  const createPaginatedContent = (data: any[], CardComponent: any) => {
+  const createPaginatedContent = (data: unknown[], CardComponent: React.ComponentType<any>) => {
     return paginatedData.map((item) => (
-      <CardComponent key={item.id} {...item} />
+      <CardComponent key={(item as any).id} {...(item as any)} />
     ));
   };
 
