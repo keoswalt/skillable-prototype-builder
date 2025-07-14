@@ -5,10 +5,7 @@
 import { Tabs } from '@/components/navigation';
 import { SortControls } from './SortControls';
 import { FilterControls } from './FilterControls';
-import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/components/cards/dashboard';
-import { DropdownSelect } from '@/components/inputs';
-import { Button } from '@/components/buttons/Button';
-import { Icon, Icons } from '@/components/Icon';
+import { PaginationControls } from './PaginationControls';
 import { SortConfig, SortOption } from '@/types/sorting';
 import { Filter } from '@/config/filtering';
 import { DashboardItem } from '@/types/dashboard';
@@ -29,6 +26,14 @@ interface DashboardGridProps {
     label: string;
     content: React.ReactNode;
   }>;
+  // Pagination props
+  currentPage: number;
+  pageSize: number;
+  totalItems: number;
+  pageSizeOptions?: Array<{ label: string; value: number }>;
+  onPageChange: (page: number) => void;
+  onPageSizeChange: (pageSize: number) => void;
+  paginationDisabled?: boolean;
 }
 
 export function DashboardGrid({
@@ -43,6 +48,13 @@ export function DashboardGrid({
   onFiltersChange,
   operatorsByType,
   tabItems,
+  currentPage,
+  pageSize,
+  totalItems,
+  pageSizeOptions,
+  onPageChange,
+  onPageSizeChange,
+  paginationDisabled = false,
 }: DashboardGridProps) {
   const activeTabContent = tabItems[activeTabIndex]?.content;
 
@@ -86,22 +98,15 @@ export function DashboardGrid({
       </div>
 
       {/* Pagination Controls */}
-      <div className="flex items-center justify-between mt-6 text-body-sm text-_components-text-secondary">
-        <div className="flex items-center gap-4">
-          <span>
-            Items per page: <DropdownSelect options={[{label: '10', value: '10'}]} value="10" />
-          </span>
-          <span>1-5 of 13</span>
-          <div className="flex gap-1">
-            <Button variant="icon" size="small">
-              <Icon icon={Icons.chevronLeft} className="text-primary-main" />
-            </Button>
-            <Button variant="icon" size="small">
-              <Icon icon={Icons.chevronRight} className="text-primary-main" />
-            </Button>
-          </div>
-        </div>
-      </div>
+      <PaginationControls
+        currentPage={currentPage}
+        pageSize={pageSize}
+        totalItems={totalItems}
+        pageSizeOptions={pageSizeOptions}
+        onPageChange={onPageChange}
+        onPageSizeChange={onPageSizeChange}
+        disabled={paginationDisabled}
+      />
     </section>
   );
 } 

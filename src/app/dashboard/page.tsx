@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { DashboardHeader } from '@/components/dashboard/DashboardHeader';
 import { DashboardGrid } from '@/components/dashboard/DashboardGrid';
 import { FIND_MENU_ITEMS, CREATE_MENU_ITEMS, TAB_CONFIG } from '@/config/navigation';
@@ -12,6 +13,10 @@ import { generateMockInstances, generateMockProfiles, generateMockSeries, genera
 import { ProfileCard, InstanceCard, SeriesCard, TemplateCard } from '@/components/cards/dashboard';
 
 export default function DashboardPage() {
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);
+
   const {
     activeTabIndex,
     setActiveTabIndex,
@@ -85,6 +90,16 @@ export default function DashboardPage() {
     updateFilterConfig(currentCardType, convertedFilters);
   };
 
+  // Handle pagination changes
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  const handlePageSizeChange = (newPageSize: number) => {
+    setPageSize(newPageSize);
+    setCurrentPage(1); // Reset to first page when changing page size
+  };
+
   // Create tab items with sorted and filtered content
   const tabItems = [
     { 
@@ -117,6 +132,25 @@ export default function DashboardPage() {
     },
   ];
 
+  // Get current tab data for pagination
+  const getCurrentTabData = () => {
+    switch (currentCardType) {
+      case 'instance':
+        return applyFilters(sortItems(mockInstances, getCurrentSortConfig('instance')), getCurrentFilterConfig('instance'));
+      case 'profile':
+        return applyFilters(sortItems(mockProfiles, getCurrentSortConfig('profile')), getCurrentFilterConfig('profile'));
+      case 'series':
+        return applyFilters(sortItems(mockSeries, getCurrentSortConfig('series')), getCurrentFilterConfig('series'));
+      case 'template':
+        return applyFilters(sortItems(mockTemplates, getCurrentSortConfig('template')), getCurrentFilterConfig('template'));
+      default:
+        return [];
+    }
+  };
+
+  const currentTabData = getCurrentTabData();
+  const totalItems = currentTabData.length;
+
   return (
     <main className="min-h-screen p-8">
       <DashboardHeader 
@@ -140,6 +174,11 @@ export default function DashboardPage() {
         onFiltersChange={handleFiltersChange}
         operatorsByType={OPERATORS_BY_TYPE}
         tabItems={tabItems}
+        currentPage={currentPage}
+        pageSize={pageSize}
+        totalItems={totalItems}
+        onPageChange={handlePageChange}
+        onPageSizeChange={handlePageSizeChange}
       />
     </main>
   );

@@ -61,4 +61,26 @@ export interface DashboardState {
   activeTabIndex: number;
   starredItems: Record<string, boolean>;
   sortConfigs: Record<string, any>;
+}
+
+export interface PaginationState {
+  currentPage: number;
+  pageSize: number;
+  totalItems: number;
+  totalPages: number;
+}
+
+export interface PageSizeOption {
+  label: string;
+  value: number;
+}
+
+export interface PaginationControlsProps {
+  currentPage: number;
+  pageSize: number;
+  totalItems: number;
+  pageSizeOptions?: PageSizeOption[];
+  onPageChange: (page: number) => void;
+  onPageSizeChange: (pageSize: number) => void;
+  disabled?: boolean;
 } 

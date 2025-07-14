@@ -208,7 +208,10 @@ export const DropdownSelect = forwardRef<HTMLSelectElement, DropdownSelectProps>
       )}
     >
       {label && (
-        <label htmlFor={selectId} className={cn(labelClasses, orientation === 'horizontal' && 'pt-2')}>
+        <label htmlFor={selectId} className={cn(
+          labelClasses,
+          orientation === 'horizontal' ? 'inline-block align-middle' : 'block'
+        )}>
           {label}{required && <span className="ml-1 text-inherit">*</span>}
         </label>
       )}
