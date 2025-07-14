@@ -10,6 +10,7 @@ The CSV parser implementation provides:
 - **Caching** for improved performance
 - **Error handling** and validation
 - **Multiple parsing methods** (string, file, URL)
+- **Automatic remote file loading** with proper CORS handling
 
 ## Installation
 
@@ -58,6 +59,8 @@ interface LabProfileData {
   series: string;
   virtualization_platform: string;
   cloud_platform: string;
+  virtualization_platform_2?: string; // Handle duplicate column
+  cloud_platform_2?: string; // Handle duplicate column
   created: string;
   last_modified: string;
   status: string;
@@ -65,8 +68,71 @@ interface LabProfileData {
 }
 ```
 
-### LabSeriesData & LabInstanceData
-Similar structures for series and instance data.
+### LabSeriesData
+```typescript
+interface LabSeriesData {
+  series: string;
+  organization: string;
+  created: string;
+  last_modified: string;
+  status: string;
+  platform: string;
+}
+```
+
+### LabInstanceData
+```typescript
+interface LabInstanceData {
+  lab_profile: string;
+  organization: string;
+  number: string;
+  series: string;
+  virtualization_platform: string;
+  cloud_platform: string;
+  created: string;
+  last_modified: string;
+  status: string;
+  platform: string;
+}
+```
+
+### CSVFileConfig
+```typescript
+interface CSVFileConfig {
+  name: string;
+  path: string;
+  type: 'template' | 'lab-profile' | 'lab-series' | 'lab-instance';
+}
+```
+
+## CSV File Configuration
+
+The parser includes predefined configurations for your CSV files:
+
+```typescript
+export const CSV_FILES: Record<string, CSVFileConfig> = {
+  template: {
+    name: 'template-seed-data.csv',
+    path: '/data/template-seed-data.csv',
+    type: 'template'
+  },
+  labProfile: {
+    name: 'lab-profile-seed-data.csv',
+    path: '/data/lab-profile-seed-data.csv',
+    type: 'lab-profile'
+  },
+  labSeries: {
+    name: 'lab-series-seed-data.csv',
+    path: '/data/lab-series-seed-data.csv',
+    type: 'lab-series'
+  },
+  labInstance: {
+    name: 'lab-instance-seed-data.csv',
+    path: '/data/lab-instance-seed-data.csv',
+    type: 'lab-instance'
+  }
+};
+```
 
 ## Usage Examples
 
@@ -226,6 +292,7 @@ const customConfig: Papa.ParseConfig = {
   transformHeader: (header) => header.trim(), // Clean headers
   transform: (value) => value.trim(),         // Clean values
   delimiter: ',',            // Custom delimiter
+  download: true,            // Required for remote file loading
   // ... other PapaParse options
 };
 ```
@@ -275,6 +342,7 @@ Visit `/csv-demo` to see a working demo of the CSV parser functionality.
 4. **Use caching** for better performance
 5. **Clean data** to remove empty rows
 6. **Provide user feedback** during data loading
+7. **Use the `download: true` option** when parsing remote URLs
 
 ## Troubleshooting
 
@@ -284,6 +352,7 @@ Visit `/csv-demo` to see a working demo of the CSV parser functionality.
 2. **Type Errors**: Check that your data matches the TypeScript interfaces
 3. **Empty Data**: Verify CSV file paths and structure
 4. **Validation Failures**: Check required fields and data format
+5. **Remote File Loading**: Ensure `download: true` is set in PapaParse config
 
 ### Debug Tips
 
@@ -299,4 +368,17 @@ console.log('Delimiter:', result.meta.delimiter);
 // Validate data structure
 const validation = CSVParser.validateData(result.data, ['lab_profile']);
 console.log('Validation:', validation);
+```
+
+### Remote File Loading Fix
+
+If you're experiencing issues with remote CSV files not loading, ensure the PapaParse configuration includes `download: true`:
+
+```typescript
+// This is automatically handled in the CSVParser.parseURL method
+const config = {
+  download: true,  // Critical for remote file loading
+  header: true,
+  // ... other options
+};
 ``` 
