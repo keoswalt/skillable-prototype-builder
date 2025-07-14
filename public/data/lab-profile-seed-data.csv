@@ -1,0 +1,501 @@
+﻿lab_profile,organization,number,series,created,last_modified,status,platform
+Introduction to Data Science,AI Nexus,2J,Advanced Developer Series,"December 17, 2011","May 5, 2012",Awaiting Verification,ESX
+Agile Project Management,CyberCore,OOW2B,Cloud Mastery Series,"August 14, 2020","October 9, 2022",Complete,ESX
+Cybersecurity Essentials,CyberCore,F,Cybersecurity Pathway,"December 10, 2021","February 11, 2024",In Development,ESX
+Introduction to Data Science,DevForge,UE,Web Development Journey,"July 13, 2012","June 12, 2014",Awaiting Verification,ESX
+Data Visualization with Python,NextGen Labs,MK9WR,Foundations of Technology,"March 6, 2024","March 20, 2024",Awaiting Verification,ESX
+Big Data Analytics,InnoSoft,XP,Foundations of Technology,"January 24, 2023","September 5, 2024",Awaiting Verification,None | Azure
+Web Development with JavaScript,CodeCrafters,GS2X,Cloud Mastery Series,"June 6, 2010","March 28, 2022",Complete,Hyper-V
+Networking Concepts,SecureNet,E4WD,AI and Machine Learning Track,"June 10, 2014","February 28, 2021",Awaiting Verification,Hyper-V
+Building Secure Web Applications,CloudSphere,W,DevOps Essentials,"October 8, 2018","October 11, 2020",Awaiting Verification,Hyper-V
+AI for Beginners,DataMinds,7H,Data Science Bootcamp,"November 21, 2010","June 20, 2024",In Development,Hyper-V
+Database Design and Management,CyberCore,ZF,Data Science Bootcamp,"November 27, 2016","November 25, 2023",Complete,Hyper-V
+Data Visualization with Python,CodeCrafters,A,Data Science Bootcamp,"September 24, 2015","June 17, 2024",Awaiting Verification,Hyper-V
+Linux Command Line Basics,CodeCrafters,ND8,Mobile Development Series,"September 28, 2014","November 12, 2020",Awaiting Verification,ESX
+Cloud Computing Basics,AI Nexus,VT,Advanced Developer Series,"April 29, 2013","March 13, 2025",Awaiting Verification,ESX
+Linux Command Line Basics,AI Nexus,1,DevOps Essentials,"March 2, 2018","September 13, 2022",In Development,ESX
+Natural Language Processing,NextGen Labs,9C6I,Cybersecurity Pathway,"February 11, 2014","June 5, 2019",In Development,ESX
+Web Development with JavaScript,CyberCore,ZGU,Mobile Development Series,"February 20, 2025","May 31, 2025",In Development,None
+Web Development with JavaScript,CloudSphere,8TTB,Cybersecurity Pathway,"November 12, 2017","December 21, 2023",Complete,None
+Introduction to Data Science,CodeCrafters,1X,DevOps Essentials,"November 14, 2010","May 18, 2021",In Development,Hyper-V
+Blockchain Fundamentals,NextGen Labs,LC9KB,Web Development Journey,"July 1, 2016","July 13, 2019",In Development,ESX
+Big Data Analytics,DataMinds,C33B2,Cybersecurity Pathway,"December 5, 2015","July 27, 2022",In Development,ESX
+Building Secure Web Applications,DataMinds,ONSR,Web Development Journey,"February 2, 2019","July 22, 2024",In Development,Hyper-V
+IoT and Embedded Systems,TechNova,OFG49,Advanced Developer Series,"December 21, 2011","April 10, 2019",Awaiting Verification,Hyper-V
+Agile Project Management,TechNova,MLKGF,Cloud Mastery Series,"January 30, 2021","November 13, 2024",In Development,Hyper-V | Azure
+Advanced Python Programming,CyberCore,O5UG7,Web Development Journey,"June 10, 2020","April 1, 2021",In Development,Hyper-V | Azure
+Web Development with JavaScript,DataMinds,Q0S,Foundations of Technology,"February 12, 2012","October 22, 2014",Complete,Hyper-V
+Advanced Python Programming,CyberCore,X,AI and Machine Learning Track,"May 9, 2025","June 7, 2025",Awaiting Verification,None | AWS
+Big Data Analytics,InnoSoft,Q8,Cybersecurity Pathway,"October 1, 2024","April 24, 2025",In Development,None | Azure
+Linux Command Line Basics,DevForge,M,Advanced Developer Series,"September 3, 2023","February 26, 2025",Awaiting Verification,None | Azure
+AI for Beginners,CloudSphere,54BKH,Web Development Journey,"June 12, 2022","April 10, 2024",Complete,None | Azure
+Blockchain Fundamentals,NextGen Labs,N,Cloud Mastery Series,"April 27, 2023","August 24, 2024",Complete,None | Azure
+Advanced Python Programming,TechNova,6,Mobile Development Series,"October 17, 2018","October 26, 2024",Complete,Hyper-V | Azure
+Big Data Analytics,CodeCrafters,C5LR,Web Development Journey,"May 27, 2014","March 7, 2017",Complete,None | AWS
+Data Visualization with Python,DataMinds,38Q3S,DevOps Essentials,"July 17, 2023","October 10, 2024",In Development,Hyper-V | Azure
+Web Development with JavaScript,InnoSoft,QQIF,Foundations of Technology,"February 3, 2015","April 10, 2018",In Development,None
+Networking Concepts,AI Nexus,821,Web Development Journey,"August 29, 2024","April 13, 2025",Awaiting Verification,Hyper-V
+Introduction to Data Science,CyberCore,SS1QG,Mobile Development Series,"February 5, 2014","February 11, 2017",Complete,Hyper-V | Azure
+Advanced Python Programming,AI Nexus,E,Networking Academy,"January 13, 2021","October 28, 2022",Complete,None
+AI for Beginners,DevForge,7,Foundations of Technology,"October 4, 2011","April 19, 2017",Complete,None
+Web Development with JavaScript,NextGen Labs,A1,Foundations of Technology,"November 5, 2018","March 18, 2022",Complete,None
+Version Control with Git,CloudSphere,4PRKU,Networking Academy,"May 3, 2011","January 14, 2023",Awaiting Verification,None
+Machine Learning Fundamentals,CloudSphere,VD5,Foundations of Technology,"March 5, 2023","November 20, 2024",Awaiting Verification,None
+Advanced Python Programming,CodeCrafters,MIKH,Advanced Developer Series,"April 28, 2019","October 25, 2019",Awaiting Verification,ESX
+Mobile App Development,SecureNet,PVM,Cloud Mastery Series,"February 22, 2018","March 8, 2023",Complete,ESX
+Networking Concepts,AI Nexus,8,Mobile Development Series,"September 12, 2021","November 3, 2021",Complete,ESX
+Data Visualization with Python,CloudSphere,5,Cybersecurity Pathway,"August 2, 2022","October 17, 2023",Awaiting Verification,Hyper-V
+Blockchain Fundamentals,CloudSphere,T,DevOps Essentials,"July 12, 2013","December 7, 2013",Complete,Hyper-V | Azure
+Cloud Computing Basics,NextGen Labs,VCH,DevOps Essentials,"October 1, 2014","August 21, 2015",Complete,None | AWS
+DevOps Practices and Tools,DataMinds,LJ03,Advanced Developer Series,"November 6, 2015","November 9, 2022",Awaiting Verification,None | AWS
+Data Visualization with Python,NextGen Labs,SE7E,Mobile Development Series,"June 26, 2017","August 4, 2024",In Development,ESX
+Blockchain Fundamentals,DataMinds,A,Web Development Journey,"June 23, 2012","March 15, 2017",In Development,Hyper-V | Azure
+Networking Concepts,SecureNet,V,Cybersecurity Pathway,"June 11, 2022","March 9, 2025",Complete,Hyper-V | Azure
+Data Visualization with Python,TechNova,9,Cybersecurity Pathway,"May 22, 2014","April 5, 2018",In Development,Hyper-V | Azure
+Cybersecurity Essentials,InnoSoft,QA,Networking Academy,"September 5, 2015","March 1, 2017",In Development,ESX
+Agile Project Management,DevForge,W,Networking Academy,"July 11, 2019","March 25, 2022",Complete,None
+Data Visualization with Python,CloudSphere,GJ47C,Advanced Developer Series,"July 14, 2019","May 12, 2020",In Development,Docker
+Introduction to Data Science,AI Nexus,0VX,AI and Machine Learning Track,"July 2, 2012","October 28, 2012",In Development,None
+DevOps Practices and Tools,CyberCore,S9SB,Web Development Journey,"February 5, 2023","August 16, 2023",Complete,None
+Natural Language Processing,SecureNet,SXZ8,Networking Academy,"April 21, 2024","January 8, 2025",Complete,None | AWS
+Database Design and Management,CodeCrafters,G,Cloud Mastery Series,"March 21, 2022","February 16, 2024",Awaiting Verification,Hyper-V | Azure
+Networking Concepts,DataMinds,68,DevOps Essentials,"August 26, 2019","October 10, 2020",In Development,ESX
+Introduction to Data Science,TechNova,H7U,Cloud Mastery Series,"September 10, 2015","January 2, 2016",Awaiting Verification,Docker | AWS
+Database Design and Management,DataMinds,M,Foundations of Technology,"January 30, 2024","March 31, 2025",In Development,ESX
+Version Control with Git,NextGen Labs,2RYIE,Networking Academy,"April 4, 2016","June 5, 2018",In Development,ESX
+Web Development with JavaScript,CodeCrafters,DX5CW,Networking Academy,"April 20, 2021","September 26, 2023",In Development,ESX
+Advanced Python Programming,CodeCrafters,RO9B,DevOps Essentials,"February 13, 2023","October 12, 2023",Complete,ESX
+Advanced Python Programming,CodeCrafters,W3XG,Mobile Development Series,"March 20, 2024","July 8, 2025",Awaiting Verification,Hyper-V | Azure
+Cloud Computing Basics,DevForge,85,Web Development Journey,"December 3, 2021","August 24, 2024",Awaiting Verification,Hyper-V
+Machine Learning Fundamentals,TechNova,X,Mobile Development Series,"April 12, 2019","April 16, 2023",In Development,Hyper-V
+Building Secure Web Applications,DataMinds,IT,Data Science Bootcamp,"December 20, 2021","July 9, 2024",Awaiting Verification,ESX
+Introduction to Data Science,DataMinds,86,Foundations of Technology,"November 4, 2014","January 18, 2015",In Development,ESX
+Big Data Analytics,CodeCrafters,T1,Networking Academy,"March 23, 2012","April 24, 2023",Awaiting Verification,ESX
+Mobile App Development,CloudSphere,1,Mobile Development Series,"August 8, 2016","August 18, 2021",Complete,ESX | AWS
+Linux Command Line Basics,TechNova,0Z,Cybersecurity Pathway,"November 22, 2023","January 21, 2024",In Development,Hyper-V
+Natural Language Processing,CloudSphere,M,Advanced Developer Series,"September 7, 2024","April 23, 2025",In Development,None | Azure
+Big Data Analytics,AI Nexus,O2ME,AI and Machine Learning Track,"December 4, 2010","December 14, 2019",Awaiting Verification,None
+Database Design and Management,CyberCore,UKL6,Cloud Mastery Series,"January 3, 2019","January 12, 2021",In Development,Hyper-V
+Cybersecurity Essentials,CloudSphere,65,Networking Academy,"February 24, 2010","August 13, 2024",Complete,Hyper-V
+Data Visualization with Python,CloudSphere,AA,AI and Machine Learning Track,"May 26, 2010","June 25, 2018",In Development,ESX
+DevOps Practices and Tools,CloudSphere,D1,AI and Machine Learning Track,"November 4, 2013","October 14, 2016",In Development,Hyper-V | Azure
+Networking Concepts,TechNova,L,Advanced Developer Series,"August 5, 2016","January 4, 2019",In Development,ESX
+Building Secure Web Applications,CodeCrafters,O,Web Development Journey,"May 9, 2014","June 26, 2021",Complete,None | Azure
+Networking Concepts,CodeCrafters,FS,Cybersecurity Pathway,"March 5, 2010","July 31, 2017",In Development,None | Azure
+Advanced Python Programming,TechNova,OLRD7,Advanced Developer Series,"December 6, 2013","March 19, 2019",In Development,Hyper-V
+Database Design and Management,CyberCore,1J5,DevOps Essentials,"January 21, 2011","August 15, 2011",Awaiting Verification,ESX
+AI for Beginners,TechNova,ZSV5,Data Science Bootcamp,"January 6, 2025","February 6, 2025",Awaiting Verification,Hyper-V
+Networking Concepts,SecureNet,FDCYX,Cloud Mastery Series,"February 9, 2020","January 18, 2021",In Development,ESX
+Introduction to Data Science,AI Nexus,ICT9,Data Science Bootcamp,"September 28, 2024","May 24, 2025",In Development,Hyper-V
+Web Development with JavaScript,CloudSphere,Q1,AI and Machine Learning Track,"August 23, 2011","July 25, 2021",Awaiting Verification,Hyper-V
+Cloud Computing Basics,CodeCrafters,PX,Networking Academy,"October 25, 2022","August 9, 2023",In Development,ESX
+Networking Concepts,AI Nexus,U9,Advanced Developer Series,"February 9, 2024","January 16, 2025",Complete,None | Azure
+Agile Project Management,CloudSphere,Z3JU2,DevOps Essentials,"March 12, 2012","October 4, 2024",In Development,ESX
+Version Control with Git,SecureNet,1MNZG,Advanced Developer Series,"November 3, 2015","June 6, 2024",Awaiting Verification,None
+Agile Project Management,SecureNet,GK4U,Foundations of Technology,"February 8, 2022","July 17, 2022",In Development,ESX
+Big Data Analytics,DevForge,JOED,Data Science Bootcamp,"April 16, 2024","May 29, 2024",In Development,Hyper-V
+Introduction to Data Science,SecureNet,L,Cybersecurity Pathway,"November 23, 2023","January 30, 2025",Awaiting Verification,Hyper-V
+Blockchain Fundamentals,InnoSoft,9Q,Mobile Development Series,"August 27, 2015","December 13, 2018",Awaiting Verification,Hyper-V | Azure
+Agile Project Management,SecureNet,NC,Cloud Mastery Series,"December 21, 2013","January 3, 2023",Complete,Hyper-V | Azure
+Version Control with Git,CloudSphere,YZLU,Foundations of Technology,"May 2, 2011","May 12, 2021",Awaiting Verification,None
+Version Control with Git,CloudSphere,QZYQ0,Web Development Journey,"March 14, 2017","February 10, 2023",Complete,Hyper-V | Azure
+Cybersecurity Essentials,CyberCore,8,Cloud Mastery Series,"June 27, 2014","June 22, 2015",Awaiting Verification,Hyper-V
+Linux Command Line Basics,CloudSphere,JO,Data Science Bootcamp,"October 7, 2011","October 31, 2013",Complete,ESX
+Cloud Computing Basics,SecureNet,W,DevOps Essentials,"December 23, 2020","January 16, 2021",Complete,Hyper-V
+Blockchain Fundamentals,DataMinds,J,Cloud Mastery Series,"September 14, 2023","October 7, 2023",Complete,Hyper-V
+Agile Project Management,TechNova,GW3,Web Development Journey,"January 4, 2024","January 22, 2024",Awaiting Verification,None
+Natural Language Processing,CloudSphere,GWL,Cloud Mastery Series,"December 2, 2011","November 30, 2016",In Development,Hyper-V | Azure
+Cloud Computing Basics,NextGen Labs,YDOZ,Data Science Bootcamp,"June 23, 2022","August 16, 2024",Complete,ESX
+Agile Project Management,AI Nexus,H6,Web Development Journey,"December 14, 2023","December 16, 2024",Awaiting Verification,ESX
+Version Control with Git,DevForge,FAP,AI and Machine Learning Track,"January 13, 2018","June 9, 2025",Awaiting Verification,ESX | AWS
+IoT and Embedded Systems,CloudSphere,8NYS,Web Development Journey,"November 13, 2021","October 3, 2024",Awaiting Verification,ESX
+Machine Learning Fundamentals,CyberCore,1QZ,Cloud Mastery Series,"August 23, 2015","July 7, 2017",Awaiting Verification,Hyper-V
+Natural Language Processing,CodeCrafters,GZ,Cybersecurity Pathway,"January 10, 2024","September 21, 2024",In Development,None | AWS
+DevOps Practices and Tools,CodeCrafters,HX48,Cybersecurity Pathway,"March 19, 2016","October 6, 2019",Complete,ESX
+Data Visualization with Python,TechNova,Y,Foundations of Technology,"November 7, 2013","March 16, 2017",Complete,None | AWS
+Advanced Python Programming,TechNova,CD,Networking Academy,"October 16, 2010","January 27, 2012",Awaiting Verification,Hyper-V | Azure
+Machine Learning Fundamentals,InnoSoft,B,Networking Academy,"September 23, 2016","May 4, 2017",In Development,Hyper-V
+Blockchain Fundamentals,InnoSoft,EDZN6,Web Development Journey,"August 31, 2024","February 13, 2025",In Development,Docker
+IoT and Embedded Systems,TechNova,J2,Web Development Journey,"April 29, 2022","December 18, 2022",Complete,ESX
+Blockchain Fundamentals,DataMinds,35I4Q,DevOps Essentials,"June 19, 2014","May 17, 2021",Awaiting Verification,Hyper-V
+AI for Beginners,SecureNet,865,Cybersecurity Pathway,"December 7, 2011","July 24, 2012",Complete,Hyper-V
+Networking Concepts,AI Nexus,ZN7RD,Cloud Mastery Series,"September 23, 2019","August 21, 2024",Complete,Hyper-V | Azure
+Database Design and Management,TechNova,4DGP,Advanced Developer Series,"November 15, 2021","September 13, 2024",In Development,ESX
+Networking Concepts,CyberCore,STWUV,Web Development Journey,"March 28, 2017","June 16, 2023",Awaiting Verification,Hyper-V
+Machine Learning Fundamentals,InnoSoft,S4,Cybersecurity Pathway,"December 1, 2020","July 10, 2023",Complete,Hyper-V
+AI for Beginners,TechNova,HV3,Networking Academy,"March 29, 2012","December 16, 2019",Complete,Hyper-V
+Mobile App Development,CyberCore,XXL,Networking Academy,"April 4, 2023","October 30, 2023",Complete,Hyper-V
+Advanced Python Programming,SecureNet,FXFK,DevOps Essentials,"July 2, 2025","July 11, 2025",Complete,Hyper-V | Azure
+Cybersecurity Essentials,SecureNet,6C6,Networking Academy,"November 3, 2019","August 9, 2024",Awaiting Verification,Hyper-V
+Networking Concepts,NextGen Labs,CV7IQ,Web Development Journey,"February 28, 2013","September 14, 2015",Awaiting Verification,Hyper-V
+Introduction to Data Science,CloudSphere,N,DevOps Essentials,"July 5, 2014","February 18, 2022",In Development,Hyper-V
+Linux Command Line Basics,CyberCore,2RIIF,Networking Academy,"March 17, 2016","May 4, 2020",In Development,Hyper-V
+Cybersecurity Essentials,CloudSphere,9QL,Mobile Development Series,"December 20, 2010","November 20, 2017",In Development,None
+Database Design and Management,TechNova,J9C,Data Science Bootcamp,"March 14, 2018","December 26, 2022",Awaiting Verification,Hyper-V | Azure
+Advanced Python Programming,CodeCrafters,GM0W6,Cybersecurity Pathway,"November 27, 2013","March 30, 2015",Complete,Hyper-V
+Cloud Computing Basics,InnoSoft,MYJ,Web Development Journey,"August 24, 2010","January 23, 2018",Complete,Hyper-V
+Version Control with Git,CloudSphere,4N4,Foundations of Technology,"November 17, 2013","July 25, 2020",Complete,Hyper-V
+Web Development with JavaScript,InnoSoft,OLZ8B,Web Development Journey,"March 4, 2012","October 15, 2020",Awaiting Verification,Hyper-V | Azure
+Data Visualization with Python,NextGen Labs,2,DevOps Essentials,"December 26, 2014","April 22, 2022",In Development,Hyper-V
+Database Design and Management,NextGen Labs,4CQU5,DevOps Essentials,"January 13, 2020","January 26, 2024",Complete,Hyper-V | Azure
+Cybersecurity Essentials,AI Nexus,S,Web Development Journey,"June 21, 2010","January 3, 2013",Complete,Hyper-V | Azure
+Introduction to Data Science,TechNova,Z26,Advanced Developer Series,"December 6, 2019","September 22, 2020",Complete,Hyper-V | Azure
+Building Secure Web Applications,CodeCrafters,4,Data Science Bootcamp,"June 21, 2024","November 20, 2024",In Development,Hyper-V
+Big Data Analytics,DevForge,AD,Advanced Developer Series,"December 17, 2022","March 27, 2023",Awaiting Verification,Hyper-V | Azure
+Database Design and Management,AI Nexus,TV,Web Development Journey,"May 31, 2023","June 2, 2024",Complete,Hyper-V | Azure
+Big Data Analytics,CodeCrafters,X96,Foundations of Technology,"August 14, 2012","August 31, 2024",Complete,Hyper-V | Azure
+Agile Project Management,CyberCore,M,DevOps Essentials,"July 18, 2013","April 29, 2017",Awaiting Verification,Docker
+Advanced Python Programming,TechNova,S57,Mobile Development Series,"February 10, 2011","July 8, 2016",In Development,Hyper-V
+Natural Language Processing,DataMinds,QH,Cybersecurity Pathway,"September 30, 2013","February 21, 2025",Awaiting Verification,ESX
+Data Visualization with Python,InnoSoft,I,DevOps Essentials,"December 22, 2024","February 6, 2025",Awaiting Verification,ESX
+Networking Concepts,CyberCore,B5,Cybersecurity Pathway,"June 16, 2010","May 10, 2012",In Development,Hyper-V
+Web Development with JavaScript,DevForge,YNN,Mobile Development Series,"April 6, 2024","May 7, 2025",Awaiting Verification,ESX
+Machine Learning Fundamentals,DataMinds,Q3,Advanced Developer Series,"October 27, 2016","May 6, 2021",Awaiting Verification,ESX
+DevOps Practices and Tools,TechNova,7B,Cloud Mastery Series,"February 2, 2024","January 4, 2025",Complete,ESX
+Blockchain Fundamentals,CloudSphere,G,Web Development Journey,"December 19, 2015","October 27, 2024",Awaiting Verification,ESX
+Introduction to Data Science,TechNova,W,Cloud Mastery Series,"August 13, 2016","December 3, 2019",Awaiting Verification,ESX
+Building Secure Web Applications,CodeCrafters,7,Web Development Journey,"August 15, 2023","December 6, 2024",In Development,ESX
+AI for Beginners,AI Nexus,S,AI and Machine Learning Track,"December 27, 2019","October 19, 2022",Complete,Hyper-V
+Mobile App Development,SecureNet,8,Cloud Mastery Series,"May 21, 2016","September 1, 2020",Complete,Hyper-V
+Web Development with JavaScript,SecureNet,HHGP3,Foundations of Technology,"February 12, 2020","April 21, 2025",Awaiting Verification,Hyper-V
+Version Control with Git,CyberCore,QZ2I7,AI and Machine Learning Track,"May 12, 2018","December 26, 2018",In Development,ESX
+Building Secure Web Applications,InnoSoft,GGHT,Advanced Developer Series,"June 5, 2025","June 15, 2025",In Development,ESX
+Web Development with JavaScript,DevForge,YRM,DevOps Essentials,"September 26, 2012","September 18, 2017",Awaiting Verification,Hyper-V
+Mobile App Development,CyberCore,LH3EI,Networking Academy,"October 1, 2021","September 26, 2024",Awaiting Verification,ESX
+Cloud Computing Basics,DataMinds,D0H,AI and Machine Learning Track,"May 12, 2015","January 22, 2024",Awaiting Verification,ESX
+Cloud Computing Basics,CloudSphere,S8VZ,DevOps Essentials,"September 29, 2016","August 14, 2019",Awaiting Verification,ESX
+Cybersecurity Essentials,SecureNet,VOF,DevOps Essentials,"April 27, 2015","June 26, 2015",Awaiting Verification,ESX
+Natural Language Processing,NextGen Labs,3LB5F,Data Science Bootcamp,"September 3, 2020","March 16, 2022",Awaiting Verification,ESX
+AI for Beginners,CodeCrafters,EPC,Cloud Mastery Series,"June 22, 2023","November 14, 2023",Awaiting Verification,ESX
+AI for Beginners,DataMinds,GCL6,Foundations of Technology,"December 4, 2010","December 24, 2018",In Development,ESX
+DevOps Practices and Tools,CodeCrafters,R,Foundations of Technology,"May 31, 2024","July 22, 2024",In Development,ESX
+Machine Learning Fundamentals,DataMinds,280,DevOps Essentials,"January 13, 2016","April 22, 2019",In Development,Hyper-V
+Natural Language Processing,CodeCrafters,LI8,DevOps Essentials,"October 29, 2012","March 10, 2016",Complete,Hyper-V
+Cloud Computing Basics,InnoSoft,S,AI and Machine Learning Track,"February 6, 2015","October 7, 2016",In Development,Hyper-V
+Linux Command Line Basics,CloudSphere,2,Cloud Mastery Series,"October 9, 2023","November 16, 2023",In Development,Hyper-V | Azure
+Natural Language Processing,CodeCrafters,J98ZC,Foundations of Technology,"June 4, 2024","June 25, 2025",In Development,Hyper-V
+Networking Concepts,CodeCrafters,C31,Cybersecurity Pathway,"June 23, 2019","November 22, 2021",Complete,Hyper-V
+Cloud Computing Basics,AI Nexus,N,Networking Academy,"April 3, 2017","April 1, 2021",Awaiting Verification,ESX
+Big Data Analytics,CloudSphere,Y,Foundations of Technology,"August 29, 2023","April 8, 2025",Complete,Hyper-V | Azure
+Mobile App Development,DataMinds,MS,DevOps Essentials,"September 25, 2014","August 1, 2021",Complete,Hyper-V | Azure
+Introduction to Data Science,TechNova,ZL1,Cybersecurity Pathway,"January 6, 2019","July 10, 2025",Awaiting Verification,ESX
+Networking Concepts,CloudSphere,AQ,DevOps Essentials,"May 19, 2011","January 29, 2023",In Development,Hyper-V
+Building Secure Web Applications,CloudSphere,Y6GB2,Cloud Mastery Series,"August 25, 2023","August 13, 2024",Complete,Hyper-V | Azure
+Web Development with JavaScript,NextGen Labs,9J5S,Advanced Developer Series,"December 28, 2017","February 15, 2018",Awaiting Verification,None
+Introduction to Data Science,DataMinds,MOA,Web Development Journey,"February 5, 2023","February 3, 2024",Complete,Hyper-V
+Database Design and Management,NextGen Labs,7PR,Web Development Journey,"June 26, 2012","June 9, 2021",Complete,Hyper-V
+Natural Language Processing,TechNova,3,Cybersecurity Pathway,"August 31, 2020","August 30, 2023",Awaiting Verification,Docker
+Building Secure Web Applications,CloudSphere,7YXMA,Networking Academy,"December 12, 2014","May 16, 2018",Awaiting Verification,None | Azure
+Cloud Computing Basics,DataMinds,WSKM,DevOps Essentials,"March 23, 2018","August 1, 2018",Complete,ESX
+Introduction to Data Science,SecureNet,M01,Networking Academy,"November 4, 2016","October 24, 2018",In Development,None
+Networking Concepts,CloudSphere,B774M,Web Development Journey,"February 20, 2016","January 2, 2021",Complete,ESX
+Version Control with Git,NextGen Labs,ZOX,Data Science Bootcamp,"August 27, 2014","November 12, 2018",Complete,Hyper-V
+Big Data Analytics,TechNova,9,Advanced Developer Series,"March 21, 2025","May 15, 2025",In Development,ESX
+Building Secure Web Applications,TechNova,HNY,Advanced Developer Series,"July 24, 2017","August 13, 2022",Complete,Hyper-V
+Web Development with JavaScript,TechNova,VXN9,Foundations of Technology,"May 21, 2022","November 29, 2023",Complete,None | Azure
+Building Secure Web Applications,DataMinds,RLD,DevOps Essentials,"June 5, 2024","February 13, 2025",Complete,Hyper-V
+Database Design and Management,DataMinds,133Y,Cybersecurity Pathway,"June 19, 2011","May 31, 2018",Awaiting Verification,Hyper-V
+Big Data Analytics,AI Nexus,315,Foundations of Technology,"August 20, 2017","November 11, 2019",Complete,Hyper-V
+Big Data Analytics,CyberCore,8L,DevOps Essentials,"November 13, 2023","February 21, 2025",In Development,Hyper-V
+Natural Language Processing,TechNova,A8G3F,Advanced Developer Series,"February 3, 2013","February 21, 2019",Complete,ESX
+AI for Beginners,NextGen Labs,J16J,Advanced Developer Series,"November 15, 2015","July 15, 2017",In Development,Docker
+Database Design and Management,SecureNet,M9P4,AI and Machine Learning Track,"October 4, 2017","October 4, 2024",Complete,None | AWS
+Web Development with JavaScript,SecureNet,AZ,Foundations of Technology,"November 18, 2011","April 2, 2020",In Development,Hyper-V | Azure
+AI for Beginners,DevForge,7WGB,Mobile Development Series,"July 13, 2016","March 9, 2020",Awaiting Verification,ESX | Azure
+AI for Beginners,SecureNet,3,Data Science Bootcamp,"May 24, 2018","November 19, 2018",In Development,Hyper-V | AWS
+Blockchain Fundamentals,CyberCore,BGT8,Networking Academy,"September 20, 2024","January 24, 2025",Awaiting Verification,ESX | AWS
+Web Development with JavaScript,SecureNet,BSE6,Mobile Development Series,"April 21, 2013","March 18, 2023",Awaiting Verification,ESX
+Data Visualization with Python,InnoSoft,6,Mobile Development Series,"December 24, 2013","June 9, 2015",In Development,Docker
+Mobile App Development,DevForge,3LTP,DevOps Essentials,"July 13, 2011","March 30, 2012",Complete,None | Azure
+DevOps Practices and Tools,SecureNet,GW,DevOps Essentials,"September 19, 2011","March 13, 2021",Awaiting Verification,Hyper-V | Azure
+Cloud Computing Basics,DataMinds,YR,Mobile Development Series,"November 17, 2023","May 17, 2024",Awaiting Verification,ESX | Azure
+Blockchain Fundamentals,DataMinds,578K,AI and Machine Learning Track,"November 24, 2018","December 15, 2021",In Development,Hyper-V | AWS
+Linux Command Line Basics,DevForge,MYL3E,Cloud Mastery Series,"July 17, 2014","March 22, 2018",Complete,ESX | AWS
+Natural Language Processing,TechNova,R6JS2,DevOps Essentials,"April 17, 2023","March 13, 2024",Awaiting Verification,Hyper-V
+Agile Project Management,CodeCrafters,3N,Cloud Mastery Series,"May 29, 2021","May 22, 2022",Complete,None | AWS
+Cloud Computing Basics,DevForge,S1KJE,Mobile Development Series,"December 31, 2011","September 29, 2015",Complete,None | Azure
+IoT and Embedded Systems,NextGen Labs,7H,Advanced Developer Series,"June 13, 2025","June 19, 2025",Complete,Hyper-V | Azure
+Blockchain Fundamentals,CloudSphere,XGGK,Mobile Development Series,"September 2, 2014","January 10, 2024",Awaiting Verification,None
+Cybersecurity Essentials,DevForge,IU6,Data Science Bootcamp,"August 10, 2019","December 19, 2019",Awaiting Verification,Hyper-V | AWS
+Cloud Computing Basics,CodeCrafters,J3,Cybersecurity Pathway,"December 24, 2018","February 13, 2024",In Development,Hyper-V
+Blockchain Fundamentals,SecureNet,PK7,AI and Machine Learning Track,"December 16, 2019","August 10, 2022",In Development,None | Azure
+DevOps Practices and Tools,InnoSoft,C6U,Data Science Bootcamp,"May 18, 2022","December 1, 2024",In Development,Hyper-V
+Agile Project Management,DevForge,B,Data Science Bootcamp,"February 13, 2011","April 28, 2011",Awaiting Verification,Docker
+Version Control with Git,NextGen Labs,0N,Mobile Development Series,"August 7, 2022","November 10, 2024",In Development,Docker
+Building Secure Web Applications,NextGen Labs,9MG8,Networking Academy,"March 30, 2013","May 19, 2020",Awaiting Verification,ESX
+Advanced Python Programming,TechNova,WR,Cloud Mastery Series,"May 26, 2021","March 21, 2025",Awaiting Verification,Hyper-V
+Linux Command Line Basics,CloudSphere,FZ4,DevOps Essentials,"March 14, 2021","June 11, 2021",Awaiting Verification,ESX
+IoT and Embedded Systems,NextGen Labs,82,Advanced Developer Series,"August 2, 2011","January 13, 2019",Complete,Hyper-V
+Mobile App Development,TechNova,P,Foundations of Technology,"November 25, 2023","December 13, 2024",In Development,Hyper-V | Azure
+DevOps Practices and Tools,TechNova,LZ,AI and Machine Learning Track,"August 18, 2021","December 14, 2021",In Development,Docker
+IoT and Embedded Systems,CloudSphere,DJ,DevOps Essentials,"February 18, 2010","July 21, 2012",In Development,ESX | AWS
+IoT and Embedded Systems,DevForge,NHK,DevOps Essentials,"July 8, 2014","October 1, 2018",Awaiting Verification,Hyper-V
+Database Design and Management,CodeCrafters,4DZ3,Data Science Bootcamp,"September 2, 2012","February 12, 2021",Awaiting Verification,Hyper-V
+Introduction to Data Science,AI Nexus,SM5H,Cloud Mastery Series,"March 12, 2024","May 7, 2025",In Development,Hyper-V
+Data Visualization with Python,CyberCore,66B,AI and Machine Learning Track,"October 21, 2018","December 15, 2019",In Development,Hyper-V | Azure
+Machine Learning Fundamentals,TechNova,S8U,Foundations of Technology,"June 30, 2011","March 3, 2019",Awaiting Verification,ESX
+Database Design and Management,AI Nexus,L,Web Development Journey,"September 19, 2015","August 1, 2022",In Development,Hyper-V | Azure
+IoT and Embedded Systems,CodeCrafters,NN,Web Development Journey,"September 3, 2016","March 27, 2020",Complete,None
+DevOps Practices and Tools,InnoSoft,A1BFE,Data Science Bootcamp,"September 16, 2013","March 6, 2019",Complete,None
+IoT and Embedded Systems,CyberCore,6,Data Science Bootcamp,"August 14, 2021","May 17, 2025",In Development,Hyper-V
+Mobile App Development,CloudSphere,5,Mobile Development Series,"July 3, 2014","May 11, 2018",Awaiting Verification,Hyper-V
+Linux Command Line Basics,CyberCore,6,Networking Academy,"May 7, 2016","July 4, 2020",Complete,None
+AI for Beginners,CloudSphere,0U,Web Development Journey,"October 8, 2023","February 6, 2024",Awaiting Verification,Hyper-V | Azure
+Database Design and Management,NextGen Labs,SM5JO,Cybersecurity Pathway,"August 11, 2021","May 6, 2023",Awaiting Verification,ESX
+Advanced Python Programming,NextGen Labs,K,DevOps Essentials,"August 31, 2011","December 3, 2014",In Development,Hyper-V | Azure
+Agile Project Management,DevForge,N0KPQ,Cloud Mastery Series,"June 18, 2019","July 18, 2019",Complete,ESX
+DevOps Practices and Tools,AI Nexus,MD5W4,Web Development Journey,"August 17, 2011","November 3, 2012",Awaiting Verification,ESX
+Cybersecurity Essentials,CloudSphere,YI5C,Cybersecurity Pathway,"July 31, 2019","March 21, 2023",In Development,ESX
+AI for Beginners,CloudSphere,YAYD5,Cloud Mastery Series,"June 21, 2019","January 4, 2020",In Development,Hyper-V | Azure
+Cloud Computing Basics,InnoSoft,L8OE,Web Development Journey,"February 27, 2012","September 4, 2018",In Development,Hyper-V | Azure
+Database Design and Management,CodeCrafters,P,Mobile Development Series,"March 13, 2012","April 1, 2023",Complete,Hyper-V | Azure
+Linux Command Line Basics,SecureNet,1X0GG,DevOps Essentials,"July 21, 2014","February 12, 2016",Awaiting Verification,Hyper-V | Azure
+Blockchain Fundamentals,DataMinds,IME,AI and Machine Learning Track,"April 1, 2013","January 15, 2021",In Development,Hyper-V | Azure
+Mobile App Development,DataMinds,5N,Data Science Bootcamp,"June 2, 2017","May 12, 2019",Awaiting Verification,Hyper-V
+Agile Project Management,DataMinds,8F2G,Cybersecurity Pathway,"April 2, 2021","February 5, 2023",Awaiting Verification,ESX | AWS
+IoT and Embedded Systems,DataMinds,CN3UR,Foundations of Technology,"January 13, 2014","May 29, 2019",Awaiting Verification,Hyper-V | AWS
+Building Secure Web Applications,NextGen Labs,URL,Web Development Journey,"December 26, 2016","May 1, 2019",In Development,Hyper-V | Azure
+Building Secure Web Applications,CodeCrafters,R5LI5,Web Development Journey,"February 27, 2013","March 12, 2016",Complete,Hyper-V
+IoT and Embedded Systems,InnoSoft,Q,DevOps Essentials,"February 23, 2023","January 27, 2025",In Development,ESX
+Blockchain Fundamentals,InnoSoft,PG2YJ,Advanced Developer Series,"April 10, 2010","December 5, 2019",Awaiting Verification,Hyper-V
+Introduction to Data Science,AI Nexus,8MPKV,Advanced Developer Series,"October 29, 2023","March 18, 2025",Awaiting Verification,Hyper-V
+Cybersecurity Essentials,InnoSoft,STU23,Networking Academy,"July 13, 2024","August 22, 2024",In Development,Hyper-V | Azure
+Mobile App Development,SecureNet,LPVSG,Cloud Mastery Series,"December 29, 2014","May 3, 2022",In Development,Hyper-V
+Building Secure Web Applications,DataMinds,EE,Cybersecurity Pathway,"April 5, 2019","November 29, 2020",Awaiting Verification,ESX
+Machine Learning Fundamentals,CodeCrafters,4E3R,DevOps Essentials,"March 4, 2018","September 27, 2019",In Development,ESX
+Database Design and Management,CloudSphere,O,Web Development Journey,"August 9, 2017","September 8, 2019",In Development,ESX
+AI for Beginners,DevForge,DM14,Web Development Journey,"July 14, 2010","May 2, 2015",Complete,ESX | AWS
+AI for Beginners,DataMinds,7HU,Networking Academy,"June 18, 2014","October 10, 2024",In Development,Hyper-V
+Natural Language Processing,NextGen Labs,SRQ,Web Development Journey,"December 3, 2016","May 19, 2022",Complete,ESX
+Building Secure Web Applications,TechNova,SLJ6B,AI and Machine Learning Track,"January 18, 2019","February 26, 2024",Complete,ESX
+Mobile App Development,DataMinds,8R,Cloud Mastery Series,"February 4, 2016","July 31, 2018",Complete,ESX
+DevOps Practices and Tools,AI Nexus,57O,Cloud Mastery Series,"May 30, 2021","February 3, 2024",Complete,ESX
+DevOps Practices and Tools,CodeCrafters,T,Foundations of Technology,"April 25, 2018","May 21, 2021",Complete,ESX
+Data Visualization with Python,CyberCore,EWZJ,AI and Machine Learning Track,"December 2, 2014","February 21, 2025",Complete,ESX
+Advanced Python Programming,NextGen Labs,Q,Web Development Journey,"March 17, 2014","February 13, 2017",In Development,ESX
+Networking Concepts,AI Nexus,B,AI and Machine Learning Track,"May 25, 2017","April 30, 2019",Complete,ESX
+Linux Command Line Basics,AI Nexus,7SM5A,Networking Academy,"July 23, 2011","April 6, 2015",Complete,ESX
+Building Secure Web Applications,CodeCrafters,OHYJ,Cloud Mastery Series,"November 29, 2019","October 3, 2024",Complete,ESX
+Web Development with JavaScript,AI Nexus,MR,DevOps Essentials,"December 7, 2015","May 8, 2024",Complete,ESX
+IoT and Embedded Systems,CodeCrafters,FKKRO,Mobile Development Series,"June 30, 2017","October 22, 2023",Awaiting Verification,ESX
+Introduction to Data Science,TechNova,5V,Networking Academy,"October 24, 2023","May 3, 2025",In Development,Hyper-V
+IoT and Embedded Systems,DataMinds,NOEF,Web Development Journey,"April 3, 2024","October 29, 2024",Awaiting Verification,ESX
+Machine Learning Fundamentals,SecureNet,X2,Cloud Mastery Series,"September 18, 2016","June 19, 2025",Complete,ESX
+Cybersecurity Essentials,SecureNet,TV8,AI and Machine Learning Track,"February 23, 2012","November 6, 2021",In Development,Hyper-V | Azure
+Big Data Analytics,CloudSphere,U,Data Science Bootcamp,"July 25, 2010","December 2, 2019",In Development,Hyper-V | Azure
+Cloud Computing Basics,CyberCore,9PS,DevOps Essentials,"July 20, 2012","September 8, 2018",Complete,Hyper-V | Azure
+Machine Learning Fundamentals,CyberCore,IEA,DevOps Essentials,"January 21, 2019","September 24, 2019",Awaiting Verification,ESX
+Building Secure Web Applications,SecureNet,T64Q,Foundations of Technology,"July 6, 2022","October 28, 2023",In Development,ESX
+Linux Command Line Basics,InnoSoft,J4,Web Development Journey,"June 6, 2011","September 20, 2021",Complete,ESX
+Cloud Computing Basics,InnoSoft,5,Cybersecurity Pathway,"August 12, 2013","April 30, 2015",Awaiting Verification,ESX
+Version Control with Git,SecureNet,PWO,Data Science Bootcamp,"August 5, 2011","December 2, 2020",Awaiting Verification,ESX
+AI for Beginners,TechNova,L753,Web Development Journey,"January 31, 2011","April 19, 2024",Complete,ESX
+Mobile App Development,TechNova,UE46X,Advanced Developer Series,"May 13, 2012","October 6, 2023",Awaiting Verification,ESX
+Database Design and Management,CodeCrafters,8H,Cybersecurity Pathway,"October 2, 2023","January 6, 2024",Awaiting Verification,ESX
+Agile Project Management,InnoSoft,4,AI and Machine Learning Track,"November 12, 2013","October 15, 2014",Complete,ESX
+IoT and Embedded Systems,DataMinds,4,Cloud Mastery Series,"December 1, 2011","August 16, 2021",In Development,ESX
+Advanced Python Programming,NextGen Labs,OXSL,Mobile Development Series,"July 24, 2012","December 7, 2016",In Development,ESX
+Advanced Python Programming,DevForge,F8Z45,DevOps Essentials,"February 2, 2015","June 1, 2019",In Development,ESX
+Linux Command Line Basics,DevForge,8HS0E,Networking Academy,"May 25, 2023","September 18, 2024",In Development,ESX
+Mobile App Development,CodeCrafters,P,DevOps Essentials,"March 14, 2010","March 18, 2011",Complete,ESX
+Cybersecurity Essentials,CloudSphere,9H1OV,Data Science Bootcamp,"February 23, 2025","May 4, 2025",Awaiting Verification,ESX
+Networking Concepts,DevForge,S,Foundations of Technology,"May 23, 2015","May 23, 2020",Complete,Hyper-V | Azure
+AI for Beginners,NextGen Labs,0,Cybersecurity Pathway,"November 5, 2015","March 8, 2020",Awaiting Verification,ESX
+Cybersecurity Essentials,InnoSoft,P0,Cybersecurity Pathway,"September 24, 2018","April 15, 2019",Complete,ESX
+Database Design and Management,NextGen Labs,0T,Networking Academy,"March 2, 2023","June 17, 2025",In Development,ESX
+Blockchain Fundamentals,NextGen Labs,5,Mobile Development Series,"June 18, 2016","October 3, 2023",Complete,ESX
+Advanced Python Programming,DataMinds,ERJ,Cybersecurity Pathway,"June 10, 2021","September 21, 2024",Awaiting Verification,ESX
+IoT and Embedded Systems,AI Nexus,P,Foundations of Technology,"July 8, 2022","February 2, 2025",Awaiting Verification,ESX
+Building Secure Web Applications,DevForge,V,Cybersecurity Pathway,"December 3, 2024","April 20, 2025",Complete,ESX
+Version Control with Git,NextGen Labs,JYF,AI and Machine Learning Track,"March 6, 2020","July 28, 2024",In Development,ESX
+Machine Learning Fundamentals,CloudSphere,IT6,Networking Academy,"July 25, 2020","April 17, 2023",Awaiting Verification,ESX
+Advanced Python Programming,CodeCrafters,MCX,Data Science Bootcamp,"December 24, 2011","December 2, 2022",In Development,ESX
+Networking Concepts,CodeCrafters,PTHG,Cybersecurity Pathway,"October 4, 2023","April 20, 2024",Awaiting Verification,ESX
+Big Data Analytics,DataMinds,WIXDX,Web Development Journey,"November 11, 2010","April 9, 2025",Awaiting Verification,ESX
+Advanced Python Programming,SecureNet,PDNN,Foundations of Technology,"April 30, 2011","September 18, 2019",In Development,ESX
+Data Visualization with Python,CyberCore,EH7O,Cybersecurity Pathway,"June 27, 2024","March 17, 2025",In Development,ESX
+Web Development with JavaScript,CloudSphere,7,Web Development Journey,"August 4, 2018","August 8, 2022",Awaiting Verification,ESX
+Version Control with Git,SecureNet,NKX,DevOps Essentials,"August 29, 2019","April 30, 2021",Complete,ESX
+IoT and Embedded Systems,SecureNet,6,AI and Machine Learning Track,"October 20, 2022","October 18, 2024",Complete,ESX
+Big Data Analytics,CloudSphere,7Z8U,DevOps Essentials,"November 19, 2013","April 3, 2023",Complete,ESX
+Cloud Computing Basics,NextGen Labs,9BXJ,Networking Academy,"November 23, 2015","December 11, 2024",Complete,ESX
+Networking Concepts,CyberCore,K4V,Advanced Developer Series,"December 18, 2020","May 8, 2023",Awaiting Verification,ESX
+Networking Concepts,CodeCrafters,VZM,Cybersecurity Pathway,"October 24, 2013","July 8, 2020",Complete,ESX
+AI for Beginners,CyberCore,VE49,Cloud Mastery Series,"September 18, 2012","May 5, 2014",In Development,ESX
+Machine Learning Fundamentals,CloudSphere,WFO4P,AI and Machine Learning Track,"May 7, 2024","May 24, 2025",Awaiting Verification,ESX
+Data Visualization with Python,InnoSoft,U,Cloud Mastery Series,"January 11, 2020","September 24, 2020",Complete,ESX
+DevOps Practices and Tools,CloudSphere,YI,Foundations of Technology,"September 5, 2013","January 3, 2018",Complete,Hyper-V
+Cybersecurity Essentials,SecureNet,CNH2,Cybersecurity Pathway,"November 2, 2020","April 6, 2022",Awaiting Verification,Hyper-V
+Natural Language Processing,AI Nexus,72TIY,Mobile Development Series,"November 21, 2014","October 30, 2021",In Development,Hyper-V
+Introduction to Data Science,CloudSphere,UIN7G,Foundations of Technology,"February 11, 2010","September 24, 2022",Awaiting Verification,Hyper-V
+Web Development with JavaScript,CyberCore,TI2LG,Mobile Development Series,"June 26, 2024","May 7, 2025",Complete,Hyper-V
+Big Data Analytics,CodeCrafters,UGDQ,Cloud Mastery Series,"June 2, 2012","July 22, 2020",Complete,Hyper-V
+Agile Project Management,SecureNet,Y0,Foundations of Technology,"April 30, 2020","December 29, 2021",In Development,Hyper-V
+DevOps Practices and Tools,CodeCrafters,N,Mobile Development Series,"October 4, 2022","April 26, 2024",Complete,Hyper-V
+Networking Concepts,DevForge,V9VL,Networking Academy,"April 22, 2016","January 31, 2023",In Development,Hyper-V
+Data Visualization with Python,AI Nexus,JIY,DevOps Essentials,"June 3, 2013","October 23, 2015",In Development,Hyper-V
+Networking Concepts,SecureNet,1,Cybersecurity Pathway,"August 28, 2021","February 1, 2022",In Development,Hyper-V
+IoT and Embedded Systems,CyberCore,OWRP,Foundations of Technology,"March 2, 2017","November 1, 2020",In Development,Hyper-V
+Linux Command Line Basics,DevForge,V,DevOps Essentials,"April 7, 2015","January 12, 2016",Complete,Hyper-V
+Advanced Python Programming,CodeCrafters,8C,AI and Machine Learning Track,"May 21, 2014","April 9, 2020",In Development,Hyper-V
+Mobile App Development,DataMinds,R,DevOps Essentials,"August 3, 2015","July 19, 2024",Awaiting Verification,Hyper-V
+Database Design and Management,CodeCrafters,7YADN,Mobile Development Series,"March 19, 2014","September 21, 2014",In Development,Hyper-V
+Machine Learning Fundamentals,CloudSphere,0YY,Advanced Developer Series,"May 10, 2020","November 6, 2020",Awaiting Verification,Hyper-V
+Version Control with Git,NextGen Labs,Q8WMI,Mobile Development Series,"October 20, 2024","October 22, 2024",Awaiting Verification,Hyper-V
+DevOps Practices and Tools,DataMinds,WR7,Cybersecurity Pathway,"July 12, 2015","November 30, 2019",Complete,Hyper-V
+Machine Learning Fundamentals,CyberCore,X5SN,Foundations of Technology,"September 23, 2022","July 10, 2023",Complete,Hyper-V
+Mobile App Development,NextGen Labs,CT,DevOps Essentials,"December 12, 2012","July 22, 2023",In Development,Hyper-V
+Web Development with JavaScript,CloudSphere,2N,Data Science Bootcamp,"November 7, 2016","July 18, 2019",Complete,Hyper-V
+Version Control with Git,InnoSoft,4UELY,Cloud Mastery Series,"April 12, 2013","October 28, 2023",Awaiting Verification,Hyper-V
+Natural Language Processing,CyberCore,VN0P7,Foundations of Technology,"October 23, 2017","May 20, 2018",In Development,Hyper-V
+Advanced Python Programming,NextGen Labs,80T8,Advanced Developer Series,"May 29, 2010","February 22, 2015",In Development,Hyper-V
+Introduction to Data Science,AI Nexus,J,Foundations of Technology,"June 2, 2024","March 11, 2025",Complete,Hyper-V
+AI for Beginners,AI Nexus,2H6,Cybersecurity Pathway,"November 9, 2016","September 8, 2019",In Development,Hyper-V
+Version Control with Git,TechNova,S2,Cloud Mastery Series,"September 22, 2019","March 17, 2025",Awaiting Verification,Hyper-V
+Linux Command Line Basics,DevForge,ASXPM,Web Development Journey,"May 17, 2010","May 25, 2017",Complete,Hyper-V
+Introduction to Data Science,InnoSoft,RR,Data Science Bootcamp,"January 1, 2014","February 16, 2014",In Development,Hyper-V
+IoT and Embedded Systems,CyberCore,5N2M,AI and Machine Learning Track,"March 22, 2015","April 30, 2017",Complete,Hyper-V
+IoT and Embedded Systems,InnoSoft,L,Web Development Journey,"December 25, 2013","March 17, 2023",Complete,Hyper-V
+Web Development with JavaScript,CyberCore,L,Cloud Mastery Series,"March 28, 2020","November 25, 2020",Complete,ESX
+DevOps Practices and Tools,AI Nexus,Y,Mobile Development Series,"June 27, 2018","August 8, 2018",Awaiting Verification,Hyper-V
+Cybersecurity Essentials,DevForge,R,Cybersecurity Pathway,"July 28, 2016","August 21, 2021",Awaiting Verification,Hyper-V
+Version Control with Git,CloudSphere,ZAR4,Advanced Developer Series,"March 1, 2016","December 25, 2017",In Development,Hyper-V | Azure
+Agile Project Management,DevForge,RK,Advanced Developer Series,"March 29, 2012","May 6, 2013",Awaiting Verification,ESX
+Mobile App Development,NextGen Labs,HG,AI and Machine Learning Track,"July 19, 2019","August 18, 2021",Complete,ESX
+Building Secure Web Applications,NextGen Labs,S8P6M,Networking Academy,"December 15, 2016","March 11, 2022",In Development,ESX
+Introduction to Data Science,CloudSphere,UT7K,Mobile Development Series,"May 31, 2021","July 18, 2023",In Development,ESX
+Data Visualization with Python,DevForge,5CI,Mobile Development Series,"December 2, 2012","October 6, 2014",Awaiting Verification,ESX
+Advanced Python Programming,SecureNet,C,Foundations of Technology,"August 16, 2015","August 16, 2019",Complete,ESX
+IoT and Embedded Systems,InnoSoft,P,AI and Machine Learning Track,"June 5, 2018","June 29, 2020",Awaiting Verification,ESX
+DevOps Practices and Tools,NextGen Labs,TUHPZ,DevOps Essentials,"June 20, 2016","September 26, 2022",In Development,ESX
+Linux Command Line Basics,CodeCrafters,IA,Cybersecurity Pathway,"May 3, 2022","December 12, 2024",In Development,ESX
+IoT and Embedded Systems,CodeCrafters,F1Q,Web Development Journey,"September 10, 2014","September 13, 2017",In Development,ESX | AWS
+Advanced Python Programming,DataMinds,X,Mobile Development Series,"May 18, 2013","March 20, 2023",In Development,Hyper-V
+IoT and Embedded Systems,SecureNet,5GLZ5,Web Development Journey,"August 10, 2015","February 19, 2025",In Development,ESX
+AI for Beginners,AI Nexus,LCG,Networking Academy,"March 29, 2010","August 9, 2016",In Development,ESX
+Advanced Python Programming,SecureNet,E8FPB,Data Science Bootcamp,"July 8, 2010","December 15, 2015",In Development,ESX
+DevOps Practices and Tools,CyberCore,O8FBI,Advanced Developer Series,"May 18, 2010","October 21, 2016",Complete,Hyper-V | Azure
+Big Data Analytics,CyberCore,DJK1,Cloud Mastery Series,"October 4, 2021","December 16, 2023",Complete,ESX
+Natural Language Processing,TechNova,ZT9PC,Advanced Developer Series,"December 2, 2024","April 14, 2025",In Development,Hyper-V
+Cybersecurity Essentials,SecureNet,XEI,Mobile Development Series,"December 6, 2014","February 6, 2017",Awaiting Verification,Hyper-V
+Mobile App Development,CyberCore,4,Mobile Development Series,"August 29, 2021","October 18, 2024",Awaiting Verification,Hyper-V | Azure
+Networking Concepts,DataMinds,QOJ,Networking Academy,"June 19, 2023","February 29, 2024",Awaiting Verification,Hyper-V
+Blockchain Fundamentals,NextGen Labs,8257,Web Development Journey,"October 18, 2018","October 7, 2024",Awaiting Verification,Hyper-V
+Cybersecurity Essentials,CyberCore,HU,Networking Academy,"June 13, 2015","October 2, 2015",In Development,Hyper-V | Azure
+Cloud Computing Basics,CodeCrafters,CR72V,AI and Machine Learning Track,"January 19, 2018","April 19, 2018",Awaiting Verification,ESX
+Web Development with JavaScript,NextGen Labs,UGSZM,Web Development Journey,"April 12, 2022","May 2, 2025",Awaiting Verification,ESX
+Version Control with Git,CodeCrafters,SG,Mobile Development Series,"January 26, 2017","July 20, 2017",Complete,ESX
+Data Visualization with Python,CyberCore,UK3RE,Data Science Bootcamp,"February 28, 2011","December 16, 2013",In Development,Hyper-V
+Cloud Computing Basics,TechNova,IL9,Cloud Mastery Series,"January 12, 2010","November 1, 2019",In Development,None
+Cloud Computing Basics,CodeCrafters,Y,DevOps Essentials,"March 9, 2016","April 3, 2021",In Development,None
+Mobile App Development,DataMinds,A7I,Mobile Development Series,"June 26, 2023","February 15, 2025",Complete,None
+Natural Language Processing,AI Nexus,5TD4X,Web Development Journey,"July 21, 2012","September 14, 2016",Awaiting Verification,None
+Data Visualization with Python,InnoSoft,WB,Networking Academy,"July 23, 2012","April 22, 2013",Awaiting Verification,None
+Data Visualization with Python,DataMinds,8BBA,Web Development Journey,"September 9, 2024","January 18, 2025",Complete,None
+Cybersecurity Essentials,SecureNet,TZ,Networking Academy,"August 20, 2015","September 22, 2017",Complete,None
+Linux Command Line Basics,DataMinds,W,Web Development Journey,"November 29, 2023","June 13, 2025",In Development,None
+Agile Project Management,CodeCrafters,5HG,Advanced Developer Series,"April 15, 2019","March 29, 2021",Awaiting Verification,None
+Cybersecurity Essentials,SecureNet,0,AI and Machine Learning Track,"October 27, 2022","June 26, 2024",Awaiting Verification,Docker
+Mobile App Development,CodeCrafters,REYT,Data Science Bootcamp,"May 30, 2013","November 16, 2018",In Development,Hyper-V
+Cybersecurity Essentials,CloudSphere,AZF9I,Web Development Journey,"March 3, 2013","April 11, 2017",Complete,Hyper-V
+Version Control with Git,DevForge,FOY,Networking Academy,"November 24, 2018","May 2, 2023",In Development,Hyper-V
+AI for Beginners,InnoSoft,JT,AI and Machine Learning Track,"October 21, 2014","December 14, 2020",Awaiting Verification,ESX
+Cybersecurity Essentials,CloudSphere,22N,AI and Machine Learning Track,"February 13, 2024","December 6, 2024",Awaiting Verification,ESX
+Building Secure Web Applications,CodeCrafters,T8,Mobile Development Series,"April 27, 2023","July 7, 2023",In Development,Hyper-V | Azure
+Version Control with Git,NextGen Labs,D8,Networking Academy,"November 25, 2024","May 19, 2025",Complete,ESX
+Machine Learning Fundamentals,DataMinds,ZL,Cloud Mastery Series,"January 30, 2024","December 21, 2024",In Development,None
+Cybersecurity Essentials,DevForge,IMYAH,Advanced Developer Series,"December 21, 2014","May 21, 2020",Complete,ESX | AWS
+Data Visualization with Python,CyberCore,GA,Web Development Journey,"December 19, 2011","April 6, 2012",Complete,ESX
+Advanced Python Programming,DataMinds,GU3B,Cloud Mastery Series,"December 27, 2016","February 19, 2021",Awaiting Verification,ESX
+Agile Project Management,TechNova,0CXLO,DevOps Essentials,"March 28, 2012","May 18, 2013",Awaiting Verification,Hyper-V
+Advanced Python Programming,TechNova,8SFQ,Advanced Developer Series,"January 10, 2016","October 14, 2020",Awaiting Verification,ESX
+IoT and Embedded Systems,SecureNet,04SVC,Foundations of Technology,"June 4, 2015","July 21, 2019",In Development,Hyper-V
+Web Development with JavaScript,DevForge,CC0P,Cloud Mastery Series,"July 25, 2011","May 9, 2023",Awaiting Verification,Hyper-V
+Big Data Analytics,DevForge,P,DevOps Essentials,"February 12, 2022","May 8, 2025",Awaiting Verification,ESX
+Machine Learning Fundamentals,InnoSoft,P01LN,Foundations of Technology,"April 8, 2015","December 7, 2016",Complete,ESX
+Cybersecurity Essentials,DevForge,R,Networking Academy,"November 8, 2023","June 17, 2024",Complete,ESX
+Cybersecurity Essentials,DevForge,5ZTZ,Advanced Developer Series,"July 21, 2012","May 11, 2025",In Development,ESX
+Big Data Analytics,DataMinds,8,Foundations of Technology,"September 24, 2019","May 27, 2023",In Development,ESX
+Networking Concepts,SecureNet,HMG,Foundations of Technology,"June 4, 2024","December 24, 2024",Complete,ESX
+Data Visualization with Python,CodeCrafters,UW,Networking Academy,"July 30, 2012","May 1, 2015",Awaiting Verification,ESX
+Mobile App Development,InnoSoft,70L83,DevOps Essentials,"November 8, 2018","November 27, 2024",In Development,ESX
+Networking Concepts,TechNova,L,Web Development Journey,"May 26, 2025","June 28, 2025",In Development,Hyper-V | Azure
+Big Data Analytics,CyberCore,RC2,Advanced Developer Series,"April 27, 2010","April 19, 2011",Complete,ESX
+Networking Concepts,SecureNet,JG2,AI and Machine Learning Track,"January 8, 2016","May 28, 2020",In Development,None | Azure
+AI for Beginners,DevForge,SP2,DevOps Essentials,"August 7, 2015","August 30, 2020",In Development,None
+Linux Command Line Basics,InnoSoft,ULHO6,Data Science Bootcamp,"March 24, 2020","April 23, 2022",Complete,None | Azure
+Agile Project Management,CyberCore,S,Mobile Development Series,"August 24, 2014","March 8, 2023",In Development,None | Azure
+Introduction to Data Science,CyberCore,OYSB4,Foundations of Technology,"November 16, 2016","July 12, 2024",In Development,None | Azure
+Database Design and Management,CloudSphere,X7U,Web Development Journey,"October 10, 2018","March 8, 2020",Complete,Hyper-V
+Mobile App Development,DataMinds,5,Cybersecurity Pathway,"February 18, 2014","September 5, 2019",In Development,ESX
+Big Data Analytics,TechNova,M,Cloud Mastery Series,"November 6, 2013","May 30, 2022",Complete,ESX
+Introduction to Data Science,DevForge,7,Mobile Development Series,"March 11, 2022","May 3, 2023",Awaiting Verification,ESX
+Natural Language Processing,CyberCore,F7,DevOps Essentials,"November 5, 2016","January 28, 2017",Awaiting Verification,ESX
+Cybersecurity Essentials,TechNova,L79,Data Science Bootcamp,"October 24, 2015","March 3, 2022",Awaiting Verification,ESX
+Mobile App Development,CyberCore,B5N,Advanced Developer Series,"March 12, 2011","April 11, 2012",In Development,Hyper-V
+Advanced Python Programming,NextGen Labs,UNVD,Advanced Developer Series,"February 9, 2016","April 3, 2020",Complete,None
+Big Data Analytics,CyberCore,F8,Data Science Bootcamp,"April 5, 2011","October 6, 2017",Complete,Hyper-V | Azure
+Version Control with Git,SecureNet,MM,Web Development Journey,"February 28, 2014","October 19, 2017",In Development,Hyper-V
+Advanced Python Programming,CodeCrafters,LBD,DevOps Essentials,"January 17, 2022","March 4, 2025",In Development,Hyper-V | Azure
+Networking Concepts,SecureNet,A,Cloud Mastery Series,"April 26, 2012","July 18, 2015",Complete,Hyper-V
+Web Development with JavaScript,TechNova,MG,Advanced Developer Series,"July 5, 2012","May 16, 2014",In Development,ESX
+Machine Learning Fundamentals,InnoSoft,0Q9,AI and Machine Learning Track,"April 15, 2023","January 7, 2025",In Development,ESX
+Data Visualization with Python,InnoSoft,XP,AI and Machine Learning Track,"November 6, 2024","July 9, 2025",In Development,ESX
+AI for Beginners,CodeCrafters,F8FWO,Cybersecurity Pathway,"November 25, 2021","June 23, 2024",Complete,ESX
+Advanced Python Programming,CyberCore,K,Mobile Development Series,"November 1, 2016","February 10, 2021",Complete,ESX
+Linux Command Line Basics,TechNova,LK5JB,DevOps Essentials,"September 12, 2010","November 21, 2024",Complete,ESX
+Blockchain Fundamentals,CodeCrafters,C,AI and Machine Learning Track,"September 24, 2020","October 29, 2021",Awaiting Verification,Hyper-V
+Version Control with Git,CloudSphere,CFHH,AI and Machine Learning Track,"December 10, 2018","May 28, 2020",Awaiting Verification,ESX
+Version Control with Git,CyberCore,9NHUG,Web Development Journey,"March 11, 2022","May 15, 2024",Complete,ESX
+Web Development with JavaScript,CodeCrafters,R,Mobile Development Series,"January 15, 2024","March 23, 2024",Complete,ESX
+Mobile App Development,CloudSphere,RPHD,Mobile Development Series,"May 3, 2016","December 19, 2016",Complete,ESX
+Natural Language Processing,NextGen Labs,M,Mobile Development Series,"December 10, 2016","April 10, 2019",Complete,ESX
+Building Secure Web Applications,DataMinds,DO5P,AI and Machine Learning Track,"October 16, 2021","August 23, 2024",In Development,ESX
+Web Development with JavaScript,NextGen Labs,SLWN5,Cloud Mastery Series,"February 24, 2022","January 17, 2025",In Development,ESX
+AI for Beginners,CloudSphere,5,Data Science Bootcamp,"August 22, 2012","July 31, 2014",Complete,Hyper-V
+Blockchain Fundamentals,TechNova,3ZZS,Web Development Journey,"October 24, 2022","July 14, 2023",In Development,Hyper-V
+Cloud Computing Basics,CyberCore,G,Networking Academy,"May 3, 2020","January 26, 2025",In Development,Hyper-V
+Linux Command Line Basics,NextGen Labs,D4,Web Development Journey,"September 18, 2011","September 5, 2016",In Development,Hyper-V
+Introduction to Data Science,DevForge,4CBDE,Data Science Bootcamp,"March 17, 2015","March 15, 2025",In Development,Hyper-V
+Cybersecurity Essentials,DevForge,F6S,Cybersecurity Pathway,"August 17, 2022","May 2, 2023",In Development,None | Azure
+Cybersecurity Essentials,CyberCore,M0,Advanced Developer Series,"November 21, 2022","May 21, 2023",Awaiting Verification,None | Azure
+Building Secure Web Applications,CyberCore,P9638,Cybersecurity Pathway,"February 22, 2022","October 1, 2022",Awaiting Verification,None | Azure
+Big Data Analytics,DataMinds,7M5UR,Advanced Developer Series,"November 3, 2018","December 28, 2019",Complete,ESX
+Data Visualization with Python,SecureNet,SA,AI and Machine Learning Track,"April 23, 2022","May 20, 2022",In Development,ESX
+Version Control with Git,DataMinds,TDBF,Mobile Development Series,"April 1, 2020","January 13, 2021",In Development,ESX
+Data Visualization with Python,CloudSphere,W,Networking Academy,"November 10, 2017","May 4, 2019",Awaiting Verification,None
+Building Secure Web Applications,AI Nexus,8,Web Development Journey,"July 27, 2018","September 4, 2023",In Development,ESX
+Agile Project Management,SecureNet,JR,Networking Academy,"January 3, 2020","November 22, 2023",Awaiting Verification,Hyper-V | Azure
+Database Design and Management,CodeCrafters,U3,Data Science Bootcamp,"September 3, 2017","October 29, 2020",In Development,ESX
+Database Design and Management,DevForge,O37HA,AI and Machine Learning Track,"November 27, 2017","June 13, 2018",Awaiting Verification,Hyper-V | Azure
+Cloud Computing Basics,AI Nexus,7O9R5,Networking Academy,"July 21, 2012","July 17, 2015",Awaiting Verification,Hyper-V
+Networking Concepts,InnoSoft,9O,AI and Machine Learning Track,"November 23, 2021","June 23, 2025",In Development,Hyper-V
+Networking Concepts,TechNova,6GUV3,Cybersecurity Pathway,"October 20, 2021","September 22, 2024",Awaiting Verification,Hyper-V
+Linux Command Line Basics,SecureNet,PAF6,Networking Academy,"December 1, 2022","April 21, 2024",In Development,None
+Introduction to Data Science,TechNova,9WE,Cybersecurity Pathway,"September 11, 2016","January 5, 2021",Complete,ESX
+Linux Command Line Basics,CodeCrafters,I98A,Advanced Developer Series,"October 29, 2020","July 8, 2023",In Development,Hyper-V
+Cybersecurity Essentials,NextGen Labs,Y7,Foundations of Technology,"November 19, 2020","July 26, 2023",Complete,ESX
+Linux Command Line Basics,DevForge,Q7,Mobile Development Series,"March 15, 2016","April 25, 2022",Awaiting Verification,ESX
+AI for Beginners,AI Nexus,C8M,Data Science Bootcamp,"December 11, 2014","January 29, 2017",Awaiting Verification,ESX
+Building Secure Web Applications,DevForge,MDI7,DevOps Essentials,"January 13, 2017","September 28, 2024",Complete,None | Azure
+Blockchain Fundamentals,SecureNet,O,Cloud Mastery Series,"March 23, 2019","September 20, 2022",Complete,None | Azure
+Database Design and Management,TechNova,4R,Cybersecurity Pathway,"July 24, 2022","December 27, 2023",Complete,Hyper-V
+Agile Project Management,CodeCrafters,72BYI,Data Science Bootcamp,"October 27, 2023","March 23, 2024",Awaiting Verification,Hyper-V
+Cybersecurity Essentials,CyberCore,J,Cybersecurity Pathway,"August 21, 2010","November 5, 2019",Awaiting Verification,ESX
+Introduction to Data Science,CloudSphere,WZSZ,Cybersecurity Pathway,"August 31, 2014","May 22, 2025",In Development,None
+Cloud Computing Basics,AI Nexus,46,Advanced Developer Series,"December 9, 2018","February 16, 2023",In Development,None
+Agile Project Management,CodeCrafters,W,DevOps Essentials,"March 23, 2020","July 8, 2024",Awaiting Verification,ESX
+DevOps Practices and Tools,AI Nexus,MATWY,Mobile Development Series,"March 3, 2021","October 18, 2024",In Development,Hyper-V | Azure
+Web Development with JavaScript,CloudSphere,A8,Foundations of Technology,"August 26, 2023","March 6, 2025",Awaiting Verification,ESX
+Big Data Analytics,CloudSphere,135,AI and Machine Learning Track,"April 29, 2012","April 15, 2013",In Development,Hyper-V | Azure
+Blockchain Fundamentals,CloudSphere,IZ,Mobile Development Series,"November 7, 2023","December 13, 2023",Awaiting Verification,ESX
+Version Control with Git,CyberCore,0GSJ,AI and Machine Learning Track,"September 24, 2023","July 2, 2025",Complete,Hyper-V
+Machine Learning Fundamentals,InnoSoft,1BVV,Foundations of Technology,"September 19, 2015","April 20, 2020",Complete,ESX
+AI for Beginners,TechNova,4ML,DevOps Essentials,"December 11, 2021","September 23, 2023",In Development,Hyper-V
+Blockchain Fundamentals,NextGen Labs,J8,Data Science Bootcamp,"May 1, 2020","June 17, 2022",Awaiting Verification,ESX
+Linux Command Line Basics,CloudSphere,D6Z6I,Web Development Journey,"January 11, 2022","February 1, 2022",Awaiting Verification,ESX
+Networking Concepts,CloudSphere,MTQOV,Networking Academy,"August 24, 2020","October 4, 2024",In Development,ESX
+Cybersecurity Essentials,DataMinds,G95AW,Mobile Development Series,"July 22, 2024","February 14, 2025",Awaiting Verification,ESX
+Agile Project Management,AI Nexus,0,Foundations of Technology,"August 17, 2017","October 16, 2018",In Development,ESX
+Data Visualization with Python,InnoSoft,5,Web Development Journey,"September 24, 2022","April 30, 2025",In Development,Hyper-V
+Web Development with JavaScript,CloudSphere,06ID,Mobile Development Series,"November 19, 2013","August 6, 2014",Complete,ESX
