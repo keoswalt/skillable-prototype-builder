@@ -24,28 +24,25 @@ import { BaseItem } from '@/types/generic';
 
 // Type for CSV data hooks
 type CSVDataHook = () => {
-  data: Record<string, unknown>[] | null;
+  data: any[] | null;
   loading: boolean;
   error: string | null;
 };
 
-// Type for transformation functions - can accept star parameters or not
-type TransformFunction = (
-  csvData: Record<string, unknown>[],
-  starredItems?: Record<string, boolean>,
-  toggleStar?: (itemType: string, itemId: number) => void
-) => ProfileItem[] | SeriesItem[] | InstanceItem[] | TemplateItem[];
+// Type for transformation functions - generic for each data type
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type TransformFunction<T = any, R = any> = (...args: any[]) => R;
 
-// Type for card components
-type CardComponent = React.ComponentType<BaseItem>;
+// Type for card components - generic for each item type
+export type CardComponent<T = any> = React.ComponentType<T>;
 
-export interface TabConfiguration {
+export interface TabConfiguration<T = any, R = any, C = any> {
   id: string;
   label: string;
   cardType: CardType;
   csvDataHook: CSVDataHook;
-  transformFunction: TransformFunction;
-  cardComponent: CardComponent;
+  transformFunction: TransformFunction<T, R>;
+  cardComponent: CardComponent<C>;
   defaultSortConfig: SortConfig;
   defaultFilterConfig: Filter[];
 }

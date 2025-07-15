@@ -126,7 +126,7 @@ export const UsePersistentStateExample: React.FC = () => {
     migrateUserPrefs('3.0', (oldData, oldVersion) => {
       console.log(`Migrating from ${oldVersion} to 3.0`);
       return {
-        ...oldData,
+        ...(typeof oldData === 'object' && oldData !== null ? oldData : {}),
         theme: 'dark', // Force dark theme in new version
         language: 'en',
         notifications: true,

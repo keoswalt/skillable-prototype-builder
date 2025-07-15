@@ -9,7 +9,7 @@ import { APP_CONSTANTS } from '@/config/constants';
 import { CardType } from '@/config/sorting';
 import { getTabIds } from '@/config/tabs';
 
-interface PaginationState {
+export interface PaginationState {
   currentPage: number;
   pageSize: number;
 }

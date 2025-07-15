@@ -170,7 +170,7 @@ export const codeBlockSlashCommand: SlashCommandItem = {
       .chain()
       .focus()
       .deleteRange(range)
-      .setCodeBlock({ language: language || undefined })
+      .setCodeBlock({ language: language || '' })
       .run();
   },
 };

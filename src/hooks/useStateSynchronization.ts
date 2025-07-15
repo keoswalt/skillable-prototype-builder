@@ -9,6 +9,9 @@ import { useFiltering } from './useFiltering';
 import { useDashboardState } from './useDashboardState';
 import { BaseItem } from '@/types/generic';
 import { CardType } from '@/config/sorting';
+import { SortConfig } from '@/config/sorting';
+import { Filter } from '@/config/filtering';
+import { PaginationState } from './useDashboardState';
 
 interface UseStateSynchronizationProps {
   cardType: CardType;
@@ -16,9 +19,9 @@ interface UseStateSynchronizationProps {
 }
 
 interface SynchronizedState {
-  sortConfig: ReturnType<typeof useSorting>['getCurrentSortConfig'];
-  filterConfig: ReturnType<typeof useFiltering>['getCurrentFilterConfig'];
-  paginationState: ReturnType<typeof useDashboardState>['getCurrentTabPagination'];
+  sortConfig: SortConfig;
+  filterConfig: Filter[];
+  paginationState: PaginationState;
   isValid: boolean;
   validationErrors: string[];
 }

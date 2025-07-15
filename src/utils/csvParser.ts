@@ -66,14 +66,14 @@ export class CSVParser {
       const finalConfig = { 
         ...DEFAULT_CONFIG, 
         ...config,
-        complete: (results) => {
+        complete: (results: Papa.ParseResult<T>) => {
           resolve({
             data: results.data as T[],
             errors: results.errors,
             meta: results.meta
           });
         },
-        error: (error) => {
+        error: (error: any) => {
           reject(error);
         }
       };
@@ -91,19 +91,19 @@ export class CSVParser {
         ...DEFAULT_CONFIG, 
         download: true, // <-- THIS IS CRITICAL
         ...config,
-        complete: (results) => {
+        complete: (results: Papa.ParseResult<T>) => {
           resolve({
             data: results.data as T[],
             errors: results.errors,
             meta: results.meta
           });
         },
-        error: (error) => {
+        error: (error: any) => {
           reject(error);
         }
       };
       
-      Papa.parse(url, finalConfig);
+      Papa.parse(url as any, finalConfig);
     });
   }
 

@@ -71,7 +71,7 @@ export const SORT_OPTIONS: Record<CardType, SortFieldOption[]> = {
 
 // Default sort configurations for each card type
 export const DEFAULT_SORT_CONFIGS: Record<CardType, SortConfig> = {
-  instance: { field: 'name', direction: 'asc' },
+  instance: { field: 'state', direction: 'asc' }, // Sort by state to see running instances first
   profile: { field: 'name', direction: 'asc' },
   series: { field: 'name', direction: 'asc' },
   template: { field: 'name', direction: 'asc' },
