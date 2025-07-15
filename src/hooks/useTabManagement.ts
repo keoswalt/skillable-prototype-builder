@@ -36,20 +36,12 @@ export function useTabManagement({
     const configuration = getTabConfigurationByIndex(activeTabIndex);
     
     if (!configuration) {
-      return {
-        configuration: null as TabConfiguration | null,
-        transformedData: [],
-        loading: false,
-        error: 'Invalid tab configuration'
-      };
+      throw new Error('Invalid tab configuration');
     }
 
     // Get CSV data using the tab's data hook
     const csvDataHook = configuration.csvDataHook;
-    const { data: csvData, loading, error } = csvDataHook({
-      cache: true,
-      clean: true
-    });
+    const { data: csvData, loading, error } = csvDataHook();
 
     // Transform data using the tab's transformation function
     let transformedData: ProfileItem[] | SeriesItem[] | InstanceItem[] | TemplateItem[] = [];
