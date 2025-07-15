@@ -60,9 +60,9 @@ export function DashboardGrid({
     <section>
       <div className="mb-4">
         {/* Tab list with sort controls inline */}
-        <div className="flex flex-wrap items-center justify-between gap-4">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
           {/* Tabs container - takes available space */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 w-full lg:w-auto">
             <Tabs 
               items={tabItems} 
               defaultIndex={activeTabIndex} 
@@ -73,7 +73,7 @@ export function DashboardGrid({
           </div>
           
           {/* Sort and Filter Controls - aligned right with responsive wrapping */}
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4 w-full lg:w-auto">
           <SortControls
               options={sortOptions}
               currentConfig={currentSortConfig}

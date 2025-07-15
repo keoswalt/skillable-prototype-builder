@@ -14,19 +14,20 @@ interface DashboardHeaderProps {
 
 export function DashboardHeader({ findMenuItems, createMenuItems }: DashboardHeaderProps) {
   return (
-    <section className="flex flex-row justify-between items-center py-6">
+    <section className="flex flex-col lg:flex-row justify-between items-start lg:items-center py-6 gap-4 lg:gap-0">
       <div className="flex items-center gap-3">
         <h1 className="font-headline text-heading-md">Welcome back, Kim.</h1>
         <Button 
           size="small" 
           variant="warning" 
           onClick={() => alert('Opens lab advisor home page')}
+          className="hidden sm:inline-flex"
         >
           View Recommendations (8)
         </Button>
       </div>
       
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 w-full lg:w-auto">
         <SplitButton
           icon={<Icon icon={Icons.search} className="size-4" />}
           label="Find"
