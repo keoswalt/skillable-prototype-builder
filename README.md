@@ -10,6 +10,7 @@ This is a private repository built for internal Skillable use by senior product 
 
 ### Component Library
 
+- [X] Alert
 - [X] Chip
 - [X] Button
 - [X] Split button

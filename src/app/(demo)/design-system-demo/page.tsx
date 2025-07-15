@@ -2,6 +2,7 @@
 import ButtonExample from '@/components/buttons/ButtonExample';
 import DataTableExample from '@/components/data/DataTableExample';
 import ChipExample from '@/components/info/ChipExample';
+import { AlertExample } from '@/components/info/AlertExample';
 import SplitButtonExample from '@/components/buttons/SplitButtonExample';
 import { DashboardCardExample } from '@/components/cards/dashboard/DashboardCardExample';
 import { BasicDialogExample } from '@/components/dialogs/BasicDialogExample';
@@ -46,6 +47,11 @@ export default function Home() {
       <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">Chip Component Examples</h2>
         <ChipExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Alert Component Examples</h2>
+        <AlertExample />
       </section>
 
       <section className="mt-8">
