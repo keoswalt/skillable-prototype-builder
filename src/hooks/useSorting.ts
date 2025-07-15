@@ -6,7 +6,8 @@ import { useLocalStorage } from './useLocalStorage';
 import { DEFAULT_SORT_CONFIGS, type SortConfig, type CardType } from '@/config/sorting';
 import { APP_CONSTANTS } from '@/config/constants';
 import { GenericSortFunction, BaseItem } from '@/types/generic';
-import { getSortOptions } from '@/config/sorting';
+import { getSortOptions, getFieldType, getCustomSortOrder } from '@/config/sorting';
+import { compareValues } from '@/utils/sortingUtils';
 
 export function useSorting() {
   const [sortConfigs, setSortConfigs, isSortConfigsLoaded] = useLocalStorage<Record<CardType, SortConfig>>(
@@ -101,7 +102,8 @@ export function useSorting() {
 
   const sortItems: GenericSortFunction<BaseItem> = <T extends BaseItem>(
     items: T[], 
-    sortConfig: SortConfig
+    sortConfig: SortConfig,
+    cardType?: CardType
   ): T[] => {
     return [...items].sort((a, b) => {
       // First, sort by starred status (starred items always come first)
@@ -115,19 +117,12 @@ export function useSorting() {
       const aValue = (a as Record<string, unknown>)[sortConfig.field];
       const bValue = (b as Record<string, unknown>)[sortConfig.field];
       
-      // Handle different data types
-      let comparison = 0;
+      // Get field type and custom order for proper comparison
+      const fieldType = cardType ? getFieldType(cardType, sortConfig.field) : 'string';
+      const customOrder = cardType ? getCustomSortOrder(cardType, sortConfig.field) : undefined;
       
-      if (typeof aValue === 'string' && typeof bValue === 'string') {
-        comparison = aValue.localeCompare(bValue);
-      } else if (typeof aValue === 'number' && typeof bValue === 'number') {
-        comparison = aValue - bValue;
-      } else if (aValue instanceof Date && bValue instanceof Date) {
-        comparison = aValue.getTime() - bValue.getTime();
-      } else {
-        // Fallback to string comparison
-        comparison = String(aValue).localeCompare(String(bValue));
-      }
+      // Use the new comparison function
+      const comparison = compareValues(aValue, bValue, fieldType, customOrder);
       
       // Apply sort direction
       return sortConfig.direction === 'desc' ? -comparison : comparison;

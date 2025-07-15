@@ -9,6 +9,15 @@ import { isValidCSVData, isStarredItemsRecord } from '@/utils/typeGuards';
 import { DataTransformationError, createErrorResult, createSuccessResult, type Result } from '@/types/errors';
 
 /**
+ * Parse a number from a string, handling alphanumeric values
+ */
+function parseNumericField(value: string): string {
+  // For fields that should be treated as numbers but are stored as strings
+  // We keep them as strings but ensure they're properly formatted for sorting
+  return value || '0';
+}
+
+/**
  * Transform LabProfileData from CSV to ProfileItem for dashboard
  */
 export function transformLabProfileToProfileItem(
@@ -88,9 +97,9 @@ export function transformLabSeriesToSeriesItem(
     id: index,
     name: item.series,
     organization: item.organization,
-    labProfiles: item.distinct_lab_profiles || '0',
-    virtualMachines: item.distinct_vms || '0',
-    apiConsumers: item.distinct_api_consumers || '0',
+    labProfiles: parseNumericField(item.distinct_lab_profiles),
+    virtualMachines: parseNumericField(item.distinct_vms),
+    apiConsumers: parseNumericField(item.distinct_api_consumers),
     created: item.created,
     modified: item.last_modified,
     starred: starredItems[`series-${index}`] || false,
@@ -120,7 +129,7 @@ export function transformLabInstanceToInstanceItem(
   const transformedData: InstanceItem[] = csvData.map((item, index) => ({
     id: index,
     name: item.lab_profile,
-    instanceId: item.id,
+    instanceId: parseNumericField(item.id),
     labProfile: item.lab_profile,
     series: item.series,
     student: item.student,

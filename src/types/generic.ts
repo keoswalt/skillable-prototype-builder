@@ -94,7 +94,8 @@ export interface GenericDashboardState<T extends GenericCardType = GenericCardTy
 // Generic sort and filter functions
 export type GenericSortFunction<T extends BaseItem> = (
   items: T[],
-  sortConfig: GenericSortConfig
+  sortConfig: GenericSortConfig,
+  cardType?: GenericCardType
 ) => T[];
 
 export type GenericFilterFunction<T extends BaseItem> = (

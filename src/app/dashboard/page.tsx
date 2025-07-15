@@ -127,8 +127,9 @@ export default function DashboardPage() {
     const synchronizedSortConfig = getSynchronizedSortConfig(cardType, data);
     const synchronizedFilterConfig = getSynchronizedFilterConfig(cardType, data);
     
-    return applyFilters(sortItems(data, synchronizedSortConfig), synchronizedFilterConfig);
-  }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getSynchronizedSortConfig, getSynchronizedFilterConfig]);
+    // Pass cardType to sortItems for proper type-aware sorting
+    return applyFilters(sortItems(data, synchronizedSortConfig, cardType), synchronizedFilterConfig);
+  }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getSynchronizedSortConfig, getSynchronizedFilterConfig, sortItems]);
 
   const totalItems = useMemo(() => processedTabData.length, [processedTabData]);
 
