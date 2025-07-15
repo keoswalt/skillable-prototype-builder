@@ -104,9 +104,7 @@ export function transformLabSeriesToSeriesItem(
  * Transform LabInstanceData from CSV to InstanceItem for dashboard
  */
 export function transformLabInstanceToInstanceItem(
-  csvData: LabInstanceData[],
-  starredItems: Record<string, boolean>,
-  toggleStar: (itemType: string, itemId: number) => void
+  csvData: LabInstanceData[]
 ): Result<InstanceItem[], DataTransformationError> {
   // Validate input data
   if (!isValidCSVData(csvData)) {
@@ -115,16 +113,6 @@ export function transformLabInstanceToInstanceItem(
         dataType: 'LabInstanceData',
         transformationFunction: 'transformLabInstanceToInstanceItem',
         inputData: csvData
-      })
-    );
-  }
-  
-  if (!isStarredItemsRecord(starredItems)) {
-    return createErrorResult(
-      new DataTransformationError('Invalid starred items record provided to transformLabInstanceToInstanceItem', {
-        dataType: 'Record<string, boolean>',
-        transformationFunction: 'transformLabInstanceToInstanceItem',
-        inputData: starredItems
       })
     );
   }
@@ -140,8 +128,7 @@ export function transformLabInstanceToInstanceItem(
     duration: item.duration,
     lastActivity: item.last_activity_time,
     state: item.state_id,
-    starred: starredItems[`instance-${index}`] || false,
-    onStarToggle: () => toggleStar('instance', index),
+    starred: false, // Instance items don't support starring, but property is required by BaseItem
   }));
 
   return createSuccessResult(transformedData);

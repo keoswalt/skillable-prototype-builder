@@ -7,6 +7,10 @@ export type InstanceCardProps = Omit<InstanceData, 'variant'> & {
   className?: string;
   // Note: InstanceCard does not support starring functionality
   // Default actions are automatically included unless overridden by the actions prop
+} & {
+  // Explicitly exclude star-related props to prevent them from being passed through
+  starred?: never;
+  onStarToggle?: never;
 };
 
 const InstanceCardComponent: React.FC<InstanceCardProps> = React.memo((props) => {

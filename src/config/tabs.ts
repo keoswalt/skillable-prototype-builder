@@ -29,11 +29,11 @@ type CSVDataHook = () => {
   error: string | null;
 };
 
-// Type for transformation functions
+// Type for transformation functions - can accept star parameters or not
 type TransformFunction = (
   csvData: Record<string, unknown>[],
-  starredItems: Record<string, boolean>,
-  toggleStar: (itemType: string, itemId: number) => void
+  starredItems?: Record<string, boolean>,
+  toggleStar?: (itemType: string, itemId: number) => void
 ) => ProfileItem[] | SeriesItem[] | InstanceItem[] | TemplateItem[];
 
 // Type for card components

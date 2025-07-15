@@ -5,7 +5,7 @@
 import { ChipVariant } from '@/components/info/Chip';
 import { InstanceItem, ProfileItem, SeriesItem, TemplateItem } from '@/types/dashboard';
 
-export function generateMockInstances(starredItems: Record<string, boolean>, toggleStar: (itemType: string, itemId: number) => void): InstanceItem[] {
+export function generateMockInstances(): InstanceItem[] {
   return Array.from({ length: 5 }).map((_, i) => ({
     id: i,
     name: `Lab Profile ${String.fromCharCode(65 + i)} (User ${i + 1})`,
@@ -17,8 +17,7 @@ export function generateMockInstances(starredItems: Record<string, boolean>, tog
     duration: `${(i % 3) + 1}:${((i * 7) % 60).toString().padStart(2, '0')}`,
     lastActivity: `June ${(i % 30) + 1}, 2025`,
     state: i % 2 === 0 ? "Running" : "Off",
-    starred: starredItems[`instance-${i}`] || false,
-    onStarToggle: () => toggleStar('instance', i),
+    starred: false, // Instance items don't support starring
   }));
 }
 

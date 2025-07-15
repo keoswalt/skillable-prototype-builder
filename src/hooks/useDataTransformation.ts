@@ -49,7 +49,7 @@ export function useDataTransformation({
       : { success: true, data: [] as SeriesItem[] };
 
     const instances = csvInstances && csvInstances.length > 0
-      ? transformLabInstanceToInstanceItem(csvInstances, starredItems, toggleStar)
+      ? transformLabInstanceToInstanceItem(csvInstances)
       : { success: true, data: [] as InstanceItem[] };
 
     const templates = csvTemplates && csvTemplates.length > 0

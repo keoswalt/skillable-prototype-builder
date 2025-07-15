@@ -17,6 +17,8 @@ export interface InstanceItem extends BaseDashboardItem {
   duration: string;
   lastActivity: string;
   state: string;
+  // Override starred property to always be false since instances don't support starring
+  starred: false;
 }
 
 export interface ProfileItem extends BaseDashboardItem {
