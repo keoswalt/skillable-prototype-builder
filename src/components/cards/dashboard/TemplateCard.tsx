@@ -67,13 +67,21 @@ const TemplateCardComponent: React.FC<TemplateCardProps> = React.memo((props) =>
     organization: { message: "Opens organization detail page" },
   };
 
+  // Define default click behavior for template cards
+  const defaultOnClick: CardClickConfig = { 
+    message: "Opens creation dialog using selected template" 
+  };
+
   // Use custom actions if provided, otherwise use defaults
   const finalActions = props.actions || defaultActions;
   
   // Merge custom metalinks with defaults (custom takes precedence)
   const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
-  return <DashboardCard variant="template" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
+  // Use custom onClick if provided, otherwise use default
+  const finalOnClick = props.onClick || defaultOnClick;
+
+  return <DashboardCard variant="template" {...props} onClick={finalOnClick} actions={finalActions} metaLinks={finalMetaLinks} />;
 });
 
 TemplateCardComponent.displayName = 'TemplateCard';

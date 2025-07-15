@@ -67,13 +67,21 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = React.memo((props) => {
     organization: { message: "Opens organization details page" },
   };
 
+  // Define default click behavior for profile cards
+  const defaultOnClick: CardClickConfig = { 
+    message: "Opening lab profile details page" 
+  };
+
   // Use custom actions if provided, otherwise use defaults
   const finalActions = props.actions || defaultActions;
   
   // Merge custom metalinks with defaults (custom takes precedence)
   const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
-  return <DashboardCard variant="profile" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
+  // Use custom onClick if provided, otherwise use default
+  const finalOnClick = props.onClick || defaultOnClick;
+
+  return <DashboardCard variant="profile" {...props} onClick={finalOnClick} actions={finalActions} metaLinks={finalMetaLinks} />;
 });
 
 ProfileCardComponent.displayName = 'ProfileCard';

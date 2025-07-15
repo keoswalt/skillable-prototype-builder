@@ -54,13 +54,21 @@ const SeriesCardComponent: React.FC<SeriesCardProps> = React.memo((props) => {
     apiConsumers: { message: "Opens edit series page on 'Publish' tab" },
   };
 
+  // Define default click behavior for series cards
+  const defaultOnClick: CardClickConfig = { 
+    message: "Opening lab series details page" 
+  };
+
   // Use custom actions if provided, otherwise use defaults
   const finalActions = props.actions || defaultActions;
   
   // Merge custom metalinks with defaults (custom takes precedence)
   const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
-  return <DashboardCard variant="series" {...props} actions={finalActions} metaLinks={finalMetaLinks} />;
+  // Use custom onClick if provided, otherwise use default
+  const finalOnClick = props.onClick || defaultOnClick;
+
+  return <DashboardCard variant="series" {...props} onClick={finalOnClick} actions={finalActions} metaLinks={finalMetaLinks} />;
 });
 
 SeriesCardComponent.displayName = 'SeriesCard';

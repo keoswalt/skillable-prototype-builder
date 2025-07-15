@@ -283,8 +283,15 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
 
   /* --------------------------- Handle card click --------------------------- */
   const handleCardClick = (event: React.MouseEvent) => {
-    // Prevent if clicking on interactive elements
-    if ((event.target as Element).closest('button, a, [role="button"]')) {
+    console.log('Card clicked!', { onClick, variant: props.variant, name: props.name });
+    
+    // Prevent if clicking on actual interactive elements (buttons, links, etc.)
+    const target = event.target as Element;
+    const isInteractiveElement = target.closest('button, a') || 
+                                (target.closest('[role="button"]') && !target.closest('[data-card-wrapper]'));
+    
+    if (isInteractiveElement) {
+      console.log('Click prevented - interactive element detected');
       return;
     }
     
@@ -537,17 +544,17 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
       );
     } else {
       return (
-        <button
+        <div
           onClick={handleCardClick}
           onKeyDown={handleKeyDown}
-          type="button"
           aria-label={`Click to interact with ${props.name}`}
-          className="block w-full"
+          className="block w-full cursor-pointer"
           role="button"
           tabIndex={0}
+          data-card-wrapper
         >
           {cardContent}
-        </button>
+        </div>
       );
     }
   }

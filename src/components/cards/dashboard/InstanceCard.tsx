@@ -37,15 +37,23 @@ const InstanceCardComponent: React.FC<InstanceCardProps> = React.memo((props) =>
     student: { message: "Opens the student details page" },
   };
 
+  // Define default click behavior for instance cards
+  const defaultOnClick: CardClickConfig = { 
+    message: "Opening lab instance details page" 
+  };
+
   // Use custom actions if provided, otherwise use defaults
   const finalActions = props.actions || defaultActions;
   
   // Merge custom metalinks with defaults (custom takes precedence)
   const finalMetaLinks = { ...defaultMetaLinks, ...props.metaLinks };
 
+  // Use custom onClick if provided, otherwise use default
+  const finalOnClick = props.onClick || defaultOnClick;
+
   // Don't pass starred or onStarToggle props to hide the star completely
   const { actions, metaLinks, ...restProps } = props;
-  return <DashboardCard variant="instance" {...restProps} actions={finalActions} metaLinks={finalMetaLinks} />;
+  return <DashboardCard variant="instance" {...restProps} onClick={finalOnClick} actions={finalActions} metaLinks={finalMetaLinks} />;
 });
 
 InstanceCardComponent.displayName = 'InstanceCard';

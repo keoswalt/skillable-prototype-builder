@@ -33,7 +33,7 @@ export const DashboardCardExample: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-6 mx-auto">
-      {/* Instance - Uses default metalinks and card-level URL navigation */}
+      {/* Instance - Uses default click behavior (no onClick prop) */}
       <InstanceCard
         name="Lab Profile Name (Kim Oswalt)"
         instanceId="1053453"
@@ -44,11 +44,10 @@ export const DashboardCardExample: React.FC = () => {
         lastActivity="June 5, 2025"
         state="Off"
         actions={dummyActions}
-        onClick="/instances/1053453" // URL navigation - opens in new tab
-        // No metaLinks prop - uses defaults automatically
+        // No onClick prop - uses default behavior automatically
       />
 
-      {/* Profile - Overrides some default metalinks and uses custom alert */}
+      {/* Profile - Overrides default click behavior with custom alert */}
       <ProfileCard
         starred={starState['profile']}
         name="Lab Profile Name"
@@ -61,7 +60,7 @@ export const DashboardCardExample: React.FC = () => {
         created="June 2, 2025"
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[1], dummyActions[2], dummyActions[3], dummyActions[4]]}
-        onClick={{ message: "Profile card clicked! This could open a detail view." }} // Custom alert message
+        onClick={{ message: "Profile card clicked! This could open a detail view." }} // Custom behavior overrides default
         metaLinks={{
           // Override default message for number
           number: { message: "Custom Profile Number Message: KO_001" },
@@ -73,7 +72,7 @@ export const DashboardCardExample: React.FC = () => {
         onStarToggle={() => toggleStar('profile')}
       />
 
-      {/* Series - Uses default metalinks and callback function */}
+      {/* Series - Uses default click behavior (no onClick prop) */}
       <SeriesCard
         starred={starState['series']}
         onStarToggle={() => toggleStar('series')}
@@ -85,14 +84,10 @@ export const DashboardCardExample: React.FC = () => {
         created="June 2, 2025"
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[3], dummyActions[4]]}
-        onClick={() => {
-          console.log('Series card clicked!');
-          alert('Series card clicked - this could trigger a custom action.');
-        }} // Callback function
-        // No metaLinks prop - uses defaults automatically
+        // No onClick prop - uses default behavior automatically
       />
 
-      {/* Template - Disables some default metalinks and uses simple alert */}
+      {/* Template - Overrides default click behavior with simple alert */}
       <TemplateCard
         starred={starState['template']}
         onStarToggle={() => toggleStar('template')}
@@ -106,7 +101,7 @@ export const DashboardCardExample: React.FC = () => {
         created="June 2, 2025"
         modified="June 5, 2025"
         actions={[dummyActions[0], dummyActions[5], dummyActions[2], dummyActions[6]]}
-        onClick={true} // Simple alert
+        onClick={true} // Custom behavior overrides default
         metaLinks={{
           // Override default message for number
           number: { message: "Template Number: KO_001 - Custom template message!" },
