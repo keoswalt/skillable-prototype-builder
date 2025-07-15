@@ -197,22 +197,22 @@ const MetaItem: React.FC<MetaItemProps> = ({ label, value, isClickable, alertMes
   };
 
   return (
-    <div className="flex flex-col gap-0.5">
+    <div className="flex flex-col gap-0.5 text-left">
       <dt className="uppercase text-body-xxs text-_components-text-secondary tracking-wider">{label}</dt>
-      <dd className="text-body-sm text-_components-text-primary break-words">
+      <dd className="text-body-xs text-_components-text-primary text-left line-clamp-2">
         {href ? (
           <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-main hover:underline focus:outline-none focus:ring-2 focus:ring-primary-main/40"
+            className="text-primary-main hover:underline focus:outline-none focus:ring-2 focus:ring-primary-main/40 text-left line-clamp-2"
           >
             {value}
           </a>
         ) : isClickable ? (
           <button
             onClick={handleClick}
-            className="text-primary-main hover:underline focus:outline-none focus:ring-2 focus:ring-primary-main/40 cursor-pointer"
+            className="text-primary-main hover:underline focus:outline-none focus:ring-2 focus:ring-primary-main/40 cursor-pointer text-left line-clamp-2"
           >
             {value}
           </button>
@@ -260,14 +260,14 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
     // Name + optional chip (for profile / template)
     const titleContent: React.ReactNode[] = [];
     titleContent.push(
-      <span key="title" className="font-semibold text-h6 text-_components-text-primary">
+      <span key="title" className="font-regular text-body-sm text-_components-text-primary">
         {props.name}
       </span>
     );
 
     if ('statusLabel' in props && props.statusLabel) {
       titleContent.push(
-        <Chip key="status" size="small" variant={props.statusTone || 'secondary'} className="ml-2">
+        <Chip key="status" size="extra-small" variant={props.statusTone || 'secondary'} className="ml-2">
           {props.statusLabel}
         </Chip>
       );
@@ -400,7 +400,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
   /* --------------------------- Render --------------------------- */
   return (
     <div
-      className={`w-full rounded-lg border border-_components-divider-main bg-_components-background-default p-4 shadow-sm ${className}`}
+      className={`w-full rounded-lg border border-_components-divider-main bg-_components-background-default p-2 space-y-1 shadow-sm ${className}`}
     >
       {/* Header */}
       <div className="flex items-center justify-between gap-3 flex-wrap">
@@ -427,7 +427,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
 
       {/* Metadata grid */}
       {metaItems.length > 0 && (
-        <dl className="mt-4 grid gap-y-3 gap-x-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-8">
+        <dl className="mt-4 grid gap-y-2 gap-x-2 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-7 xl:grid-cols-7 2xl:grid-cols-8">
           {metaItems.map(({ key, label, value, isClickable, alertMessage, href }) => (
             <MetaItem key={key} label={label} value={value} isClickable={isClickable} alertMessage={alertMessage} href={href} />
           ))}

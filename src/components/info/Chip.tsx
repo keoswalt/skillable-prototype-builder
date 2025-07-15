@@ -4,7 +4,7 @@ import { IconName, Icons } from '../Icon';
 import { LucideIcon } from 'lucide-react';
 
 export type ChipVariant = 'default' | 'primary' | 'secondary' | 'warning' | 'error' | 'success';
-export type ChipSize = 'default' | 'small';
+export type ChipSize = 'default' | 'small' | 'extra-small';
 
 interface ChipProps {
   children: React.ReactNode;
@@ -39,6 +39,11 @@ const sizeStyles: Record<ChipSize, {
     container: 'gap-1 px-2 py-0.5 text-body-xs',
     icon: 'w-3 h-3',
     closeIcon: 'w-3 h-3'
+  },
+  'extra-small': {
+    container: 'gap-0.5 px-1.5 py-0.25 text-body-xxs',
+    icon: 'w-2.5 h-2.5',
+    closeIcon: 'w-2.5 h-2.5'
   }
 };
 
@@ -59,7 +64,7 @@ export const Chip: React.FC<ChipProps> = ({
     <div
       onClick={onClick}
       className={`
-        inline-flex items-center rounded-full font-medium
+        inline-flex items-center rounded-full font-regular
         ${sizeStyle.container}
         ${variantStyles[variant]}
         ${onClick ? 'cursor-pointer hover:opacity-90' : ''}
