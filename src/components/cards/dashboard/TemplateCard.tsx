@@ -1,9 +1,12 @@
+"use client";
+
 import React from 'react';
-import DashboardCard, { CardAction, TemplateData, MetaLinkConfig } from './DashboardCard';
+import DashboardCard, { CardAction, TemplateData, MetaLinkConfig, CardClickConfig } from './DashboardCard';
 
 export type TemplateCardProps = Omit<TemplateData, 'variant'> & {
   actions?: CardAction[];
   metaLinks?: Record<string, MetaLinkConfig>;
+  onClick?: CardClickConfig;
   className?: string;
   // Default actions are automatically included unless overridden by the actions prop
 } & (

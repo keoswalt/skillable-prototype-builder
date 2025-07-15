@@ -1,3 +1,5 @@
+"use client";
+
 // src/components/cards/dashboard/DashboardCard.tsx
 // PURPOSE: A flexible card component for the Skillable design system that renders four
 // different data-card variants: lab instance, lab profile, lab series, and template.
@@ -11,6 +13,9 @@
 //   Note: Instance cards do not support starring functionality.
 // • actions? – Optional cluster of icon–buttons on the right side of the header.
 //   Each card variant provides its own default actions, but these can be overridden.
+// • onClick? – Optional card-level click behavior. Supports URL strings, boolean alerts, 
+//   custom messages, or callback functions. When provided, the entire card becomes clickable
+//   with hover and active states.
 //
 // USAGE
 // ---------------------------------------------------------------------------
@@ -38,6 +43,41 @@
 //   name="Lab Profile Name"
 //   // ... other props
 //   actions={[{ icon: 'edit', label: 'Edit', onClick: () => console.log('edit') }]}
+// />
+//
+// -- Card-level click behavior -------------------------------------------------
+// The card can be made clickable by providing an `onClick` prop:
+//
+// // URL navigation (opens in new tab)
+// <DashboardCard
+//   variant="profile"
+//   name="Lab Profile Name"
+//   // ... other props
+//   onClick="/profiles/123"
+// />
+//
+// // Simple alert
+// <DashboardCard
+//   variant="profile"
+//   name="Lab Profile Name"
+//   // ... other props
+//   onClick={true}
+// />
+//
+// // Custom alert message
+// <DashboardCard
+//   variant="profile"
+//   name="Lab Profile Name"
+//   // ... other props
+//   onClick={{ message: "Custom card click message!" }}
+// />
+//
+// // Callback function
+// <DashboardCard
+//   variant="profile"
+//   name="Lab Profile Name"
+//   // ... other props
+//   onClick={() => console.log('Card clicked!')}
 // />
 //
 // -- Clickable metadata values -------------------------------------------------
@@ -84,6 +124,9 @@ export interface CardAction {
 // MetaLink configuration type - supports URLs, booleans, and custom messages
 export type MetaLinkConfig = string | boolean | { message: string };
 
+// Card click configuration type - supports URLs, booleans, custom messages, and callback functions
+export type CardClickConfig = string | boolean | { message: string } | (() => void);
+
 // Base props shared by all variants
 interface BaseCardProps {
   /** Optional array of icon buttons displayed on the right-hand side */
@@ -91,6 +134,8 @@ interface BaseCardProps {
   /** Map of data keys (e.g. "instanceId", "series") to URL strings, boolean values, or custom message objects. 
       If string: renders as <a> tag. If boolean/object: renders as clickable button that shows an alert. */
   metaLinks?: Record<string, MetaLinkConfig>;
+  /** Card-level click behavior - supports URL strings, boolean alerts, custom messages, or callback functions */
+  onClick?: CardClickConfig;
   /** Additional CSS classes for the root element */
   className?: string;
 }
@@ -230,11 +275,46 @@ const MetaItem: React.FC<MetaItemProps> = ({ label, value, isClickable, alertMes
 
 export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
   // Extract common props first
-  const { actions, metaLinks, className = '' } = props;
+  const { actions, metaLinks, onClick, className = '' } = props;
   
   // Extract star props if they exist
   const starred = 'starred' in props ? props.starred : undefined;
   const onStarToggle = 'onStarToggle' in props ? props.onStarToggle : undefined;
+
+  /* --------------------------- Handle card click --------------------------- */
+  const handleCardClick = (event: React.MouseEvent) => {
+    // Prevent if clicking on interactive elements
+    if ((event.target as Element).closest('button, a, [role="button"]')) {
+      return;
+    }
+    
+    // Handle different click behavior types
+    if (typeof onClick === 'string') {
+      window.open(onClick, '_blank');
+    } else if (typeof onClick === 'boolean') {
+      alert('Card clicked');
+    } else if (typeof onClick === 'object' && onClick?.message) {
+      alert(onClick.message);
+    } else if (typeof onClick === 'function') {
+      onClick();
+    }
+  };
+
+  /* --------------------------- Handle keyboard events --------------------------- */
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      if (typeof onClick === 'string') {
+        window.open(onClick, '_blank');
+      } else if (typeof onClick === 'boolean') {
+        alert('Card clicked');
+      } else if (typeof onClick === 'object' && onClick?.message) {
+        alert(onClick.message);
+      } else if (typeof onClick === 'function') {
+        onClick();
+      }
+    }
+  };
 
   /* --------------------------- Build header --------------------------- */
   const renderHeader = () => {
@@ -398,9 +478,11 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
   const metaItems = buildMeta();
 
   /* --------------------------- Render --------------------------- */
-  return (
+  const cardContent = (
     <div
-      className={`w-full rounded-lg border border-_components-divider-main bg-_components-background-default p-2 space-y-1 shadow-sm ${className}`}
+      className={`w-full rounded-lg border border-_components-divider-main bg-_components-background-default p-2 space-y-1 shadow-sm ${
+        onClick ? 'cursor-pointer transition-all duration-200 hover:border-primary-main hover:shadow-md active:bg-_components-background-contrast-sm focus:outline-none focus:ring-2 focus:ring-primary-main focus:ring-offset-2' : ''
+      } ${className}`}
     >
       {/* Header */}
       <div className="flex items-center justify-between gap-3 flex-wrap">
@@ -435,6 +517,43 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
       )}
     </div>
   );
+
+  // If onClick is provided, wrap in appropriate interactive element
+  if (onClick) {
+    const isUrl = typeof onClick === 'string';
+    
+    if (isUrl) {
+      return (
+        <a 
+          href={onClick}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open ${props.name} in new tab`}
+          className="block w-full no-underline"
+          tabIndex={0}
+        >
+          {cardContent}
+        </a>
+      );
+    } else {
+      return (
+        <button
+          onClick={handleCardClick}
+          onKeyDown={handleKeyDown}
+          type="button"
+          aria-label={`Click to interact with ${props.name}`}
+          className="block w-full"
+          role="button"
+          tabIndex={0}
+        >
+          {cardContent}
+        </button>
+      );
+    }
+  }
+
+  // Return card content directly if no onClick behavior
+  return cardContent;
 };
 
 export default DashboardCard; 

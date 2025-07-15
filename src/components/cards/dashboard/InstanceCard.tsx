@@ -1,9 +1,12 @@
+"use client";
+
 import React from 'react';
-import DashboardCard, { CardAction, InstanceData, MetaLinkConfig } from './DashboardCard';
+import DashboardCard, { CardAction, InstanceData, MetaLinkConfig, CardClickConfig } from './DashboardCard';
 
 export type InstanceCardProps = Omit<InstanceData, 'variant'> & {
   actions?: CardAction[];
   metaLinks?: Record<string, MetaLinkConfig>;
+  onClick?: CardClickConfig;
   className?: string;
   // Note: InstanceCard does not support starring functionality
   // Default actions are automatically included unless overridden by the actions prop
