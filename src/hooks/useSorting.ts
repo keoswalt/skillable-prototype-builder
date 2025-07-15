@@ -112,8 +112,8 @@ export function useSorting() {
       if (!aStarred && bStarred) return 1;
       
       // If both items have the same starred status, apply the user-selected sort
-      const aValue = a[sortConfig.field];
-      const bValue = b[sortConfig.field];
+      const aValue = (a as Record<string, unknown>)[sortConfig.field];
+      const bValue = (b as Record<string, unknown>)[sortConfig.field];
       
       // Handle different data types
       let comparison = 0;

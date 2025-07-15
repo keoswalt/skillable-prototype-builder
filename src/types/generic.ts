@@ -10,6 +10,7 @@ export interface BaseItem {
   id: number;
   name: string;
   starred: boolean;
+  [key: string]: unknown; // Index signature to allow dynamic property access
 }
 
 // Generic dashboard item with configurable properties
