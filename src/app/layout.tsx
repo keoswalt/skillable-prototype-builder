@@ -4,6 +4,7 @@ import "./globals.css";
 import "./theme/index.css";
 import PrimaryNav from "@/components/navigation/PrimaryNav";
 import ThemeInitializer from "@/app/theme/ThemeInitializer";
+import { ToastProvider, ToastContainer } from "@/components/info";
 import "../components/editor/prose-theme.css";
 
 // Initialize fonts
@@ -36,8 +37,11 @@ export default function RootLayout({
       <head />
       <body>
         <ThemeInitializer />
-        <PrimaryNav />
-        {children}
+        <ToastProvider>
+          <PrimaryNav />
+          {children}
+          <ToastContainer />
+        </ToastProvider>
       </body>
     </html>
   );

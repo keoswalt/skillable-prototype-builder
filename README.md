@@ -10,28 +10,28 @@ This is a private repository built for internal Skillable use by senior product 
 
 ### Component Library
 
+- [X] Accordion
+- [X] Advanced menu
 - [X] Alert
-- [X] Chip
+- [X] Basic dialog
 - [X] Button
-- [X] Split button
-- [X] Menu
-- [X] Primary navigation bar
+- [X] Checkbox item
+- [X] Chip
 - [X] Data table
 - [X] Dashboard card
-- [X] Basic dialog
-- [X] Text field input
+- [X] Dropdown select
+- [X] Filter menu
+- [X] Formatting toolbar
+- [X] Menu
+- [X] Primary navigation bar
+- [X] Radio list
+- [X] Split button
+- [X] State toggle
+- [X] Stepper
 - [X] Switch
 - [X] Tabs
+- [X] Text field input
 - [X] Tooltip
-- [X] Dropdown select
-- [X] Checkbox item
-- [X] Radio list
-- [X] Stepper
-- [X] Accordion
-- [X] State toggle
-- [X] Formatting toolbar
-- [X] Advanced menu
-- [X] Filter menu
 
 > See `design-system-demo/page.tsx` for examples of completed components.
 

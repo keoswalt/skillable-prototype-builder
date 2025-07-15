@@ -1,11 +1,16 @@
+'use client';
+
 /**
  * Alert Example Component
  * 
  * Demonstrates all variants and states of the Alert component.
  * Shows both filled and outlined styles for error, warning, success, and info states.
+ * Also demonstrates toast notification functionality.
  */
 import React, { useState } from 'react';
 import { Alert } from './Alert';
+import { useToast } from '@/hooks/useToast';
+import { Button } from '@/components/buttons/Button';
 
 export const AlertExample: React.FC = () => {
   const [alerts, setAlerts] = useState({
@@ -18,6 +23,8 @@ export const AlertExample: React.FC = () => {
     successOutlined: true,
     infoOutlined: true,
   });
+
+  const toast = useToast();
 
   const handleClose = (key: keyof typeof alerts) => {
     setAlerts(prev => ({ ...prev, [key]: false }));
@@ -162,6 +169,100 @@ export const AlertExample: React.FC = () => {
             icon={<span className="w-5 h-5 text-red-600">🚨</span>}
             onClose={() => {}}
           />
+        </div>
+      </div>
+
+      {/* Toast Demonstration */}
+      <div className="space-y-4">
+        <h4 className="font-medium">Toast Notifications</h4>
+        <p className="mb-4">
+          Click the buttons below to trigger toast notifications. Toasts will appear in the bottom-left corner and auto-dismiss after 3 seconds.
+        </p>
+        
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <Button
+            variant="success"
+            onClick={() => toast.success({
+              title: 'Success!',
+              description: 'Your action was completed successfully.'
+            })}
+          >
+            Success Toast
+          </Button>
+          
+          <Button
+            variant="error"
+            onClick={() => toast.error({
+              title: 'Error',
+              description: 'Something went wrong. Please try again.'
+            })}
+          >
+            Error Toast
+          </Button>
+          
+          <Button
+            variant="warning"
+            onClick={() => toast.warning({
+              title: 'Warning',
+              description: 'Please review your input before proceeding.'
+            })}
+          >
+            Warning Toast
+          </Button>
+          
+          <Button
+            variant="secondary"
+            onClick={() => toast.info({
+              title: 'Information',
+              description: 'Here\'s some helpful information for you.'
+            })}
+          >
+            Info Toast
+          </Button>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <Button
+            variant="primary"
+            onClick={() => toast.success({
+              title: 'Custom Duration',
+              description: 'This toast will stay for 10 seconds.',
+              duration: 10000
+            })}
+          >
+            Long Duration Toast
+          </Button>
+          
+          <Button
+            variant="outline"
+            onClick={() => toast.info({
+              title: 'No Auto-dismiss',
+              description: 'This toast will stay until manually dismissed.',
+              autoDismiss: false
+            })}
+          >
+            Persistent Toast
+          </Button>
+        </div>
+
+        <div className="flex gap-3">
+          <button
+            onClick={() => {
+              toast.success({ title: 'Toast 1', description: 'First toast' });
+              setTimeout(() => toast.warning({ title: 'Toast 2', description: 'Second toast' }), 500);
+              setTimeout(() => toast.error({ title: 'Toast 3', description: 'Third toast' }), 1000);
+            }}
+            className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors"
+          >
+            Show Multiple Toasts
+          </button>
+          
+          <button
+            onClick={() => toast.clearAll()}
+            className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition-colors"
+          >
+            Clear All Toasts
+          </button>
         </div>
       </div>
     </div>

@@ -167,7 +167,11 @@ export const Alert: React.FC<AlertProps> = ({
       {onClose && (
         <button
           type="button"
-          onClick={onClose}
+          onClick={(e) => {
+            console.log('Close button clicked in Alert component'); // Debug log
+            e.stopPropagation(); // Prevent event bubbling
+            onClose();
+          }}
           className={`
             flex-shrink-0 p-1 rounded-md transition-colors
             ${config.closeColor}
