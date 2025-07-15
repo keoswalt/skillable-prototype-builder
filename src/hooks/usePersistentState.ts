@@ -33,7 +33,7 @@ interface PersistentStateResult<T> {
   isLoaded: boolean;
   clear: () => void;
   reset: () => void;
-  migrate: (newVersion: string, migrationFn: (oldData: T, oldVersion: string) => T) => void;
+  migrate: (newVersion: string, migrationFn: (oldData: unknown, oldVersion: string) => T) => void;
 }
 
 // Storage utilities
@@ -114,8 +114,8 @@ const migrateState = <T>(
 // Validation utilities
 const validateState = <T>(
   data: unknown,
-  validate?: (data: unknown) => data is T,
-  defaultValue: T
+  defaultValue: T,
+  validate?: (data: unknown) => data is T
 ): T => {
   if (validate && !validate(data)) {
     console.warn(`Invalid state data for key, using default value`);
@@ -140,7 +140,7 @@ export function usePersistentState<T>({
   defaultValue,
   persistenceType = 'localStorage',
   version,
-  migrate,
+  migrate: migrateFn,
   validate,
   cleanup,
   debounceMs = 100
@@ -161,15 +161,15 @@ export function usePersistentState<T>({
     try {
       let loadedValue: T;
 
-      if (version && migrate) {
+      if (version && migrateFn) {
         // Use migration
-        loadedValue = migrateState(storage, key, version, migrate, defaultValue);
+        loadedValue = migrateState(storage, key, version, migrateFn, defaultValue);
       } else {
         // Simple load
         const data = storage.getItem(key);
         if (data) {
           const parsed = JSON.parse(data);
-          loadedValue = validateState(parsed, validate, defaultValue);
+          loadedValue = validateState(parsed, defaultValue, validate);
         } else {
           loadedValue = defaultValue;
         }
@@ -185,7 +185,7 @@ export function usePersistentState<T>({
     } finally {
       setIsLoaded(true);
     }
-  }, [key, defaultValue, persistenceType, version, migrate, validate, cleanup, storage]);
+  }, [key, defaultValue, persistenceType, version, migrateFn, validate, cleanup, storage]);
 
   // Save state with debouncing
   const saveToStorage = useCallback((newValue: T) => {
@@ -246,7 +246,7 @@ export function usePersistentState<T>({
   }, [defaultValue, saveToStorage]);
 
   // Migrate function
-  const migrate = useCallback((newVersion: string, migrationFn: (oldData: T, oldVersion: string) => T) => {
+  const migrate = useCallback((newVersion: string, migrationFn: (oldData: unknown, oldVersion: string) => T) => {
     if (!storage || persistenceType === 'none') return;
 
     try {
