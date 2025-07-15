@@ -14,7 +14,7 @@ import { DataTransformationError, createErrorResult, createSuccessResult, type R
 export function transformLabProfileToProfileItem(
   csvData: LabProfileData[],
   starredItems: Record<string, boolean>,
-  toggleStar: (itemType: string, itemId: number) => void
+  toggleStar: (itemType: string, itemId: number, itemName?: string) => void
 ): Result<ProfileItem[], DataTransformationError> {
   // Validate input data
   if (!isValidCSVData(csvData)) {
@@ -49,7 +49,7 @@ export function transformLabProfileToProfileItem(
     statusLabel: item.status || 'Active',
     statusTone: 'default' as const,
     starred: starredItems[`profile-${index}`] || false,
-    onStarToggle: () => toggleStar('profile', index),
+    onStarToggle: () => toggleStar('profile', index, item.lab_profile),
   }));
 
   return createSuccessResult(transformedData);
@@ -61,7 +61,7 @@ export function transformLabProfileToProfileItem(
 export function transformLabSeriesToSeriesItem(
   csvData: LabSeriesData[],
   starredItems: Record<string, boolean>,
-  toggleStar: (itemType: string, itemId: number) => void
+  toggleStar: (itemType: string, itemId: number, itemName?: string) => void
 ): Result<SeriesItem[], DataTransformationError> {
   // Validate input data
   if (!isValidCSVData(csvData)) {
@@ -94,7 +94,7 @@ export function transformLabSeriesToSeriesItem(
     created: item.created,
     modified: item.last_modified,
     starred: starredItems[`series-${index}`] || false,
-    onStarToggle: () => toggleStar('series', index),
+    onStarToggle: () => toggleStar('series', index, item.series),
   }));
 
   return createSuccessResult(transformedData);
@@ -117,7 +117,7 @@ export function transformLabInstanceToInstanceItem(
     );
   }
 
-  const transformedData = csvData.map((item, index) => ({
+  const transformedData: InstanceItem[] = csvData.map((item, index) => ({
     id: index,
     name: item.lab_profile,
     instanceId: item.id,
@@ -128,7 +128,7 @@ export function transformLabInstanceToInstanceItem(
     duration: item.duration,
     lastActivity: item.last_activity_time,
     state: item.state_id,
-    starred: false, // Instance items don't support starring, but property is required by BaseItem
+    starred: false as const, // Instance items don't support starring, but property is required by BaseItem
   }));
 
   return createSuccessResult(transformedData);
@@ -140,7 +140,7 @@ export function transformLabInstanceToInstanceItem(
 export function transformTemplateToTemplateItem(
   csvData: TemplateData[],
   starredItems: Record<string, boolean>,
-  toggleStar: (itemType: string, itemId: number) => void
+  toggleStar: (itemType: string, itemId: number, itemName?: string) => void
 ): Result<TemplateItem[], DataTransformationError> {
   // Validate input data
   if (!isValidCSVData(csvData)) {
@@ -175,7 +175,7 @@ export function transformTemplateToTemplateItem(
     statusLabel: 'Active', // Default status since not in CSV
     statusTone: 'default' as const,
     starred: starredItems[`template-${index}`] || false,
-    onStarToggle: () => toggleStar('template', index),
+    onStarToggle: () => toggleStar('template', index, item.lab_profile),
   }));
 
   return createSuccessResult(transformedData);

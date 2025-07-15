@@ -4,6 +4,7 @@
 
 import { useState } from 'react';
 import { useLocalStorage } from './useLocalStorage';
+import { useToast } from '@/hooks/useToast';
 import { APP_CONSTANTS } from '@/config/constants';
 import { CardType } from '@/config/sorting';
 import { getTabIds } from '@/config/tabs';
@@ -19,6 +20,7 @@ interface PerTabPaginationState {
 
 export function useDashboardState() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const { showToast } = useToast();
   
   // State for managing starred items
   const [starredItems, setStarredItems, isStarredItemsLoaded] = useLocalStorage<Record<string, boolean>>(
@@ -140,12 +142,27 @@ export function useDashboardState() {
     setPerTabCurrentPage(resetCurrentPages);
   };
 
-  const toggleStar = (itemType: string, itemId: number) => {
+  const toggleStar = (itemType: string, itemId: number, itemName?: string) => {
     const key = `${itemType}-${itemId}`;
+    const isCurrentlyStarred = starredItems[key] || false;
+    const newStarredState = !isCurrentlyStarred;
+    
     setStarredItems(prev => ({
       ...prev,
-      [key]: !prev[key]
+      [key]: newStarredState
     }));
+
+    // Show toast notification
+    const itemTypeLabel = itemType.charAt(0).toUpperCase() + itemType.slice(1);
+    const action = newStarredState ? 'favorited' : 'unfavorited';
+    const displayName = itemName || `${itemTypeLabel} ${itemId}`;
+    
+    showToast('info', {
+      title: `${itemTypeLabel} ${action}`,
+      description: newStarredState 
+        ? `"${displayName}" has been added to your favorites`
+        : `"${displayName}" has been removed from your favorites`
+    });
   };
 
   const getCurrentCardType = (): CardType => {
