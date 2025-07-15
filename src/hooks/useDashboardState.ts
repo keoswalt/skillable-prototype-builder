@@ -26,9 +26,15 @@ export function useDashboardState() {
     APP_CONSTANTS.DEFAULT_STARRED_ITEMS
   );
 
-  // State for managing pagination per tab - persist in localStorage
-  const [perTabPaginationState, setPerTabPaginationState, isPaginationLoaded] = useLocalStorage<PerTabPaginationState>(
-    'skillable-ds-per-tab-pagination',
+  // Shared page size across all tabs
+  const [sharedPageSize, setSharedPageSize, isSharedPageSizeLoaded] = useLocalStorage<number>(
+    'skillable-ds-shared-page-size',
+    25
+  );
+
+  // State for managing current page per tab - persist in localStorage
+  const [perTabCurrentPage, setPerTabCurrentPage, isCurrentPageLoaded] = useLocalStorage<Record<string, number>>(
+    'skillable-ds-per-tab-current-page',
     {}
   );
 
@@ -41,54 +47,97 @@ export function useDashboardState() {
   // Get pagination state for current tab
   const getCurrentTabPagination = (): PaginationState => {
     const currentTabId = getCurrentTabId();
-    return perTabPaginationState[currentTabId] || { currentPage: 1, pageSize: 25 };
+    return {
+      currentPage: perTabCurrentPage[currentTabId] || 1,
+      pageSize: sharedPageSize
+    };
   };
 
   // Update pagination for current tab
   const updateCurrentTabPagination = (updates: Partial<PaginationState>) => {
     const currentTabId = getCurrentTabId();
-    setPerTabPaginationState(prev => ({
-      ...prev,
-      [currentTabId]: {
-        ...(prev[currentTabId] || { currentPage: 1, pageSize: 25 }),
-        ...updates
-      }
-    }));
+    
+    // Handle page size updates (shared across all tabs)
+    if (updates.pageSize !== undefined) {
+      setSharedPageSize(updates.pageSize);
+      // Reset all tabs to page 1 when page size changes
+      const tabIds = getTabIds();
+      const resetCurrentPages: Record<string, number> = {};
+      tabIds.forEach(tabId => {
+        resetCurrentPages[tabId] = 1;
+      });
+      setPerTabCurrentPage(resetCurrentPages);
+    }
+    
+    // Handle current page updates (per tab)
+    if (updates.currentPage !== undefined) {
+      setPerTabCurrentPage(prev => ({
+        ...prev,
+        [currentTabId]: updates.currentPage!
+      }));
+    }
   };
 
   // Update pagination for specific tab
   const updateTabPagination = (tabId: string, updates: Partial<PaginationState>) => {
-    setPerTabPaginationState(prev => ({
-      ...prev,
-      [tabId]: {
-        ...(prev[tabId] || { currentPage: 1, pageSize: 25 }),
-        ...updates
-      }
-    }));
+    // Handle page size updates (shared across all tabs)
+    if (updates.pageSize !== undefined) {
+      setSharedPageSize(updates.pageSize);
+      // Reset all tabs to page 1 when page size changes
+      const tabIds = getTabIds();
+      const resetCurrentPages: Record<string, number> = {};
+      tabIds.forEach(id => {
+        resetCurrentPages[id] = 1;
+      });
+      setPerTabCurrentPage(resetCurrentPages);
+    }
+    
+    // Handle current page updates (per tab)
+    if (updates.currentPage !== undefined) {
+      setPerTabCurrentPage(prev => ({
+        ...prev,
+        [tabId]: updates.currentPage!
+      }));
+    }
   };
 
   // Get pagination state for specific tab
   const getTabPagination = (tabId: string): PaginationState => {
-    return perTabPaginationState[tabId] || { currentPage: 1, pageSize: 25 };
+    return {
+      currentPage: perTabCurrentPage[tabId] || 1,
+      pageSize: sharedPageSize
+    };
   };
 
   // Reset pagination for current tab
   const resetCurrentTabPagination = () => {
     const currentTabId = getCurrentTabId();
-    setPerTabPaginationState(prev => ({
+    setPerTabCurrentPage(prev => ({
       ...prev,
-      [currentTabId]: { currentPage: 1, pageSize: 25 }
+      [currentTabId]: 1
     }));
   };
 
   // Reset pagination for all tabs
   const resetAllTabPagination = () => {
     const tabIds = getTabIds();
-    const resetState: PerTabPaginationState = {};
+    const resetState: Record<string, number> = {};
     tabIds.forEach(tabId => {
-      resetState[tabId] = { currentPage: 1, pageSize: 25 };
+      resetState[tabId] = 1;
     });
-    setPerTabPaginationState(resetState);
+    setPerTabCurrentPage(resetState);
+  };
+
+  // Update shared page size (affects all tabs)
+  const updateSharedPageSize = (newPageSize: number) => {
+    setSharedPageSize(newPageSize);
+    // Reset all tabs to page 1 when page size changes
+    const tabIds = getTabIds();
+    const resetCurrentPages: Record<string, number> = {};
+    tabIds.forEach(tabId => {
+      resetCurrentPages[tabId] = 1;
+    });
+    setPerTabCurrentPage(resetCurrentPages);
   };
 
   const toggleStar = (itemType: string, itemId: number) => {
@@ -120,9 +169,12 @@ export function useDashboardState() {
     getTabPagination,
     resetCurrentTabPagination,
     resetAllTabPagination,
+    // Shared page size methods
+    sharedPageSize,
+    updateSharedPageSize,
     // All pagination state (for debugging/management)
-    perTabPaginationState,
+    perTabCurrentPage,
     getCurrentCardType,
-    isLoaded: isStarredItemsLoaded && isPaginationLoaded,
+    isLoaded: isStarredItemsLoaded && isSharedPageSizeLoaded && isCurrentPageLoaded,
   };
 } 

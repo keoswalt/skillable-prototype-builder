@@ -32,6 +32,9 @@ export default function DashboardPage() {
     getTabPagination,
     resetCurrentTabPagination,
     resetAllTabPagination,
+    // Shared page size methods
+    sharedPageSize,
+    updateSharedPageSize,
     // Backward compatibility
     paginationState,
     updatePagination,
@@ -166,8 +169,8 @@ export default function DashboardPage() {
   }, [updateTabPagination, currentTabId]);
 
   const handlePageSizeChange = useCallback((newPageSize: number) => {
-    updateTabPagination(currentTabId, { pageSize: newPageSize, currentPage: 1 });
-  }, [updateTabPagination, currentTabId]);
+    updateSharedPageSize(newPageSize);
+  }, [updateSharedPageSize]);
 
   // Create paginated tab items using tab configuration - MUST be called before any conditional returns
   const createPaginatedContent = useCallback((data: BaseItem[], CardComponent: React.ComponentType<BaseItem>) => {
@@ -223,8 +226,7 @@ export default function DashboardPage() {
     );
   }
 
-  // Get current tab pagination state for display
-  const currentTabPagination = getCurrentTabPagination();
+
 
   return (
     <main className="min-h-screen p-8">
@@ -246,7 +248,7 @@ export default function DashboardPage() {
         operatorsByType={OPERATORS_BY_TYPE}
         tabItems={tabItems}
         currentPage={validCurrentPage}
-        pageSize={currentTabPagination.pageSize}
+        pageSize={sharedPageSize}
         totalItems={totalItems}
         onPageChange={handlePageChange}
         onPageSizeChange={handlePageSizeChange}
