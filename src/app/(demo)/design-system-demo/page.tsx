@@ -19,6 +19,7 @@ import StateToggleExample from '@/components/navigation/StateToggleExample';
 import FormattingToolbarExample from '@/components/editor/FormattingToolbarExample';
 import AdvancedMenuExample from '@/components/menu/AdvancedMenuExample';
 import FilterMenuExample from '@/components/menu/FilterMenuExample';
+import DividerExample from '@/components/dividers/DividerExample';
 
 export default function Home() {
   return (
@@ -67,6 +68,11 @@ export default function Home() {
       <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">Data Table Component Examples</h2>
         <DataTableExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Divider Component Examples</h2>
+        <DividerExample />
       </section>
 
       <section className="mt-8">

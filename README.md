@@ -19,6 +19,7 @@ This is a private repository built for internal Skillable use by senior product 
 - [X] Chip
 - [X] Data table
 - [X] Dashboard card
+- [X] Divider
 - [X] Dropdown select
 - [X] Filter menu
 - [X] Formatting toolbar
