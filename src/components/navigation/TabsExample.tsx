@@ -20,19 +20,19 @@ export default function TabsExample() {
     <div className="space-y-12 mx-auto mt-8">
       {/* Horizontal */}
       <div>
-        <h2 className="text-heading-md font-headline mb-4">Horizontal Tabs</h2>
+        <h2 className="text-heading-xs font-headline mb-4">Horizontal Tabs</h2>
         <Tabs items={baseTabs} />
       </div>
 
       {/* Horizontal (overflow) */}
       <div>
-        <h2 className="text-heading-md font-headline mb-4">Horizontal Tabs – Overflow</h2>
+        <h2 className="text-heading-xs font-headline mb-4">Horizontal Tabs – Overflow</h2>
         <Tabs items={overflowTabs} />
       </div>
 
       {/* Vertical */}
       <div>
-        <h2 className="text-heading-md font-headline mb-4">Vertical Tabs</h2>
+        <h2 className="text-heading-xs font-headline mb-4">Vertical Tabs</h2>
         <div className="h-64">
           <Tabs items={baseTabs} orientation="vertical" className="h-full" />
         </div>

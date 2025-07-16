@@ -25,28 +25,13 @@ export default function Home() {
     <main className="min-h-screen p-8">
 
       <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Accordion Component Examples</h2>
+        <AccordionExample />
+      </section>
+
+      <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">Advanced Menu Component Example</h2>
         <AdvancedMenuExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Filter Menu Component Example</h2>
-        <FilterMenuExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Button Component Examples</h2>
-        <ButtonExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Data Table Component Examples</h2>
-        <DataTableExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Chip Component Examples</h2>
-        <ChipExample />
       </section>
 
       <section className="mt-8">
@@ -55,43 +40,13 @@ export default function Home() {
       </section>
 
       <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Split Button Component Examples</h2>
-        <SplitButtonExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Lab Profile Card Component Examples</h2>
-        <DashboardCardExample />
-      </section>
-
-      <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">Basic Dialog Component Examples</h2>
         <BasicDialogExample />
       </section>
 
       <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Text Field Component Examples</h2>
-        <TextFieldExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Switch Component Examples</h2>
-        <SwitchExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Table Component Examples</h2>
-        <TabsExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Tooltip Component Examples</h2>
-        <TooltipExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Dropdown Component Examples</h2>
-        <DropdownSelectExample />
+        <h2 className="font-headline text-heading-sm mb-6">Button Component Examples</h2>
+        <ButtonExample />
       </section>
 
       <section className="mt-8">
@@ -100,18 +55,43 @@ export default function Home() {
       </section>
 
       <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Chip Component Examples</h2>
+        <ChipExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Dashboard Card Component Examples</h2>
+        <DashboardCardExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Data Table Component Examples</h2>
+        <DataTableExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Dropdown Component Examples</h2>
+        <DropdownSelectExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Filter Menu Component Example</h2>
+        <FilterMenuExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Formatting Toolbar Component Examples</h2>
+        <FormattingToolbarExample />
+      </section>
+
+      <section className="mt-8">
         <h2 className="font-headline text-heading-sm mb-6">Radio List Item Component Examples</h2>
         <RadioListExample />
       </section>
 
       <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Stepper Component Examples</h2>
-        <StepperExample />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Accordion Component Examples</h2>
-        <AccordionExample />
+        <h2 className="font-headline text-heading-sm mb-6">Split Button Component Examples</h2>
+        <SplitButtonExample />
       </section>
 
       <section className="mt-8">
@@ -120,8 +100,28 @@ export default function Home() {
       </section>
 
       <section className="mt-8">
-        <h2 className="font-headline text-heading-sm mb-6">Formatting Toolbar Component Examples</h2>
-        <FormattingToolbarExample />
+        <h2 className="font-headline text-heading-sm mb-6">Stepper Component Examples</h2>
+        <StepperExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Switch Component Examples</h2>
+        <SwitchExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Tab Component Examples</h2>
+        <TabsExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Text Field Component Examples</h2>
+        <TextFieldExample />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-headline text-heading-sm mb-6">Tooltip Component Examples</h2>
+        <TooltipExample />
       </section>
 
     </main>

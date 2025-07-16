@@ -174,7 +174,7 @@ export const AlertExample: React.FC = () => {
 
       {/* Toast Demonstration */}
       <div className="space-y-4">
-        <h4 className="font-medium">Toast Notifications</h4>
+        <h4 className="font-headline text-heading-xs font-medium">Toast Notifications</h4>
         <p className="mb-4">
           Click the buttons below to trigger toast notifications. Toasts will appear in the bottom-left corner and auto-dismiss after 3 seconds.
         </p>
@@ -246,23 +246,23 @@ export const AlertExample: React.FC = () => {
         </div>
 
         <div className="flex gap-3">
-          <button
+          <Button
+            variant="primary"
             onClick={() => {
               toast.success({ title: 'Toast 1', description: 'First toast' });
               setTimeout(() => toast.warning({ title: 'Toast 2', description: 'Second toast' }), 500);
               setTimeout(() => toast.error({ title: 'Toast 3', description: 'Third toast' }), 1000);
             }}
-            className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors"
           >
             Show Multiple Toasts
-          </button>
+          </Button>
           
-          <button
+          <Button
+            variant="secondary"
             onClick={() => toast.clearAll()}
-            className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition-colors"
           >
             Clear All Toasts
-          </button>
+          </Button>
         </div>
       </div>
     </div>
