@@ -92,8 +92,6 @@ export const DashboardCardExample: React.FC = () => {
         starred={starState['template']}
         onStarToggle={() => toggleStar('template')}
         name="Template Name"
-        statusLabel="Complete"
-        statusTone="success"
         number="KO_001"
         seriesName="My Lab Series"
         organization="Skillable – Production"

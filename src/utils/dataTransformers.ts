@@ -181,8 +181,6 @@ export function transformTemplateToTemplateItem(
     platform: item.platform || 'Unknown',
     created: item.created,
     modified: item.last_modified,
-    statusLabel: 'Active', // Default status since not in CSV
-    statusTone: 'default' as const,
     starred: starredItems[`template-${index}`] || false,
     onStarToggle: () => toggleStar('template', index, item.lab_profile),
   }));

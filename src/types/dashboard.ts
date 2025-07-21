@@ -50,8 +50,6 @@ export interface TemplateItem extends BaseDashboardItem {
   platform: string;
   created: string;
   modified: string;
-  statusLabel: string;
-  statusTone: ChipVariant;
   onStarToggle: () => void;
 }
 

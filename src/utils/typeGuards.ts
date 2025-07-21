@@ -72,8 +72,6 @@ export function isTemplateItem(item: unknown): item is TemplateItem {
     typeof (item as TemplateItem).platform === 'string' &&
     typeof (item as TemplateItem).created === 'string' &&
     typeof (item as TemplateItem).modified === 'string' &&
-    typeof (item as TemplateItem).statusLabel === 'string' &&
-    typeof (item as TemplateItem).statusTone === 'string' &&
     typeof (item as TemplateItem).onStarToggle === 'function'
   );
 }

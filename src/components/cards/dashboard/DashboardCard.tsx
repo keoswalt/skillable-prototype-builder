@@ -208,8 +208,6 @@ export interface SeriesData {
 export interface TemplateData {
   variant: 'template';
   name: string;
-  statusLabel?: string;
-  statusTone?: ChipVariant;
   number: string;
   seriesName: string;
   organization: string;
@@ -352,7 +350,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
       </span>
     );
 
-    if ('statusLabel' in props && props.statusLabel) {
+    if ('statusLabel' in props && props.statusLabel && props.variant === 'profile') {
       titleContent.push(
         <Chip key="status" size="extra-small" variant={props.statusTone || 'secondary'} className="ml-2">
           {props.statusLabel}
