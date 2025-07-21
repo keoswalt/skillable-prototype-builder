@@ -23,7 +23,7 @@ export function DashboardHeader({ findMenuItems, createMenuItems }: DashboardHea
           onClick={() => alert('Opens lab advisor home page')}
           className="hidden sm:inline-flex"
         >
-          View Recommendations (8)
+          View Lab Advisor Alerts (8)
         </Button>
       </div>
       
