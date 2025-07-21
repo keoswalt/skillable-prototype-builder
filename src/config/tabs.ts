@@ -50,22 +50,22 @@ export interface TabConfiguration<T = any, R = any, C = any> {
 // Tab configuration registry
 export const TAB_CONFIGURATIONS: TabConfiguration[] = [
   {
-    id: 'lab-instances',
-    label: 'Lab Instances',
-    cardType: 'instance',
-    csvDataHook: useLabInstanceData,
-    transformFunction: transformLabInstanceToInstanceItem,
-    cardComponent: InstanceCard,
-    defaultSortConfig: { field: 'name', direction: 'asc' },
-    defaultFilterConfig: [],
-  },
-  {
     id: 'lab-profiles',
     label: 'Lab Profiles',
     cardType: 'profile',
     csvDataHook: useLabProfileData,
     transformFunction: transformLabProfileToProfileItem,
     cardComponent: ProfileCard,
+    defaultSortConfig: { field: 'name', direction: 'asc' },
+    defaultFilterConfig: [],
+  },
+  {
+    id: 'lab-instances',
+    label: 'Lab Instances',
+    cardType: 'instance',
+    csvDataHook: useLabInstanceData,
+    transformFunction: transformLabInstanceToInstanceItem,
+    cardComponent: InstanceCard,
     defaultSortConfig: { field: 'name', direction: 'asc' },
     defaultFilterConfig: [],
   },

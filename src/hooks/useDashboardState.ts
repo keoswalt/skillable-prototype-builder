@@ -7,7 +7,7 @@ import { useLocalStorage } from './useLocalStorage';
 import { useToast } from '@/hooks/useToast';
 import { APP_CONSTANTS } from '@/config/constants';
 import { CardType } from '@/config/sorting';
-import { getTabIds } from '@/config/tabs';
+import { getTabIds, getTabConfigurationByIndex } from '@/config/tabs';
 
 export interface PaginationState {
   currentPage: number;
@@ -166,8 +166,8 @@ export function useDashboardState() {
   };
 
   const getCurrentCardType = (): CardType => {
-    const cardTypes: CardType[] = ['instance', 'profile', 'series', 'template'];
-    return cardTypes[activeTabIndex];
+    const tabConfig = getTabConfigurationByIndex(activeTabIndex);
+    return tabConfig?.cardType || 'profile'; // Default to profile if no config found
   };
 
   return {

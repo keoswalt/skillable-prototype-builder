@@ -20,11 +20,4 @@ export const CREATE_MENU_ITEMS: MenuItem[] = [
   { label: 'New lab series', onClick: () => alert('Opens create lab series page') },
   { label: 'New virtual machine', onClick: () => alert('Opens create new VM page') },
   { label: 'New script template', onClick: () => alert('Opens create new script template page') },
-];
-
-export const TAB_CONFIG = [
-  { id: 'instance', label: 'Lab Instances' },
-  { id: 'profile', label: 'Lab Profiles' },
-  { id: 'series', label: 'Lab Series' },
-  { id: 'template', label: 'Templates' },
-] as const; 
+]; 
