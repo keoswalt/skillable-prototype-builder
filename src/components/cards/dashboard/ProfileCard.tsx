@@ -48,7 +48,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = React.memo((props) => {
       icon: 'saveAll',
       label: 'Clone',
       onClick: () => {
-        alert('Navigates to edit profile page, opens "save as" dialog');
+        alert('Default: Navigates to edit profile page, opens "save as" dialog. If user has permission to create templates, show dropdown with 1) Save as new lab and 2) Save as template [checks box on profile, shows toast to user]');
       },
     },
     {
