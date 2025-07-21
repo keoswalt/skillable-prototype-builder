@@ -13,6 +13,7 @@ export const FIND_MENU_ITEMS: MenuItem[] = [
   { label: 'Lab series', onClick: () => alert('Opens find lab series page') },
   { label: 'Organizations', onClick: () => alert('Opens find organizations page') },
   { label: 'Users', onClick: () => alert('Opens find users page') },
+  { label: 'Bug Report', onClick: () => alert('Opens find bug reports page') },
 ];
 
 export const CREATE_MENU_ITEMS: MenuItem[] = [
