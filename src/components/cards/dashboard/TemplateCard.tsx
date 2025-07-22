@@ -24,17 +24,17 @@ const TemplateCardComponent: React.FC<TemplateCardProps> = React.memo((props) =>
   // Define default actions for template cards
   const defaultActions: CardAction[] = [
     {
-      icon: 'externalLink',
-      label: 'Open',
+      icon: 'eye',
+      label: 'Preview',
       onClick: () => {
         alert('Launches preview of template');
       },
     },
     {
-      icon: 'eye',
-      label: 'Preview',
+      icon: 'circleQuestionMark',
+      label: 'Details',
       onClick: () => {
-        alert('Opens lab manual(what shows today when you click "details")');
+        alert('Opens lab manual (what shows from template gallery when you click "details")');
       },
     },
     {
