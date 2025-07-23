@@ -116,9 +116,9 @@ export const RadioList = forwardRef<HTMLDivElement, RadioListProps>((props, ref)
     const inputId = `${groupName}-${value}`;
 
     return (
-      <div key={value} className="flex items-center gap-2">
+      <div key={value} className={cn("flex items-center gap-2", !disabled && "cursor-pointer")}>
         {/* Control */}
-        <label className="relative inline-flex items-center">
+        <label className="relative inline-flex items-center cursor-pointer">
           <input
             id={inputId}
             type="radio"
