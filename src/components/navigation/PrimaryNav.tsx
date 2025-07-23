@@ -34,6 +34,7 @@ const navItems: NavItem[] = [
 export default function PrimaryNav() {
   const pathname = usePathname();
   const userButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileUserButtonRef = useRef<HTMLButtonElement>(null);
 
   const [menuState, setMenuState] = useState<MenuState>({
     isMobileMenuOpen: false,
@@ -55,7 +56,9 @@ export default function PrimaryNav() {
       if (
         menuState.isUserDropdownOpen &&
         userButtonRef.current &&
-        !userButtonRef.current.contains(event.target as Node)
+        !userButtonRef.current.contains(event.target as Node) &&
+        mobileUserButtonRef.current &&
+        !mobileUserButtonRef.current.contains(event.target as Node)
       ) {
         setMenuState(prev => ({ ...prev, isUserDropdownOpen: false }));
       }
@@ -143,6 +146,14 @@ export default function PrimaryNav() {
         {item.label}
       </Link>
     );
+  };
+
+  // Get the current anchor element based on screen size
+  const getCurrentAnchorEl = () => {
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      return mobileUserButtonRef.current;
+    }
+    return userButtonRef.current;
   };
 
   return (
@@ -246,24 +257,22 @@ export default function PrimaryNav() {
           <div className="pt-4 pb-3 border-t border-[var(--components-divider-main)]">
             <div className="px-2 space-y-1">
               <button
+                ref={mobileUserButtonRef}
                 onClick={() => toggleMenu('isUserDropdownOpen')}
-                className="block w-full text-left px-3 py-2 text-body-sm text-primary-main rounded-md hover:text-[var(--primary-light)] hover:bg-[var(--components-background-contrast-sm)]"
+                className="block w-full text-left px-3 py-2 text-body-sm text-primary-main rounded-md hover:text-[var(--primary-light)] hover:bg-[var(--components-background-contrast-sm)] flex items-center justify-between"
               >
-                Kim Oswalt
+                <span style={{
+                  fontFamily: 'var(--fontfamily-primary)',
+                  letterSpacing: 'var(--letterspacing-wide)'
+                }}>Kim Oswalt</span>
+                <Icon
+                  icon={Icons.chevronDown}
+                  className={`h-4 w-4 transform ${
+                    menuState.isUserDropdownOpen ? 'rotate-180' : ''
+                  }`}
+                />
               </button>
             </div>
-            {/* Mobile User Menu */}
-            {menuState.isUserDropdownOpen && (
-              <div className="px-2 pt-2">
-                <UserMenu
-                  isOpen={menuState.isUserDropdownOpen}
-                  onClose={() => toggleMenu('isUserDropdownOpen')}
-                  anchorEl={null}
-                  currentTheme={currentTheme}
-                  onThemeChange={handleThemeChange}
-                />
-              </div>
-            )}
           </div>
         </div>
       </div>
@@ -272,7 +281,7 @@ export default function PrimaryNav() {
       <UserMenu
         isOpen={menuState.isUserDropdownOpen}
         onClose={() => toggleMenu('isUserDropdownOpen')}
-        anchorEl={userButtonRef.current}
+        anchorEl={getCurrentAnchorEl()}
         currentTheme={currentTheme}
         onThemeChange={handleThemeChange}
       />
