@@ -42,8 +42,8 @@ export const SplitButton: React.FC<SplitButtonProps> = ({
 
   const colorClasses = {
     default: {
-      container: 'border-common-white-contrast bg-common-white-main text-common-white-contrast',
-      hover: 'hover:bg-accent-light',
+      container: 'border-_components-text-primary bg-_components-background-default text-_components-text-primary',
+      hover: 'hover:bg-_components-background-contrast-sm',
     },
     primary: {
       container: 'border-primary-contrast bg-primary-main text-primary-contrast',

@@ -48,6 +48,9 @@ import {
   BookOpen,
   Camera,
   HelpCircle,
+  Sun,
+  Moon,
+  LogOut,
   LucideIcon,
   LucideProps
 } from 'lucide-react';
@@ -75,12 +78,16 @@ export const Icons = {
   externalLink: ExternalLink,
   eye: Eye,
   squarePlus: SquarePlus,
+  logout: LogOut,
   // UI Elements
   search: Search,
   user: User,
   bell: Bell,
   gradCap: GraduationCap,
   circleQuestionMark: HelpCircle,
+  // Theme
+  sun: Sun,
+  moon: Moon,
   // Status/Feedback
   alert: AlertCircle,
   info: Info,

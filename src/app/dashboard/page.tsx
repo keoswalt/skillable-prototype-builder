@@ -230,7 +230,7 @@ export default function DashboardPage() {
 
 
   return (
-    <main className="min-h-screen p-8">
+    <main className="min-h-screen text-_components-text-primary bg-_components-background-default p-8">
       <DashboardHeader 
         findMenuItems={FIND_MENU_ITEMS}
         createMenuItems={CREATE_MENU_ITEMS}

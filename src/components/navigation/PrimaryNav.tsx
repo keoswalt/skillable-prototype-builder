@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { Icon, Icons } from '../Icon';
+import { setTheme } from '../../app/theme/theme';
+import UserMenu from '../menu/UserMenu';
 
 interface NavItem {
   label: string;
@@ -26,13 +29,11 @@ const navItems: NavItem[] = [
   { label: 'Help', action: 'alert', alertMessage: 'Opens docs page' },
 ];
 
+
+
 export default function PrimaryNav() {
   const pathname = usePathname();
-
-  // Don't show the nav on the instructions editor page
-  if (pathname.startsWith('/instructions-editor')) {
-    return null;
-  }
+  const userButtonRef = useRef<HTMLButtonElement>(null);
 
   const [menuState, setMenuState] = useState<MenuState>({
     isMobileMenuOpen: false,
@@ -40,11 +41,50 @@ export default function PrimaryNav() {
     isUserDropdownOpen: false,
   });
 
+  const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'>('light');
+
+  // Initialize theme on component mount
+  useEffect(() => {
+    const isDark = document.documentElement.classList.contains('dark');
+    setCurrentTheme(isDark ? 'dark' : 'light');
+  }, []);
+
+  // Handle click outside to close user menu
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        menuState.isUserDropdownOpen &&
+        userButtonRef.current &&
+        !userButtonRef.current.contains(event.target as Node)
+      ) {
+        setMenuState(prev => ({ ...prev, isUserDropdownOpen: false }));
+      }
+    };
+
+    if (menuState.isUserDropdownOpen) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [menuState.isUserDropdownOpen]);
+
+  // Don't show the nav on the instructions editor page
+  if (pathname.startsWith('/instructions-editor')) {
+    return null;
+  }
+
   const toggleMenu = (menuKey: keyof MenuState) => {
     setMenuState(prev => ({
       ...prev,
       [menuKey]: !prev[menuKey]
     }));
+  };
+
+  const handleThemeChange = (theme: 'light' | 'dark') => {
+    setTheme(theme);
+    setCurrentTheme(theme);
   };
 
   const handleNavItemClick = (item: NavItem) => {
@@ -144,28 +184,20 @@ export default function PrimaryNav() {
           <div className="hidden md:flex items-center space-x-4">
 
             <button
+              ref={userButtonRef}
               onClick={() => toggleMenu('isUserDropdownOpen')}
               className="px-[5px] py-1 text-body-xs text-primary-main hover:text-[var(--primary-light)] flex items-center rounded-[5px]"
             >
               <span style={{
                 fontFamily: 'var(--fontfamily-primary)',
                 letterSpacing: 'var(--letterspacing-wide)'
-              }}>User Name</span>
-              <svg
+              }}>Kim Oswalt</span>
+              <Icon
+                icon={Icons.chevronDown}
                 className={`ml-2 h-4 w-4 transform ${
                   menuState.isUserDropdownOpen ? 'rotate-180' : ''
                 }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              />
             </button>
           </div>
 
@@ -217,12 +249,33 @@ export default function PrimaryNav() {
                 onClick={() => toggleMenu('isUserDropdownOpen')}
                 className="block w-full text-left px-3 py-2 text-body-sm text-primary-main rounded-md hover:text-[var(--primary-light)] hover:bg-[var(--components-background-contrast-sm)]"
               >
-                User Name
+                Kim Oswalt
               </button>
             </div>
+            {/* Mobile User Menu */}
+            {menuState.isUserDropdownOpen && (
+              <div className="px-2 pt-2">
+                <UserMenu
+                  isOpen={menuState.isUserDropdownOpen}
+                  onClose={() => toggleMenu('isUserDropdownOpen')}
+                  anchorEl={null}
+                  currentTheme={currentTheme}
+                  onThemeChange={handleThemeChange}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
+      
+      {/* User Menu */}
+      <UserMenu
+        isOpen={menuState.isUserDropdownOpen}
+        onClose={() => toggleMenu('isUserDropdownOpen')}
+        anchorEl={userButtonRef.current}
+        currentTheme={currentTheme}
+        onThemeChange={handleThemeChange}
+      />
     </nav>
   );
 } 
