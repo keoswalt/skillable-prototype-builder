@@ -259,7 +259,7 @@ export default function PrimaryNav() {
               <button
                 ref={mobileUserButtonRef}
                 onClick={() => toggleMenu('isUserDropdownOpen')}
-                className="block w-full text-left px-3 py-2 text-body-sm text-primary-main rounded-md hover:text-[var(--primary-light)] hover:bg-[var(--components-background-contrast-sm)] flex items-center justify-between"
+                className="w-full text-left px-3 py-2 text-body-sm text-primary-main rounded-md hover:text-[var(--primary-light)] hover:bg-[var(--components-background-contrast-sm)] flex items-center justify-between"
               >
                 <span style={{
                   fontFamily: 'var(--fontfamily-primary)',
