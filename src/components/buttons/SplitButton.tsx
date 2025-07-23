@@ -46,7 +46,7 @@ export const SplitButton: React.FC<SplitButtonProps> = ({
       hover: 'hover:bg-_components-background-contrast-sm',
     },
     primary: {
-      container: 'border-primary-contrast bg-primary-main text-primary-contrast',
+      container: 'bg-primary-main text-primary-contrast',
       hover: 'hover:bg-primary-dark',
     },
   }[variant];
@@ -55,7 +55,8 @@ export const SplitButton: React.FC<SplitButtonProps> = ({
     <>
       <div 
         className={`
-          inline-flex h-8 items-center rounded-[5px] border text-sm
+          inline-flex h-8 items-center rounded-[5px] text-sm
+          ${variant === 'default' ? 'border' : ''}
           ${colorClasses.container}
           ${className}
         `}
