@@ -43,6 +43,7 @@ export interface LabInstanceData {
   state_id: string;
   duration: string;
   student: string;
+  instructions: string;
 }
 
 // Union type for all CSV data types

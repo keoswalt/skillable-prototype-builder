@@ -174,6 +174,7 @@ export interface InstanceData {
   duration: string;
   lastActivity: string;
   state: string;
+  instructions: string;
 }
 
 /* ======================= Profile ======================== */
@@ -395,6 +396,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
           i('duration', 'Run Time', p.duration),
           i('lastActivity', 'Last Activity', p.lastActivity),
           i('state', 'State', p.state),
+          i('instructions', 'Instruction Set', p.instructions),
         ];
       }
       case 'profile': {

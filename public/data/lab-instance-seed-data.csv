@@ -1,701 +1,701 @@
-﻿id,lab_profile,series,user_id,last_activity_time,state_id,duration,student
-12193863,Database Design and Management,Cloud Mastery Series,5269530,"December 27, 2024",Running,4:13:47,Alex Martinez
-39703560,Blockchain Fundamentals,Networking Academy,5269680,"June 4, 2022",Saved,1:29:30,Jamie Clark
-93648785,Cloud Computing Basics,Data Science Bootcamp,5269680,"January 23, 2020",Tearing Down,1:13:26,Riley Garcia
-20459310,Introduction to Data Science,AI and Machine Learning Track,5269627,"November 15, 2025",Running,2:35:52,Alex Martinez
-10913079,Cloud Computing Basics,AI and Machine Learning Track,5269680,"May 28, 2025",Saved,0:53:20,Drew Garcia
-82533551,Building Secure Web Applications,Foundations of Technology,5279472,"August 6, 2024",Off,4:56:18,Morgan Clark
-14197600,DevOps Practices and Tools,Web Development Journey,5269724,"January 25, 2024",Building,1:19:06,Drew Brown
-50629903,Mobile App Development,DevOps Essentials,5303951,"October 25, 2020",Building,2:04:25,Skyler Martinez
-27358313,Advanced Python Programming,AI and Machine Learning Track,6663604,"July 2, 2023",Saved,0:11:29,Alex Davis
-26870420,IoT and Embedded Systems,Advanced Developer Series,6663604,"January 12, 2022",Tearing Down,0:13:04,Morgan Walker
-16250991,Big Data Analytics,Advanced Developer Series,6663604,"April 18, 2025",Tearing Down,2:56:04,Jamie Clark
-56806070,Cybersecurity Essentials,DevOps Essentials,6663604,"July 3, 2021",Building,4:04:58,Riley Clark
-39918169,Machine Learning Fundamentals,Cloud Mastery Series,5279472,"December 7, 2025",Saved,4:55:45,Jamie Walker
-14010215,AI for Beginners,Data Science Bootcamp,6663604,"November 9, 2022",Tearing Down,3:57:38,Drew Lee
-78791020,Database Design and Management,Cloud Mastery Series,6294759,"May 30, 2021",Off,3:14:25,Morgan Lee
-94343177,Data Visualization with Python,Cloud Mastery Series,1986603,"December 17, 2024",Building,0:46:27,Taylor Martinez
-22528317,Big Data Analytics,Data Science Bootcamp,962375,"November 3, 2021",Saved,4:48:20,Alex Clark
-22506624,Data Visualization with Python,Networking Academy,137420,"March 10, 2023",Saved,4:10:34,Riley Walker
-92933592,Version Control with Git,Foundations of Technology,137420,"March 14, 2020",Tearing Down,3:22:35,Casey Brown
-41226798,Cloud Computing Basics,Web Development Journey,1703299,"May 30, 2020",Running,0:36:51,Skyler Clark
-69690476,Web Development with JavaScript,Networking Academy,4904769,"December 4, 2021",Building,3:56:38,Alex Johnson
-23479086,DevOps Practices and Tools,Web Development Journey,4904769,"November 8, 2024",Off,2:59:09,Riley Walker
-20499569,AI for Beginners,Advanced Developer Series,4904769,"November 19, 2021",Running,1:46:01,Jordan Davis
-71067099,Introduction to Data Science,Web Development Journey,4904769,"May 2, 2020",Building,0:58:30,Skyler Lee
-81818927,Introduction to Data Science,Mobile Development Series,4904769,"September 13, 2024",Tearing Down,2:55:26,Taylor Johnson
-31874615,Cloud Computing Basics,Data Science Bootcamp,4904769,"September 19, 2021",Tearing Down,4:49:28,Riley Davis
-64829145,Big Data Analytics,Cybersecurity Pathway,4904769,"January 10, 2025",Running,4:47:08,Skyler Davis
-80985813,Big Data Analytics,Foundations of Technology,4904769,"October 1, 2021",Running,0:25:12,Riley Brown
-37509962,Machine Learning Fundamentals,AI and Machine Learning Track,4904769,"December 12, 2022",Tearing Down,0:22:52,Drew Smith
-98070288,Big Data Analytics,Data Science Bootcamp,4904769,"June 11, 2025",Off,3:48:26,Jamie Smith
-65491738,Cybersecurity Essentials,AI and Machine Learning Track,4904769,"April 7, 2024",Off,4:29:15,Riley Lee
-91896336,IoT and Embedded Systems,Foundations of Technology,4904769,"March 5, 2025",Off,4:07:36,Skyler Lewis
-36443044,Natural Language Processing,Mobile Development Series,4904769,"February 22, 2024",Running,2:12:00,Drew Martinez
-91456307,Networking Concepts,DevOps Essentials,4904769,"February 2, 2020",Off,1:49:42,Taylor Smith
-13644591,Agile Project Management,Cloud Mastery Series,4904769,"May 29, 2024",Running,4:55:31,Casey Garcia
-86952507,IoT and Embedded Systems,Cloud Mastery Series,4904769,"January 21, 2025",Tearing Down,2:21:35,Jamie Brown
-65154257,Web Development with JavaScript,Foundations of Technology,4904769,"August 12, 2025",Running,0:45:55,Taylor Brown
-99848360,IoT and Embedded Systems,Cloud Mastery Series,4904769,"November 24, 2025",Saved,1:42:41,Taylor Lewis
-71737087,Natural Language Processing,Advanced Developer Series,4904769,"June 22, 2022",Building,3:52:44,Drew Brown
-14461032,Web Development with JavaScript,Advanced Developer Series,389713,"May 28, 2023",Building,3:51:28,Morgan Walker
-23852576,Agile Project Management,Data Science Bootcamp,4904769,"June 18, 2022",Off,1:02:06,Jamie Brown
-45441011,Advanced Python Programming,Cloud Mastery Series,4904769,"July 30, 2022",Saved,1:17:48,Riley Davis
-85604004,Agile Project Management,AI and Machine Learning Track,4904769,"March 8, 2020",Tearing Down,4:52:14,Jordan Lee
-57091190,DevOps Practices and Tools,Advanced Developer Series,4904769,"October 31, 2021",Saved,2:00:14,Taylor Garcia
-57242154,Database Design and Management,Foundations of Technology,4904769,"May 13, 2024",Tearing Down,0:39:10,Casey Smith
-51862662,Agile Project Management,AI and Machine Learning Track,4904769,"September 12, 2022",Building,4:32:35,Avery Garcia
-59308393,Version Control with Git,Foundations of Technology,4904769,"June 27, 2024",Building,1:52:11,Drew Davis
-99935038,Building Secure Web Applications,Foundations of Technology,4904769,"June 30, 2024",Saved,4:19:57,Casey Martinez
-33031729,Introduction to Data Science,Networking Academy,4904769,"February 7, 2025",Saved,2:04:50,Drew Davis
-50685874,Mobile App Development,Foundations of Technology,4904769,"June 28, 2022",Building,2:03:46,Riley Clark
-90798681,Cybersecurity Essentials,Networking Academy,4904769,"April 6, 2020",Running,2:46:33,Jordan Garcia
-72073404,Big Data Analytics,Data Science Bootcamp,4904769,"September 26, 2021",Off,4:15:46,Drew Martinez
-18666679,AI for Beginners,Web Development Journey,4904769,"November 29, 2022",Running,0:37:28,Alex Lee
-97950063,IoT and Embedded Systems,AI and Machine Learning Track,4904769,"November 16, 2022",Off,3:43:56,Taylor Lee
-40890086,Version Control with Git,Cloud Mastery Series,4904769,"July 19, 2021",Running,4:50:26,Morgan Clark
-43894642,Machine Learning Fundamentals,Foundations of Technology,4904769,"April 2, 2023",Running,4:07:58,Morgan Walker
-92690529,Blockchain Fundamentals,Web Development Journey,4904769,"August 15, 2020",Running,3:47:34,Morgan Martinez
-14568128,Linux Command Line Basics,Cloud Mastery Series,4904769,"August 10, 2020",Saved,3:59:05,Drew Garcia
-60879131,Advanced Python Programming,AI and Machine Learning Track,4904769,"July 12, 2025",Building,3:45:19,Casey Smith
-88565368,Data Visualization with Python,AI and Machine Learning Track,1703299,"July 24, 2020",Saved,4:52:52,Drew Johnson
-64745251,Mobile App Development,Mobile Development Series,4904769,"April 12, 2023",Running,1:42:59,Drew Lewis
-28755603,IoT and Embedded Systems,Cloud Mastery Series,4904769,"March 30, 2025",Running,0:13:14,Skyler Garcia
-56880211,Linux Command Line Basics,Networking Academy,4904769,"November 27, 2022",Building,2:17:38,Alex Davis
-16112092,Database Design and Management,Mobile Development Series,4904769,"April 20, 2022",Running,3:54:21,Jordan Martinez
-94244380,Networking Concepts,DevOps Essentials,4904769,"July 8, 2023",Running,0:27:51,Riley Davis
-29295467,Web Development with JavaScript,Networking Academy,1703299,"December 28, 2025",Building,0:56:35,Morgan Garcia
-82689272,Agile Project Management,Foundations of Technology,4904769,"March 11, 2023",Saved,0:36:29,Jamie Johnson
-24880978,Machine Learning Fundamentals,Cybersecurity Pathway,994222,"December 10, 2023",Off,2:15:30,Morgan Lewis
-47431293,Database Design and Management,Cybersecurity Pathway,994222,"September 18, 2023",Building,2:51:03,Skyler Davis
-37797747,Introduction to Data Science,Web Development Journey,2290534,"July 18, 2025",Off,0:59:59,Drew Garcia
-98197844,AI for Beginners,Data Science Bootcamp,994222,"May 6, 2021",Off,4:57:52,Morgan Walker
-41257995,Introduction to Data Science,Web Development Journey,4904769,"June 12, 2024",Off,2:10:22,Jordan Davis
-99841364,Cloud Computing Basics,Cloud Mastery Series,4904769,"September 7, 2020",Tearing Down,3:01:50,Jamie Garcia
-86842459,Building Secure Web Applications,Advanced Developer Series,4904769,"August 28, 2020",Saved,3:36:09,Casey Garcia
-20558707,Web Development with JavaScript,Web Development Journey,4904769,"January 19, 2025",Saved,4:50:10,Taylor Martinez
-71252355,Mobile App Development,DevOps Essentials,4904769,"February 1, 2022",Building,4:21:30,Avery Brown
-64960322,IoT and Embedded Systems,Mobile Development Series,1972728,"September 23, 2024",Building,4:33:03,Skyler Clark
-30055673,Agile Project Management,Foundations of Technology,4904769,"April 10, 2023",Running,3:17:56,Avery Johnson
-13780718,Data Visualization with Python,Networking Academy,4904769,"November 20, 2024",Saved,3:17:03,Drew Garcia
-55095711,Linux Command Line Basics,DevOps Essentials,4904769,"October 13, 2025",Off,4:38:26,Jordan Lee
-23357070,Version Control with Git,Web Development Journey,4904769,"October 24, 2020",Tearing Down,2:12:46,Alex Garcia
-41954531,Big Data Analytics,Data Science Bootcamp,4904769,"November 21, 2020",Tearing Down,3:02:31,Drew Clark
-82432540,Web Development with JavaScript,DevOps Essentials,235934,"September 4, 2023",Building,3:58:32,Morgan Johnson
-86949043,Big Data Analytics,Foundations of Technology,4904769,"September 13, 2020",Tearing Down,3:29:21,Jamie Martinez
-98749191,Linux Command Line Basics,Mobile Development Series,2627965,"April 29, 2025",Saved,4:16:33,Alex Johnson
-75193690,DevOps Practices and Tools,Data Science Bootcamp,4904769,"February 21, 2025",Off,0:35:25,Drew Clark
-97986195,Agile Project Management,Networking Academy,4904769,"May 31, 2021",Tearing Down,2:25:22,Casey Garcia
-81890116,Cybersecurity Essentials,DevOps Essentials,4904769,"July 8, 2023",Building,3:27:00,Riley Walker
-53686156,DevOps Practices and Tools,Data Science Bootcamp,4904769,"March 23, 2021",Building,2:55:08,Avery Walker
-72864713,DevOps Practices and Tools,DevOps Essentials,4904769,"March 11, 2024",Building,4:39:30,Jordan Johnson
-37806523,Database Design and Management,Cloud Mastery Series,4904769,"February 17, 2025",Building,4:54:05,Casey Davis
-63829498,Agile Project Management,Foundations of Technology,4904769,"November 27, 2022",Building,1:30:01,Alex Martinez
-19632393,Natural Language Processing,DevOps Essentials,4904769,"July 20, 2020",Running,3:30:47,Jordan Walker
-91236544,Cloud Computing Basics,Cloud Mastery Series,4904769,"August 14, 2021",Tearing Down,1:52:43,Jordan Clark
-57361041,Data Visualization with Python,Foundations of Technology,4904769,"August 5, 2025",Saved,2:24:00,Alex Walker
-58424194,AI for Beginners,Advanced Developer Series,4904769,"March 6, 2023",Saved,0:37:34,Casey Brown
-11308003,Web Development with JavaScript,Cloud Mastery Series,4904769,"August 12, 2023",Building,0:57:19,Jamie Brown
-36399840,Machine Learning Fundamentals,Cloud Mastery Series,4904769,"June 20, 2025",Tearing Down,2:18:26,Skyler Brown
-55577088,Cloud Computing Basics,Cybersecurity Pathway,4904769,"April 4, 2021",Building,1:10:56,Jordan Walker
-85477707,Data Visualization with Python,Advanced Developer Series,1703299,"December 5, 2023",Saved,1:41:35,Casey Lee
-57732138,Advanced Python Programming,Networking Academy,1703299,"September 15, 2021",Running,3:50:19,Casey Smith
-98139908,Agile Project Management,Cloud Mastery Series,4904769,"April 27, 2023",Off,3:00:53,Jamie Brown
-60806186,Cloud Computing Basics,DevOps Essentials,4904769,"December 13, 2020",Saved,3:17:58,Jamie Clark
-65226400,Introduction to Data Science,Mobile Development Series,4904769,"March 16, 2022",Off,4:42:45,Riley Davis
-33336701,Agile Project Management,Networking Academy,4904769,"December 4, 2023",Tearing Down,2:58:12,Skyler Davis
-30691884,Database Design and Management,DevOps Essentials,389713,"April 22, 2021",Saved,2:28:32,Casey Smith
-96408810,Web Development with JavaScript,AI and Machine Learning Track,389713,"October 16, 2024",Saved,3:29:40,Morgan Martinez
-31726776,Version Control with Git,DevOps Essentials,994222,"July 5, 2024",Building,2:35:39,Morgan Johnson
-11449086,Linux Command Line Basics,Cloud Mastery Series,2290534,"March 18, 2022",Saved,0:57:20,Jordan Davis
-44171449,Linux Command Line Basics,Networking Academy,1703299,"August 30, 2021",Off,4:39:13,Taylor Davis
-29835496,Advanced Python Programming,Advanced Developer Series,389713,"November 4, 2023",Saved,1:29:45,Taylor Davis
-66473956,Blockchain Fundamentals,Networking Academy,4904769,"August 21, 2025",Building,3:25:10,Casey Walker
-41079008,AI for Beginners,DevOps Essentials,4904769,"March 1, 2021",Saved,1:26:34,Drew Lewis
-54825142,Networking Concepts,Advanced Developer Series,4904769,"March 28, 2023",Saved,0:29:49,Drew Walker
-69855185,AI for Beginners,Advanced Developer Series,4904769,"July 10, 2021",Saved,2:16:45,Jordan Clark
-54429103,Natural Language Processing,Web Development Journey,4904769,"November 26, 2025",Tearing Down,0:23:36,Alex Lewis
-35526004,Introduction to Data Science,Cybersecurity Pathway,4904769,"September 15, 2020",Running,1:58:25,Skyler Johnson
-74376945,Web Development with JavaScript,Advanced Developer Series,4904769,"September 16, 2024",Off,1:59:16,Taylor Lewis
-28982260,Networking Concepts,Web Development Journey,4904769,"December 7, 2024",Building,1:26:24,Morgan Johnson
-92931436,DevOps Practices and Tools,Cybersecurity Pathway,4803349,"November 29, 2023",Building,0:33:38,Avery Johnson
-41121294,Agile Project Management,Cybersecurity Pathway,1703299,"April 17, 2024",Off,4:25:18,Riley Davis
-81997227,Advanced Python Programming,Cybersecurity Pathway,4904769,"March 18, 2024",Tearing Down,3:29:27,Morgan Martinez
-84169086,Web Development with JavaScript,Networking Academy,994222,"October 18, 2020",Building,2:35:32,Skyler Martinez
-71609686,IoT and Embedded Systems,AI and Machine Learning Track,4904769,"July 18, 2025",Building,0:17:37,Jordan Lee
-98319015,Building Secure Web Applications,Mobile Development Series,4904769,"February 6, 2023",Saved,1:31:54,Alex Martinez
-54732939,DevOps Practices and Tools,DevOps Essentials,4904769,"March 13, 2024",Running,1:12:19,Morgan Davis
-69476815,AI for Beginners,DevOps Essentials,4904769,"December 30, 2022",Saved,3:34:00,Taylor Clark
-38567979,Advanced Python Programming,Cloud Mastery Series,4904769,"October 3, 2023",Tearing Down,4:28:16,Jamie Smith
-86024325,Introduction to Data Science,Data Science Bootcamp,2426227,"February 1, 2023",Running,1:35:55,Alex Davis
-10041162,Mobile App Development,Cybersecurity Pathway,2426227,"January 1, 2022",Building,2:48:41,Taylor Johnson
-77827136,Web Development with JavaScript,Foundations of Technology,2426227,"December 28, 2023",Building,4:24:16,Skyler Martinez
-60062668,Data Visualization with Python,Cloud Mastery Series,2426227,"October 29, 2020",Saved,3:24:12,Riley Martinez
-99240605,Data Visualization with Python,Networking Academy,2426227,"March 5, 2020",Building,3:25:53,Drew Smith
-75659099,Big Data Analytics,Cybersecurity Pathway,1703299,"December 22, 2025",Tearing Down,0:38:57,Drew Johnson
-32808874,Machine Learning Fundamentals,Cloud Mastery Series,4904769,"May 6, 2021",Tearing Down,2:19:15,Casey Lee
-56950918,Mobile App Development,Networking Academy,2426227,"March 5, 2025",Building,3:27:09,Casey Smith
-40484013,Agile Project Management,Advanced Developer Series,4904769,"December 26, 2020",Tearing Down,3:09:00,Skyler Davis
-26064761,Cybersecurity Essentials,DevOps Essentials,3494134,"August 22, 2025",Saved,4:44:15,Morgan Johnson
-17313576,Version Control with Git,Data Science Bootcamp,994222,"March 28, 2023",Building,2:12:39,Riley Clark
-68213734,AI for Beginners,Cloud Mastery Series,4904769,"May 11, 2024",Saved,1:03:39,Skyler Brown
-30208906,Cloud Computing Basics,Cybersecurity Pathway,4904769,"September 5, 2021",Running,1:54:17,Avery Lee
-52371745,Agile Project Management,AI and Machine Learning Track,4904769,"July 4, 2024",Off,0:22:06,Alex Walker
-61505747,Cloud Computing Basics,Cybersecurity Pathway,3320826,"December 13, 2023",Building,0:28:10,Jamie Davis
-17557752,Cybersecurity Essentials,Foundations of Technology,4706801,"July 14, 2024",Running,1:26:19,Jamie Lee
-25937592,Database Design and Management,Advanced Developer Series,4713322,"October 12, 2022",Running,4:25:44,Drew Walker
-45266933,Version Control with Git,AI and Machine Learning Track,4713323,"December 26, 2025",Tearing Down,4:24:30,Jamie Lee
-95395993,DevOps Practices and Tools,AI and Machine Learning Track,4712972,"May 4, 2020",Building,3:28:07,Alex Lewis
-75117727,Machine Learning Fundamentals,Cybersecurity Pathway,4711911,"June 12, 2023",Off,4:21:32,Casey Walker
-68455990,DevOps Practices and Tools,Data Science Bootcamp,4691169,"November 22, 2025",Tearing Down,3:18:36,Riley Smith
-79579048,Mobile App Development,Cybersecurity Pathway,4713338,"November 8, 2023",Running,3:18:06,Jordan Walker
-15115574,Building Secure Web Applications,Cybersecurity Pathway,4713339,"February 16, 2020",Building,0:53:54,Alex Smith
-12436255,Database Design and Management,DevOps Essentials,4713366,"October 12, 2025",Building,4:41:28,Alex Brown
-91867725,Data Visualization with Python,Foundations of Technology,4713338,"October 20, 2020",Building,4:03:51,Taylor Smith
-39322476,Introduction to Data Science,Networking Academy,4703942,"October 6, 2024",Building,4:00:54,Taylor Johnson
-71141408,Cloud Computing Basics,Advanced Developer Series,4713323,"December 30, 2025",Building,1:30:14,Drew Clark
-39089443,Agile Project Management,Mobile Development Series,4708458,"May 18, 2022",Running,3:26:27,Alex Smith
-77416101,IoT and Embedded Systems,Web Development Journey,4713338,"January 1, 2024",Building,1:42:01,Riley Brown
-84995261,Building Secure Web Applications,Cloud Mastery Series,4713242,"September 15, 2020",Saved,0:57:50,Alex Walker
-75703780,Natural Language Processing,Web Development Journey,4713395,"January 4, 2024",Saved,1:22:30,Riley Garcia
-32039693,Blockchain Fundamentals,DevOps Essentials,4693859,"March 2, 2024",Tearing Down,3:47:34,Riley Walker
-94938204,Data Visualization with Python,Web Development Journey,4708458,"April 22, 2024",Tearing Down,4:59:11,Jamie Davis
-94907557,AI for Beginners,Data Science Bootcamp,4713242,"April 3, 2020",Building,0:30:20,Skyler Garcia
-47647658,Version Control with Git,DevOps Essentials,4708613,"July 30, 2025",Tearing Down,2:50:51,Morgan Johnson
-90625726,Web Development with JavaScript,AI and Machine Learning Track,4713240,"October 11, 2023",Off,4:18:07,Riley Lee
-83371534,Networking Concepts,DevOps Essentials,3788371,"April 12, 2021",Building,1:32:21,Jamie Lewis
-56413815,IoT and Embedded Systems,Foundations of Technology,1712546,"April 26, 2024",Saved,0:32:09,Casey Lee
-31329558,Data Visualization with Python,AI and Machine Learning Track,4198699,"October 26, 2025",Building,2:16:37,Riley Garcia
-49396361,Version Control with Git,AI and Machine Learning Track,3788371,"May 9, 2024",Tearing Down,2:00:40,Drew Clark
-34909528,Cybersecurity Essentials,Data Science Bootcamp,3788371,"June 9, 2023",Running,0:26:18,Jamie Martinez
-93208845,Cybersecurity Essentials,DevOps Essentials,4312225,"September 18, 2025",Saved,4:32:32,Skyler Brown
-85726411,Cybersecurity Essentials,AI and Machine Learning Track,4312225,"December 17, 2025",Running,2:23:52,Taylor Walker
-65487780,Building Secure Web Applications,Networking Academy,5812603,"June 6, 2025",Running,0:50:55,Jordan Clark
-50944744,Introduction to Data Science,Advanced Developer Series,5812603,"May 15, 2021",Tearing Down,4:40:46,Drew Garcia
-89385435,Mobile App Development,Networking Academy,4312225,"December 14, 2023",Off,2:58:40,Drew Davis
-97740680,Building Secure Web Applications,Mobile Development Series,1712546,"September 25, 2022",Running,0:54:25,Riley Lee
-56289072,Networking Concepts,Foundations of Technology,1712546,"October 29, 2023",Tearing Down,1:12:23,Casey Garcia
-44934898,Building Secure Web Applications,Data Science Bootcamp,1712546,"August 25, 2024",Off,0:20:16,Drew Garcia
-11398827,Machine Learning Fundamentals,Mobile Development Series,3788371,"April 28, 2021",Running,4:15:55,Morgan Lee
-78862447,Networking Concepts,Cybersecurity Pathway,3135003,"September 7, 2024",Off,2:37:59,Morgan Brown
-20229812,Introduction to Data Science,Cybersecurity Pathway,3920869,"March 26, 2024",Saved,4:00:37,Jamie Walker
-92122960,Natural Language Processing,Web Development Journey,3920869,"April 23, 2022",Tearing Down,3:49:47,Morgan Smith
-48051218,Agile Project Management,Networking Academy,3287021,"August 20, 2025",Saved,0:59:16,Skyler Smith
-27213778,IoT and Embedded Systems,Web Development Journey,3287021,"April 20, 2025",Running,1:17:16,Riley Walker
-14434019,Introduction to Data Science,AI and Machine Learning Track,3920869,"July 6, 2021",Saved,1:55:04,Jordan Davis
-42930022,Database Design and Management,DevOps Essentials,3287021,"April 2, 2025",Off,0:22:26,Jamie Lee
-42208731,Cloud Computing Basics,Cybersecurity Pathway,3287021,"June 23, 2021",Building,3:28:10,Taylor Davis
-69198812,Networking Concepts,Web Development Journey,3920869,"February 10, 2021",Saved,2:43:25,Casey Brown
-52929539,Introduction to Data Science,Networking Academy,4713438,"April 24, 2025",Building,2:40:15,Skyler Davis
-76743513,Mobile App Development,Networking Academy,4713240,"February 4, 2025",Tearing Down,3:18:58,Casey Clark
-76673226,Blockchain Fundamentals,DevOps Essentials,4713240,"May 29, 2021",Off,2:04:50,Avery Walker
-65507715,Agile Project Management,Advanced Developer Series,4703943,"January 16, 2021",Building,2:10:57,Jamie Lee
-13111098,Data Visualization with Python,Data Science Bootcamp,4704246,"June 11, 2022",Tearing Down,3:59:58,Taylor Smith
-33181703,Big Data Analytics,Web Development Journey,4703945,"July 17, 2025",Building,2:44:35,Drew Martinez
-85439616,Version Control with Git,Web Development Journey,4691972,"December 17, 2022",Tearing Down,1:36:35,Jordan Lewis
-70228148,AI for Beginners,Advanced Developer Series,4709865,"July 10, 2022",Saved,4:14:10,Taylor Lewis
-65786679,Advanced Python Programming,Web Development Journey,4713468,"March 23, 2022",Building,3:58:08,Jamie Garcia
-20502844,Advanced Python Programming,Cybersecurity Pathway,4694092,"April 28, 2020",Tearing Down,1:31:41,Jordan Davis
-20150211,Mobile App Development,Mobile Development Series,4692039,"December 21, 2024",Saved,1:01:41,Alex Clark
-32691738,Advanced Python Programming,Foundations of Technology,4713240,"July 11, 2020",Running,2:21:43,Casey Garcia
-31431900,Introduction to Data Science,AI and Machine Learning Track,4713495,"August 5, 2024",Off,3:28:20,Drew Davis
-26600300,Linux Command Line Basics,Mobile Development Series,4704247,"December 8, 2022",Tearing Down,1:21:07,Jamie Martinez
-47021394,AI for Beginners,Data Science Bootcamp,4713506,"March 26, 2023",Running,4:27:06,Taylor Lee
-22029939,Database Design and Management,Mobile Development Series,4713240,"October 12, 2023",Building,1:12:55,Casey Garcia
-52159278,Web Development with JavaScript,Advanced Developer Series,4694608,"February 8, 2024",Saved,4:53:17,Drew Garcia
-81672493,Big Data Analytics,Advanced Developer Series,4713516,"December 13, 2025",Tearing Down,0:52:03,Alex Martinez
-41121176,Building Secure Web Applications,Foundations of Technology,4704246,"January 6, 2021",Saved,4:55:40,Riley Walker
-24367130,Machine Learning Fundamentals,Foundations of Technology,4713228,"April 23, 2024",Building,3:58:15,Drew Lee
-31154416,Building Secure Web Applications,Mobile Development Series,4699410,"August 20, 2022",Off,4:59:29,Avery Davis
-31818917,Linux Command Line Basics,Data Science Bootcamp,4701813,"February 14, 2022",Building,2:58:39,Riley Martinez
-95257882,Web Development with JavaScript,Data Science Bootcamp,4704378,"May 14, 2022",Tearing Down,4:23:46,Jordan Lee
-50605465,Database Design and Management,Cybersecurity Pathway,4707067,"July 26, 2022",Building,0:34:56,Riley Smith
-85906496,Natural Language Processing,Advanced Developer Series,4713563,"February 21, 2025",Building,4:16:52,Morgan Garcia
-89786271,Networking Concepts,DevOps Essentials,4713565,"December 17, 2025",Running,1:55:53,Skyler Lewis
-57721837,Natural Language Processing,Cloud Mastery Series,4699410,"February 2, 2021",Off,0:40:07,Jamie Johnson
-51126916,Building Secure Web Applications,Networking Academy,4706110,"February 19, 2023",Tearing Down,1:15:47,Jamie Walker
-89703790,Introduction to Data Science,Cloud Mastery Series,4709527,"October 27, 2024",Building,0:52:54,Jordan Walker
-97030527,Data Visualization with Python,Web Development Journey,4713595,"June 20, 2022",Building,3:09:00,Jamie Davis
-23458542,AI for Beginners,Cloud Mastery Series,4704417,"December 10, 2020",Off,0:20:21,Taylor Davis
-48406353,Cloud Computing Basics,AI and Machine Learning Track,4704352,"November 30, 2022",Tearing Down,4:36:43,Taylor Walker
-80803461,Natural Language Processing,Networking Academy,4713654,"November 20, 2022",Off,4:52:30,Skyler Garcia
-47938083,Cloud Computing Basics,Mobile Development Series,4701202,"August 2, 2024",Building,0:18:34,Jamie Brown
-75763513,Linux Command Line Basics,Mobile Development Series,4713563,"February 19, 2023",Running,1:00:17,Alex Brown
-60564736,Cloud Computing Basics,Mobile Development Series,4704304,"May 7, 2023",Tearing Down,3:32:55,Morgan Walker
-85650429,Database Design and Management,Cloud Mastery Series,4713763,"February 10, 2023",Tearing Down,4:12:32,Avery Smith
-78079036,Cloud Computing Basics,DevOps Essentials,4713699,"June 15, 2025",Saved,0:10:08,Morgan Brown
-11549995,Blockchain Fundamentals,Mobile Development Series,4704543,"January 13, 2022",Building,4:14:17,Alex Martinez
-45484543,Linux Command Line Basics,Data Science Bootcamp,4713818,"March 7, 2023",Running,2:24:53,Riley Clark
-23624414,Blockchain Fundamentals,Mobile Development Series,4713550,"September 22, 2023",Tearing Down,1:00:40,Skyler Smith
-53787383,Mobile App Development,Networking Academy,4713943,"March 30, 2023",Running,4:40:30,Taylor Smith
-24908064,Advanced Python Programming,Cybersecurity Pathway,4703861,"April 15, 2023",Tearing Down,2:22:31,Avery Davis
-58892209,DevOps Practices and Tools,Foundations of Technology,4704368,"April 26, 2021",Running,4:26:07,Skyler Walker
-66877054,Natural Language Processing,DevOps Essentials,4713563,"August 11, 2022",Saved,4:20:37,Drew Brown
-69171256,Introduction to Data Science,Mobile Development Series,4694608,"June 16, 2021",Running,0:52:39,Skyler Martinez
-40977460,Data Visualization with Python,Mobile Development Series,4697829,"June 23, 2023",Running,1:19:55,Morgan Davis
-53256344,Web Development with JavaScript,Networking Academy,4713675,"January 19, 2023",Off,4:23:55,Casey Johnson
-90062003,Data Visualization with Python,Web Development Journey,4714124,"February 24, 2022",Building,0:13:43,Alex Johnson
-93030124,Cloud Computing Basics,AI and Machine Learning Track,4714781,"July 19, 2022",Tearing Down,4:24:59,Morgan Davis
-93964259,Introduction to Data Science,Web Development Journey,4696001,"March 15, 2024",Building,4:58:08,Jamie Brown
-90003318,Introduction to Data Science,Networking Academy,4693859,"March 12, 2024",Saved,0:20:16,Avery Smith
-93589741,IoT and Embedded Systems,Cloud Mastery Series,4705494,"April 13, 2023",Tearing Down,2:41:19,Skyler Davis
-64254145,Building Secure Web Applications,Advanced Developer Series,4531531,"May 3, 2024",Running,1:01:14,Skyler Smith
-30554044,Blockchain Fundamentals,Networking Academy,4711953,"December 13, 2024",Tearing Down,2:58:27,Skyler Brown
-12354232,Advanced Python Programming,AI and Machine Learning Track,4715290,"April 29, 2025",Saved,1:06:57,Avery Davis
-75816586,Database Design and Management,Cybersecurity Pathway,662509,"October 18, 2021",Running,0:30:57,Morgan Walker
-21868266,AI for Beginners,Web Development Journey,4715900,"December 10, 2024",Tearing Down,1:48:33,Taylor Davis
-40289045,Version Control with Git,AI and Machine Learning Track,4715946,"June 26, 2021",Running,2:58:01,Taylor Johnson
-56466218,Advanced Python Programming,Mobile Development Series,4716008,"August 25, 2023",Off,0:08:04,Jordan Smith
-75436524,Machine Learning Fundamentals,Foundations of Technology,4645501,"November 7, 2024",Saved,3:08:44,Jordan Martinez
-38714201,Advanced Python Programming,Foundations of Technology,4703980,"March 6, 2024",Running,2:26:23,Avery Lewis
-25929815,Database Design and Management,Networking Academy,3065484,"July 17, 2024",Running,4:58:59,Morgan Walker
-61774091,Building Secure Web Applications,Cybersecurity Pathway,4716127,"July 18, 2022",Saved,3:46:36,Drew Martinez
-53978293,Machine Learning Fundamentals,Advanced Developer Series,4715970,"October 9, 2022",Off,4:43:14,Alex Smith
-21125367,Cybersecurity Essentials,Networking Academy,4058883,"January 21, 2020",Running,2:19:14,Skyler Smith
-58545896,AI for Beginners,Web Development Journey,4703980,"January 29, 2023",Off,2:27:03,Jamie Smith
-11436179,Blockchain Fundamentals,Mobile Development Series,4712790,"June 29, 2020",Tearing Down,2:09:04,Riley Smith
-37928514,Cybersecurity Essentials,DevOps Essentials,4703980,"March 18, 2021",Off,3:15:59,Jordan Lewis
-92468666,Machine Learning Fundamentals,Networking Academy,4716481,"October 10, 2025",Saved,3:24:54,Jordan Walker
-61244485,AI for Beginners,Data Science Bootcamp,4716127,"July 7, 2022",Off,1:04:52,Casey Davis
-32842466,Web Development with JavaScript,AI and Machine Learning Track,4716648,"March 3, 2021",Building,1:08:38,Casey Walker
-74135363,Web Development with JavaScript,Foundations of Technology,4711815,"May 13, 2023",Building,4:02:54,Drew Brown
-22193827,Natural Language Processing,Cloud Mastery Series,4711565,"November 11, 2023",Tearing Down,4:52:29,Drew Smith
-55313690,Machine Learning Fundamentals,Mobile Development Series,4716679,"June 14, 2020",Running,1:23:54,Casey Johnson
-22803835,Building Secure Web Applications,Foundations of Technology,4697991,"April 5, 2024",Saved,3:58:40,Avery Davis
-70383990,Mobile App Development,Mobile Development Series,4716701,"October 25, 2021",Saved,4:57:42,Alex Davis
-37702408,Advanced Python Programming,Networking Academy,4716702,"February 18, 2020",Tearing Down,3:11:01,Taylor Martinez
-53282846,Web Development with JavaScript,Data Science Bootcamp,4697991,"April 30, 2020",Off,3:38:10,Jordan Johnson
-24339387,Machine Learning Fundamentals,Foundations of Technology,4554706,"July 25, 2022",Running,1:56:37,Alex Brown
-31813706,Cloud Computing Basics,DevOps Essentials,4716764,"April 30, 2020",Saved,4:01:23,Taylor Lee
-34822483,Big Data Analytics,Cybersecurity Pathway,2977506,"September 23, 2022",Running,0:50:42,Morgan Walker
-42507039,Introduction to Data Science,AI and Machine Learning Track,4716803,"July 29, 2023",Tearing Down,4:43:39,Jamie Lee
-84059823,Version Control with Git,Cloud Mastery Series,4694092,"August 20, 2022",Running,1:39:43,Taylor Brown
-86465090,Building Secure Web Applications,Web Development Journey,4675821,"September 9, 2020",Building,0:54:12,Morgan Brown
-98860558,Networking Concepts,Foundations of Technology,4716885,"December 31, 2024",Tearing Down,2:13:20,Morgan Brown
-80581426,Building Secure Web Applications,Data Science Bootcamp,4716702,"April 16, 2025",Running,1:01:10,Morgan Lee
-96727937,Database Design and Management,AI and Machine Learning Track,4696030,"May 9, 2022",Tearing Down,2:17:55,Alex Clark
-66394012,Database Design and Management,Data Science Bootcamp,4716008,"November 18, 2020",Tearing Down,0:27:54,Riley Brown
-28906671,Mobile App Development,Cybersecurity Pathway,4717070,"September 26, 2023",Off,3:49:01,Casey Garcia
-40590438,Linux Command Line Basics,Mobile Development Series,4717082,"April 23, 2020",Running,0:21:02,Skyler Brown
-54808638,Cybersecurity Essentials,Cloud Mastery Series,4717083,"July 1, 2024",Off,1:42:06,Avery Davis
-48243867,Database Design and Management,Advanced Developer Series,4717114,"July 27, 2025",Saved,2:09:25,Avery Lee
-36715483,Database Design and Management,Cybersecurity Pathway,4717117,"September 8, 2022",Building,3:27:23,Alex Smith
-75634503,Database Design and Management,DevOps Essentials,4717127,"April 1, 2020",Off,0:50:39,Jordan Davis
-35519895,Web Development with JavaScript,Cybersecurity Pathway,4713121,"February 26, 2023",Saved,2:44:59,Riley Martinez
-41067601,Machine Learning Fundamentals,Cybersecurity Pathway,4712942,"June 1, 2025",Tearing Down,0:33:09,Casey Walker
-81669049,Advanced Python Programming,AI and Machine Learning Track,4717187,"July 8, 2025",Building,0:30:28,Taylor Clark
-87808380,Advanced Python Programming,Cloud Mastery Series,4713121,"January 19, 2022",Building,3:38:47,Skyler Johnson
-84518911,Networking Concepts,Cybersecurity Pathway,4717286,"March 18, 2024",Building,2:52:57,Drew Smith
-88968997,Web Development with JavaScript,Mobile Development Series,4717303,"May 2, 2025",Saved,1:03:36,Avery Smith
-11318484,Introduction to Data Science,Networking Academy,4713121,"February 6, 2020",Off,2:59:43,Casey Martinez
-85351052,Linux Command Line Basics,Web Development Journey,4717313,"June 6, 2021",Running,1:01:14,Riley Johnson
-79670665,IoT and Embedded Systems,Mobile Development Series,4717324,"March 27, 2022",Off,0:32:07,Casey Smith
-86722183,DevOps Practices and Tools,Data Science Bootcamp,4536464,"May 5, 2024",Off,1:03:06,Alex Brown
-97871098,Blockchain Fundamentals,DevOps Essentials,4697883,"January 15, 2022",Off,3:42:48,Casey Smith
-11068428,AI for Beginners,AI and Machine Learning Track,4536464,"March 21, 2024",Building,1:41:58,Riley Lee
-77726892,Advanced Python Programming,Cybersecurity Pathway,4536053,"October 26, 2020",Building,2:58:54,Drew Walker
-84940706,Database Design and Management,Web Development Journey,4711032,"June 11, 2025",Building,3:31:28,Avery Garcia
-80529851,Advanced Python Programming,DevOps Essentials,4531796,"January 29, 2025",Tearing Down,3:01:03,Taylor Davis
-47189116,Networking Concepts,Advanced Developer Series,4717515,"April 1, 2022",Building,0:13:33,Jamie Martinez
-89309439,Data Visualization with Python,Cloud Mastery Series,4717515,"June 4, 2021",Tearing Down,1:44:30,Jordan Lewis
-99491599,Natural Language Processing,Networking Academy,4717578,"September 4, 2025",Tearing Down,3:09:39,Alex Brown
-75606449,Introduction to Data Science,DevOps Essentials,4531520,"November 19, 2023",Running,0:41:56,Casey Walker
-70829610,Cloud Computing Basics,Cloud Mastery Series,4717631,"January 26, 2022",Saved,0:17:25,Jamie Lewis
-44955825,IoT and Embedded Systems,Web Development Journey,4717667,"January 2, 2022",Tearing Down,2:07:55,Casey Garcia
-78029319,Advanced Python Programming,DevOps Essentials,4717689,"March 9, 2025",Building,2:56:35,Morgan Johnson
-66074683,DevOps Practices and Tools,Web Development Journey,4703270,"November 3, 2022",Running,3:36:08,Casey Clark
-24628778,Linux Command Line Basics,Advanced Developer Series,4707700,"November 7, 2022",Off,0:11:49,Taylor Lewis
-60878325,Networking Concepts,DevOps Essentials,4703969,"February 12, 2025",Off,2:50:28,Alex Davis
-54627237,Introduction to Data Science,Foundations of Technology,4717984,"April 29, 2020",Off,4:58:26,Avery Martinez
-74463634,Agile Project Management,Cloud Mastery Series,4717991,"November 11, 2020",Running,2:31:29,Taylor Brown
-18485802,Blockchain Fundamentals,Networking Academy,4717991,"May 4, 2025",Saved,2:10:10,Jordan Garcia
-74382869,Natural Language Processing,Advanced Developer Series,4718158,"September 4, 2020",Off,2:08:15,Jamie Johnson
-14001301,Data Visualization with Python,Foundations of Technology,4712753,"December 2, 2024",Building,4:51:41,Casey Johnson
-81893023,Natural Language Processing,DevOps Essentials,4712753,"August 2, 2025",Tearing Down,1:40:00,Jamie Brown
-34066992,Database Design and Management,Cybersecurity Pathway,4718195,"August 28, 2020",Off,3:16:51,Morgan Clark
-13124531,Agile Project Management,Foundations of Technology,4695587,"February 19, 2020",Building,2:11:57,Jamie Lewis
-71047902,Machine Learning Fundamentals,Cybersecurity Pathway,4695587,"June 26, 2020",Building,4:16:00,Morgan Clark
-51221490,Blockchain Fundamentals,Networking Academy,4699059,"February 10, 2025",Saved,0:36:30,Casey Walker
-56649157,IoT and Embedded Systems,AI and Machine Learning Track,4718302,"June 4, 2022",Building,2:01:01,Jamie Garcia
-45165531,Networking Concepts,AI and Machine Learning Track,4718197,"June 27, 2023",Building,2:39:28,Drew Martinez
-48158430,Data Visualization with Python,Web Development Journey,4699034,"March 25, 2025",Tearing Down,4:27:39,Alex Martinez
-57688406,IoT and Embedded Systems,Foundations of Technology,4718701,"July 3, 2023",Saved,3:45:03,Morgan Lewis
-36314081,Mobile App Development,DevOps Essentials,4691965,"May 21, 2020",Running,0:47:49,Avery Garcia
-98099799,Machine Learning Fundamentals,Foundations of Technology,2712919,"August 30, 2020",Running,0:59:26,Jordan Martinez
-62237687,Linux Command Line Basics,Web Development Journey,4705049,"February 26, 2025",Saved,4:31:59,Morgan Lewis
-84525782,Mobile App Development,Foundations of Technology,4696030,"January 17, 2022",Building,3:19:01,Casey Smith
-95872039,Building Secure Web Applications,Web Development Journey,4709910,"August 28, 2023",Running,3:07:43,Morgan Clark
-59303886,Data Visualization with Python,Web Development Journey,4719179,"July 3, 2021",Tearing Down,2:04:30,Jamie Smith
-97196692,Web Development with JavaScript,Advanced Developer Series,4708863,"April 30, 2020",Building,1:39:40,Jordan Brown
-70771059,Agile Project Management,Web Development Journey,4712225,"August 18, 2022",Running,2:57:21,Jamie Smith
-58536621,Agile Project Management,Mobile Development Series,4712225,"June 25, 2021",Off,4:15:48,Drew Clark
-27127567,Database Design and Management,Foundations of Technology,4712227,"November 6, 2021",Saved,4:38:17,Jordan Johnson
-92164850,Linux Command Line Basics,Mobile Development Series,4701359,"January 22, 2022",Off,4:30:16,Morgan Brown
-52391423,Version Control with Git,Web Development Journey,4719316,"February 19, 2022",Off,4:35:05,Drew Lewis
-71841668,Building Secure Web Applications,Cloud Mastery Series,4712226,"May 9, 2025",Saved,4:59:36,Casey Lee
-51646988,Machine Learning Fundamentals,AI and Machine Learning Track,4712500,"January 29, 2025",Building,4:30:13,Avery Davis
-97519178,Introduction to Data Science,Web Development Journey,4712225,"October 15, 2025",Running,0:54:16,Casey Lee
-15205969,Introduction to Data Science,AI and Machine Learning Track,4701359,"July 16, 2022",Off,1:06:57,Jordan Lee
-61577436,Data Visualization with Python,Cloud Mastery Series,4712419,"March 16, 2025",Tearing Down,4:30:30,Jamie Martinez
-38794015,Networking Concepts,Web Development Journey,4719335,"October 19, 2022",Running,4:40:35,Alex Smith
-10916952,Introduction to Data Science,Data Science Bootcamp,4719389,"December 20, 2020",Off,4:52:02,Avery Davis
-70075370,Building Secure Web Applications,Advanced Developer Series,4719411,"January 13, 2023",Tearing Down,1:22:13,Casey Lewis
-32960411,Building Secure Web Applications,Advanced Developer Series,4719417,"April 16, 2024",Off,0:08:50,Jordan Davis
-71133133,AI for Beginners,Advanced Developer Series,4719335,"September 12, 2024",Saved,3:09:31,Alex Davis
-42228471,Database Design and Management,Foundations of Technology,4719335,"November 5, 2025",Building,4:40:25,Alex Davis
-34149463,Database Design and Management,Networking Academy,4719465,"May 24, 2022",Saved,0:32:48,Drew Smith
-55065930,DevOps Practices and Tools,Web Development Journey,4719480,"June 13, 2020",Running,2:18:14,Riley Brown
-12547715,Introduction to Data Science,Foundations of Technology,4719481,"October 18, 2025",Off,3:51:42,Jamie Lee
-38937806,Building Secure Web Applications,Mobile Development Series,4701094,"March 10, 2022",Building,0:20:24,Alex Brown
-71853431,Database Design and Management,Foundations of Technology,4719548,"October 18, 2024",Tearing Down,3:15:30,Skyler Johnson
-93880852,Version Control with Git,AI and Machine Learning Track,4719480,"June 21, 2021",Saved,1:00:52,Drew Martinez
-40848040,Database Design and Management,Cybersecurity Pathway,4719632,"October 31, 2022",Off,0:19:26,Jamie Davis
-95068885,Big Data Analytics,Advanced Developer Series,4719637,"September 30, 2024",Tearing Down,3:44:48,Skyler Lee
-53286290,Agile Project Management,Foundations of Technology,4719659,"April 23, 2024",Saved,4:30:51,Jordan Lewis
-50670486,Agile Project Management,Cybersecurity Pathway,4713180,"March 28, 2025",Saved,1:22:37,Morgan Walker
-92809246,Linux Command Line Basics,Mobile Development Series,4719734,"August 23, 2025",Saved,0:52:53,Drew Walker
-64510545,Building Secure Web Applications,Foundations of Technology,4719752,"July 4, 2022",Running,4:37:25,Skyler Walker
-96814240,Cybersecurity Essentials,DevOps Essentials,4719767,"March 14, 2020",Building,3:18:53,Taylor Garcia
-18780168,Data Visualization with Python,Data Science Bootcamp,4719890,"January 7, 2025",Running,3:51:41,Riley Lee
-57964416,Data Visualization with Python,Web Development Journey,4719892,"June 22, 2023",Building,4:19:19,Avery Lee
-77428458,Cloud Computing Basics,Cloud Mastery Series,4719929,"November 16, 2022",Saved,2:23:07,Jamie Walker
-36440404,Advanced Python Programming,Web Development Journey,4719956,"March 26, 2025",Off,4:07:57,Jordan Lee
-22436270,AI for Beginners,Networking Academy,4713180,"September 2, 2021",Running,0:15:07,Alex Martinez
-10726104,Building Secure Web Applications,Foundations of Technology,4719979,"November 13, 2025",Building,3:44:09,Drew Lee
-33838711,Data Visualization with Python,AI and Machine Learning Track,4713180,"May 28, 2020",Building,4:17:04,Taylor Lee
-12720397,Web Development with JavaScript,Web Development Journey,4720049,"May 16, 2024",Building,4:36:48,Jordan Brown
-43992828,Cloud Computing Basics,AI and Machine Learning Track,4720126,"March 1, 2020",Building,3:48:06,Alex Garcia
-71987307,Database Design and Management,DevOps Essentials,4720279,"May 23, 2021",Building,2:15:14,Jamie Lewis
-47496607,Advanced Python Programming,Foundations of Technology,4720289,"December 4, 2023",Running,3:27:18,Drew Johnson
-80020786,Advanced Python Programming,Mobile Development Series,4720594,"March 31, 2020",Building,0:40:48,Skyler Johnson
-40067071,Building Secure Web Applications,Mobile Development Series,4716803,"November 6, 2021",Running,2:09:50,Alex Brown
-78540001,DevOps Practices and Tools,DevOps Essentials,4720641,"December 12, 2023",Running,4:02:59,Avery Walker
-89288889,Linux Command Line Basics,Advanced Developer Series,4712907,"August 29, 2020",Off,1:20:24,Avery Johnson
-42962672,Natural Language Processing,Advanced Developer Series,4720641,"June 21, 2023",Tearing Down,1:20:36,Casey Johnson
-98292706,Linux Command Line Basics,Cybersecurity Pathway,4717114,"June 1, 2023",Saved,2:11:09,Riley Martinez
-39253239,Cloud Computing Basics,DevOps Essentials,4697829,"August 19, 2025",Running,4:57:27,Drew Brown
-56856763,Introduction to Data Science,Foundations of Technology,4720838,"June 19, 2022",Tearing Down,2:39:13,Drew Lee
-31290680,Machine Learning Fundamentals,Cybersecurity Pathway,4720857,"June 25, 2023",Tearing Down,2:59:21,Drew Lewis
-46487662,Cybersecurity Essentials,Networking Academy,4703971,"August 16, 2021",Tearing Down,0:41:12,Alex Smith
-88849453,AI for Beginners,Data Science Bootcamp,4720857,"July 27, 2025",Tearing Down,4:08:24,Jordan Davis
-20355401,Machine Learning Fundamentals,Mobile Development Series,4701846,"September 2, 2020",Tearing Down,2:38:59,Jordan Lee
-10408023,Cybersecurity Essentials,Advanced Developer Series,4720910,"May 7, 2020",Saved,3:36:10,Alex Davis
-65875182,Agile Project Management,Foundations of Technology,4399135,"March 19, 2025",Off,2:03:29,Jamie Smith
-49320193,Linux Command Line Basics,Mobile Development Series,4720952,"March 3, 2020",Saved,3:10:20,Casey Davis
-68461829,Networking Concepts,Cybersecurity Pathway,4713240,"July 7, 2022",Building,2:23:58,Taylor Smith
-51707505,Networking Concepts,DevOps Essentials,4704125,"October 1, 2020",Off,3:48:57,Jamie Smith
-64676016,Introduction to Data Science,Advanced Developer Series,4708863,"January 20, 2023",Off,4:11:33,Jordan Brown
-17442645,Building Secure Web Applications,Cybersecurity Pathway,4720981,"December 12, 2025",Saved,3:56:07,Riley Lee
-72489504,AI for Beginners,DevOps Essentials,4690937,"February 25, 2022",Saved,3:53:24,Taylor Smith
-39239293,Big Data Analytics,Cybersecurity Pathway,4703957,"July 3, 2023",Tearing Down,0:41:34,Jamie Johnson
-98698405,Version Control with Git,Foundations of Technology,4704186,"November 7, 2025",Tearing Down,0:59:55,Drew Lee
-42017336,IoT and Embedded Systems,Web Development Journey,4704605,"December 27, 2022",Building,4:34:16,Jamie Clark
-35997337,Cloud Computing Basics,Advanced Developer Series,4705234,"July 18, 2021",Off,1:07:16,Morgan Brown
-94702463,IoT and Embedded Systems,Cloud Mastery Series,4713517,"February 13, 2025",Off,2:45:11,Casey Walker
-51947217,Agile Project Management,Foundations of Technology,4705650,"January 19, 2021",Tearing Down,2:03:41,Skyler Lewis
-98674751,Web Development with JavaScript,Web Development Journey,4711637,"October 27, 2021",Off,1:16:00,Alex Lee
-65286988,DevOps Practices and Tools,Foundations of Technology,4713372,"October 2, 2022",Tearing Down,3:47:21,Morgan Walker
-94826432,Machine Learning Fundamentals,Cloud Mastery Series,4721061,"February 21, 2025",Saved,1:21:50,Drew Clark
-51039593,Building Secure Web Applications,Cybersecurity Pathway,4703807,"August 1, 2024",Tearing Down,0:40:29,Avery Brown
-95398524,IoT and Embedded Systems,Cloud Mastery Series,4705289,"February 5, 2025",Running,3:43:33,Alex Martinez
-76364021,Web Development with JavaScript,Mobile Development Series,4721099,"November 30, 2021",Running,1:44:29,Jamie Lee
-92848207,Linux Command Line Basics,Data Science Bootcamp,4717736,"July 28, 2025",Running,3:43:21,Jamie Lewis
-76315438,Networking Concepts,Cybersecurity Pathway,4703852,"October 15, 2024",Running,0:29:34,Taylor Lewis
-92473099,Introduction to Data Science,DevOps Essentials,4705501,"October 24, 2023",Off,2:40:13,Avery Davis
-78934567,Version Control with Git,Web Development Journey,4705289,"August 29, 2024",Running,1:30:41,Skyler Brown
-82486477,Data Visualization with Python,Data Science Bootcamp,4704372,"January 13, 2023",Off,4:10:18,Alex Lee
-90653955,Introduction to Data Science,DevOps Essentials,4711517,"February 3, 2023",Running,0:17:48,Drew Johnson
-48320912,Data Visualization with Python,Data Science Bootcamp,4705650,"March 26, 2022",Tearing Down,2:30:21,Jordan Lee
-11809018,Cloud Computing Basics,Web Development Journey,4704406,"April 27, 2025",Running,0:42:24,Alex Walker
-24394489,IoT and Embedded Systems,Mobile Development Series,4703655,"April 22, 2020",Building,0:50:05,Riley Lewis
-67770027,Networking Concepts,Foundations of Technology,4713242,"November 1, 2022",Building,4:39:23,Casey Lewis
-17739418,Database Design and Management,Data Science Bootcamp,4711847,"May 31, 2025",Running,2:31:11,Jordan Smith
-18105965,Big Data Analytics,Web Development Journey,4701846,"April 2, 2022",Off,4:49:23,Skyler Clark
-62950811,Networking Concepts,Web Development Journey,4705650,"July 27, 2020",Building,2:27:51,Jordan Davis
-54111681,IoT and Embedded Systems,Mobile Development Series,4705650,"January 30, 2021",Tearing Down,0:55:03,Jamie Brown
-13262653,Advanced Python Programming,Foundations of Technology,4693552,"September 9, 2023",Building,3:07:33,Drew Brown
-78292772,Agile Project Management,Data Science Bootcamp,4703971,"August 21, 2022",Running,2:54:50,Skyler Brown
-84741012,Machine Learning Fundamentals,AI and Machine Learning Track,4703655,"September 14, 2025",Running,2:44:21,Casey Brown
-22700838,Networking Concepts,Mobile Development Series,4712753,"April 20, 2024",Off,3:27:54,Jamie Brown
-82607339,Linux Command Line Basics,Cloud Mastery Series,4705289,"July 14, 2021",Tearing Down,2:09:09,Morgan Lewis
-16929876,Advanced Python Programming,Cloud Mastery Series,4703655,"September 3, 2022",Tearing Down,4:11:57,Riley Davis
-25855987,Mobile App Development,DevOps Essentials,4703971,"April 28, 2024",Saved,2:30:25,Skyler Walker
-90691754,Machine Learning Fundamentals,Networking Academy,4721185,"May 2, 2021",Off,1:45:35,Skyler Smith
-85139104,Introduction to Data Science,Cybersecurity Pathway,4704532,"February 26, 2025",Tearing Down,0:29:11,Taylor Garcia
-20777384,DevOps Practices and Tools,Cybersecurity Pathway,4697824,"February 9, 2025",Building,4:59:10,Jamie Lee
-62245529,Cybersecurity Essentials,Foundations of Technology,4721210,"May 22, 2024",Running,2:10:09,Riley Walker
-79949377,Advanced Python Programming,DevOps Essentials,4691858,"January 17, 2025",Building,4:43:25,Alex Smith
-72013190,Mobile App Development,Networking Academy,4705650,"February 29, 2020",Saved,3:15:24,Casey Martinez
-10804302,Web Development with JavaScript,Cybersecurity Pathway,4704406,"September 22, 2025",Tearing Down,0:36:27,Alex Walker
-87568157,Blockchain Fundamentals,Advanced Developer Series,4704405,"December 18, 2021",Off,0:58:31,Jordan Smith
-57454210,Agile Project Management,Advanced Developer Series,4704352,"August 18, 2021",Tearing Down,4:41:36,Taylor Garcia
-74250301,Database Design and Management,Cloud Mastery Series,4702921,"December 6, 2025",Building,4:12:30,Jordan Lewis
-62705617,Mobile App Development,Cybersecurity Pathway,4721210,"November 10, 2025",Off,4:01:59,Skyler Davis
-60387680,AI for Beginners,Web Development Journey,4704532,"March 20, 2025",Building,0:05:40,Riley Smith
-89114643,IoT and Embedded Systems,Foundations of Technology,4713240,"May 30, 2020",Saved,3:43:33,Taylor Davis
-98455283,Advanced Python Programming,Advanced Developer Series,4704431,"January 19, 2022",Tearing Down,1:10:41,Avery Garcia
-36896544,Linux Command Line Basics,Mobile Development Series,4712846,"February 13, 2023",Running,3:36:27,Jordan Lee
-42717419,Building Secure Web Applications,Cybersecurity Pathway,4721235,"June 6, 2021",Tearing Down,4:41:26,Casey Garcia
-26920235,Version Control with Git,DevOps Essentials,4707760,"November 4, 2022",Saved,3:24:01,Avery Davis
-41716170,Version Control with Git,Advanced Developer Series,4701976,"June 21, 2024",Running,4:46:38,Riley Johnson
-56466933,DevOps Practices and Tools,Data Science Bootcamp,4704406,"March 3, 2020",Building,2:40:32,Casey Lewis
-47937374,Blockchain Fundamentals,DevOps Essentials,4701976,"February 7, 2021",Saved,2:19:51,Jordan Walker
-37456721,Web Development with JavaScript,Data Science Bootcamp,4713335,"December 27, 2020",Saved,4:04:29,Drew Walker
-76689292,Building Secure Web Applications,Networking Academy,4721264,"December 11, 2020",Off,2:37:28,Alex Walker
-37025324,Cybersecurity Essentials,Cloud Mastery Series,4704431,"July 19, 2020",Tearing Down,1:25:49,Riley Clark
-74518633,Building Secure Web Applications,Networking Academy,4721257,"October 7, 2023",Off,1:31:22,Jamie Smith
-30939619,Data Visualization with Python,Foundations of Technology,4712780,"April 2, 2024",Running,4:37:18,Drew Garcia
-53275256,Cloud Computing Basics,DevOps Essentials,4703945,"July 2, 2023",Running,0:46:47,Taylor Smith
-95234249,AI for Beginners,Networking Academy,4721210,"November 25, 2024",Building,2:41:44,Morgan Clark
-76542256,DevOps Practices and Tools,Data Science Bootcamp,4713165,"May 26, 2023",Saved,4:20:52,Drew Johnson
-60614417,Web Development with JavaScript,Mobile Development Series,4721275,"October 29, 2025",Saved,4:13:43,Riley Clark
-43377128,Blockchain Fundamentals,Data Science Bootcamp,4721282,"May 13, 2023",Building,1:48:34,Riley Smith
-35732174,Natural Language Processing,Mobile Development Series,4704417,"April 15, 2025",Off,3:37:44,Riley Lewis
-89106172,Version Control with Git,AI and Machine Learning Track,4720924,"March 28, 2022",Tearing Down,4:28:40,Jordan Walker
-30030585,Introduction to Data Science,Web Development Journey,4704241,"April 2, 2024",Saved,3:43:14,Drew Lewis
-70802761,Cloud Computing Basics,Cybersecurity Pathway,4713674,"January 3, 2025",Building,4:07:19,Taylor Walker
-94015415,DevOps Practices and Tools,Data Science Bootcamp,4691608,"July 2, 2020",Building,2:06:52,Jordan Garcia
-80848363,Linux Command Line Basics,Data Science Bootcamp,4721302,"August 11, 2023",Building,1:14:50,Morgan Garcia
-24331625,Mobile App Development,Cybersecurity Pathway,4694595,"July 1, 2024",Off,0:38:08,Jamie Lee
-52168569,Cloud Computing Basics,AI and Machine Learning Track,4697985,"February 19, 2020",Off,0:06:01,Riley Lee
-15911099,Networking Concepts,Cybersecurity Pathway,4703861,"October 24, 2024",Tearing Down,2:56:49,Avery Walker
-87372464,DevOps Practices and Tools,DevOps Essentials,4703807,"May 13, 2021",Tearing Down,3:55:28,Drew Walker
-42503227,Machine Learning Fundamentals,Advanced Developer Series,4697815,"October 25, 2021",Running,4:53:11,Morgan Martinez
-70893162,Agile Project Management,Cybersecurity Pathway,4721302,"December 23, 2025",Tearing Down,3:07:48,Morgan Johnson
-51512275,Cloud Computing Basics,AI and Machine Learning Track,4706250,"September 10, 2022",Running,2:53:55,Skyler Smith
-32957038,AI for Beginners,Networking Academy,4704491,"January 7, 2020",Tearing Down,0:29:46,Morgan Lee
-15055563,Cybersecurity Essentials,Data Science Bootcamp,4717578,"July 17, 2023",Tearing Down,4:47:47,Alex Martinez
-10597362,Linux Command Line Basics,Mobile Development Series,4703270,"May 24, 2020",Running,0:09:41,Alex Martinez
-30323632,Database Design and Management,Networking Academy,4721278,"August 11, 2020",Running,2:23:11,Jordan Garcia
-34556704,Agile Project Management,Data Science Bootcamp,4720991,"September 4, 2023",Tearing Down,1:40:08,Casey Johnson
-75593954,Data Visualization with Python,Foundations of Technology,4721320,"January 17, 2024",Running,2:32:03,Drew Martinez
-81031919,Database Design and Management,Data Science Bootcamp,4717578,"January 8, 2023",Building,4:31:44,Taylor Walker
-82192110,Cloud Computing Basics,Networking Academy,4704406,"May 24, 2020",Saved,4:38:39,Riley Walker
-38848065,Version Control with Git,DevOps Essentials,4721320,"July 11, 2021",Building,1:00:18,Casey Clark
-34791654,Machine Learning Fundamentals,Networking Academy,4704491,"February 12, 2021",Off,0:12:07,Casey Martinez
-89924797,Web Development with JavaScript,Cybersecurity Pathway,4707119,"September 16, 2020",Tearing Down,2:15:56,Alex Smith
-75704149,Natural Language Processing,DevOps Essentials,4713297,"June 26, 2020",Building,3:02:27,Avery Walker
-16172941,AI for Beginners,Networking Academy,4705501,"January 14, 2024",Running,1:41:34,Morgan Walker
-84393208,Cloud Computing Basics,Cybersecurity Pathway,4701392,"November 14, 2023",Building,1:38:03,Skyler Brown
-58329428,Agile Project Management,AI and Machine Learning Track,4721382,"May 26, 2024",Tearing Down,1:14:23,Taylor Garcia
-69921653,DevOps Practices and Tools,Web Development Journey,4707220,"January 1, 2024",Building,4:00:16,Drew Martinez
-60524224,Networking Concepts,Foundations of Technology,4694439,"November 4, 2020",Running,3:17:32,Alex Lee
-55496182,Linux Command Line Basics,Advanced Developer Series,4704117,"October 23, 2023",Running,3:38:07,Riley Smith
-17038503,DevOps Practices and Tools,Web Development Journey,4721427,"June 14, 2024",Saved,4:45:43,Jordan Walker
-39517445,Natural Language Processing,DevOps Essentials,4713763,"April 12, 2021",Saved,1:55:23,Alex Lewis
-40164853,Advanced Python Programming,DevOps Essentials,4703972,"September 24, 2025",Off,1:56:14,Morgan Smith
-95201218,Data Visualization with Python,Advanced Developer Series,4704117,"December 31, 2024",Tearing Down,1:42:42,Morgan Johnson
-12065350,Cloud Computing Basics,Cloud Mastery Series,4704278,"May 12, 2021",Tearing Down,3:34:31,Jamie Walker
-94564841,Agile Project Management,Networking Academy,4721100,"January 24, 2021",Running,0:16:19,Taylor Davis
-23498958,AI for Beginners,Web Development Journey,4409432,"July 20, 2021",Building,0:13:44,Taylor Davis
-20161423,AI for Beginners,Cloud Mastery Series,4704543,"April 24, 2023",Off,3:59:54,Alex Lee
-89574268,Building Secure Web Applications,Advanced Developer Series,4703946,"December 18, 2022",Off,2:39:05,Skyler Lee
-13078060,Machine Learning Fundamentals,Networking Academy,4704278,"April 14, 2020",Tearing Down,4:08:17,Jamie Walker
-84367354,Building Secure Web Applications,DevOps Essentials,4707527,"November 1, 2021",Running,3:00:36,Jordan Lee
-54605689,Introduction to Data Science,DevOps Essentials,4721370,"October 31, 2023",Running,3:26:12,Jamie Johnson
-10407026,Natural Language Processing,Cloud Mastery Series,4704406,"March 23, 2024",Building,2:45:02,Skyler Garcia
-89931636,Linux Command Line Basics,Cloud Mastery Series,4720991,"September 30, 2021",Running,0:26:51,Jordan Lee
-37634369,Database Design and Management,Mobile Development Series,4721545,"September 13, 2025",Running,2:43:06,Skyler Clark
-11137591,DevOps Practices and Tools,Advanced Developer Series,4704295,"November 28, 2022",Tearing Down,4:26:04,Avery Davis
-83576247,Building Secure Web Applications,Data Science Bootcamp,4720991,"March 11, 2021",Building,0:25:18,Jamie Garcia
-44861617,Cybersecurity Essentials,DevOps Essentials,4713595,"March 17, 2025",Building,3:02:51,Taylor Clark
-97265410,Data Visualization with Python,Web Development Journey,,"January 16, 2024",Saved,4:45:56,Jordan Johnson
-28258833,Cloud Computing Basics,Cloud Mastery Series,,"July 7, 2020",Running,4:15:29,Casey Smith
-63044217,Data Visualization with Python,Data Science Bootcamp,,"September 7, 2024",Tearing Down,4:54:41,Skyler Lee
-97428094,Blockchain Fundamentals,Web Development Journey,,"April 21, 2024",Tearing Down,3:06:22,Jordan Brown
-18218280,Machine Learning Fundamentals,Mobile Development Series,,"March 29, 2020",Off,2:07:22,Casey Lewis
-62412825,Database Design and Management,AI and Machine Learning Track,,"November 11, 2024",Building,1:17:56,Riley Smith
-60746978,AI for Beginners,Data Science Bootcamp,,"July 3, 2022",Building,3:22:51,Morgan Davis
-72575331,Version Control with Git,Foundations of Technology,,"January 10, 2023",Building,4:28:56,Avery Brown
-39845419,Blockchain Fundamentals,Data Science Bootcamp,,"September 8, 2021",Saved,1:43:32,Taylor Lee
-19266484,Linux Command Line Basics,Networking Academy,,"December 16, 2021",Running,2:34:21,Morgan Garcia
-84098006,Advanced Python Programming,DevOps Essentials,,"March 5, 2025",Building,4:05:50,Morgan Walker
-91838323,Advanced Python Programming,Advanced Developer Series,,"September 29, 2023",Saved,4:57:00,Riley Martinez
-24426807,Version Control with Git,Advanced Developer Series,,"November 2, 2020",Off,2:25:38,Skyler Johnson
-75545537,Database Design and Management,Networking Academy,,"March 6, 2020",Building,0:54:36,Drew Walker
-12267910,Introduction to Data Science,Advanced Developer Series,,"October 3, 2021",Off,1:45:28,Taylor Davis
-57889871,Blockchain Fundamentals,DevOps Essentials,,"August 26, 2024",Off,1:35:20,Casey Brown
-91165637,Linux Command Line Basics,DevOps Essentials,,"March 21, 2023",Off,1:36:44,Riley Clark
-14513227,Introduction to Data Science,Networking Academy,,"March 18, 2025",Running,2:58:58,Jordan Walker
-13030562,Web Development with JavaScript,Networking Academy,,"December 20, 2021",Off,3:11:39,Alex Lewis
-29853809,Web Development with JavaScript,Web Development Journey,,"October 5, 2020",Saved,4:39:37,Jordan Garcia
-23436859,Blockchain Fundamentals,Web Development Journey,,"March 17, 2024",Off,2:47:27,Drew Davis
-98858825,AI for Beginners,Mobile Development Series,,"December 22, 2022",Building,2:04:12,Alex Johnson
-10173213,Networking Concepts,Advanced Developer Series,,"July 18, 2024",Off,2:03:39,Alex Davis
-24252035,Building Secure Web Applications,Networking Academy,,"February 3, 2024",Tearing Down,0:12:15,Taylor Brown
-39338569,Cloud Computing Basics,DevOps Essentials,,"February 15, 2022",Off,3:55:55,Drew Martinez
-53995765,Networking Concepts,DevOps Essentials,,"March 13, 2022",Building,2:49:37,Drew Johnson
-49758258,IoT and Embedded Systems,Foundations of Technology,,"June 9, 2023",Tearing Down,1:25:01,Casey Martinez
-82031302,Web Development with JavaScript,AI and Machine Learning Track,,"May 16, 2021",Off,2:45:19,Taylor Lee
-23710978,Advanced Python Programming,Mobile Development Series,,"May 22, 2025",Running,0:47:49,Casey Garcia
-37022938,Linux Command Line Basics,DevOps Essentials,,"October 3, 2021",Running,2:36:51,Jordan Martinez
-85315581,Advanced Python Programming,Cybersecurity Pathway,,"August 9, 2023",Running,4:29:26,Taylor Smith
-24237608,IoT and Embedded Systems,AI and Machine Learning Track,,"May 27, 2020",Off,1:35:11,Morgan Clark
-79910203,Database Design and Management,Cybersecurity Pathway,,"June 11, 2020",Tearing Down,4:47:35,Riley Clark
-39863201,IoT and Embedded Systems,Foundations of Technology,,"June 9, 2020",Saved,1:26:05,Jordan Clark
-49990351,Building Secure Web Applications,Networking Academy,,"February 18, 2021",Building,4:54:02,Morgan Garcia
-50934586,Big Data Analytics,AI and Machine Learning Track,,"December 17, 2023",Saved,0:37:21,Drew Brown
-16868156,Blockchain Fundamentals,AI and Machine Learning Track,,"April 23, 2025",Tearing Down,3:46:42,Skyler Clark
-64511352,Web Development with JavaScript,Advanced Developer Series,,"August 15, 2021",Building,2:35:17,Alex Davis
-56291902,Version Control with Git,Advanced Developer Series,,"November 10, 2025",Tearing Down,4:17:04,Alex Lee
-62573478,Cybersecurity Essentials,Foundations of Technology,,"April 8, 2022",Tearing Down,0:26:56,Avery Lewis
-24207395,Natural Language Processing,Web Development Journey,,"July 30, 2020",Off,2:02:10,Taylor Garcia
-23104738,Version Control with Git,Cloud Mastery Series,,"September 10, 2023",Running,3:50:14,Alex Smith
-43049342,Machine Learning Fundamentals,Networking Academy,,"May 15, 2025",Off,4:35:22,Riley Smith
-13703594,Linux Command Line Basics,Web Development Journey,,"July 29, 2023",Running,2:19:26,Riley Clark
-95883390,Agile Project Management,Advanced Developer Series,,"August 18, 2023",Building,0:57:02,Casey Davis
-51115006,Mobile App Development,Cloud Mastery Series,,"September 8, 2024",Running,1:17:53,Avery Walker
-86047509,Cloud Computing Basics,DevOps Essentials,,"January 21, 2020",Off,4:53:32,Riley Lewis
-64846934,Building Secure Web Applications,Networking Academy,,"November 7, 2020",Saved,2:24:28,Avery Johnson
-55770899,Database Design and Management,Foundations of Technology,,"September 8, 2023",Tearing Down,0:40:37,Alex Johnson
-34014397,Networking Concepts,Advanced Developer Series,,"May 12, 2025",Saved,1:48:17,Alex Martinez
-57886891,Advanced Python Programming,Networking Academy,,"December 5, 2020",Running,4:55:04,Morgan Johnson
-87009740,Natural Language Processing,Web Development Journey,,"May 23, 2025",Running,2:08:43,Taylor Davis
-82604086,DevOps Practices and Tools,Web Development Journey,,"August 17, 2023",Running,3:14:27,Jamie Lee
-16916435,Advanced Python Programming,Mobile Development Series,,"December 9, 2025",Tearing Down,1:21:24,Avery Clark
-84720114,Machine Learning Fundamentals,AI and Machine Learning Track,,"September 20, 2020",Off,4:06:34,Riley Clark
-59834387,Data Visualization with Python,AI and Machine Learning Track,,"February 3, 2024",Saved,3:14:58,Avery Clark
-78954103,Natural Language Processing,Data Science Bootcamp,,"January 30, 2024",Off,4:30:58,Skyler Lee
-53960160,Mobile App Development,DevOps Essentials,,"January 29, 2025",Building,0:18:49,Avery Lee
-20458734,Web Development with JavaScript,Web Development Journey,,"December 11, 2023",Off,4:34:23,Taylor Martinez
-63601899,Blockchain Fundamentals,Advanced Developer Series,,"May 10, 2021",Building,2:10:19,Morgan Martinez
-85702242,Big Data Analytics,Foundations of Technology,,"January 15, 2021",Off,2:42:38,Casey Lee
-57169934,Agile Project Management,AI and Machine Learning Track,,"December 5, 2022",Building,3:10:16,Avery Garcia
-68902744,Natural Language Processing,Mobile Development Series,,"May 16, 2022",Off,0:53:23,Taylor Garcia
-16725999,Cloud Computing Basics,DevOps Essentials,,"October 15, 2025",Building,4:27:43,Avery Garcia
-80661444,Data Visualization with Python,Web Development Journey,,"April 27, 2025",Saved,0:51:35,Casey Lewis
-44076104,DevOps Practices and Tools,Web Development Journey,,"November 17, 2020",Running,0:24:34,Alex Lee
-24234444,Data Visualization with Python,Advanced Developer Series,,"November 5, 2025",Off,3:41:35,Drew Smith
-50505301,Mobile App Development,DevOps Essentials,,"August 7, 2020",Saved,0:40:10,Alex Martinez
-67068541,DevOps Practices and Tools,Mobile Development Series,,"July 18, 2022",Tearing Down,4:57:14,Morgan Brown
-87101568,Blockchain Fundamentals,Web Development Journey,,"July 6, 2025",Tearing Down,1:09:37,Taylor Lee
-15287884,Linux Command Line Basics,Cloud Mastery Series,,"June 13, 2020",Building,0:20:24,Taylor Garcia
-34551926,Natural Language Processing,Web Development Journey,,"November 14, 2024",Off,2:50:20,Morgan Johnson
-32856615,Introduction to Data Science,Data Science Bootcamp,,"May 11, 2025",Off,2:04:27,Jamie Garcia
-74734711,Advanced Python Programming,Foundations of Technology,,"December 8, 2020",Tearing Down,2:35:10,Skyler Walker
-51319414,AI for Beginners,DevOps Essentials,,"May 18, 2020",Saved,1:50:42,Casey Lee
-87192304,Cloud Computing Basics,Mobile Development Series,,"December 18, 2022",Running,3:16:17,Casey Lee
-79088725,AI for Beginners,DevOps Essentials,,"August 9, 2024",Saved,1:30:02,Drew Martinez
-22286498,AI for Beginners,DevOps Essentials,,"May 27, 2021",Building,4:56:34,Drew Lewis
-86192141,Networking Concepts,Foundations of Technology,,"May 13, 2021",Saved,3:54:52,Skyler Walker
-56629639,IoT and Embedded Systems,Cloud Mastery Series,,"April 30, 2022",Off,3:53:48,Morgan Johnson
-61075591,Big Data Analytics,Foundations of Technology,,"April 6, 2022",Building,1:09:02,Drew Brown
-73712753,Cybersecurity Essentials,Web Development Journey,,"April 14, 2022",Tearing Down,4:39:46,Skyler Smith
-31210027,Machine Learning Fundamentals,AI and Machine Learning Track,,"February 13, 2025",Tearing Down,1:08:15,Riley Lewis
-19630249,Agile Project Management,Cybersecurity Pathway,,"June 17, 2024",Running,3:38:36,Jordan Walker
-65816299,Machine Learning Fundamentals,Mobile Development Series,,"December 17, 2020",Running,0:43:04,Drew Brown
-35711240,Introduction to Data Science,Cloud Mastery Series,,"July 16, 2023",Building,0:24:49,Skyler Smith
-50310107,Cybersecurity Essentials,Cloud Mastery Series,,"June 4, 2023",Off,0:05:45,Casey Garcia
-37352555,Natural Language Processing,Advanced Developer Series,,"October 26, 2024",Tearing Down,2:27:13,Morgan Garcia
-82578824,AI for Beginners,Advanced Developer Series,,"November 30, 2021",Building,2:06:54,Avery Garcia
-78890162,Advanced Python Programming,Cloud Mastery Series,,"April 12, 2020",Running,2:47:09,Casey Walker
-56262465,Natural Language Processing,DevOps Essentials,,"June 20, 2025",Saved,2:58:19,Morgan Walker
-70564324,AI for Beginners,Data Science Bootcamp,,"January 17, 2025",Tearing Down,3:48:10,Avery Lee
-31342565,Data Visualization with Python,Networking Academy,,"February 28, 2024",Building,4:49:01,Taylor Johnson
-79101667,Cloud Computing Basics,AI and Machine Learning Track,,"October 22, 2020",Saved,1:10:06,Morgan Smith
-66308081,Introduction to Data Science,Advanced Developer Series,,"January 12, 2023",Saved,3:48:16,Riley Garcia
-59694129,Introduction to Data Science,Cloud Mastery Series,,"September 30, 2021",Running,4:15:19,Avery Brown
-26553778,Database Design and Management,DevOps Essentials,,"June 21, 2025",Off,0:08:20,Drew Johnson
-24459070,DevOps Practices and Tools,Web Development Journey,,"February 19, 2024",Off,2:12:20,Taylor Davis
-96601640,Building Secure Web Applications,Cloud Mastery Series,,"September 29, 2024",Saved,0:29:15,Avery Smith
-21723833,Blockchain Fundamentals,Networking Academy,,"February 25, 2021",Tearing Down,2:44:21,Morgan Lewis
-93251075,Introduction to Data Science,Web Development Journey,,"December 25, 2023",Tearing Down,3:03:35,Drew Lee
-60499293,DevOps Practices and Tools,Cloud Mastery Series,,"December 1, 2025",Off,4:32:50,Jordan Clark
-72817147,Data Visualization with Python,Networking Academy,,"January 16, 2022",Saved,2:53:19,Morgan Walker
-30329659,Agile Project Management,Advanced Developer Series,,"June 1, 2021",Tearing Down,3:02:24,Taylor Martinez
-20472943,Cybersecurity Essentials,Cloud Mastery Series,,"March 14, 2021",Saved,3:19:51,Skyler Johnson
-49368737,Version Control with Git,Web Development Journey,,"February 24, 2023",Tearing Down,3:14:07,Morgan Martinez
-93988310,Machine Learning Fundamentals,AI and Machine Learning Track,,"March 19, 2024",Building,2:50:54,Riley Brown
-25188532,Big Data Analytics,Cloud Mastery Series,,"January 11, 2023",Off,0:19:32,Jordan Martinez
-12354953,Linux Command Line Basics,Cybersecurity Pathway,,"February 26, 2024",Off,0:56:09,Jordan Davis
-76206558,Cybersecurity Essentials,Cybersecurity Pathway,,"February 24, 2025",Off,4:12:08,Taylor Walker
-97699108,Agile Project Management,Mobile Development Series,,"July 30, 2023",Tearing Down,3:40:12,Alex Davis
-37773705,AI for Beginners,Networking Academy,,"December 8, 2023",Off,2:41:08,Casey Garcia
-71711789,Machine Learning Fundamentals,AI and Machine Learning Track,,"December 21, 2020",Saved,2:26:30,Casey Johnson
-91281451,IoT and Embedded Systems,Cloud Mastery Series,,"June 21, 2021",Running,0:42:13,Jordan Davis
-62594324,Agile Project Management,Foundations of Technology,,"November 17, 2020",Building,4:44:25,Morgan Lee
-70813771,Agile Project Management,Cloud Mastery Series,,"February 5, 2022",Saved,1:36:33,Jordan Garcia
-93737844,Cybersecurity Essentials,Data Science Bootcamp,,"July 13, 2025",Saved,2:24:52,Riley Davis
-25946033,Mobile App Development,Cloud Mastery Series,,"October 7, 2024",Tearing Down,2:25:47,Morgan Smith
-81223668,Database Design and Management,Cybersecurity Pathway,,"September 5, 2024",Off,2:12:48,Taylor Clark
-34059823,Big Data Analytics,Cybersecurity Pathway,,"September 24, 2024",Tearing Down,1:03:40,Skyler Lewis
-53464139,Linux Command Line Basics,Web Development Journey,,"December 4, 2023",Saved,0:15:10,Alex Johnson
-35625986,Blockchain Fundamentals,Web Development Journey,,"May 15, 2020",Running,2:25:51,Avery Davis
-96526235,Cloud Computing Basics,Cybersecurity Pathway,,"December 28, 2023",Off,0:06:24,Morgan Davis
-80945527,AI for Beginners,DevOps Essentials,,"April 1, 2025",Tearing Down,2:23:49,Jordan Lewis
-30680846,IoT and Embedded Systems,Foundations of Technology,,"September 4, 2022",Tearing Down,2:07:39,Drew Johnson
-63436345,Cloud Computing Basics,Networking Academy,,"March 5, 2025",Saved,1:41:52,Jamie Clark
-53462665,IoT and Embedded Systems,AI and Machine Learning Track,,"August 31, 2021",Running,4:48:19,Casey Lewis
-51757277,Advanced Python Programming,DevOps Essentials,,"March 27, 2024",Tearing Down,4:01:28,Skyler Davis
-56029018,Mobile App Development,DevOps Essentials,,"August 8, 2020",Saved,1:04:55,Jamie Walker
-96158935,Cloud Computing Basics,AI and Machine Learning Track,,"July 8, 2024",Off,1:21:28,Casey Johnson
-43954357,Version Control with Git,DevOps Essentials,,"June 24, 2021",Saved,0:52:27,Skyler Johnson
-83341077,Web Development with JavaScript,Networking Academy,,"March 17, 2021",Tearing Down,3:23:38,Drew Lewis
-86450770,Web Development with JavaScript,Mobile Development Series,,"June 26, 2024",Running,2:50:42,Taylor Clark
-12439018,Web Development with JavaScript,Advanced Developer Series,,"April 1, 2021",Running,0:56:02,Avery Brown
-97815146,Introduction to Data Science,AI and Machine Learning Track,,"August 21, 2023",Saved,0:16:06,Alex Smith
-85601898,IoT and Embedded Systems,Cloud Mastery Series,,"May 2, 2023",Off,3:27:03,Jamie Lewis
-71246225,Database Design and Management,Foundations of Technology,,"July 23, 2025",Tearing Down,0:42:55,Casey Walker
-62172504,Agile Project Management,Cybersecurity Pathway,,"February 23, 2021",Running,2:01:06,Taylor Brown
-47055725,Database Design and Management,Cloud Mastery Series,,"January 10, 2020",Saved,2:54:54,Morgan Martinez
-85899709,Machine Learning Fundamentals,Cloud Mastery Series,,"July 9, 2021",Running,3:43:07,Riley Smith
-11665217,Mobile App Development,Networking Academy,,"March 2, 2023",Tearing Down,4:31:14,Casey Martinez
-93253239,Linux Command Line Basics,Cybersecurity Pathway,,"April 28, 2025",Building,0:56:24,Taylor Smith
-97573052,AI for Beginners,Advanced Developer Series,,"December 22, 2025",Saved,3:46:54,Drew Lewis
-30925223,DevOps Practices and Tools,Cloud Mastery Series,,"October 10, 2021",Saved,0:14:56,Jamie Smith
-90955759,Building Secure Web Applications,DevOps Essentials,,"March 10, 2023",Tearing Down,1:07:29,Skyler Walker
-98952883,Networking Concepts,Cybersecurity Pathway,,"December 29, 2025",Running,2:24:29,Casey Lee
-19274761,Database Design and Management,Cybersecurity Pathway,,"February 15, 2025",Tearing Down,3:06:12,Morgan Martinez
-72622445,AI for Beginners,Web Development Journey,,"April 8, 2020",Running,3:33:13,Drew Davis
-91994417,Cybersecurity Essentials,Networking Academy,,"November 5, 2023",Tearing Down,0:42:06,Jamie Brown
-57765775,Building Secure Web Applications,Web Development Journey,,"August 14, 2025",Tearing Down,1:10:59,Riley Lee
-58637589,DevOps Practices and Tools,Data Science Bootcamp,,"March 5, 2023",Off,2:01:54,Casey Lee
-45675794,Data Visualization with Python,AI and Machine Learning Track,,"November 21, 2022",Off,2:32:50,Alex Lee
-28703988,AI for Beginners,Web Development Journey,,"December 15, 2025",Off,4:07:48,Alex Garcia
-88101852,Blockchain Fundamentals,Networking Academy,,"October 19, 2023",Tearing Down,0:28:37,Riley Clark
-76577374,Machine Learning Fundamentals,Mobile Development Series,,"May 6, 2020",Saved,2:28:23,Avery Garcia
-68658272,Database Design and Management,Advanced Developer Series,,"December 23, 2020",Running,0:16:05,Jamie Lee
-77607077,Building Secure Web Applications,Cloud Mastery Series,,"August 1, 2023",Tearing Down,4:27:09,Skyler Lee
-19292597,Web Development with JavaScript,Foundations of Technology,,"October 26, 2020",Running,4:58:20,Taylor Garcia
-41560013,Linux Command Line Basics,Data Science Bootcamp,,"June 9, 2025",Saved,2:31:34,Avery Garcia
-19897547,Cloud Computing Basics,Data Science Bootcamp,,"October 29, 2022",Running,2:41:06,Casey Davis
-75993268,Web Development with JavaScript,Cybersecurity Pathway,,"June 27, 2020",Saved,1:55:43,Avery Clark
-90439100,Introduction to Data Science,AI and Machine Learning Track,,"May 14, 2022",Off,4:21:23,Jamie Lewis
-53484708,Natural Language Processing,Web Development Journey,,"September 24, 2025",Saved,0:05:26,Avery Garcia
-72263081,Cybersecurity Essentials,Web Development Journey,,"October 29, 2024",Off,4:54:35,Riley Clark
-39829205,AI for Beginners,Advanced Developer Series,,"October 29, 2021",Tearing Down,4:49:24,Taylor Walker
-34904811,Version Control with Git,Data Science Bootcamp,,"December 2, 2022",Running,1:58:35,Morgan Clark
-55076854,Linux Command Line Basics,Mobile Development Series,,"October 24, 2022",Off,4:34:40,Avery Garcia
-32141686,Web Development with JavaScript,Advanced Developer Series,,"March 7, 2022",Off,0:48:32,Skyler Brown
-51345679,Advanced Python Programming,Cybersecurity Pathway,,"December 12, 2025",Tearing Down,1:43:37,Jordan Garcia
-62867871,Web Development with JavaScript,AI and Machine Learning Track,,"October 21, 2025",Saved,1:45:36,Alex Clark
-65508989,Version Control with Git,DevOps Essentials,,"January 31, 2024",Saved,3:04:37,Drew Davis
-15190425,Cybersecurity Essentials,Networking Academy,,"September 19, 2023",Saved,1:58:56,Drew Garcia
-70167108,Blockchain Fundamentals,Advanced Developer Series,,"October 11, 2023",Saved,4:27:14,Skyler Clark
-27042035,Building Secure Web Applications,Mobile Development Series,,"July 19, 2024",Saved,2:49:47,Jamie Davis
-86250188,Networking Concepts,Mobile Development Series,,"April 2, 2021",Off,3:52:20,Avery Lee
-19587102,Big Data Analytics,AI and Machine Learning Track,,"August 2, 2024",Running,0:19:33,Jordan Lewis
-47725936,Natural Language Processing,Cloud Mastery Series,,"April 13, 2021",Off,2:37:30,Riley Davis
-24315134,Linux Command Line Basics,Networking Academy,,"December 5, 2024",Building,4:18:54,Avery Lewis
-68079972,Web Development with JavaScript,Web Development Journey,,"October 5, 2023",Off,1:30:16,Skyler Brown
-96038152,Networking Concepts,DevOps Essentials,,"October 5, 2024",Building,1:13:01,Taylor Martinez
-39850491,Web Development with JavaScript,AI and Machine Learning Track,,"April 14, 2020",Saved,3:32:33,Riley Johnson
-70546552,AI for Beginners,Networking Academy,,"January 23, 2022",Running,2:43:40,Alex Clark
-99114086,Cybersecurity Essentials,Cybersecurity Pathway,,"July 4, 2025",Running,3:05:50,Morgan Johnson
-18499773,Networking Concepts,Cloud Mastery Series,,"May 28, 2024",Building,1:12:46,Taylor Lee
-80842602,IoT and Embedded Systems,Cloud Mastery Series,,"August 20, 2021",Tearing Down,3:48:00,Taylor Brown
-97952223,Mobile App Development,Networking Academy,,"February 13, 2023",Tearing Down,1:49:05,Avery Lee
-66733537,Introduction to Data Science,Cloud Mastery Series,,"June 29, 2020",Tearing Down,1:35:45,Skyler Clark
-19290103,Data Visualization with Python,Web Development Journey,,"July 13, 2023",Off,3:10:21,Jordan Clark
-95642870,Agile Project Management,Cloud Mastery Series,,"April 3, 2020",Building,2:35:22,Alex Garcia
-74303631,Mobile App Development,Data Science Bootcamp,,"January 17, 2020",Saved,1:55:57,Jordan Martinez
-70905375,Linux Command Line Basics,Advanced Developer Series,,"June 19, 2025",Running,2:10:17,Morgan Garcia
-10094804,Big Data Analytics,Web Development Journey,,"August 1, 2023",Running,1:56:59,Avery Clark
-32269256,Natural Language Processing,Advanced Developer Series,,"October 31, 2020",Tearing Down,1:53:45,Morgan Garcia
-15781258,Advanced Python Programming,Cybersecurity Pathway,,"July 20, 2020",Tearing Down,2:19:08,Alex Smith
-58193244,Networking Concepts,Web Development Journey,,"December 14, 2024",Running,4:09:42,Skyler Lee
-27255765,Linux Command Line Basics,Mobile Development Series,,"July 31, 2021",Off,4:53:14,Drew Johnson
-92163206,Natural Language Processing,Web Development Journey,,"December 26, 2021",Building,2:14:03,Riley Walker
-67138746,Natural Language Processing,Advanced Developer Series,,"September 18, 2024",Running,4:27:59,Drew Davis
-75215185,Building Secure Web Applications,Advanced Developer Series,,"December 18, 2020",Building,2:54:19,Jamie Lewis
-45580071,DevOps Practices and Tools,Foundations of Technology,,"February 10, 2024",Tearing Down,3:11:48,Alex Martinez
+﻿id,lab_profile,series,user_id,last_activity_time,state_id,duration,student,instructions
+12193863,Database Design and Management,Cloud Mastery Series,5269530,"December 27, 2024",Running,4:13:47,Alex Martinez,Advanced Blueprint (fr)
+39703560,Blockchain Fundamentals,Networking Academy,5269680,"June 4, 2022",Saved,1:29:30,Jamie Clark,Advanced Blueprint (ge)
+93648785,Cloud Computing Basics,Data Science Bootcamp,5269680,"January 23, 2020",Tearing Down,1:13:26,Riley Garcia,Advanced Checklist (en)
+20459310,Introduction to Data Science,AI and Machine Learning Track,5269627,"November 15, 2025",Running,2:35:52,Alex Martinez,Advanced Checklist (fr)
+10913079,Cloud Computing Basics,AI and Machine Learning Track,5269680,"May 28, 2025",Saved,0:53:20,Drew Garcia,Advanced Checklist (ge)
+82533551,Building Secure Web Applications,Foundations of Technology,5279472,"August 6, 2024",Off,4:56:18,Morgan Clark,Advanced Compendium (sp)
+14197600,DevOps Practices and Tools,Web Development Journey,5269724,"January 25, 2024",Building,1:19:06,Drew Brown,Advanced Framework (en)
+50629903,Mobile App Development,DevOps Essentials,5303951,"October 25, 2020",Building,2:04:25,Skyler Martinez,Advanced Framework (sp)
+27358313,Advanced Python Programming,AI and Machine Learning Track,6663604,"July 2, 2023",Saved,0:11:29,Alex Davis,Advanced Manual (fr)
+26870420,IoT and Embedded Systems,Advanced Developer Series,6663604,"January 12, 2022",Tearing Down,0:13:04,Morgan Walker,Advanced Manual (sp)
+16250991,Big Data Analytics,Advanced Developer Series,6663604,"April 18, 2025",Tearing Down,2:56:04,Jamie Clark,Advanced Outline (sp)
+56806070,Cybersecurity Essentials,DevOps Essentials,6663604,"July 3, 2021",Building,4:04:58,Riley Clark,Advanced Pathway (fr)
+39918169,Machine Learning Fundamentals,Cloud Mastery Series,5279472,"December 7, 2025",Saved,4:55:45,Jamie Walker,Advanced Plan (en)
+14010215,AI for Beginners,Data Science Bootcamp,6663604,"November 9, 2022",Tearing Down,3:57:38,Drew Lee,Advanced Plan (sp)
+78791020,Database Design and Management,Cloud Mastery Series,6294759,"May 30, 2021",Off,3:14:25,Morgan Lee,Advanced Primer (en)
+94343177,Data Visualization with Python,Cloud Mastery Series,1986603,"December 17, 2024",Building,0:46:27,Taylor Martinez,Advanced Primer (ge)
+22528317,Big Data Analytics,Data Science Bootcamp,962375,"November 3, 2021",Saved,4:48:20,Alex Clark,Advanced Primer (sp)
+22506624,Data Visualization with Python,Networking Academy,137420,"March 10, 2023",Saved,4:10:34,Riley Walker,Advanced Procedure (sp)
+92933592,Version Control with Git,Foundations of Technology,137420,"March 14, 2020",Tearing Down,3:22:35,Casey Brown,Advanced Protocol (en)
+41226798,Cloud Computing Basics,Web Development Journey,1703299,"May 30, 2020",Running,0:36:51,Skyler Clark,Advanced Protocol (sp)
+69690476,Web Development with JavaScript,Networking Academy,4904769,"December 4, 2021",Building,3:56:38,Alex Johnson,Advanced Reference (fr)
+23479086,DevOps Practices and Tools,Web Development Journey,4904769,"November 8, 2024",Off,2:59:09,Riley Walker,Advanced Reference (sp)
+20499569,AI for Beginners,Advanced Developer Series,4904769,"November 19, 2021",Running,1:46:01,Jordan Davis,Advanced Steps (en)
+71067099,Introduction to Data Science,Web Development Journey,4904769,"May 2, 2020",Building,0:58:30,Skyler Lee,Advanced Steps (ge)
+81818927,Introduction to Data Science,Mobile Development Series,4904769,"September 13, 2024",Tearing Down,2:55:26,Taylor Johnson,Advanced Strategy (fr)
+31874615,Cloud Computing Basics,Data Science Bootcamp,4904769,"September 19, 2021",Tearing Down,4:49:28,Riley Davis,Advanced System (sp)
+64829145,Big Data Analytics,Cybersecurity Pathway,4904769,"January 10, 2025",Running,4:47:08,Skyler Davis,Advanced Tutorial (sp)
+80985813,Big Data Analytics,Foundations of Technology,4904769,"October 1, 2021",Running,0:25:12,Riley Brown,Advanced Workflow (fr)
+37509962,Machine Learning Fundamentals,AI and Machine Learning Track,4904769,"December 12, 2022",Tearing Down,0:22:52,Drew Smith,Basic Approach (ge)
+98070288,Big Data Analytics,Data Science Bootcamp,4904769,"June 11, 2025",Off,3:48:26,Jamie Smith,Basic Blueprint (fr)
+65491738,Cybersecurity Essentials,AI and Machine Learning Track,4904769,"April 7, 2024",Off,4:29:15,Riley Lee,Basic Course (en)
+91896336,IoT and Embedded Systems,Foundations of Technology,4904769,"March 5, 2025",Off,4:07:36,Skyler Lewis,Basic Course (fr)
+36443044,Natural Language Processing,Mobile Development Series,4904769,"February 22, 2024",Running,2:12:00,Drew Martinez,Basic Course (ge)
+91456307,Networking Concepts,DevOps Essentials,4904769,"February 2, 2020",Off,1:49:42,Taylor Smith,Basic Guide (ge)
+13644591,Agile Project Management,Cloud Mastery Series,4904769,"May 29, 2024",Running,4:55:31,Casey Garcia,Basic Handbook (sp)
+86952507,IoT and Embedded Systems,Cloud Mastery Series,4904769,"January 21, 2025",Tearing Down,2:21:35,Jamie Brown,Basic Outline (fr)
+65154257,Web Development with JavaScript,Foundations of Technology,4904769,"August 12, 2025",Running,0:45:55,Taylor Brown,Basic Pathway (en)
+99848360,IoT and Embedded Systems,Cloud Mastery Series,4904769,"November 24, 2025",Saved,1:42:41,Taylor Lewis,Basic Plan (sp)
+71737087,Natural Language Processing,Advanced Developer Series,4904769,"June 22, 2022",Building,3:52:44,Drew Brown,Basic Primer (en)
+14461032,Web Development with JavaScript,Advanced Developer Series,389713,"May 28, 2023",Building,3:51:28,Morgan Walker,Basic Primer (sp)
+23852576,Agile Project Management,Data Science Bootcamp,4904769,"June 18, 2022",Off,1:02:06,Jamie Brown,Basic Protocol (fr)
+45441011,Advanced Python Programming,Cloud Mastery Series,4904769,"July 30, 2022",Saved,1:17:48,Riley Davis,Basic Reference (fr)
+85604004,Agile Project Management,AI and Machine Learning Track,4904769,"March 8, 2020",Tearing Down,4:52:14,Jordan Lee,Basic Steps (ge)
+57091190,DevOps Practices and Tools,Advanced Developer Series,4904769,"October 31, 2021",Saved,2:00:14,Taylor Garcia,Basic Strategy (sp)
+57242154,Database Design and Management,Foundations of Technology,4904769,"May 13, 2024",Tearing Down,0:39:10,Casey Smith,Basic System (en)
+51862662,Agile Project Management,AI and Machine Learning Track,4904769,"September 12, 2022",Building,4:32:35,Avery Garcia,Basic System (fr)
+59308393,Version Control with Git,Foundations of Technology,4904769,"June 27, 2024",Building,1:52:11,Drew Davis,Basic Toolkit (en)
+99935038,Building Secure Web Applications,Foundations of Technology,4904769,"June 30, 2024",Saved,4:19:57,Casey Martinez,Basic Toolkit (sp)
+33031729,Introduction to Data Science,Networking Academy,4904769,"February 7, 2025",Saved,2:04:50,Drew Davis,Basic Tutorial (fr)
+50685874,Mobile App Development,Foundations of Technology,4904769,"June 28, 2022",Building,2:03:46,Riley Clark,Basic Walkthrough (en)
+90798681,Cybersecurity Essentials,Networking Academy,4904769,"April 6, 2020",Running,2:46:33,Jordan Garcia,Basic Walkthrough (fr)
+72073404,Big Data Analytics,Data Science Bootcamp,4904769,"September 26, 2021",Off,4:15:46,Drew Martinez,Basic Workflow (fr)
+18666679,AI for Beginners,Web Development Journey,4904769,"November 29, 2022",Running,0:37:28,Alex Lee,Beginner Checklist (ge)
+97950063,IoT and Embedded Systems,AI and Machine Learning Track,4904769,"November 16, 2022",Off,3:43:56,Taylor Lee,Beginner Compendium (sp)
+40890086,Version Control with Git,Cloud Mastery Series,4904769,"July 19, 2021",Running,4:50:26,Morgan Clark,Beginner Course (fr)
+43894642,Machine Learning Fundamentals,Foundations of Technology,4904769,"April 2, 2023",Running,4:07:58,Morgan Walker,Beginner Course (ge)
+92690529,Blockchain Fundamentals,Web Development Journey,4904769,"August 15, 2020",Running,3:47:34,Morgan Martinez,Beginner Framework (en)
+14568128,Linux Command Line Basics,Cloud Mastery Series,4904769,"August 10, 2020",Saved,3:59:05,Drew Garcia,Beginner Guide (sp)
+60879131,Advanced Python Programming,AI and Machine Learning Track,4904769,"July 12, 2025",Building,3:45:19,Casey Smith,Beginner Instructions (fr)
+88565368,Data Visualization with Python,AI and Machine Learning Track,1703299,"July 24, 2020",Saved,4:52:52,Drew Johnson,Beginner Instructions (sp)
+64745251,Mobile App Development,Mobile Development Series,4904769,"April 12, 2023",Running,1:42:59,Drew Lewis,Beginner Manual (ge)
+28755603,IoT and Embedded Systems,Cloud Mastery Series,4904769,"March 30, 2025",Running,0:13:14,Skyler Garcia,Beginner Manual (sp)
+56880211,Linux Command Line Basics,Networking Academy,4904769,"November 27, 2022",Building,2:17:38,Alex Davis,Beginner Outline (en)
+16112092,Database Design and Management,Mobile Development Series,4904769,"April 20, 2022",Running,3:54:21,Jordan Martinez,Beginner Outline (fr)
+94244380,Networking Concepts,DevOps Essentials,4904769,"July 8, 2023",Running,0:27:51,Riley Davis,Beginner Overview (sp)
+29295467,Web Development with JavaScript,Networking Academy,1703299,"December 28, 2025",Building,0:56:35,Morgan Garcia,Beginner Pathway (fr)
+82689272,Agile Project Management,Foundations of Technology,4904769,"March 11, 2023",Saved,0:36:29,Jamie Johnson,Beginner Pathway (ge)
+24880978,Machine Learning Fundamentals,Cybersecurity Pathway,994222,"December 10, 2023",Off,2:15:30,Morgan Lewis,Beginner Pathway (sp)
+47431293,Database Design and Management,Cybersecurity Pathway,994222,"September 18, 2023",Building,2:51:03,Skyler Davis,Beginner Plan (en)
+37797747,Introduction to Data Science,Web Development Journey,2290534,"July 18, 2025",Off,0:59:59,Drew Garcia,Beginner Procedure (fr)
+98197844,AI for Beginners,Data Science Bootcamp,994222,"May 6, 2021",Off,4:57:52,Morgan Walker,Beginner Procedure (ge)
+41257995,Introduction to Data Science,Web Development Journey,4904769,"June 12, 2024",Off,2:10:22,Jordan Davis,Beginner Protocol (ge)
+99841364,Cloud Computing Basics,Cloud Mastery Series,4904769,"September 7, 2020",Tearing Down,3:01:50,Jamie Garcia,Beginner Reference (fr)
+86842459,Building Secure Web Applications,Advanced Developer Series,4904769,"August 28, 2020",Saved,3:36:09,Casey Garcia,Beginner Reference (ge)
+20558707,Web Development with JavaScript,Web Development Journey,4904769,"January 19, 2025",Saved,4:50:10,Taylor Martinez,Beginner Steps (en)
+71252355,Mobile App Development,DevOps Essentials,4904769,"February 1, 2022",Building,4:21:30,Avery Brown,Beginner Steps (fr)
+64960322,IoT and Embedded Systems,Mobile Development Series,1972728,"September 23, 2024",Building,4:33:03,Skyler Clark,Beginner Steps (ge)
+30055673,Agile Project Management,Foundations of Technology,4904769,"April 10, 2023",Running,3:17:56,Avery Johnson,Beginner System (en)
+13780718,Data Visualization with Python,Networking Academy,4904769,"November 20, 2024",Saved,3:17:03,Drew Garcia,Beginner System (fr)
+55095711,Linux Command Line Basics,DevOps Essentials,4904769,"October 13, 2025",Off,4:38:26,Jordan Lee,Beginner System (ge)
+23357070,Version Control with Git,Web Development Journey,4904769,"October 24, 2020",Tearing Down,2:12:46,Alex Garcia,Beginner Toolkit (fr)
+41954531,Big Data Analytics,Data Science Bootcamp,4904769,"November 21, 2020",Tearing Down,3:02:31,Drew Clark,Beginner Toolkit (sp)
+82432540,Web Development with JavaScript,DevOps Essentials,235934,"September 4, 2023",Building,3:58:32,Morgan Johnson,Beginner Tutorial (ge)
+86949043,Big Data Analytics,Foundations of Technology,4904769,"September 13, 2020",Tearing Down,3:29:21,Jamie Martinez,Beginner Workflow (fr)
+98749191,Linux Command Line Basics,Mobile Development Series,2627965,"April 29, 2025",Saved,4:16:33,Alex Johnson,Compact Approach (sp)
+75193690,DevOps Practices and Tools,Data Science Bootcamp,4904769,"February 21, 2025",Off,0:35:25,Drew Clark,Compact Blueprint (fr)
+97986195,Agile Project Management,Networking Academy,4904769,"May 31, 2021",Tearing Down,2:25:22,Casey Garcia,Compact Checklist (en)
+81890116,Cybersecurity Essentials,DevOps Essentials,4904769,"July 8, 2023",Building,3:27:00,Riley Walker,Compact Checklist (sp)
+53686156,DevOps Practices and Tools,Data Science Bootcamp,4904769,"March 23, 2021",Building,2:55:08,Avery Walker,Compact Course (sp)
+72864713,DevOps Practices and Tools,DevOps Essentials,4904769,"March 11, 2024",Building,4:39:30,Jordan Johnson,Compact Guide (sp)
+37806523,Database Design and Management,Cloud Mastery Series,4904769,"February 17, 2025",Building,4:54:05,Casey Davis,Compact Handbook (sp)
+63829498,Agile Project Management,Foundations of Technology,4904769,"November 27, 2022",Building,1:30:01,Alex Martinez,Compact Instructions (en)
+19632393,Natural Language Processing,DevOps Essentials,4904769,"July 20, 2020",Running,3:30:47,Jordan Walker,Compact Manual (en)
+91236544,Cloud Computing Basics,Cloud Mastery Series,4904769,"August 14, 2021",Tearing Down,1:52:43,Jordan Clark,Compact Outline (fr)
+57361041,Data Visualization with Python,Foundations of Technology,4904769,"August 5, 2025",Saved,2:24:00,Alex Walker,Compact Outline (ge)
+58424194,AI for Beginners,Advanced Developer Series,4904769,"March 6, 2023",Saved,0:37:34,Casey Brown,Compact Overview (fr)
+11308003,Web Development with JavaScript,Cloud Mastery Series,4904769,"August 12, 2023",Building,0:57:19,Jamie Brown,Compact Overview (sp)
+36399840,Machine Learning Fundamentals,Cloud Mastery Series,4904769,"June 20, 2025",Tearing Down,2:18:26,Skyler Brown,Compact Pathway (fr)
+55577088,Cloud Computing Basics,Cybersecurity Pathway,4904769,"April 4, 2021",Building,1:10:56,Jordan Walker,Compact Plan (fr)
+85477707,Data Visualization with Python,Advanced Developer Series,1703299,"December 5, 2023",Saved,1:41:35,Casey Lee,Compact Plan (ge)
+57732138,Advanced Python Programming,Networking Academy,1703299,"September 15, 2021",Running,3:50:19,Casey Smith,Compact Primer (fr)
+98139908,Agile Project Management,Cloud Mastery Series,4904769,"April 27, 2023",Off,3:00:53,Jamie Brown,Compact Primer (sp)
+60806186,Cloud Computing Basics,DevOps Essentials,4904769,"December 13, 2020",Saved,3:17:58,Jamie Clark,Compact Procedure (en)
+65226400,Introduction to Data Science,Mobile Development Series,4904769,"March 16, 2022",Off,4:42:45,Riley Davis,Compact Procedure (fr)
+33336701,Agile Project Management,Networking Academy,4904769,"December 4, 2023",Tearing Down,2:58:12,Skyler Davis,Compact Protocol (fr)
+30691884,Database Design and Management,DevOps Essentials,389713,"April 22, 2021",Saved,2:28:32,Casey Smith,Compact Protocol (ge)
+96408810,Web Development with JavaScript,AI and Machine Learning Track,389713,"October 16, 2024",Saved,3:29:40,Morgan Martinez,Compact Reference (fr)
+31726776,Version Control with Git,DevOps Essentials,994222,"July 5, 2024",Building,2:35:39,Morgan Johnson,Compact Reference (ge)
+11449086,Linux Command Line Basics,Cloud Mastery Series,2290534,"March 18, 2022",Saved,0:57:20,Jordan Davis,Compact Reference (sp)
+44171449,Linux Command Line Basics,Networking Academy,1703299,"August 30, 2021",Off,4:39:13,Taylor Davis,Compact Steps (fr)
+29835496,Advanced Python Programming,Advanced Developer Series,389713,"November 4, 2023",Saved,1:29:45,Taylor Davis,Compact Steps (sp)
+66473956,Blockchain Fundamentals,Networking Academy,4904769,"August 21, 2025",Building,3:25:10,Casey Walker,Compact Strategy (en)
+41079008,AI for Beginners,DevOps Essentials,4904769,"March 1, 2021",Saved,1:26:34,Drew Lewis,Compact Strategy (sp)
+54825142,Networking Concepts,Advanced Developer Series,4904769,"March 28, 2023",Saved,0:29:49,Drew Walker,Compact System (fr)
+69855185,AI for Beginners,Advanced Developer Series,4904769,"July 10, 2021",Saved,2:16:45,Jordan Clark,Compact Tutorial (fr)
+54429103,Natural Language Processing,Web Development Journey,4904769,"November 26, 2025",Tearing Down,0:23:36,Alex Lewis,Compact Workflow (ge)
+35526004,Introduction to Data Science,Cybersecurity Pathway,4904769,"September 15, 2020",Running,1:58:25,Skyler Johnson,Compact Workflow (sp)
+74376945,Web Development with JavaScript,Advanced Developer Series,4904769,"September 16, 2024",Off,1:59:16,Taylor Lewis,Complete Approach (fr)
+28982260,Networking Concepts,Web Development Journey,4904769,"December 7, 2024",Building,1:26:24,Morgan Johnson,Complete Blueprint (ge)
+92931436,DevOps Practices and Tools,Cybersecurity Pathway,4803349,"November 29, 2023",Building,0:33:38,Avery Johnson,Complete Blueprint (sp)
+41121294,Agile Project Management,Cybersecurity Pathway,1703299,"April 17, 2024",Off,4:25:18,Riley Davis,Complete Compendium (en)
+81997227,Advanced Python Programming,Cybersecurity Pathway,4904769,"March 18, 2024",Tearing Down,3:29:27,Morgan Martinez,Complete Course (en)
+84169086,Web Development with JavaScript,Networking Academy,994222,"October 18, 2020",Building,2:35:32,Skyler Martinez,Complete Course (ge)
+71609686,IoT and Embedded Systems,AI and Machine Learning Track,4904769,"July 18, 2025",Building,0:17:37,Jordan Lee,Complete Guide (fr)
+98319015,Building Secure Web Applications,Mobile Development Series,4904769,"February 6, 2023",Saved,1:31:54,Alex Martinez,Complete Handbook (sp)
+54732939,DevOps Practices and Tools,DevOps Essentials,4904769,"March 13, 2024",Running,1:12:19,Morgan Davis,Complete Instructions (en)
+69476815,AI for Beginners,DevOps Essentials,4904769,"December 30, 2022",Saved,3:34:00,Taylor Clark,Complete Instructions (fr)
+38567979,Advanced Python Programming,Cloud Mastery Series,4904769,"October 3, 2023",Tearing Down,4:28:16,Jamie Smith,Complete Manual (fr)
+86024325,Introduction to Data Science,Data Science Bootcamp,2426227,"February 1, 2023",Running,1:35:55,Alex Davis,Complete Manual (ge)
+10041162,Mobile App Development,Cybersecurity Pathway,2426227,"January 1, 2022",Building,2:48:41,Taylor Johnson,Complete Outline (en)
+77827136,Web Development with JavaScript,Foundations of Technology,2426227,"December 28, 2023",Building,4:24:16,Skyler Martinez,Complete Outline (fr)
+60062668,Data Visualization with Python,Cloud Mastery Series,2426227,"October 29, 2020",Saved,3:24:12,Riley Martinez,Complete Overview (ge)
+99240605,Data Visualization with Python,Networking Academy,2426227,"March 5, 2020",Building,3:25:53,Drew Smith,Complete Pathway (en)
+75659099,Big Data Analytics,Cybersecurity Pathway,1703299,"December 22, 2025",Tearing Down,0:38:57,Drew Johnson,Complete Plan (ge)
+32808874,Machine Learning Fundamentals,Cloud Mastery Series,4904769,"May 6, 2021",Tearing Down,2:19:15,Casey Lee,Complete Primer (en)
+56950918,Mobile App Development,Networking Academy,2426227,"March 5, 2025",Building,3:27:09,Casey Smith,Complete Primer (fr)
+40484013,Agile Project Management,Advanced Developer Series,4904769,"December 26, 2020",Tearing Down,3:09:00,Skyler Davis,Complete Procedure (en)
+26064761,Cybersecurity Essentials,DevOps Essentials,3494134,"August 22, 2025",Saved,4:44:15,Morgan Johnson,Complete Procedure (fr)
+17313576,Version Control with Git,Data Science Bootcamp,994222,"March 28, 2023",Building,2:12:39,Riley Clark,Complete Protocol (fr)
+68213734,AI for Beginners,Cloud Mastery Series,4904769,"May 11, 2024",Saved,1:03:39,Skyler Brown,Complete Protocol (ge)
+30208906,Cloud Computing Basics,Cybersecurity Pathway,4904769,"September 5, 2021",Running,1:54:17,Avery Lee,Complete Protocol (sp)
+52371745,Agile Project Management,AI and Machine Learning Track,4904769,"July 4, 2024",Off,0:22:06,Alex Walker,Complete Reference (en)
+61505747,Cloud Computing Basics,Cybersecurity Pathway,3320826,"December 13, 2023",Building,0:28:10,Jamie Davis,Complete Reference (sp)
+17557752,Cybersecurity Essentials,Foundations of Technology,4706801,"July 14, 2024",Running,1:26:19,Jamie Lee,Complete Steps (en)
+25937592,Database Design and Management,Advanced Developer Series,4713322,"October 12, 2022",Running,4:25:44,Drew Walker,Complete Steps (fr)
+45266933,Version Control with Git,AI and Machine Learning Track,4713323,"December 26, 2025",Tearing Down,4:24:30,Jamie Lee,Complete Strategy (en)
+95395993,DevOps Practices and Tools,AI and Machine Learning Track,4712972,"May 4, 2020",Building,3:28:07,Alex Lewis,Complete System (en)
+75117727,Machine Learning Fundamentals,Cybersecurity Pathway,4711911,"June 12, 2023",Off,4:21:32,Casey Walker,Complete System (sp)
+68455990,DevOps Practices and Tools,Data Science Bootcamp,4691169,"November 22, 2025",Tearing Down,3:18:36,Riley Smith,Complete Toolkit (en)
+79579048,Mobile App Development,Cybersecurity Pathway,4713338,"November 8, 2023",Running,3:18:06,Jordan Walker,Complete Toolkit (ge)
+15115574,Building Secure Web Applications,Cybersecurity Pathway,4713339,"February 16, 2020",Building,0:53:54,Alex Smith,Complete Tutorial (en)
+12436255,Database Design and Management,DevOps Essentials,4713366,"October 12, 2025",Building,4:41:28,Alex Brown,Complete Tutorial (sp)
+91867725,Data Visualization with Python,Foundations of Technology,4713338,"October 20, 2020",Building,4:03:51,Taylor Smith,Complete Walkthrough (ge)
+39322476,Introduction to Data Science,Networking Academy,4703942,"October 6, 2024",Building,4:00:54,Taylor Johnson,Complete Walkthrough (sp)
+71141408,Cloud Computing Basics,Advanced Developer Series,4713323,"December 30, 2025",Building,1:30:14,Drew Clark,Comprehensive Approach (ge)
+39089443,Agile Project Management,Mobile Development Series,4708458,"May 18, 2022",Running,3:26:27,Alex Smith,Comprehensive Blueprint (en)
+77416101,IoT and Embedded Systems,Web Development Journey,4713338,"January 1, 2024",Building,1:42:01,Riley Brown,Comprehensive Blueprint (sp)
+84995261,Building Secure Web Applications,Cloud Mastery Series,4713242,"September 15, 2020",Saved,0:57:50,Alex Walker,Comprehensive Compendium (en)
+75703780,Natural Language Processing,Web Development Journey,4713395,"January 4, 2024",Saved,1:22:30,Riley Garcia,Comprehensive Compendium (sp)
+32039693,Blockchain Fundamentals,DevOps Essentials,4693859,"March 2, 2024",Tearing Down,3:47:34,Riley Walker,Comprehensive Course (fr)
+94938204,Data Visualization with Python,Web Development Journey,4708458,"April 22, 2024",Tearing Down,4:59:11,Jamie Davis,Comprehensive Course (sp)
+94907557,AI for Beginners,Data Science Bootcamp,4713242,"April 3, 2020",Building,0:30:20,Skyler Garcia,Comprehensive Handbook (sp)
+47647658,Version Control with Git,DevOps Essentials,4708613,"July 30, 2025",Tearing Down,2:50:51,Morgan Johnson,Comprehensive Manual (fr)
+90625726,Web Development with JavaScript,AI and Machine Learning Track,4713240,"October 11, 2023",Off,4:18:07,Riley Lee,Comprehensive Manual (ge)
+83371534,Networking Concepts,DevOps Essentials,3788371,"April 12, 2021",Building,1:32:21,Jamie Lewis,Comprehensive Outline (en)
+56413815,IoT and Embedded Systems,Foundations of Technology,1712546,"April 26, 2024",Saved,0:32:09,Casey Lee,Comprehensive Outline (fr)
+31329558,Data Visualization with Python,AI and Machine Learning Track,4198699,"October 26, 2025",Building,2:16:37,Riley Garcia,Comprehensive Outline (sp)
+49396361,Version Control with Git,AI and Machine Learning Track,3788371,"May 9, 2024",Tearing Down,2:00:40,Drew Clark,Comprehensive Pathway (fr)
+34909528,Cybersecurity Essentials,Data Science Bootcamp,3788371,"June 9, 2023",Running,0:26:18,Jamie Martinez,Comprehensive Plan (fr)
+93208845,Cybersecurity Essentials,DevOps Essentials,4312225,"September 18, 2025",Saved,4:32:32,Skyler Brown,Comprehensive Primer (fr)
+85726411,Cybersecurity Essentials,AI and Machine Learning Track,4312225,"December 17, 2025",Running,2:23:52,Taylor Walker,Comprehensive Primer (ge)
+65487780,Building Secure Web Applications,Networking Academy,5812603,"June 6, 2025",Running,0:50:55,Jordan Clark,Comprehensive Procedure (en)
+50944744,Introduction to Data Science,Advanced Developer Series,5812603,"May 15, 2021",Tearing Down,4:40:46,Drew Garcia,Comprehensive Protocol (en)
+89385435,Mobile App Development,Networking Academy,4312225,"December 14, 2023",Off,2:58:40,Drew Davis,Comprehensive Protocol (ge)
+97740680,Building Secure Web Applications,Mobile Development Series,1712546,"September 25, 2022",Running,0:54:25,Riley Lee,Comprehensive Reference (en)
+56289072,Networking Concepts,Foundations of Technology,1712546,"October 29, 2023",Tearing Down,1:12:23,Casey Garcia,Comprehensive Reference (ge)
+44934898,Building Secure Web Applications,Data Science Bootcamp,1712546,"August 25, 2024",Off,0:20:16,Drew Garcia,Comprehensive Steps (fr)
+11398827,Machine Learning Fundamentals,Mobile Development Series,3788371,"April 28, 2021",Running,4:15:55,Morgan Lee,Comprehensive Strategy (en)
+78862447,Networking Concepts,Cybersecurity Pathway,3135003,"September 7, 2024",Off,2:37:59,Morgan Brown,Comprehensive Strategy (ge)
+20229812,Introduction to Data Science,Cybersecurity Pathway,3920869,"March 26, 2024",Saved,4:00:37,Jamie Walker,Comprehensive Toolkit (sp)
+92122960,Natural Language Processing,Web Development Journey,3920869,"April 23, 2022",Tearing Down,3:49:47,Morgan Smith,Comprehensive Tutorial (fr)
+48051218,Agile Project Management,Networking Academy,3287021,"August 20, 2025",Saved,0:59:16,Skyler Smith,Comprehensive Walkthrough (sp)
+27213778,IoT and Embedded Systems,Web Development Journey,3287021,"April 20, 2025",Running,1:17:16,Riley Walker,Comprehensive Workflow (en)
+14434019,Introduction to Data Science,AI and Machine Learning Track,3920869,"July 6, 2021",Saved,1:55:04,Jordan Davis,Comprehensive Workflow (ge)
+42930022,Database Design and Management,DevOps Essentials,3287021,"April 2, 2025",Off,0:22:26,Jamie Lee,Concise Approach (en)
+42208731,Cloud Computing Basics,Cybersecurity Pathway,3287021,"June 23, 2021",Building,3:28:10,Taylor Davis,Concise Blueprint (fr)
+69198812,Networking Concepts,Web Development Journey,3920869,"February 10, 2021",Saved,2:43:25,Casey Brown,Concise Blueprint (sp)
+52929539,Introduction to Data Science,Networking Academy,4713438,"April 24, 2025",Building,2:40:15,Skyler Davis,Concise Checklist (fr)
+76743513,Mobile App Development,Networking Academy,4713240,"February 4, 2025",Tearing Down,3:18:58,Casey Clark,Concise Compendium (ge)
+76673226,Blockchain Fundamentals,DevOps Essentials,4713240,"May 29, 2021",Off,2:04:50,Avery Walker,Concise Framework (en)
+65507715,Agile Project Management,Advanced Developer Series,4703943,"January 16, 2021",Building,2:10:57,Jamie Lee,Concise Guide (en)
+13111098,Data Visualization with Python,Data Science Bootcamp,4704246,"June 11, 2022",Tearing Down,3:59:58,Taylor Smith,Concise Guide (sp)
+33181703,Big Data Analytics,Web Development Journey,4703945,"July 17, 2025",Building,2:44:35,Drew Martinez,Concise Handbook (en)
+85439616,Version Control with Git,Web Development Journey,4691972,"December 17, 2022",Tearing Down,1:36:35,Jordan Lewis,Concise Instructions (fr)
+70228148,AI for Beginners,Advanced Developer Series,4709865,"July 10, 2022",Saved,4:14:10,Taylor Lewis,Concise Manual (fr)
+65786679,Advanced Python Programming,Web Development Journey,4713468,"March 23, 2022",Building,3:58:08,Jamie Garcia,Concise Outline (en)
+20502844,Advanced Python Programming,Cybersecurity Pathway,4694092,"April 28, 2020",Tearing Down,1:31:41,Jordan Davis,Concise Outline (fr)
+20150211,Mobile App Development,Mobile Development Series,4692039,"December 21, 2024",Saved,1:01:41,Alex Clark,Concise Overview (fr)
+32691738,Advanced Python Programming,Foundations of Technology,4713240,"July 11, 2020",Running,2:21:43,Casey Garcia,Concise Pathway (fr)
+31431900,Introduction to Data Science,AI and Machine Learning Track,4713495,"August 5, 2024",Off,3:28:20,Drew Davis,Concise Primer (fr)
+26600300,Linux Command Line Basics,Mobile Development Series,4704247,"December 8, 2022",Tearing Down,1:21:07,Jamie Martinez,Concise Procedure (fr)
+47021394,AI for Beginners,Data Science Bootcamp,4713506,"March 26, 2023",Running,4:27:06,Taylor Lee,Concise Procedure (ge)
+22029939,Database Design and Management,Mobile Development Series,4713240,"October 12, 2023",Building,1:12:55,Casey Garcia,Concise Protocol (en)
+52159278,Web Development with JavaScript,Advanced Developer Series,4694608,"February 8, 2024",Saved,4:53:17,Drew Garcia,Concise Protocol (ge)
+81672493,Big Data Analytics,Advanced Developer Series,4713516,"December 13, 2025",Tearing Down,0:52:03,Alex Martinez,Concise Protocol (sp)
+41121176,Building Secure Web Applications,Foundations of Technology,4704246,"January 6, 2021",Saved,4:55:40,Riley Walker,Concise Reference (fr)
+24367130,Machine Learning Fundamentals,Foundations of Technology,4713228,"April 23, 2024",Building,3:58:15,Drew Lee,Concise Reference (ge)
+31154416,Building Secure Web Applications,Mobile Development Series,4699410,"August 20, 2022",Off,4:59:29,Avery Davis,Concise System (en)
+31818917,Linux Command Line Basics,Data Science Bootcamp,4701813,"February 14, 2022",Building,2:58:39,Riley Martinez,Concise Toolkit (ge)
+95257882,Web Development with JavaScript,Data Science Bootcamp,4704378,"May 14, 2022",Tearing Down,4:23:46,Jordan Lee,Concise Tutorial (en)
+50605465,Database Design and Management,Cybersecurity Pathway,4707067,"July 26, 2022",Building,0:34:56,Riley Smith,Concise Tutorial (ge)
+85906496,Natural Language Processing,Advanced Developer Series,4713563,"February 21, 2025",Building,4:16:52,Morgan Garcia,Concise Walkthrough (en)
+89786271,Networking Concepts,DevOps Essentials,4713565,"December 17, 2025",Running,1:55:53,Skyler Lewis,Core Approach (fr)
+57721837,Natural Language Processing,Cloud Mastery Series,4699410,"February 2, 2021",Off,0:40:07,Jamie Johnson,Core Approach (ge)
+51126916,Building Secure Web Applications,Networking Academy,4706110,"February 19, 2023",Tearing Down,1:15:47,Jamie Walker,Core Approach (sp)
+89703790,Introduction to Data Science,Cloud Mastery Series,4709527,"October 27, 2024",Building,0:52:54,Jordan Walker,Core Blueprint (fr)
+97030527,Data Visualization with Python,Web Development Journey,4713595,"June 20, 2022",Building,3:09:00,Jamie Davis,Core Blueprint (sp)
+23458542,AI for Beginners,Cloud Mastery Series,4704417,"December 10, 2020",Off,0:20:21,Taylor Davis,Core Checklist (en)
+48406353,Cloud Computing Basics,AI and Machine Learning Track,4704352,"November 30, 2022",Tearing Down,4:36:43,Taylor Walker,Core Checklist (sp)
+80803461,Natural Language Processing,Networking Academy,4713654,"November 20, 2022",Off,4:52:30,Skyler Garcia,Core Compendium (en)
+47938083,Cloud Computing Basics,Mobile Development Series,4701202,"August 2, 2024",Building,0:18:34,Jamie Brown,Core Compendium (sp)
+75763513,Linux Command Line Basics,Mobile Development Series,4713563,"February 19, 2023",Running,1:00:17,Alex Brown,Core Course (ge)
+60564736,Cloud Computing Basics,Mobile Development Series,4704304,"May 7, 2023",Tearing Down,3:32:55,Morgan Walker,Core Framework (en)
+85650429,Database Design and Management,Cloud Mastery Series,4713763,"February 10, 2023",Tearing Down,4:12:32,Avery Smith,Core Framework (sp)
+78079036,Cloud Computing Basics,DevOps Essentials,4713699,"June 15, 2025",Saved,0:10:08,Morgan Brown,Core Handbook (en)
+11549995,Blockchain Fundamentals,Mobile Development Series,4704543,"January 13, 2022",Building,4:14:17,Alex Martinez,Core Instructions (sp)
+45484543,Linux Command Line Basics,Data Science Bootcamp,4713818,"March 7, 2023",Running,2:24:53,Riley Clark,Core Manual (fr)
+23624414,Blockchain Fundamentals,Mobile Development Series,4713550,"September 22, 2023",Tearing Down,1:00:40,Skyler Smith,Core Outline (en)
+53787383,Mobile App Development,Networking Academy,4713943,"March 30, 2023",Running,4:40:30,Taylor Smith,Core Outline (fr)
+24908064,Advanced Python Programming,Cybersecurity Pathway,4703861,"April 15, 2023",Tearing Down,2:22:31,Avery Davis,Core Pathway (en)
+58892209,DevOps Practices and Tools,Foundations of Technology,4704368,"April 26, 2021",Running,4:26:07,Skyler Walker,Core Pathway (ge)
+66877054,Natural Language Processing,DevOps Essentials,4713563,"August 11, 2022",Saved,4:20:37,Drew Brown,Core Pathway (sp)
+69171256,Introduction to Data Science,Mobile Development Series,4694608,"June 16, 2021",Running,0:52:39,Skyler Martinez,Core Plan (fr)
+40977460,Data Visualization with Python,Mobile Development Series,4697829,"June 23, 2023",Running,1:19:55,Morgan Davis,Core Plan (ge)
+53256344,Web Development with JavaScript,Networking Academy,4713675,"January 19, 2023",Off,4:23:55,Casey Johnson,Core Primer (ge)
+90062003,Data Visualization with Python,Web Development Journey,4714124,"February 24, 2022",Building,0:13:43,Alex Johnson,Core Procedure (en)
+93030124,Cloud Computing Basics,AI and Machine Learning Track,4714781,"July 19, 2022",Tearing Down,4:24:59,Morgan Davis,Core Procedure (sp)
+93964259,Introduction to Data Science,Web Development Journey,4696001,"March 15, 2024",Building,4:58:08,Jamie Brown,Core Protocol (ge)
+90003318,Introduction to Data Science,Networking Academy,4693859,"March 12, 2024",Saved,0:20:16,Avery Smith,Core System (sp)
+93589741,IoT and Embedded Systems,Cloud Mastery Series,4705494,"April 13, 2023",Tearing Down,2:41:19,Skyler Davis,Core Walkthrough (ge)
+64254145,Building Secure Web Applications,Advanced Developer Series,4531531,"May 3, 2024",Running,1:01:14,Skyler Smith,Core Workflow (en)
+30554044,Blockchain Fundamentals,Networking Academy,4711953,"December 13, 2024",Tearing Down,2:58:27,Skyler Brown,Detailed Checklist (sp)
+12354232,Advanced Python Programming,AI and Machine Learning Track,4715290,"April 29, 2025",Saved,1:06:57,Avery Davis,Detailed Compendium (en)
+75816586,Database Design and Management,Cybersecurity Pathway,662509,"October 18, 2021",Running,0:30:57,Morgan Walker,Detailed Compendium (fr)
+21868266,AI for Beginners,Web Development Journey,4715900,"December 10, 2024",Tearing Down,1:48:33,Taylor Davis,Detailed Compendium (sp)
+40289045,Version Control with Git,AI and Machine Learning Track,4715946,"June 26, 2021",Running,2:58:01,Taylor Johnson,Detailed Framework (sp)
+56466218,Advanced Python Programming,Mobile Development Series,4716008,"August 25, 2023",Off,0:08:04,Jordan Smith,Detailed Guide (en)
+75436524,Machine Learning Fundamentals,Foundations of Technology,4645501,"November 7, 2024",Saved,3:08:44,Jordan Martinez,Detailed Guide (fr)
+38714201,Advanced Python Programming,Foundations of Technology,4703980,"March 6, 2024",Running,2:26:23,Avery Lewis,Detailed Guide (ge)
+25929815,Database Design and Management,Networking Academy,3065484,"July 17, 2024",Running,4:58:59,Morgan Walker,Detailed Handbook (sp)
+61774091,Building Secure Web Applications,Cybersecurity Pathway,4716127,"July 18, 2022",Saved,3:46:36,Drew Martinez,Detailed Instructions (sp)
+53978293,Machine Learning Fundamentals,Advanced Developer Series,4715970,"October 9, 2022",Off,4:43:14,Alex Smith,Detailed Manual (sp)
+21125367,Cybersecurity Essentials,Networking Academy,4058883,"January 21, 2020",Running,2:19:14,Skyler Smith,Detailed Overview (en)
+58545896,AI for Beginners,Web Development Journey,4703980,"January 29, 2023",Off,2:27:03,Jamie Smith,Detailed Overview (fr)
+11436179,Blockchain Fundamentals,Mobile Development Series,4712790,"June 29, 2020",Tearing Down,2:09:04,Riley Smith,Detailed Overview (ge)
+37928514,Cybersecurity Essentials,DevOps Essentials,4703980,"March 18, 2021",Off,3:15:59,Jordan Lewis,Detailed Overview (sp)
+92468666,Machine Learning Fundamentals,Networking Academy,4716481,"October 10, 2025",Saved,3:24:54,Jordan Walker,Detailed Pathway (en)
+61244485,AI for Beginners,Data Science Bootcamp,4716127,"July 7, 2022",Off,1:04:52,Casey Davis,Detailed Pathway (fr)
+32842466,Web Development with JavaScript,AI and Machine Learning Track,4716648,"March 3, 2021",Building,1:08:38,Casey Walker,Detailed Pathway (ge)
+74135363,Web Development with JavaScript,Foundations of Technology,4711815,"May 13, 2023",Building,4:02:54,Drew Brown,Detailed Plan (sp)
+22193827,Natural Language Processing,Cloud Mastery Series,4711565,"November 11, 2023",Tearing Down,4:52:29,Drew Smith,Detailed Protocol (sp)
+55313690,Machine Learning Fundamentals,Mobile Development Series,4716679,"June 14, 2020",Running,1:23:54,Casey Johnson,Detailed Reference (fr)
+22803835,Building Secure Web Applications,Foundations of Technology,4697991,"April 5, 2024",Saved,3:58:40,Avery Davis,Detailed Steps (ge)
+70383990,Mobile App Development,Mobile Development Series,4716701,"October 25, 2021",Saved,4:57:42,Alex Davis,Detailed System (ge)
+37702408,Advanced Python Programming,Networking Academy,4716702,"February 18, 2020",Tearing Down,3:11:01,Taylor Martinez,Detailed System (sp)
+53282846,Web Development with JavaScript,Data Science Bootcamp,4697991,"April 30, 2020",Off,3:38:10,Jordan Johnson,Detailed Toolkit (fr)
+24339387,Machine Learning Fundamentals,Foundations of Technology,4554706,"July 25, 2022",Running,1:56:37,Alex Brown,Detailed Toolkit (sp)
+31813706,Cloud Computing Basics,DevOps Essentials,4716764,"April 30, 2020",Saved,4:01:23,Taylor Lee,Detailed Tutorial (sp)
+34822483,Big Data Analytics,Cybersecurity Pathway,2977506,"September 23, 2022",Running,0:50:42,Morgan Walker,Detailed Workflow (en)
+42507039,Introduction to Data Science,AI and Machine Learning Track,4716803,"July 29, 2023",Tearing Down,4:43:39,Jamie Lee,Efficient Blueprint (fr)
+84059823,Version Control with Git,Cloud Mastery Series,4694092,"August 20, 2022",Running,1:39:43,Taylor Brown,Efficient Checklist (ge)
+86465090,Building Secure Web Applications,Web Development Journey,4675821,"September 9, 2020",Building,0:54:12,Morgan Brown,Efficient Course (fr)
+98860558,Networking Concepts,Foundations of Technology,4716885,"December 31, 2024",Tearing Down,2:13:20,Morgan Brown,Efficient Guide (ge)
+80581426,Building Secure Web Applications,Data Science Bootcamp,4716702,"April 16, 2025",Running,1:01:10,Morgan Lee,Efficient Handbook (en)
+96727937,Database Design and Management,AI and Machine Learning Track,4696030,"May 9, 2022",Tearing Down,2:17:55,Alex Clark,Efficient Instructions (sp)
+66394012,Database Design and Management,Data Science Bootcamp,4716008,"November 18, 2020",Tearing Down,0:27:54,Riley Brown,Efficient Manual (en)
+28906671,Mobile App Development,Cybersecurity Pathway,4717070,"September 26, 2023",Off,3:49:01,Casey Garcia,Efficient Manual (sp)
+40590438,Linux Command Line Basics,Mobile Development Series,4717082,"April 23, 2020",Running,0:21:02,Skyler Brown,Efficient Outline (en)
+54808638,Cybersecurity Essentials,Cloud Mastery Series,4717083,"July 1, 2024",Off,1:42:06,Avery Davis,Efficient Pathway (fr)
+48243867,Database Design and Management,Advanced Developer Series,4717114,"July 27, 2025",Saved,2:09:25,Avery Lee,Efficient Pathway (ge)
+36715483,Database Design and Management,Cybersecurity Pathway,4717117,"September 8, 2022",Building,3:27:23,Alex Smith,Efficient Plan (ge)
+75634503,Database Design and Management,DevOps Essentials,4717127,"April 1, 2020",Off,0:50:39,Jordan Davis,Efficient Primer (en)
+35519895,Web Development with JavaScript,Cybersecurity Pathway,4713121,"February 26, 2023",Saved,2:44:59,Riley Martinez,Efficient Primer (fr)
+41067601,Machine Learning Fundamentals,Cybersecurity Pathway,4712942,"June 1, 2025",Tearing Down,0:33:09,Casey Walker,Efficient Procedure (fr)
+81669049,Advanced Python Programming,AI and Machine Learning Track,4717187,"July 8, 2025",Building,0:30:28,Taylor Clark,Efficient Protocol (fr)
+87808380,Advanced Python Programming,Cloud Mastery Series,4713121,"January 19, 2022",Building,3:38:47,Skyler Johnson,Efficient Reference (sp)
+84518911,Networking Concepts,Cybersecurity Pathway,4717286,"March 18, 2024",Building,2:52:57,Drew Smith,Efficient System (ge)
+88968997,Web Development with JavaScript,Mobile Development Series,4717303,"May 2, 2025",Saved,1:03:36,Avery Smith,Efficient System (sp)
+11318484,Introduction to Data Science,Networking Academy,4713121,"February 6, 2020",Off,2:59:43,Casey Martinez,Efficient Toolkit (sp)
+85351052,Linux Command Line Basics,Web Development Journey,4717313,"June 6, 2021",Running,1:01:14,Riley Johnson,Efficient Tutorial (en)
+79670665,IoT and Embedded Systems,Mobile Development Series,4717324,"March 27, 2022",Off,0:32:07,Casey Smith,Efficient Walkthrough (en)
+86722183,DevOps Practices and Tools,Data Science Bootcamp,4536464,"May 5, 2024",Off,1:03:06,Alex Brown,Efficient Walkthrough (ge)
+97871098,Blockchain Fundamentals,DevOps Essentials,4697883,"January 15, 2022",Off,3:42:48,Casey Smith,Essential Approach (en)
+11068428,AI for Beginners,AI and Machine Learning Track,4536464,"March 21, 2024",Building,1:41:58,Riley Lee,Essential Approach (fr)
+77726892,Advanced Python Programming,Cybersecurity Pathway,4536053,"October 26, 2020",Building,2:58:54,Drew Walker,Essential Approach (ge)
+84940706,Database Design and Management,Web Development Journey,4711032,"June 11, 2025",Building,3:31:28,Avery Garcia,Essential Blueprint (ge)
+80529851,Advanced Python Programming,DevOps Essentials,4531796,"January 29, 2025",Tearing Down,3:01:03,Taylor Davis,Essential Course (fr)
+47189116,Networking Concepts,Advanced Developer Series,4717515,"April 1, 2022",Building,0:13:33,Jamie Martinez,Essential Guide (ge)
+89309439,Data Visualization with Python,Cloud Mastery Series,4717515,"June 4, 2021",Tearing Down,1:44:30,Jordan Lewis,Essential Handbook (sp)
+99491599,Natural Language Processing,Networking Academy,4717578,"September 4, 2025",Tearing Down,3:09:39,Alex Brown,Essential Overview (fr)
+75606449,Introduction to Data Science,DevOps Essentials,4531520,"November 19, 2023",Running,0:41:56,Casey Walker,Essential Overview (ge)
+70829610,Cloud Computing Basics,Cloud Mastery Series,4717631,"January 26, 2022",Saved,0:17:25,Jamie Lewis,Essential Overview (sp)
+44955825,IoT and Embedded Systems,Web Development Journey,4717667,"January 2, 2022",Tearing Down,2:07:55,Casey Garcia,Essential Pathway (sp)
+78029319,Advanced Python Programming,DevOps Essentials,4717689,"March 9, 2025",Building,2:56:35,Morgan Johnson,Essential Procedure (en)
+66074683,DevOps Practices and Tools,Web Development Journey,4703270,"November 3, 2022",Running,3:36:08,Casey Clark,Essential Protocol (fr)
+24628778,Linux Command Line Basics,Advanced Developer Series,4707700,"November 7, 2022",Off,0:11:49,Taylor Lewis,Essential Steps (fr)
+60878325,Networking Concepts,DevOps Essentials,4703969,"February 12, 2025",Off,2:50:28,Alex Davis,Essential Steps (sp)
+54627237,Introduction to Data Science,Foundations of Technology,4717984,"April 29, 2020",Off,4:58:26,Avery Martinez,Essential Strategy (fr)
+74463634,Agile Project Management,Cloud Mastery Series,4717991,"November 11, 2020",Running,2:31:29,Taylor Brown,Essential System (en)
+18485802,Blockchain Fundamentals,Networking Academy,4717991,"May 4, 2025",Saved,2:10:10,Jordan Garcia,Essential Tutorial (fr)
+74382869,Natural Language Processing,Advanced Developer Series,4718158,"September 4, 2020",Off,2:08:15,Jamie Johnson,Expert Approach (sp)
+14001301,Data Visualization with Python,Foundations of Technology,4712753,"December 2, 2024",Building,4:51:41,Casey Johnson,Expert Checklist (ge)
+81893023,Natural Language Processing,DevOps Essentials,4712753,"August 2, 2025",Tearing Down,1:40:00,Jamie Brown,Expert Course (sp)
+34066992,Database Design and Management,Cybersecurity Pathway,4718195,"August 28, 2020",Off,3:16:51,Morgan Clark,Expert Guide (en)
+13124531,Agile Project Management,Foundations of Technology,4695587,"February 19, 2020",Building,2:11:57,Jamie Lewis,Expert Instructions (en)
+71047902,Machine Learning Fundamentals,Cybersecurity Pathway,4695587,"June 26, 2020",Building,4:16:00,Morgan Clark,Expert Instructions (fr)
+51221490,Blockchain Fundamentals,Networking Academy,4699059,"February 10, 2025",Saved,0:36:30,Casey Walker,Expert Outline (fr)
+56649157,IoT and Embedded Systems,AI and Machine Learning Track,4718302,"June 4, 2022",Building,2:01:01,Jamie Garcia,Expert Overview (fr)
+45165531,Networking Concepts,AI and Machine Learning Track,4718197,"June 27, 2023",Building,2:39:28,Drew Martinez,Expert Overview (sp)
+48158430,Data Visualization with Python,Web Development Journey,4699034,"March 25, 2025",Tearing Down,4:27:39,Alex Martinez,Expert Plan (ge)
+57688406,IoT and Embedded Systems,Foundations of Technology,4718701,"July 3, 2023",Saved,3:45:03,Morgan Lewis,Expert Primer (ge)
+36314081,Mobile App Development,DevOps Essentials,4691965,"May 21, 2020",Running,0:47:49,Avery Garcia,Expert Primer (sp)
+98099799,Machine Learning Fundamentals,Foundations of Technology,2712919,"August 30, 2020",Running,0:59:26,Jordan Martinez,Expert Procedure (sp)
+62237687,Linux Command Line Basics,Web Development Journey,4705049,"February 26, 2025",Saved,4:31:59,Morgan Lewis,Expert Protocol (ge)
+84525782,Mobile App Development,Foundations of Technology,4696030,"January 17, 2022",Building,3:19:01,Casey Smith,Expert Reference (en)
+95872039,Building Secure Web Applications,Web Development Journey,4709910,"August 28, 2023",Running,3:07:43,Morgan Clark,Expert Steps (sp)
+59303886,Data Visualization with Python,Web Development Journey,4719179,"July 3, 2021",Tearing Down,2:04:30,Jamie Smith,Expert System (en)
+97196692,Web Development with JavaScript,Advanced Developer Series,4708863,"April 30, 2020",Building,1:39:40,Jordan Brown,Expert Toolkit (en)
+70771059,Agile Project Management,Web Development Journey,4712225,"August 18, 2022",Running,2:57:21,Jamie Smith,Expert Tutorial (fr)
+58536621,Agile Project Management,Mobile Development Series,4712225,"June 25, 2021",Off,4:15:48,Drew Clark,Expert Walkthrough (en)
+27127567,Database Design and Management,Foundations of Technology,4712227,"November 6, 2021",Saved,4:38:17,Jordan Johnson,Expert Workflow (ge)
+92164850,Linux Command Line Basics,Mobile Development Series,4701359,"January 22, 2022",Off,4:30:16,Morgan Brown,Fundamental Blueprint (fr)
+52391423,Version Control with Git,Web Development Journey,4719316,"February 19, 2022",Off,4:35:05,Drew Lewis,Fundamental Checklist (en)
+71841668,Building Secure Web Applications,Cloud Mastery Series,4712226,"May 9, 2025",Saved,4:59:36,Casey Lee,Fundamental Compendium (en)
+51646988,Machine Learning Fundamentals,AI and Machine Learning Track,4712500,"January 29, 2025",Building,4:30:13,Avery Davis,Fundamental Course (fr)
+97519178,Introduction to Data Science,Web Development Journey,4712225,"October 15, 2025",Running,0:54:16,Casey Lee,Fundamental Course (ge)
+15205969,Introduction to Data Science,AI and Machine Learning Track,4701359,"July 16, 2022",Off,1:06:57,Jordan Lee,Fundamental Framework (en)
+61577436,Data Visualization with Python,Cloud Mastery Series,4712419,"March 16, 2025",Tearing Down,4:30:30,Jamie Martinez,Fundamental Framework (ge)
+38794015,Networking Concepts,Web Development Journey,4719335,"October 19, 2022",Running,4:40:35,Alex Smith,Fundamental Guide (en)
+10916952,Introduction to Data Science,Data Science Bootcamp,4719389,"December 20, 2020",Off,4:52:02,Avery Davis,Fundamental Guide (ge)
+70075370,Building Secure Web Applications,Advanced Developer Series,4719411,"January 13, 2023",Tearing Down,1:22:13,Casey Lewis,Fundamental Handbook (ge)
+32960411,Building Secure Web Applications,Advanced Developer Series,4719417,"April 16, 2024",Off,0:08:50,Jordan Davis,Fundamental Manual (ge)
+71133133,AI for Beginners,Advanced Developer Series,4719335,"September 12, 2024",Saved,3:09:31,Alex Davis,Fundamental Outline (fr)
+42228471,Database Design and Management,Foundations of Technology,4719335,"November 5, 2025",Building,4:40:25,Alex Davis,Fundamental Overview (sp)
+34149463,Database Design and Management,Networking Academy,4719465,"May 24, 2022",Saved,0:32:48,Drew Smith,Fundamental Primer (sp)
+55065930,DevOps Practices and Tools,Web Development Journey,4719480,"June 13, 2020",Running,2:18:14,Riley Brown,Fundamental Procedure (en)
+12547715,Introduction to Data Science,Foundations of Technology,4719481,"October 18, 2025",Off,3:51:42,Jamie Lee,Fundamental Procedure (fr)
+38937806,Building Secure Web Applications,Mobile Development Series,4701094,"March 10, 2022",Building,0:20:24,Alex Brown,Fundamental Procedure (sp)
+71853431,Database Design and Management,Foundations of Technology,4719548,"October 18, 2024",Tearing Down,3:15:30,Skyler Johnson,Fundamental Reference (en)
+93880852,Version Control with Git,AI and Machine Learning Track,4719480,"June 21, 2021",Saved,1:00:52,Drew Martinez,Fundamental Strategy (ge)
+40848040,Database Design and Management,Cybersecurity Pathway,4719632,"October 31, 2022",Off,0:19:26,Jamie Davis,Fundamental Strategy (sp)
+95068885,Big Data Analytics,Advanced Developer Series,4719637,"September 30, 2024",Tearing Down,3:44:48,Skyler Lee,Fundamental System (ge)
+53286290,Agile Project Management,Foundations of Technology,4719659,"April 23, 2024",Saved,4:30:51,Jordan Lewis,Fundamental Tutorial (ge)
+50670486,Agile Project Management,Cybersecurity Pathway,4713180,"March 28, 2025",Saved,1:22:37,Morgan Walker,Fundamental Workflow (fr)
+92809246,Linux Command Line Basics,Mobile Development Series,4719734,"August 23, 2025",Saved,0:52:53,Drew Walker,Fundamental Workflow (sp)
+64510545,Building Secure Web Applications,Foundations of Technology,4719752,"July 4, 2022",Running,4:37:25,Skyler Walker,Interactive Approach (en)
+96814240,Cybersecurity Essentials,DevOps Essentials,4719767,"March 14, 2020",Building,3:18:53,Taylor Garcia,Interactive Blueprint (ge)
+18780168,Data Visualization with Python,Data Science Bootcamp,4719890,"January 7, 2025",Running,3:51:41,Riley Lee,Interactive Checklist (en)
+57964416,Data Visualization with Python,Web Development Journey,4719892,"June 22, 2023",Building,4:19:19,Avery Lee,Interactive Checklist (ge)
+77428458,Cloud Computing Basics,Cloud Mastery Series,4719929,"November 16, 2022",Saved,2:23:07,Jamie Walker,Interactive Compendium (fr)
+36440404,Advanced Python Programming,Web Development Journey,4719956,"March 26, 2025",Off,4:07:57,Jordan Lee,Interactive Compendium (ge)
+22436270,AI for Beginners,Networking Academy,4713180,"September 2, 2021",Running,0:15:07,Alex Martinez,Interactive Course (en)
+10726104,Building Secure Web Applications,Foundations of Technology,4719979,"November 13, 2025",Building,3:44:09,Drew Lee,Interactive Guide (en)
+33838711,Data Visualization with Python,AI and Machine Learning Track,4713180,"May 28, 2020",Building,4:17:04,Taylor Lee,Interactive Guide (ge)
+12720397,Web Development with JavaScript,Web Development Journey,4720049,"May 16, 2024",Building,4:36:48,Jordan Brown,Interactive Guide (sp)
+43992828,Cloud Computing Basics,AI and Machine Learning Track,4720126,"March 1, 2020",Building,3:48:06,Alex Garcia,Interactive Manual (en)
+71987307,Database Design and Management,DevOps Essentials,4720279,"May 23, 2021",Building,2:15:14,Jamie Lewis,Interactive Manual (ge)
+47496607,Advanced Python Programming,Foundations of Technology,4720289,"December 4, 2023",Running,3:27:18,Drew Johnson,Interactive Outline (ge)
+80020786,Advanced Python Programming,Mobile Development Series,4720594,"March 31, 2020",Building,0:40:48,Skyler Johnson,Interactive Overview (ge)
+40067071,Building Secure Web Applications,Mobile Development Series,4716803,"November 6, 2021",Running,2:09:50,Alex Brown,Interactive Pathway (en)
+78540001,DevOps Practices and Tools,DevOps Essentials,4720641,"December 12, 2023",Running,4:02:59,Avery Walker,Interactive Pathway (ge)
+89288889,Linux Command Line Basics,Advanced Developer Series,4712907,"August 29, 2020",Off,1:20:24,Avery Johnson,Interactive Primer (ge)
+42962672,Natural Language Processing,Advanced Developer Series,4720641,"June 21, 2023",Tearing Down,1:20:36,Casey Johnson,Interactive Primer (sp)
+98292706,Linux Command Line Basics,Cybersecurity Pathway,4717114,"June 1, 2023",Saved,2:11:09,Riley Martinez,Interactive Procedure (en)
+39253239,Cloud Computing Basics,DevOps Essentials,4697829,"August 19, 2025",Running,4:57:27,Drew Brown,Interactive Procedure (fr)
+56856763,Introduction to Data Science,Foundations of Technology,4720838,"June 19, 2022",Tearing Down,2:39:13,Drew Lee,Interactive Procedure (ge)
+31290680,Machine Learning Fundamentals,Cybersecurity Pathway,4720857,"June 25, 2023",Tearing Down,2:59:21,Drew Lewis,Interactive Reference (en)
+46487662,Cybersecurity Essentials,Networking Academy,4703971,"August 16, 2021",Tearing Down,0:41:12,Alex Smith,Interactive Reference (fr)
+88849453,AI for Beginners,Data Science Bootcamp,4720857,"July 27, 2025",Tearing Down,4:08:24,Jordan Davis,Interactive Reference (sp)
+20355401,Machine Learning Fundamentals,Mobile Development Series,4701846,"September 2, 2020",Tearing Down,2:38:59,Jordan Lee,Interactive Steps (ge)
+10408023,Cybersecurity Essentials,Advanced Developer Series,4720910,"May 7, 2020",Saved,3:36:10,Alex Davis,Interactive System (en)
+65875182,Agile Project Management,Foundations of Technology,4399135,"March 19, 2025",Off,2:03:29,Jamie Smith,Interactive System (fr)
+49320193,Linux Command Line Basics,Mobile Development Series,4720952,"March 3, 2020",Saved,3:10:20,Casey Davis,Interactive System (ge)
+68461829,Networking Concepts,Cybersecurity Pathway,4713240,"July 7, 2022",Building,2:23:58,Taylor Smith,Interactive System (sp)
+51707505,Networking Concepts,DevOps Essentials,4704125,"October 1, 2020",Off,3:48:57,Jamie Smith,Interactive Toolkit (fr)
+64676016,Introduction to Data Science,Advanced Developer Series,4708863,"January 20, 2023",Off,4:11:33,Jordan Brown,Interactive Walkthrough (fr)
+17442645,Building Secure Web Applications,Cybersecurity Pathway,4720981,"December 12, 2025",Saved,3:56:07,Riley Lee,Interactive Workflow (ge)
+72489504,AI for Beginners,DevOps Essentials,4690937,"February 25, 2022",Saved,3:53:24,Taylor Smith,Introductory Checklist (fr)
+39239293,Big Data Analytics,Cybersecurity Pathway,4703957,"July 3, 2023",Tearing Down,0:41:34,Jamie Johnson,Introductory Checklist (sp)
+98698405,Version Control with Git,Foundations of Technology,4704186,"November 7, 2025",Tearing Down,0:59:55,Drew Lee,Introductory Compendium (ge)
+42017336,IoT and Embedded Systems,Web Development Journey,4704605,"December 27, 2022",Building,4:34:16,Jamie Clark,Introductory Course (ge)
+35997337,Cloud Computing Basics,Advanced Developer Series,4705234,"July 18, 2021",Off,1:07:16,Morgan Brown,Introductory Framework (en)
+94702463,IoT and Embedded Systems,Cloud Mastery Series,4713517,"February 13, 2025",Off,2:45:11,Casey Walker,Introductory Framework (ge)
+51947217,Agile Project Management,Foundations of Technology,4705650,"January 19, 2021",Tearing Down,2:03:41,Skyler Lewis,Introductory Guide (en)
+98674751,Web Development with JavaScript,Web Development Journey,4711637,"October 27, 2021",Off,1:16:00,Alex Lee,Introductory Handbook (fr)
+65286988,DevOps Practices and Tools,Foundations of Technology,4713372,"October 2, 2022",Tearing Down,3:47:21,Morgan Walker,Introductory Handbook (ge)
+94826432,Machine Learning Fundamentals,Cloud Mastery Series,4721061,"February 21, 2025",Saved,1:21:50,Drew Clark,Introductory Instructions (en)
+51039593,Building Secure Web Applications,Cybersecurity Pathway,4703807,"August 1, 2024",Tearing Down,0:40:29,Avery Brown,Introductory Instructions (ge)
+95398524,IoT and Embedded Systems,Cloud Mastery Series,4705289,"February 5, 2025",Running,3:43:33,Alex Martinez,Introductory Manual (sp)
+76364021,Web Development with JavaScript,Mobile Development Series,4721099,"November 30, 2021",Running,1:44:29,Jamie Lee,Introductory Outline (ge)
+92848207,Linux Command Line Basics,Data Science Bootcamp,4717736,"July 28, 2025",Running,3:43:21,Jamie Lewis,Introductory Overview (en)
+76315438,Networking Concepts,Cybersecurity Pathway,4703852,"October 15, 2024",Running,0:29:34,Taylor Lewis,Introductory Plan (ge)
+92473099,Introduction to Data Science,DevOps Essentials,4705501,"October 24, 2023",Off,2:40:13,Avery Davis,Introductory Primer (ge)
+78934567,Version Control with Git,Web Development Journey,4705289,"August 29, 2024",Running,1:30:41,Skyler Brown,Introductory Protocol (ge)
+82486477,Data Visualization with Python,Data Science Bootcamp,4704372,"January 13, 2023",Off,4:10:18,Alex Lee,Introductory Protocol (sp)
+90653955,Introduction to Data Science,DevOps Essentials,4711517,"February 3, 2023",Running,0:17:48,Drew Johnson,Introductory Steps (ge)
+48320912,Data Visualization with Python,Data Science Bootcamp,4705650,"March 26, 2022",Tearing Down,2:30:21,Jordan Lee,Introductory System (en)
+11809018,Cloud Computing Basics,Web Development Journey,4704406,"April 27, 2025",Running,0:42:24,Alex Walker,Introductory System (ge)
+24394489,IoT and Embedded Systems,Mobile Development Series,4703655,"April 22, 2020",Building,0:50:05,Riley Lewis,Introductory Toolkit (ge)
+67770027,Networking Concepts,Foundations of Technology,4713242,"November 1, 2022",Building,4:39:23,Casey Lewis,Introductory Toolkit (sp)
+17739418,Database Design and Management,Data Science Bootcamp,4711847,"May 31, 2025",Running,2:31:11,Jordan Smith,Introductory Tutorial (ge)
+18105965,Big Data Analytics,Web Development Journey,4701846,"April 2, 2022",Off,4:49:23,Skyler Clark,Introductory Tutorial (sp)
+62950811,Networking Concepts,Web Development Journey,4705650,"July 27, 2020",Building,2:27:51,Jordan Davis,Introductory Walkthrough (en)
+54111681,IoT and Embedded Systems,Mobile Development Series,4705650,"January 30, 2021",Tearing Down,0:55:03,Jamie Brown,Introductory Walkthrough (fr)
+13262653,Advanced Python Programming,Foundations of Technology,4693552,"September 9, 2023",Building,3:07:33,Drew Brown,Introductory Walkthrough (sp)
+78292772,Agile Project Management,Data Science Bootcamp,4703971,"August 21, 2022",Running,2:54:50,Skyler Brown,Introductory Workflow (ge)
+84741012,Machine Learning Fundamentals,AI and Machine Learning Track,4703655,"September 14, 2025",Running,2:44:21,Casey Brown,Modular Approach (en)
+22700838,Networking Concepts,Mobile Development Series,4712753,"April 20, 2024",Off,3:27:54,Jamie Brown,Modular Blueprint (sp)
+82607339,Linux Command Line Basics,Cloud Mastery Series,4705289,"July 14, 2021",Tearing Down,2:09:09,Morgan Lewis,Modular Compendium (en)
+16929876,Advanced Python Programming,Cloud Mastery Series,4703655,"September 3, 2022",Tearing Down,4:11:57,Riley Davis,Modular Compendium (ge)
+25855987,Mobile App Development,DevOps Essentials,4703971,"April 28, 2024",Saved,2:30:25,Skyler Walker,Modular Course (fr)
+90691754,Machine Learning Fundamentals,Networking Academy,4721185,"May 2, 2021",Off,1:45:35,Skyler Smith,Modular Course (sp)
+85139104,Introduction to Data Science,Cybersecurity Pathway,4704532,"February 26, 2025",Tearing Down,0:29:11,Taylor Garcia,Modular Framework (en)
+20777384,DevOps Practices and Tools,Cybersecurity Pathway,4697824,"February 9, 2025",Building,4:59:10,Jamie Lee,Modular Guide (ge)
+62245529,Cybersecurity Essentials,Foundations of Technology,4721210,"May 22, 2024",Running,2:10:09,Riley Walker,Modular Handbook (en)
+79949377,Advanced Python Programming,DevOps Essentials,4691858,"January 17, 2025",Building,4:43:25,Alex Smith,Modular Handbook (fr)
+72013190,Mobile App Development,Networking Academy,4705650,"February 29, 2020",Saved,3:15:24,Casey Martinez,Modular Handbook (ge)
+10804302,Web Development with JavaScript,Cybersecurity Pathway,4704406,"September 22, 2025",Tearing Down,0:36:27,Alex Walker,Modular Instructions (sp)
+87568157,Blockchain Fundamentals,Advanced Developer Series,4704405,"December 18, 2021",Off,0:58:31,Jordan Smith,Modular Outline (ge)
+57454210,Agile Project Management,Advanced Developer Series,4704352,"August 18, 2021",Tearing Down,4:41:36,Taylor Garcia,Modular Plan (ge)
+74250301,Database Design and Management,Cloud Mastery Series,4702921,"December 6, 2025",Building,4:12:30,Jordan Lewis,Modular Primer (en)
+62705617,Mobile App Development,Cybersecurity Pathway,4721210,"November 10, 2025",Off,4:01:59,Skyler Davis,Modular Primer (ge)
+60387680,AI for Beginners,Web Development Journey,4704532,"March 20, 2025",Building,0:05:40,Riley Smith,Modular Primer (sp)
+89114643,IoT and Embedded Systems,Foundations of Technology,4713240,"May 30, 2020",Saved,3:43:33,Taylor Davis,Modular Procedure (en)
+98455283,Advanced Python Programming,Advanced Developer Series,4704431,"January 19, 2022",Tearing Down,1:10:41,Avery Garcia,Modular Procedure (ge)
+36896544,Linux Command Line Basics,Mobile Development Series,4712846,"February 13, 2023",Running,3:36:27,Jordan Lee,Modular Protocol (en)
+42717419,Building Secure Web Applications,Cybersecurity Pathway,4721235,"June 6, 2021",Tearing Down,4:41:26,Casey Garcia,Modular Protocol (fr)
+26920235,Version Control with Git,DevOps Essentials,4707760,"November 4, 2022",Saved,3:24:01,Avery Davis,Modular Protocol (sp)
+41716170,Version Control with Git,Advanced Developer Series,4701976,"June 21, 2024",Running,4:46:38,Riley Johnson,Modular Reference (fr)
+56466933,DevOps Practices and Tools,Data Science Bootcamp,4704406,"March 3, 2020",Building,2:40:32,Casey Lewis,Modular Strategy (en)
+47937374,Blockchain Fundamentals,DevOps Essentials,4701976,"February 7, 2021",Saved,2:19:51,Jordan Walker,Modular Strategy (sp)
+37456721,Web Development with JavaScript,Data Science Bootcamp,4713335,"December 27, 2020",Saved,4:04:29,Drew Walker,Modular Toolkit (fr)
+76689292,Building Secure Web Applications,Networking Academy,4721264,"December 11, 2020",Off,2:37:28,Alex Walker,Modular Toolkit (ge)
+37025324,Cybersecurity Essentials,Cloud Mastery Series,4704431,"July 19, 2020",Tearing Down,1:25:49,Riley Clark,Modular Toolkit (sp)
+74518633,Building Secure Web Applications,Networking Academy,4721257,"October 7, 2023",Off,1:31:22,Jamie Smith,Modular Tutorial (en)
+30939619,Data Visualization with Python,Foundations of Technology,4712780,"April 2, 2024",Running,4:37:18,Drew Garcia,Modular Tutorial (fr)
+53275256,Cloud Computing Basics,DevOps Essentials,4703945,"July 2, 2023",Running,0:46:47,Taylor Smith,Modular Tutorial (sp)
+95234249,AI for Beginners,Networking Academy,4721210,"November 25, 2024",Building,2:41:44,Morgan Clark,Modular Walkthrough (fr)
+76542256,DevOps Practices and Tools,Data Science Bootcamp,4713165,"May 26, 2023",Saved,4:20:52,Drew Johnson,Optimized Blueprint (fr)
+60614417,Web Development with JavaScript,Mobile Development Series,4721275,"October 29, 2025",Saved,4:13:43,Riley Clark,Optimized Blueprint (ge)
+43377128,Blockchain Fundamentals,Data Science Bootcamp,4721282,"May 13, 2023",Building,1:48:34,Riley Smith,Optimized Compendium (sp)
+35732174,Natural Language Processing,Mobile Development Series,4704417,"April 15, 2025",Off,3:37:44,Riley Lewis,Optimized Course (sp)
+89106172,Version Control with Git,AI and Machine Learning Track,4720924,"March 28, 2022",Tearing Down,4:28:40,Jordan Walker,Optimized Framework (fr)
+30030585,Introduction to Data Science,Web Development Journey,4704241,"April 2, 2024",Saved,3:43:14,Drew Lewis,Optimized Guide (ge)
+70802761,Cloud Computing Basics,Cybersecurity Pathway,4713674,"January 3, 2025",Building,4:07:19,Taylor Walker,Optimized Handbook (sp)
+94015415,DevOps Practices and Tools,Data Science Bootcamp,4691608,"July 2, 2020",Building,2:06:52,Jordan Garcia,Optimized Manual (en)
+80848363,Linux Command Line Basics,Data Science Bootcamp,4721302,"August 11, 2023",Building,1:14:50,Morgan Garcia,Optimized Manual (ge)
+24331625,Mobile App Development,Cybersecurity Pathway,4694595,"July 1, 2024",Off,0:38:08,Jamie Lee,Optimized Outline (ge)
+52168569,Cloud Computing Basics,AI and Machine Learning Track,4697985,"February 19, 2020",Off,0:06:01,Riley Lee,Optimized Overview (sp)
+15911099,Networking Concepts,Cybersecurity Pathway,4703861,"October 24, 2024",Tearing Down,2:56:49,Avery Walker,Optimized Pathway (en)
+87372464,DevOps Practices and Tools,DevOps Essentials,4703807,"May 13, 2021",Tearing Down,3:55:28,Drew Walker,Optimized Procedure (en)
+42503227,Machine Learning Fundamentals,Advanced Developer Series,4697815,"October 25, 2021",Running,4:53:11,Morgan Martinez,Optimized Procedure (fr)
+70893162,Agile Project Management,Cybersecurity Pathway,4721302,"December 23, 2025",Tearing Down,3:07:48,Morgan Johnson,Optimized Protocol (sp)
+51512275,Cloud Computing Basics,AI and Machine Learning Track,4706250,"September 10, 2022",Running,2:53:55,Skyler Smith,Optimized Reference (fr)
+32957038,AI for Beginners,Networking Academy,4704491,"January 7, 2020",Tearing Down,0:29:46,Morgan Lee,Optimized Steps (ge)
+15055563,Cybersecurity Essentials,Data Science Bootcamp,4717578,"July 17, 2023",Tearing Down,4:47:47,Alex Martinez,Optimized Strategy (en)
+10597362,Linux Command Line Basics,Mobile Development Series,4703270,"May 24, 2020",Running,0:09:41,Alex Martinez,Optimized Strategy (sp)
+30323632,Database Design and Management,Networking Academy,4721278,"August 11, 2020",Running,2:23:11,Jordan Garcia,Optimized Tutorial (en)
+34556704,Agile Project Management,Data Science Bootcamp,4720991,"September 4, 2023",Tearing Down,1:40:08,Casey Johnson,Optimized Tutorial (fr)
+75593954,Data Visualization with Python,Foundations of Technology,4721320,"January 17, 2024",Running,2:32:03,Drew Martinez,Optimized Walkthrough (en)
+81031919,Database Design and Management,Data Science Bootcamp,4717578,"January 8, 2023",Building,4:31:44,Taylor Walker,Optimized Walkthrough (fr)
+82192110,Cloud Computing Basics,Networking Academy,4704406,"May 24, 2020",Saved,4:38:39,Riley Walker,Practical Approach (sp)
+38848065,Version Control with Git,DevOps Essentials,4721320,"July 11, 2021",Building,1:00:18,Casey Clark,Practical Blueprint (fr)
+34791654,Machine Learning Fundamentals,Networking Academy,4704491,"February 12, 2021",Off,0:12:07,Casey Martinez,Practical Checklist (sp)
+89924797,Web Development with JavaScript,Cybersecurity Pathway,4707119,"September 16, 2020",Tearing Down,2:15:56,Alex Smith,Practical Compendium (sp)
+75704149,Natural Language Processing,DevOps Essentials,4713297,"June 26, 2020",Building,3:02:27,Avery Walker,Practical Course (fr)
+16172941,AI for Beginners,Networking Academy,4705501,"January 14, 2024",Running,1:41:34,Morgan Walker,Practical Course (ge)
+84393208,Cloud Computing Basics,Cybersecurity Pathway,4701392,"November 14, 2023",Building,1:38:03,Skyler Brown,Practical Course (sp)
+58329428,Agile Project Management,AI and Machine Learning Track,4721382,"May 26, 2024",Tearing Down,1:14:23,Taylor Garcia,Practical Framework (en)
+69921653,DevOps Practices and Tools,Web Development Journey,4707220,"January 1, 2024",Building,4:00:16,Drew Martinez,Practical Framework (fr)
+60524224,Networking Concepts,Foundations of Technology,4694439,"November 4, 2020",Running,3:17:32,Alex Lee,Practical Instructions (en)
+55496182,Linux Command Line Basics,Advanced Developer Series,4704117,"October 23, 2023",Running,3:38:07,Riley Smith,Practical Instructions (sp)
+17038503,DevOps Practices and Tools,Web Development Journey,4721427,"June 14, 2024",Saved,4:45:43,Jordan Walker,Practical Manual (en)
+39517445,Natural Language Processing,DevOps Essentials,4713763,"April 12, 2021",Saved,1:55:23,Alex Lewis,Practical Manual (fr)
+40164853,Advanced Python Programming,DevOps Essentials,4703972,"September 24, 2025",Off,1:56:14,Morgan Smith,Practical Manual (ge)
+95201218,Data Visualization with Python,Advanced Developer Series,4704117,"December 31, 2024",Tearing Down,1:42:42,Morgan Johnson,Practical Outline (en)
+12065350,Cloud Computing Basics,Cloud Mastery Series,4704278,"May 12, 2021",Tearing Down,3:34:31,Jamie Walker,Practical Outline (ge)
+94564841,Agile Project Management,Networking Academy,4721100,"January 24, 2021",Running,0:16:19,Taylor Davis,Practical Outline (sp)
+23498958,AI for Beginners,Web Development Journey,4409432,"July 20, 2021",Building,0:13:44,Taylor Davis,Practical Overview (sp)
+20161423,AI for Beginners,Cloud Mastery Series,4704543,"April 24, 2023",Off,3:59:54,Alex Lee,Practical Pathway (en)
+89574268,Building Secure Web Applications,Advanced Developer Series,4703946,"December 18, 2022",Off,2:39:05,Skyler Lee,Practical Plan (en)
+13078060,Machine Learning Fundamentals,Networking Academy,4704278,"April 14, 2020",Tearing Down,4:08:17,Jamie Walker,Practical Plan (ge)
+84367354,Building Secure Web Applications,DevOps Essentials,4707527,"November 1, 2021",Running,3:00:36,Jordan Lee,Practical Procedure (en)
+54605689,Introduction to Data Science,DevOps Essentials,4721370,"October 31, 2023",Running,3:26:12,Jamie Johnson,Practical Protocol (ge)
+10407026,Natural Language Processing,Cloud Mastery Series,4704406,"March 23, 2024",Building,2:45:02,Skyler Garcia,Practical Reference (sp)
+89931636,Linux Command Line Basics,Cloud Mastery Series,4720991,"September 30, 2021",Running,0:26:51,Jordan Lee,Practical Steps (fr)
+37634369,Database Design and Management,Mobile Development Series,4721545,"September 13, 2025",Running,2:43:06,Skyler Clark,Practical Steps (ge)
+11137591,DevOps Practices and Tools,Advanced Developer Series,4704295,"November 28, 2022",Tearing Down,4:26:04,Avery Davis,Practical System (sp)
+83576247,Building Secure Web Applications,Data Science Bootcamp,4720991,"March 11, 2021",Building,0:25:18,Jamie Garcia,Practical Toolkit (sp)
+44861617,Cybersecurity Essentials,DevOps Essentials,4713595,"March 17, 2025",Building,3:02:51,Taylor Clark,Practical Tutorial (fr)
+97265410,Data Visualization with Python,Web Development Journey,,"January 16, 2024",Saved,4:45:56,Jordan Johnson,Practical Walkthrough (fr)
+28258833,Cloud Computing Basics,Cloud Mastery Series,,"July 7, 2020",Running,4:15:29,Casey Smith,Primary Blueprint (sp)
+63044217,Data Visualization with Python,Data Science Bootcamp,,"September 7, 2024",Tearing Down,4:54:41,Skyler Lee,Primary Checklist (sp)
+97428094,Blockchain Fundamentals,Web Development Journey,,"April 21, 2024",Tearing Down,3:06:22,Jordan Brown,Primary Compendium (fr)
+18218280,Machine Learning Fundamentals,Mobile Development Series,,"March 29, 2020",Off,2:07:22,Casey Lewis,Primary Course (en)
+62412825,Database Design and Management,AI and Machine Learning Track,,"November 11, 2024",Building,1:17:56,Riley Smith,Primary Framework (fr)
+60746978,AI for Beginners,Data Science Bootcamp,,"July 3, 2022",Building,3:22:51,Morgan Davis,Primary Guide (fr)
+72575331,Version Control with Git,Foundations of Technology,,"January 10, 2023",Building,4:28:56,Avery Brown,Primary Handbook (sp)
+39845419,Blockchain Fundamentals,Data Science Bootcamp,,"September 8, 2021",Saved,1:43:32,Taylor Lee,Primary Manual (fr)
+19266484,Linux Command Line Basics,Networking Academy,,"December 16, 2021",Running,2:34:21,Morgan Garcia,Primary Manual (ge)
+84098006,Advanced Python Programming,DevOps Essentials,,"March 5, 2025",Building,4:05:50,Morgan Walker,Primary Outline (en)
+91838323,Advanced Python Programming,Advanced Developer Series,,"September 29, 2023",Saved,4:57:00,Riley Martinez,Primary Outline (ge)
+24426807,Version Control with Git,Advanced Developer Series,,"November 2, 2020",Off,2:25:38,Skyler Johnson,Primary Plan (fr)
+75545537,Database Design and Management,Networking Academy,,"March 6, 2020",Building,0:54:36,Drew Walker,Primary Plan (ge)
+12267910,Introduction to Data Science,Advanced Developer Series,,"October 3, 2021",Off,1:45:28,Taylor Davis,Primary Plan (sp)
+57889871,Blockchain Fundamentals,DevOps Essentials,,"August 26, 2024",Off,1:35:20,Casey Brown,Primary Procedure (en)
+91165637,Linux Command Line Basics,DevOps Essentials,,"March 21, 2023",Off,1:36:44,Riley Clark,Primary Procedure (fr)
+14513227,Introduction to Data Science,Networking Academy,,"March 18, 2025",Running,2:58:58,Jordan Walker,Primary Strategy (en)
+13030562,Web Development with JavaScript,Networking Academy,,"December 20, 2021",Off,3:11:39,Alex Lewis,Primary System (en)
+29853809,Web Development with JavaScript,Web Development Journey,,"October 5, 2020",Saved,4:39:37,Jordan Garcia,Primary System (fr)
+23436859,Blockchain Fundamentals,Web Development Journey,,"March 17, 2024",Off,2:47:27,Drew Davis,Primary System (ge)
+98858825,AI for Beginners,Mobile Development Series,,"December 22, 2022",Building,2:04:12,Alex Johnson,Primary Toolkit (en)
+10173213,Networking Concepts,Advanced Developer Series,,"July 18, 2024",Off,2:03:39,Alex Davis,Primary Toolkit (sp)
+24252035,Building Secure Web Applications,Networking Academy,,"February 3, 2024",Tearing Down,0:12:15,Taylor Brown,Primary Tutorial (sp)
+39338569,Cloud Computing Basics,DevOps Essentials,,"February 15, 2022",Off,3:55:55,Drew Martinez,Primary Workflow (fr)
+53995765,Networking Concepts,DevOps Essentials,,"March 13, 2022",Building,2:49:37,Drew Johnson,Primary Workflow (ge)
+49758258,IoT and Embedded Systems,Foundations of Technology,,"June 9, 2023",Tearing Down,1:25:01,Casey Martinez,Progressive Approach (ge)
+82031302,Web Development with JavaScript,AI and Machine Learning Track,,"May 16, 2021",Off,2:45:19,Taylor Lee,Progressive Blueprint (ge)
+23710978,Advanced Python Programming,Mobile Development Series,,"May 22, 2025",Running,0:47:49,Casey Garcia,Progressive Checklist (en)
+37022938,Linux Command Line Basics,DevOps Essentials,,"October 3, 2021",Running,2:36:51,Jordan Martinez,Progressive Course (fr)
+85315581,Advanced Python Programming,Cybersecurity Pathway,,"August 9, 2023",Running,4:29:26,Taylor Smith,Progressive Guide (sp)
+24237608,IoT and Embedded Systems,AI and Machine Learning Track,,"May 27, 2020",Off,1:35:11,Morgan Clark,Progressive Handbook (ge)
+79910203,Database Design and Management,Cybersecurity Pathway,,"June 11, 2020",Tearing Down,4:47:35,Riley Clark,Progressive Pathway (en)
+39863201,IoT and Embedded Systems,Foundations of Technology,,"June 9, 2020",Saved,1:26:05,Jordan Clark,Progressive Plan (fr)
+49990351,Building Secure Web Applications,Networking Academy,,"February 18, 2021",Building,4:54:02,Morgan Garcia,Progressive Primer (fr)
+50934586,Big Data Analytics,AI and Machine Learning Track,,"December 17, 2023",Saved,0:37:21,Drew Brown,Progressive Procedure (en)
+16868156,Blockchain Fundamentals,AI and Machine Learning Track,,"April 23, 2025",Tearing Down,3:46:42,Skyler Clark,Progressive Procedure (ge)
+64511352,Web Development with JavaScript,Advanced Developer Series,,"August 15, 2021",Building,2:35:17,Alex Davis,Progressive Protocol (en)
+56291902,Version Control with Git,Advanced Developer Series,,"November 10, 2025",Tearing Down,4:17:04,Alex Lee,Progressive Protocol (ge)
+62573478,Cybersecurity Essentials,Foundations of Technology,,"April 8, 2022",Tearing Down,0:26:56,Avery Lewis,Progressive Reference (ge)
+24207395,Natural Language Processing,Web Development Journey,,"July 30, 2020",Off,2:02:10,Taylor Garcia,Progressive Strategy (ge)
+23104738,Version Control with Git,Cloud Mastery Series,,"September 10, 2023",Running,3:50:14,Alex Smith,Progressive System (en)
+43049342,Machine Learning Fundamentals,Networking Academy,,"May 15, 2025",Off,4:35:22,Riley Smith,Progressive Toolkit (fr)
+13703594,Linux Command Line Basics,Web Development Journey,,"July 29, 2023",Running,2:19:26,Riley Clark,Progressive Tutorial (ge)
+95883390,Agile Project Management,Advanced Developer Series,,"August 18, 2023",Building,0:57:02,Casey Davis,Progressive Tutorial (sp)
+51115006,Mobile App Development,Cloud Mastery Series,,"September 8, 2024",Running,1:17:53,Avery Walker,Progressive Walkthrough (fr)
+86047509,Cloud Computing Basics,DevOps Essentials,,"January 21, 2020",Off,4:53:32,Riley Lewis,Progressive Walkthrough (sp)
+64846934,Building Secure Web Applications,Networking Academy,,"November 7, 2020",Saved,2:24:28,Avery Johnson,Progressive Workflow (en)
+55770899,Database Design and Management,Foundations of Technology,,"September 8, 2023",Tearing Down,0:40:37,Alex Johnson,Quick Approach (fr)
+34014397,Networking Concepts,Advanced Developer Series,,"May 12, 2025",Saved,1:48:17,Alex Martinez,Quick Blueprint (en)
+57886891,Advanced Python Programming,Networking Academy,,"December 5, 2020",Running,4:55:04,Morgan Johnson,Quick Blueprint (fr)
+87009740,Natural Language Processing,Web Development Journey,,"May 23, 2025",Running,2:08:43,Taylor Davis,Quick Blueprint (ge)
+82604086,DevOps Practices and Tools,Web Development Journey,,"August 17, 2023",Running,3:14:27,Jamie Lee,Quick Blueprint (sp)
+16916435,Advanced Python Programming,Mobile Development Series,,"December 9, 2025",Tearing Down,1:21:24,Avery Clark,Quick Checklist (en)
+84720114,Machine Learning Fundamentals,AI and Machine Learning Track,,"September 20, 2020",Off,4:06:34,Riley Clark,Quick Checklist (fr)
+59834387,Data Visualization with Python,AI and Machine Learning Track,,"February 3, 2024",Saved,3:14:58,Avery Clark,Quick Checklist (ge)
+78954103,Natural Language Processing,Data Science Bootcamp,,"January 30, 2024",Off,4:30:58,Skyler Lee,Quick Compendium (en)
+53960160,Mobile App Development,DevOps Essentials,,"January 29, 2025",Building,0:18:49,Avery Lee,Quick Compendium (ge)
+20458734,Web Development with JavaScript,Web Development Journey,,"December 11, 2023",Off,4:34:23,Taylor Martinez,Quick Compendium (sp)
+63601899,Blockchain Fundamentals,Advanced Developer Series,,"May 10, 2021",Building,2:10:19,Morgan Martinez,Quick Course (en)
+85702242,Big Data Analytics,Foundations of Technology,,"January 15, 2021",Off,2:42:38,Casey Lee,Quick Guide (fr)
+57169934,Agile Project Management,AI and Machine Learning Track,,"December 5, 2022",Building,3:10:16,Avery Garcia,Quick Guide (sp)
+68902744,Natural Language Processing,Mobile Development Series,,"May 16, 2022",Off,0:53:23,Taylor Garcia,Quick Instructions (ge)
+16725999,Cloud Computing Basics,DevOps Essentials,,"October 15, 2025",Building,4:27:43,Avery Garcia,Quick Manual (ge)
+80661444,Data Visualization with Python,Web Development Journey,,"April 27, 2025",Saved,0:51:35,Casey Lewis,Quick Manual (sp)
+44076104,DevOps Practices and Tools,Web Development Journey,,"November 17, 2020",Running,0:24:34,Alex Lee,Quick Outline (en)
+24234444,Data Visualization with Python,Advanced Developer Series,,"November 5, 2025",Off,3:41:35,Drew Smith,Quick Outline (ge)
+50505301,Mobile App Development,DevOps Essentials,,"August 7, 2020",Saved,0:40:10,Alex Martinez,Quick Pathway (en)
+67068541,DevOps Practices and Tools,Mobile Development Series,,"July 18, 2022",Tearing Down,4:57:14,Morgan Brown,Quick Plan (ge)
+87101568,Blockchain Fundamentals,Web Development Journey,,"July 6, 2025",Tearing Down,1:09:37,Taylor Lee,Quick Primer (fr)
+15287884,Linux Command Line Basics,Cloud Mastery Series,,"June 13, 2020",Building,0:20:24,Taylor Garcia,Quick Primer (sp)
+34551926,Natural Language Processing,Web Development Journey,,"November 14, 2024",Off,2:50:20,Morgan Johnson,Quick Procedure (ge)
+32856615,Introduction to Data Science,Data Science Bootcamp,,"May 11, 2025",Off,2:04:27,Jamie Garcia,Quick Procedure (sp)
+74734711,Advanced Python Programming,Foundations of Technology,,"December 8, 2020",Tearing Down,2:35:10,Skyler Walker,Quick Protocol (sp)
+51319414,AI for Beginners,DevOps Essentials,,"May 18, 2020",Saved,1:50:42,Casey Lee,Quick System (fr)
+87192304,Cloud Computing Basics,Mobile Development Series,,"December 18, 2022",Running,3:16:17,Casey Lee,Quick System (ge)
+79088725,AI for Beginners,DevOps Essentials,,"August 9, 2024",Saved,1:30:02,Drew Martinez,Quick Toolkit (fr)
+22286498,AI for Beginners,DevOps Essentials,,"May 27, 2021",Building,4:56:34,Drew Lewis,Quick Toolkit (ge)
+86192141,Networking Concepts,Foundations of Technology,,"May 13, 2021",Saved,3:54:52,Skyler Walker,Quick Toolkit (sp)
+56629639,IoT and Embedded Systems,Cloud Mastery Series,,"April 30, 2022",Off,3:53:48,Morgan Johnson,Quick Tutorial (en)
+61075591,Big Data Analytics,Foundations of Technology,,"April 6, 2022",Building,1:09:02,Drew Brown,Quick Tutorial (fr)
+73712753,Cybersecurity Essentials,Web Development Journey,,"April 14, 2022",Tearing Down,4:39:46,Skyler Smith,Quick Tutorial (sp)
+31210027,Machine Learning Fundamentals,AI and Machine Learning Track,,"February 13, 2025",Tearing Down,1:08:15,Riley Lewis,Quick Walkthrough (en)
+19630249,Agile Project Management,Cybersecurity Pathway,,"June 17, 2024",Running,3:38:36,Jordan Walker,Quick Workflow (ge)
+65816299,Machine Learning Fundamentals,Mobile Development Series,,"December 17, 2020",Running,0:43:04,Drew Brown,Quick Workflow (sp)
+35711240,Introduction to Data Science,Cloud Mastery Series,,"July 16, 2023",Building,0:24:49,Skyler Smith,Simplified Approach (sp)
+50310107,Cybersecurity Essentials,Cloud Mastery Series,,"June 4, 2023",Off,0:05:45,Casey Garcia,Simplified Course (en)
+37352555,Natural Language Processing,Advanced Developer Series,,"October 26, 2024",Tearing Down,2:27:13,Morgan Garcia,Simplified Course (ge)
+82578824,AI for Beginners,Advanced Developer Series,,"November 30, 2021",Building,2:06:54,Avery Garcia,Simplified Framework (sp)
+78890162,Advanced Python Programming,Cloud Mastery Series,,"April 12, 2020",Running,2:47:09,Casey Walker,Simplified Guide (en)
+56262465,Natural Language Processing,DevOps Essentials,,"June 20, 2025",Saved,2:58:19,Morgan Walker,Simplified Handbook (en)
+70564324,AI for Beginners,Data Science Bootcamp,,"January 17, 2025",Tearing Down,3:48:10,Avery Lee,Simplified Handbook (sp)
+31342565,Data Visualization with Python,Networking Academy,,"February 28, 2024",Building,4:49:01,Taylor Johnson,Simplified Manual (ge)
+79101667,Cloud Computing Basics,AI and Machine Learning Track,,"October 22, 2020",Saved,1:10:06,Morgan Smith,Simplified Outline (fr)
+66308081,Introduction to Data Science,Advanced Developer Series,,"January 12, 2023",Saved,3:48:16,Riley Garcia,Simplified Overview (en)
+59694129,Introduction to Data Science,Cloud Mastery Series,,"September 30, 2021",Running,4:15:19,Avery Brown,Simplified Overview (ge)
+26553778,Database Design and Management,DevOps Essentials,,"June 21, 2025",Off,0:08:20,Drew Johnson,Simplified Pathway (en)
+24459070,DevOps Practices and Tools,Web Development Journey,,"February 19, 2024",Off,2:12:20,Taylor Davis,Simplified Pathway (fr)
+96601640,Building Secure Web Applications,Cloud Mastery Series,,"September 29, 2024",Saved,0:29:15,Avery Smith,Simplified Primer (en)
+21723833,Blockchain Fundamentals,Networking Academy,,"February 25, 2021",Tearing Down,2:44:21,Morgan Lewis,Simplified Primer (ge)
+93251075,Introduction to Data Science,Web Development Journey,,"December 25, 2023",Tearing Down,3:03:35,Drew Lee,Simplified Primer (sp)
+60499293,DevOps Practices and Tools,Cloud Mastery Series,,"December 1, 2025",Off,4:32:50,Jordan Clark,Simplified Procedure (ge)
+72817147,Data Visualization with Python,Networking Academy,,"January 16, 2022",Saved,2:53:19,Morgan Walker,Simplified Procedure (sp)
+30329659,Agile Project Management,Advanced Developer Series,,"June 1, 2021",Tearing Down,3:02:24,Taylor Martinez,Simplified Protocol (fr)
+20472943,Cybersecurity Essentials,Cloud Mastery Series,,"March 14, 2021",Saved,3:19:51,Skyler Johnson,Simplified Reference (en)
+49368737,Version Control with Git,Web Development Journey,,"February 24, 2023",Tearing Down,3:14:07,Morgan Martinez,Simplified Steps (ge)
+93988310,Machine Learning Fundamentals,AI and Machine Learning Track,,"March 19, 2024",Building,2:50:54,Riley Brown,Simplified Strategy (en)
+25188532,Big Data Analytics,Cloud Mastery Series,,"January 11, 2023",Off,0:19:32,Jordan Martinez,Simplified System (sp)
+12354953,Linux Command Line Basics,Cybersecurity Pathway,,"February 26, 2024",Off,0:56:09,Jordan Davis,Simplified Toolkit (fr)
+76206558,Cybersecurity Essentials,Cybersecurity Pathway,,"February 24, 2025",Off,4:12:08,Taylor Walker,Simplified Tutorial (en)
+97699108,Agile Project Management,Mobile Development Series,,"July 30, 2023",Tearing Down,3:40:12,Alex Davis,Simplified Tutorial (fr)
+37773705,AI for Beginners,Networking Academy,,"December 8, 2023",Off,2:41:08,Casey Garcia,Simplified Walkthrough (fr)
+71711789,Machine Learning Fundamentals,AI and Machine Learning Track,,"December 21, 2020",Saved,2:26:30,Casey Johnson,Simplified Workflow (fr)
+91281451,IoT and Embedded Systems,Cloud Mastery Series,,"June 21, 2021",Running,0:42:13,Jordan Davis,Step-by-step Approach (ge)
+62594324,Agile Project Management,Foundations of Technology,,"November 17, 2020",Building,4:44:25,Morgan Lee,Step-by-step Checklist (ge)
+70813771,Agile Project Management,Cloud Mastery Series,,"February 5, 2022",Saved,1:36:33,Jordan Garcia,Step-by-step Checklist (sp)
+93737844,Cybersecurity Essentials,Data Science Bootcamp,,"July 13, 2025",Saved,2:24:52,Riley Davis,Step-by-step Course (en)
+25946033,Mobile App Development,Cloud Mastery Series,,"October 7, 2024",Tearing Down,2:25:47,Morgan Smith,Step-by-step Course (ge)
+81223668,Database Design and Management,Cybersecurity Pathway,,"September 5, 2024",Off,2:12:48,Taylor Clark,Step-by-step Course (sp)
+34059823,Big Data Analytics,Cybersecurity Pathway,,"September 24, 2024",Tearing Down,1:03:40,Skyler Lewis,Step-by-step Guide (ge)
+53464139,Linux Command Line Basics,Web Development Journey,,"December 4, 2023",Saved,0:15:10,Alex Johnson,Step-by-step Guide (sp)
+35625986,Blockchain Fundamentals,Web Development Journey,,"May 15, 2020",Running,2:25:51,Avery Davis,Step-by-step Handbook (en)
+96526235,Cloud Computing Basics,Cybersecurity Pathway,,"December 28, 2023",Off,0:06:24,Morgan Davis,Step-by-step Instructions (fr)
+80945527,AI for Beginners,DevOps Essentials,,"April 1, 2025",Tearing Down,2:23:49,Jordan Lewis,Step-by-step Instructions (sp)
+30680846,IoT and Embedded Systems,Foundations of Technology,,"September 4, 2022",Tearing Down,2:07:39,Drew Johnson,Step-by-step Manual (sp)
+63436345,Cloud Computing Basics,Networking Academy,,"March 5, 2025",Saved,1:41:52,Jamie Clark,Step-by-step Outline (fr)
+53462665,IoT and Embedded Systems,AI and Machine Learning Track,,"August 31, 2021",Running,4:48:19,Casey Lewis,Step-by-step Overview (fr)
+51757277,Advanced Python Programming,DevOps Essentials,,"March 27, 2024",Tearing Down,4:01:28,Skyler Davis,Step-by-step Overview (sp)
+56029018,Mobile App Development,DevOps Essentials,,"August 8, 2020",Saved,1:04:55,Jamie Walker,Step-by-step Pathway (ge)
+96158935,Cloud Computing Basics,AI and Machine Learning Track,,"July 8, 2024",Off,1:21:28,Casey Johnson,Step-by-step Plan (en)
+43954357,Version Control with Git,DevOps Essentials,,"June 24, 2021",Saved,0:52:27,Skyler Johnson,Step-by-step Primer (fr)
+83341077,Web Development with JavaScript,Networking Academy,,"March 17, 2021",Tearing Down,3:23:38,Drew Lewis,Step-by-step Primer (sp)
+86450770,Web Development with JavaScript,Mobile Development Series,,"June 26, 2024",Running,2:50:42,Taylor Clark,Step-by-step Procedure (fr)
+12439018,Web Development with JavaScript,Advanced Developer Series,,"April 1, 2021",Running,0:56:02,Avery Brown,Step-by-step Procedure (sp)
+97815146,Introduction to Data Science,AI and Machine Learning Track,,"August 21, 2023",Saved,0:16:06,Alex Smith,Step-by-step Reference (en)
+85601898,IoT and Embedded Systems,Cloud Mastery Series,,"May 2, 2023",Off,3:27:03,Jamie Lewis,Step-by-step Reference (ge)
+71246225,Database Design and Management,Foundations of Technology,,"July 23, 2025",Tearing Down,0:42:55,Casey Walker,Step-by-step Steps (en)
+62172504,Agile Project Management,Cybersecurity Pathway,,"February 23, 2021",Running,2:01:06,Taylor Brown,Step-by-step Steps (ge)
+47055725,Database Design and Management,Cloud Mastery Series,,"January 10, 2020",Saved,2:54:54,Morgan Martinez,Step-by-step Tutorial (en)
+85899709,Machine Learning Fundamentals,Cloud Mastery Series,,"July 9, 2021",Running,3:43:07,Riley Smith,Step-by-step Walkthrough (sp)
+11665217,Mobile App Development,Networking Academy,,"March 2, 2023",Tearing Down,4:31:14,Casey Martinez,Step-by-step Workflow (fr)
+93253239,Linux Command Line Basics,Cybersecurity Pathway,,"April 28, 2025",Building,0:56:24,Taylor Smith,Step-by-step Workflow (ge)
+97573052,AI for Beginners,Advanced Developer Series,,"December 22, 2025",Saved,3:46:54,Drew Lewis,Strategic Blueprint (en)
+30925223,DevOps Practices and Tools,Cloud Mastery Series,,"October 10, 2021",Saved,0:14:56,Jamie Smith,Strategic Blueprint (sp)
+90955759,Building Secure Web Applications,DevOps Essentials,,"March 10, 2023",Tearing Down,1:07:29,Skyler Walker,Strategic Checklist (sp)
+98952883,Networking Concepts,Cybersecurity Pathway,,"December 29, 2025",Running,2:24:29,Casey Lee,Strategic Compendium (ge)
+19274761,Database Design and Management,Cybersecurity Pathway,,"February 15, 2025",Tearing Down,3:06:12,Morgan Martinez,Strategic Course (en)
+72622445,AI for Beginners,Web Development Journey,,"April 8, 2020",Running,3:33:13,Drew Davis,Strategic Course (ge)
+91994417,Cybersecurity Essentials,Networking Academy,,"November 5, 2023",Tearing Down,0:42:06,Jamie Brown,Strategic Course (sp)
+57765775,Building Secure Web Applications,Web Development Journey,,"August 14, 2025",Tearing Down,1:10:59,Riley Lee,Strategic Framework (en)
+58637589,DevOps Practices and Tools,Data Science Bootcamp,,"March 5, 2023",Off,2:01:54,Casey Lee,Strategic Handbook (en)
+45675794,Data Visualization with Python,AI and Machine Learning Track,,"November 21, 2022",Off,2:32:50,Alex Lee,Strategic Handbook (fr)
+28703988,AI for Beginners,Web Development Journey,,"December 15, 2025",Off,4:07:48,Alex Garcia,Strategic Instructions (en)
+88101852,Blockchain Fundamentals,Networking Academy,,"October 19, 2023",Tearing Down,0:28:37,Riley Clark,Strategic Instructions (ge)
+76577374,Machine Learning Fundamentals,Mobile Development Series,,"May 6, 2020",Saved,2:28:23,Avery Garcia,Strategic Manual (ge)
+68658272,Database Design and Management,Advanced Developer Series,,"December 23, 2020",Running,0:16:05,Jamie Lee,Strategic Overview (fr)
+77607077,Building Secure Web Applications,Cloud Mastery Series,,"August 1, 2023",Tearing Down,4:27:09,Skyler Lee,Strategic Pathway (fr)
+19292597,Web Development with JavaScript,Foundations of Technology,,"October 26, 2020",Running,4:58:20,Taylor Garcia,Strategic Pathway (ge)
+41560013,Linux Command Line Basics,Data Science Bootcamp,,"June 9, 2025",Saved,2:31:34,Avery Garcia,Strategic Procedure (en)
+19897547,Cloud Computing Basics,Data Science Bootcamp,,"October 29, 2022",Running,2:41:06,Casey Davis,Strategic Procedure (ge)
+75993268,Web Development with JavaScript,Cybersecurity Pathway,,"June 27, 2020",Saved,1:55:43,Avery Clark,Strategic Procedure (sp)
+90439100,Introduction to Data Science,AI and Machine Learning Track,,"May 14, 2022",Off,4:21:23,Jamie Lewis,Strategic Reference (fr)
+53484708,Natural Language Processing,Web Development Journey,,"September 24, 2025",Saved,0:05:26,Avery Garcia,Strategic Reference (ge)
+72263081,Cybersecurity Essentials,Web Development Journey,,"October 29, 2024",Off,4:54:35,Riley Clark,Strategic Reference (sp)
+39829205,AI for Beginners,Advanced Developer Series,,"October 29, 2021",Tearing Down,4:49:24,Taylor Walker,Strategic Steps (sp)
+34904811,Version Control with Git,Data Science Bootcamp,,"December 2, 2022",Running,1:58:35,Morgan Clark,Strategic Strategy (en)
+55076854,Linux Command Line Basics,Mobile Development Series,,"October 24, 2022",Off,4:34:40,Avery Garcia,Strategic Strategy (fr)
+32141686,Web Development with JavaScript,Advanced Developer Series,,"March 7, 2022",Off,0:48:32,Skyler Brown,Strategic Strategy (ge)
+51345679,Advanced Python Programming,Cybersecurity Pathway,,"December 12, 2025",Tearing Down,1:43:37,Jordan Garcia,Strategic System (fr)
+62867871,Web Development with JavaScript,AI and Machine Learning Track,,"October 21, 2025",Saved,1:45:36,Alex Clark,Strategic System (ge)
+65508989,Version Control with Git,DevOps Essentials,,"January 31, 2024",Saved,3:04:37,Drew Davis,Strategic Tutorial (sp)
+15190425,Cybersecurity Essentials,Networking Academy,,"September 19, 2023",Saved,1:58:56,Drew Garcia,Strategic Workflow (fr)
+70167108,Blockchain Fundamentals,Advanced Developer Series,,"October 11, 2023",Saved,4:27:14,Skyler Clark,Strategic Workflow (ge)
+27042035,Building Secure Web Applications,Mobile Development Series,,"July 19, 2024",Saved,2:49:47,Jamie Davis,Strategic Workflow (sp)
+86250188,Networking Concepts,Mobile Development Series,,"April 2, 2021",Off,3:52:20,Avery Lee,Visual Blueprint (fr)
+19587102,Big Data Analytics,AI and Machine Learning Track,,"August 2, 2024",Running,0:19:33,Jordan Lewis,Visual Blueprint (ge)
+47725936,Natural Language Processing,Cloud Mastery Series,,"April 13, 2021",Off,2:37:30,Riley Davis,Visual Course (en)
+24315134,Linux Command Line Basics,Networking Academy,,"December 5, 2024",Building,4:18:54,Avery Lewis,Visual Framework (en)
+68079972,Web Development with JavaScript,Web Development Journey,,"October 5, 2023",Off,1:30:16,Skyler Brown,Visual Guide (sp)
+96038152,Networking Concepts,DevOps Essentials,,"October 5, 2024",Building,1:13:01,Taylor Martinez,Visual Handbook (ge)
+39850491,Web Development with JavaScript,AI and Machine Learning Track,,"April 14, 2020",Saved,3:32:33,Riley Johnson,Visual Instructions (en)
+70546552,AI for Beginners,Networking Academy,,"January 23, 2022",Running,2:43:40,Alex Clark,Visual Instructions (sp)
+99114086,Cybersecurity Essentials,Cybersecurity Pathway,,"July 4, 2025",Running,3:05:50,Morgan Johnson,Visual Manual (en)
+18499773,Networking Concepts,Cloud Mastery Series,,"May 28, 2024",Building,1:12:46,Taylor Lee,Visual Outline (ge)
+80842602,IoT and Embedded Systems,Cloud Mastery Series,,"August 20, 2021",Tearing Down,3:48:00,Taylor Brown,Visual Outline (sp)
+97952223,Mobile App Development,Networking Academy,,"February 13, 2023",Tearing Down,1:49:05,Avery Lee,Visual Overview (en)
+66733537,Introduction to Data Science,Cloud Mastery Series,,"June 29, 2020",Tearing Down,1:35:45,Skyler Clark,Visual Overview (ge)
+19290103,Data Visualization with Python,Web Development Journey,,"July 13, 2023",Off,3:10:21,Jordan Clark,Visual Plan (en)
+95642870,Agile Project Management,Cloud Mastery Series,,"April 3, 2020",Building,2:35:22,Alex Garcia,Visual Plan (fr)
+74303631,Mobile App Development,Data Science Bootcamp,,"January 17, 2020",Saved,1:55:57,Jordan Martinez,Visual Plan (ge)
+70905375,Linux Command Line Basics,Advanced Developer Series,,"June 19, 2025",Running,2:10:17,Morgan Garcia,Visual Plan (sp)
+10094804,Big Data Analytics,Web Development Journey,,"August 1, 2023",Running,1:56:59,Avery Clark,Visual Primer (fr)
+32269256,Natural Language Processing,Advanced Developer Series,,"October 31, 2020",Tearing Down,1:53:45,Morgan Garcia,Visual Primer (ge)
+15781258,Advanced Python Programming,Cybersecurity Pathway,,"July 20, 2020",Tearing Down,2:19:08,Alex Smith,Visual Procedure (ge)
+58193244,Networking Concepts,Web Development Journey,,"December 14, 2024",Running,4:09:42,Skyler Lee,Visual Protocol (sp)
+27255765,Linux Command Line Basics,Mobile Development Series,,"July 31, 2021",Off,4:53:14,Drew Johnson,Visual Steps (fr)
+92163206,Natural Language Processing,Web Development Journey,,"December 26, 2021",Building,2:14:03,Riley Walker,Visual Steps (ge)
+67138746,Natural Language Processing,Advanced Developer Series,,"September 18, 2024",Running,4:27:59,Drew Davis,Visual Toolkit (en)
+75215185,Building Secure Web Applications,Advanced Developer Series,,"December 18, 2020",Building,2:54:19,Jamie Lewis,Visual Tutorial (en)
+45580071,DevOps Practices and Tools,Foundations of Technology,,"February 10, 2024",Tearing Down,3:11:48,Alex Martinez,Visual Tutorial (sp)

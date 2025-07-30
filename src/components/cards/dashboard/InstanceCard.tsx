@@ -3,14 +3,30 @@
 import React from 'react';
 import DashboardCard, { CardAction, InstanceData, MetaLinkConfig, CardClickConfig } from './DashboardCard';
 
-export type InstanceCardProps = Omit<InstanceData, 'variant'> & {
+// Props that can come from InstanceItem (dashboard data)
+interface InstanceItemProps {
+  id: number;
+  name: string;
+  instanceId: string;
+  labProfile: string;
+  series: string;
+  student: string;
+  instructionSet: string; // From InstanceItem
+  duration: string;
+  lastActivity: string;
+  state: string;
+}
+
+// Props that can be passed directly to InstanceCard
+interface InstanceCardDirectProps {
   actions?: CardAction[];
   metaLinks?: Record<string, MetaLinkConfig>;
   onClick?: CardClickConfig;
   className?: string;
+}
+
+export type InstanceCardProps = (InstanceItemProps | Omit<InstanceData, 'variant'>) & InstanceCardDirectProps & {
   // Note: InstanceCard does not support starring functionality
-  // Default actions are automatically included unless overridden by the actions prop
-} & {
   // Explicitly exclude star-related props to prevent them from being passed through
   starred?: never;
   onStarToggle?: never;
@@ -35,6 +51,7 @@ const InstanceCardComponent: React.FC<InstanceCardProps> = React.memo((props) =>
     labProfile: { message: "Opens the lab profile details page" },
     series: { message: "Opens the lab series details page" },
     student: { message: "Opens the student details page" },
+    instructions: { message: "Opens the instruction editor with current set and language" },
   };
 
   // Define default click behavior for instance cards
@@ -51,9 +68,18 @@ const InstanceCardComponent: React.FC<InstanceCardProps> = React.memo((props) =>
   // Use custom onClick if provided, otherwise use default
   const finalOnClick = props.onClick || defaultOnClick;
 
-  // Don't pass starred or onStarToggle props to hide the star completely
+  // Extract props and handle field mapping
   const { actions, metaLinks, ...restProps } = props;
-  return <DashboardCard variant="instance" {...restProps} onClick={finalOnClick} actions={finalActions} metaLinks={finalMetaLinks} />;
+  
+  // Check if this is an InstanceItem (has instructionSet) or InstanceData (has instructions)
+  const hasInstructionSet = 'instructionSet' in restProps;
+  
+  // Map instructionSet to instructions if needed
+  const mappedProps = hasInstructionSet 
+    ? { ...restProps, instructions: restProps.instructionSet }
+    : restProps;
+
+  return <DashboardCard variant="instance" {...mappedProps} onClick={finalOnClick} actions={finalActions} metaLinks={finalMetaLinks} />;
 });
 
 InstanceCardComponent.displayName = 'InstanceCard';

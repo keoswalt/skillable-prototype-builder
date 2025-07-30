@@ -133,7 +133,7 @@ export function transformLabInstanceToInstanceItem(
     labProfile: item.lab_profile,
     series: item.series,
     student: item.student,
-    instructionSet: 'Standard', // Default value since not in CSV
+    instructionSet: item.instructions,
     duration: item.duration,
     lastActivity: item.last_activity_time,
     state: item.state_id,

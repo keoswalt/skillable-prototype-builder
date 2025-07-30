@@ -40,6 +40,7 @@ export const DashboardCardExample: React.FC = () => {
         labProfile="Lab Profile Name"
         series="Lab Series Name"
         student="Kim Oswalt"
+        instructions="Advanced Blueprint (en)"
         duration="1:10"
         lastActivity="June 5, 2025"
         state="Off"
