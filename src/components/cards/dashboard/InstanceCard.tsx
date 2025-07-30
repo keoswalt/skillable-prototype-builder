@@ -11,7 +11,7 @@ interface InstanceItemProps {
   labProfile: string;
   series: string;
   student: string;
-  instructionSet: string; // From InstanceItem
+  instructionSet: string;
   duration: string;
   lastActivity: string;
   state: string;

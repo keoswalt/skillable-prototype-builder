@@ -20,6 +20,7 @@ export const FILTER_OPTIONS = {
     { label: 'Lab Profile', value: 'labProfile', type: 'text' as const },
     { label: 'Series', value: 'series', type: 'text' as const },
     { label: 'Student', value: 'student', type: 'text' as const },
+    { label: 'Instruction Set', value: 'instructionSet', type: 'text' as const },
     { label: 'State', value: 'state', type: 'select' as const, options: [
       { label: 'Running', value: 'running' },
       { label: 'Stopped', value: 'stopped' },

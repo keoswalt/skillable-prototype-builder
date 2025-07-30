@@ -295,12 +295,12 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
         return [
           i('instanceId', 'Instance ID', p.instanceId),
           i('labProfile', 'Lab Profile', p.labProfile),
+          i('instructions', 'Instruction Set', p.instructions),
           i('series', 'Series', p.series),
           i('student', 'Student', p.student),
           i('duration', 'Run Time', p.duration),
           i('lastActivity', 'Last Activity', p.lastActivity),
           i('state', 'State', p.state),
-          i('instructions', 'Instruction Set', p.instructions),
         ];
       }
       case 'profile': {

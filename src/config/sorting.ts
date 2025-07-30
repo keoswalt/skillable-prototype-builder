@@ -34,6 +34,7 @@ export const SORT_OPTIONS: Record<CardType, SortFieldOption[]> = {
     { label: 'Lab Profile', value: 'labProfile', type: 'string' },
     { label: 'Series', value: 'series', type: 'string' },
     { label: 'Student', value: 'student', type: 'string' },
+    { label: 'Instruction Set', value: 'instructionSet', type: 'string' },
     { label: 'State', value: 'state', type: 'custom', customOrder: CUSTOM_SORT_ORDERS.state },
     { label: 'Last Activity', value: 'lastActivity', type: 'date' },
     { label: 'Run Time', value: 'duration', type: 'duration' },
