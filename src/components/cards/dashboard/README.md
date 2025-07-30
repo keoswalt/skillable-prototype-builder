@@ -1,131 +1,294 @@
 # Dashboard Cards
 
-This directory contains flexible card components for the Skillable Studio user dashboard.
+A flexible card component system for the Skillable design system that renders four different data-card variants: lab instance, lab profile, lab series, and template.
 
-## Components
+## Overview
 
-- `DashboardCard.tsx` - Base component with variant support
-- `InstanceCard.tsx` - Lab instance cards
-- `ProfileCard.tsx` - Lab profile cards  
-- `SeriesCard.tsx` - Lab series cards
-- `TemplateCard.tsx` - Template cards
+The `DashboardCard` component is the core card component that supports multiple variants through a discriminated union type system. Each variant has its own dedicated data shape and default behaviors.
 
-## Default Actions
+## Props
 
-Each card variant comes with predefined default actions that are automatically included. These actions are defined at the component level and provide sensible defaults for each card type.
+- **variant** – Discriminator for the card content: `"instance" | "profile" | "series" | "template"`
+- **Each variant has a dedicated data shape** (see interfaces below)
+- **starred & onStarToggle** – Optional star functionality (both must be provided together). When provided, renders a star icon that toggles between filled (favorited) and outlined (not favorited). Note: Instance cards do not support starring functionality
+- **actions?** – Optional cluster of icon–buttons on the right side of the header. Each card variant provides its own default actions, but these can be overridden
+- **onClick?** – Optional card-level click behavior. Supports URL strings, boolean alerts, custom messages, or callback functions. When provided, the entire card becomes clickable with hover and active states
 
-### Default Actions by Variant
+## Usage
 
-**InstanceCard:**
-- `Open` (externalLink icon) - Opens the lab instance
-
-**ProfileCard:**
-- `Open` (externalLink icon) - Launches lab client (if multiple instruction sets, shows dropdown to choose)
-- `Edit Instructions` (gradCap icon) - If 1 instruction set, opens edit instructions page. If multiple, shows dropdown to choose instruction set
-- `Edit` (edit icon) - Opens edit profile page
-- `Clone` (saveAll icon) - Navigates to edit profile page, opens "save as" dialog
-- `Delete` (delete icon) - Opens confirmation dialog
-
-**SeriesCard:**
-- `Edit` (edit icon) - Opens edit series page
-- `Clone` (saveAll icon) - Navigates to lab series page, opens "save as" dialog
-- `Delete` (delete icon) - Opens confirmation dialog
-
-**TemplateCard:**
-- `Open` (externalLink icon) - Launches preview of template
-- `Preview` (eye icon) - Opens lab manual (what shows today when you click "details")
-- `Edit` (edit icon) - Only shows for users with edit permissions. Opens edit profile page
-- `Create` (squarePlus icon) - Opens creation dialog with template selected
-- `Delete` (delete icon) - Only shows for users with edit permissions. Opens confirmation dialog
-
-### Usage Examples
-
-#### Default Actions (Automatic)
 ```tsx
-// Default actions are automatically included
-<InstanceCard
-  title="Lab Instance"
-  instanceId="12345"
-  labProfile="My Profile"
-  series="My Series"
-  user="John Doe"
-  instructionSet="Base instructions (en)"
-  duration="1:30"
-  lastActivity="2 hours ago"
-  state="Running"
-  // Open action is automatically included
+import { DashboardCard } from '@/components/cards/dashboard';
+
+// With default actions (provided by each card variant)
+<DashboardCard
+  variant="instance"
+  name="Lab Profile Name (Kim Oswalt)"
+  instanceId="1053453"
+  labProfile="Lab Profile Name"
+  series="Lab Series Name"
+  student="Kim Oswalt"
+  instructions="Advanced Blueprint (en)"
+  duration="1:10"
+  lastActivity="June 5, 2025"
+  state="Off"
 />
 
-<ProfileCard
-  title="Lab Profile"
+<DashboardCard
+  variant="profile"
+  name="Lab Profile Name"
+  statusLabel="In Development"
+  statusTone="warning"
   number="KO_001"
-  seriesName="My Series"
-  organization="Skillable - Production"
+  seriesName="My Lab Series"
+  organization="Skillable – Production"
   platform="Azure"
   created="June 2, 2025"
   modified="June 5, 2025"
-  // Open, Edit Instructions, Edit, Clone, Delete actions are automatically included
-/>
-
-<SeriesCard
-  title="Lab Series"
-  organization="Skillable - Production"
-  labProfiles="5 Profiles"
-  virtualMachines="3 VMs"
-  apiConsumers="2 Consumers"
-  created="June 2, 2025"
-  modified="June 5, 2025"
-  // Edit, Clone, Delete actions are automatically included
-/>
-
-<TemplateCard
-  title="Template"
-  number="TEMP_001"
-  seriesName="Template Series"
-  organization="Skillable - Production"
-  platform="Azure"
-  created="June 2, 2025"
-  modified="June 5, 2025"
-  // Open, Preview, Edit, Create, Delete actions are automatically included
+  starred={true}
+  onStarToggle={() => console.log('star toggled')}
 />
 ```
 
-#### Custom Actions (Override Defaults)
+### With Custom Actions
+
 ```tsx
-// Override default actions with custom ones
-<InstanceCard
-  title="Lab Instance"
-  instanceId="12345"
-  // ... other props
-  actions={[
-    { icon: 'eye', label: 'View Details', onClick: () => console.log('view') },
-    { icon: 'settings', label: 'Configure', onClick: () => console.log('configure') },
-    { icon: 'info', label: 'Info', onClick: () => console.log('info') }
-  ]}
+<DashboardCard
+  variant="instance"
+  name="Lab Profile Name (Kim Oswalt)"
+  instanceId="1053453"
+  labProfile="Lab Profile Name"
+  series="Lab Series Name"
+  student="Kim Oswalt"
+  instructions="Advanced Blueprint (en)"
+  duration="1:10"
+  lastActivity="June 5, 2025"
+  state="Off"
+  actions={[{ icon: 'edit', label: 'Edit', onClick: () => console.log('edit') }]}
 />
 ```
 
-## Benefits
+## Card-Level Click Behavior
 
-1. **Zero Configuration** - Default actions are automatically included
-2. **Consistency** - All cards of the same type have the same default actions
-3. **Flexibility** - Still allows full customization via the `actions` prop
-4. **Simplicity** - No need to pass callback props for common actions
-5. **Maintainability** - Default actions are defined once per card type
-6. **Type Safety** - Full TypeScript support
-7. **Context-Aware** - Each card type has actions that make sense for that specific entity type
+The card can be made clickable by providing an `onClick` prop:
 
-## Backward Compatibility
+### URL Navigation (opens in new tab)
 
-The implementation is fully backward compatible. Existing code using the `actions` prop will continue to work without changes.
+```tsx
+<DashboardCard
+  variant="instance"
+  name="Lab Profile Name (Kim Oswalt)"
+  instanceId="1053453"
+  labProfile="Lab Profile Name"
+  series="Lab Series Name"
+  student="Kim Oswalt"
+  instructions="Advanced Blueprint (en)"
+  duration="1:10"
+  lastActivity="June 5, 2025"
+  state="Off"
+  onClick="/instances/1053453"
+/>
+```
 
-## Implementation Details
+### Simple Alert
 
-Each card variant component defines its own `defaultActions` array that includes the appropriate actions for that card type. These actions are automatically passed to the underlying `DashboardCard` component unless custom actions are provided via the `actions` prop.
+```tsx
+<DashboardCard
+  variant="instance"
+  name="Lab Profile Name (Kim Oswalt)"
+  instanceId="1053453"
+  labProfile="Lab Profile Name"
+  series="Lab Series Name"
+  student="Kim Oswalt"
+  instructions="Advanced Blueprint (en)"
+  duration="1:10"
+  lastActivity="June 5, 2025"
+  state="Off"
+  onClick={true}
+/>
+```
 
-### Action Behavior Notes
+### Custom Alert Message
 
-- **Permission-based actions**: Some actions (like Edit and Delete on TemplateCard) only show for users with appropriate permissions
-- **Context-sensitive actions**: Some actions (like Open on ProfileCard) behave differently based on the number of instruction sets
-- **Navigation actions**: Many actions navigate to specific pages or open dialogs appropriate for the card type
-- **Confirmation dialogs**: Delete actions typically open confirmation dialogs before proceeding 
+```tsx
+<DashboardCard
+  variant="instance"
+  name="Lab Profile Name (Kim Oswalt)"
+  instanceId="1053453"
+  labProfile="Lab Profile Name"
+  series="Lab Series Name"
+  student="Kim Oswalt"
+  instructions="Advanced Blueprint (en)"
+  duration="1:10"
+  lastActivity="June 5, 2025"
+  state="Off"
+  onClick={{ message: "Custom card click message!" }}
+/>
+```
+
+### Callback Function
+
+```tsx
+<DashboardCard
+  variant="instance"
+  name="Lab Profile Name (Kim Oswalt)"
+  instanceId="1053453"
+  labProfile="Lab Profile Name"
+  series="Lab Series Name"
+  student="Kim Oswalt"
+  instructions="Advanced Blueprint (en)"
+  duration="1:10"
+  lastActivity="June 5, 2025"
+  state="Off"
+  onClick={() => console.log('Card clicked!')}
+/>
+```
+
+## Clickable Metadata Values
+
+Pass a `metaLinks` prop whose keys correspond to the data-property names and values can be:
+- **URL strings** - renders as `<a>` tags
+- **boolean values** - renders as clickable buttons that show an alert with the value
+- **objects with message property** - renders as clickable buttons that show custom alert
+
+```tsx
+<DashboardCard
+  variant="instance"
+  name="Lab Profile Name (Kim Oswalt)"
+  instanceId="1053453"
+  labProfile="Lab Profile Name"
+  series="Lab Series Name"
+  student="Kim Oswalt"
+  instructions="Advanced Blueprint (en)"
+  duration="1:10"
+  lastActivity="June 5, 2025"
+  state="Off"
+  metaLinks={{
+    instanceId: '/instances/1053453', // URL - renders as <a>
+    labProfile: true, // boolean - shows alert with value
+    series: { message: "Series link clicked!" }, // object - shows custom alert
+    instructions: '/instruction-sets/advanced-blueprint-en' // URL for instruction set
+  }}
+/>
+```
+
+## Data Interfaces
+
+### InstanceData
+
+```tsx
+export interface InstanceData {
+  variant: 'instance';
+  /** Card name – typically the lab profile name with student */
+  name: string;
+  instanceId: string;
+  labProfile: string;
+  series: string;
+  student: string;
+  duration: string;
+  lastActivity: string;
+  state: string;
+  instructions: string;
+}
+```
+
+### ProfileData
+
+```tsx
+export interface ProfileData {
+  variant: 'profile';
+  name: string;
+  /** Optional colored status chip */
+  statusLabel?: string;
+  /** Chip variant (color) – defaults to 'default' */
+  statusTone?: ChipVariant;
+  number: string;
+  seriesName: string;
+  organization: string;
+  platform: string;
+  created: string;
+  modified: string;
+}
+```
+
+### SeriesData
+
+```tsx
+export interface SeriesData {
+  variant: 'series';
+  name: string;
+  organization: string;
+  labProfiles: string;
+  virtualMachines: string;
+  apiConsumers: string;
+  created: string;
+  modified: string;
+}
+```
+
+### TemplateData
+
+```tsx
+export interface TemplateData {
+  variant: 'template';
+  name: string;
+  number: string;
+  seriesName: string;
+  organization: string;
+  platform: string;
+  created: string;
+  modified: string;
+}
+```
+
+## Card Variants
+
+### InstanceCard
+
+A wrapper component for instance data that provides default behaviors and handles field mapping between `InstanceItem` (dashboard data) and `InstanceData` (card interface).
+
+**Features:**
+- Automatically maps `instructionSet` field to `instructions`
+- Provides default clickable behavior for metadata fields
+- Does not support starring functionality
+- Includes default actions (Open)
+
+### ProfileCard
+
+A wrapper component for profile data with full starring support and comprehensive default actions.
+
+**Features:**
+- Supports starring functionality
+- Multiple default actions (Open, Edit Instructions, Edit, Clone, Delete)
+- Clickable metadata fields with informative messages
+
+### SeriesCard
+
+A wrapper component for series data with starring support and series-specific actions.
+
+**Features:**
+- Supports starring functionality
+- Series-specific default actions
+- Clickable metadata fields
+
+### TemplateCard
+
+A wrapper component for template data with starring support and template-specific actions.
+
+**Features:**
+- Supports starring functionality
+- Template-specific default actions
+- Clickable metadata fields
+
+## Accessibility
+
+- All interactive elements have proper ARIA labels
+- Keyboard navigation support (Enter/Space for card clicks)
+- Focus management with visible focus rings
+- Screen reader friendly metadata structure
+
+## Styling
+
+- Responsive grid layout for metadata
+- Hover and active states for clickable elements
+- Consistent spacing and typography
+- Theme-aware colors and borders 

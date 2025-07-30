@@ -1,110 +1,14 @@
 "use client";
 
-// src/components/cards/dashboard/DashboardCard.tsx
-// PURPOSE: A flexible card component for the Skillable design system that renders four
-// different data-card variants: lab instance, lab profile, lab series, and template.
-//
-// PROPS
-// ---------------------------------------------------------------------------
-// • variant – Discriminator for the card content: "instance" | "profile" | "series" | "template".
-// • Each variant has a dedicated data shape (see interfaces below).
-// • starred & onStarToggle – Optional star functionality (both must be provided together).
-//   When provided, renders a star icon that toggles between filled (favorited) and outlined (not favorited).
-//   Note: Instance cards do not support starring functionality.
-// • actions? – Optional cluster of icon–buttons on the right side of the header.
-//   Each card variant provides its own default actions, but these can be overridden.
-// • onClick? – Optional card-level click behavior. Supports URL strings, boolean alerts, 
-//   custom messages, or callback functions. When provided, the entire card becomes clickable
-//   with hover and active states.
-//
-// USAGE
-// ---------------------------------------------------------------------------
-// import { DashboardCard } from '@/components/cards/dashboard';
-//
-// // With default actions (provided by each card variant)
-// <DashboardCard
-//   variant="profile"
-//   name="Lab Profile Name"
-//   statusLabel="In Development"
-//   statusTone="warning"
-//   number="KO_001"
-//   seriesName="My Lab Series"
-//   organization="Skillable – Production"
-//   platform="Azure"
-//   created="June 2, 2025"
-//   modified="June 5, 2025"
-//   starred={true}
-//   onStarToggle={() => console.log('star toggled')}
-// />
-//
-// // With custom actions
-// <DashboardCard
-//   variant="profile"
-//   name="Lab Profile Name"
-//   // ... other props
-//   actions={[{ icon: 'edit', label: 'Edit', onClick: () => console.log('edit') }]}
-// />
-//
-// -- Card-level click behavior -------------------------------------------------
-// The card can be made clickable by providing an `onClick` prop:
-//
-// // URL navigation (opens in new tab)
-// <DashboardCard
-//   variant="profile"
-//   name="Lab Profile Name"
-//   // ... other props
-//   onClick="/profiles/123"
-// />
-//
-// // Simple alert
-// <DashboardCard
-//   variant="profile"
-//   name="Lab Profile Name"
-//   // ... other props
-//   onClick={true}
-// />
-//
-// // Custom alert message
-// <DashboardCard
-//   variant="profile"
-//   name="Lab Profile Name"
-//   // ... other props
-//   onClick={{ message: "Custom card click message!" }}
-// />
-//
-// // Callback function
-// <DashboardCard
-//   variant="profile"
-//   name="Lab Profile Name"
-//   // ... other props
-//   onClick={() => console.log('Card clicked!')}
-// />
-//
-// -- Clickable metadata values -------------------------------------------------
-// Pass a `metaLinks` prop whose keys correspond to the data-property names and
-// values can be:
-// • URL strings - renders as <a> tags
-// • boolean values - renders as clickable buttons that show an alert with the value
-// • objects with message property - renders as clickable buttons that show custom alert
-//
-// <DashboardCard
-//   variant="instance"
-//   name="Lab Profile Name (Kim Oswalt)"
-//   instanceId="1053453"
-//   labProfile="Lab Profile Name"
-//   series="Lab Series Name"
-//   student="Kim Oswalt"
-//   duration="1:10"
-//   lastActivity="June 5, 2025"
-//   state="Off"
-//   metaLinks={{
-//     instanceId: '/instances/1053453', // URL - renders as <a>
-//     labProfile: true, // boolean - shows alert with value
-//     series: { message: "Series link clicked!" } // object - shows custom alert
-//   }}
-// />
-//
-// ---------------------------------------------------------------------------
+/**
+ * DashboardCard - A flexible card component for the Skillable design system
+ * 
+ * Renders four different data-card variants: lab instance, lab profile, lab series, and template.
+ * Each variant has its own dedicated data shape and default behaviors.
+ * 
+ * For comprehensive documentation, usage examples, and API reference, see:
+ * @see {@link ./README.md}
+ */
 
 import React from 'react';
 import { Icon, IconName, Icons } from '../../Icon';
