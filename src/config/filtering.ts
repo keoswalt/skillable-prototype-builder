@@ -45,7 +45,7 @@ export const FILTER_OPTIONS = {
       { label: 'Draft', value: 'draft' }
     ]},
     { label: 'Created', value: 'created', type: 'text' as const },
-    { label: 'Modified', value: 'modified', type: 'text' as const },
+    { label: 'Updated', value: 'modified', type: 'text' as const },
   ],
   series: [
     { label: 'Name', value: 'name', type: 'text' as const },

@@ -326,7 +326,7 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
           i('organization', 'Organization', p.organization),
           i('platform', 'Platform', p.platform),
           i('created', 'Created', p.created),
-          i('modified', 'Modified', p.modified),
+          i('modified', 'Updated', p.modified),
         ];
       }
       case 'series': {
@@ -362,7 +362,6 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
           const isUrl = typeof metaLinkConfig === 'string';
           const isClickable = Boolean(metaLinkConfig) && !isUrl;
           const alertMessage = typeof metaLinkConfig === 'object' && metaLinkConfig !== null ? metaLinkConfig.message : undefined;
-          
           return {
             key,
             label,

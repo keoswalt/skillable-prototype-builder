@@ -46,7 +46,7 @@ export const SORT_OPTIONS: Record<CardType, SortFieldOption[]> = {
     { label: 'Platform', value: 'platform', type: 'string' },
     { label: 'Status', value: 'statusLabel', type: 'custom', customOrder: CUSTOM_SORT_ORDERS.statusLabel },
     { label: 'Created', value: 'created', type: 'date' },
-    { label: 'Modified', value: 'modified', type: 'date' },
+    { label: 'Updated', value: 'modified', type: 'date' },
   ],
   series: [
     { label: 'Name', value: 'name', type: 'string' },
