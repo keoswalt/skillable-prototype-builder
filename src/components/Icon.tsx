@@ -51,6 +51,11 @@ import {
   Sun,
   Moon,
   LogOut,
+  Play,
+  MoreHorizontal,
+  Bug,
+  CreditCard,
+  StickyNote,
   LucideIcon,
   LucideProps
 } from 'lucide-react';
@@ -79,6 +84,8 @@ export const Icons = {
   eye: Eye,
   squarePlus: SquarePlus,
   logout: LogOut,
+  play: Play,
+  more: MoreHorizontal,
   // UI Elements
   search: Search,
   user: User,
@@ -91,6 +98,9 @@ export const Icons = {
   // Status/Feedback
   alert: AlertCircle,
   info: Info,
+  bug: Bug,
+  creditCard: CreditCard,
+  note: StickyNote,
   // Formatting / Editor
   bold: Bold,
   italic: Italic,

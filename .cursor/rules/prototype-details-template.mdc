@@ -11,7 +11,7 @@ All files should be written in markdown and saved as a markdown document(.md) in
 They should **ALWAYS** includ **ALL** of the following in this order:
 * Descriptive title
 * 1-2 sentence description
-* Creation date in MONTH DAY, YEAR format
+* Current date in MONTH DAY, YEAR format
 * Description of the original design that was analyzed
 * Step-by-step implementation plan with checkboxes generated as part of @create-prototype.mdc
 * List of components from @src/components used in the prototype

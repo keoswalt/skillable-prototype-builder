@@ -51,6 +51,7 @@ The user will provide you with a screenshot of a Figma design. You will use the 
    - Import only the specific components needed, not entire component libraries
 2. Always use the project's design tokens as defined in @tailwind.config.ts
 3. Use Tailwind CSS for utility classes
+   - 
 4. If using icons, reference @use-icons.mdc
 5. Use appropriate interaction feedback:
    - Use toast notifications for non-critical feedback
@@ -60,7 +61,7 @@ The user will provide you with a screenshot of a Figma design. You will use the 
 6. Use React.memo() for components that don't need frequent re-renders
 7. Implement lazy loading for heavy components or large datasets
 8. Use useMemo() and useCallback() for expensive computations and event handlers
-9. Implement proper loading states to prevent layout shifts
+9.  Implement proper loading states to prevent layout shifts
 10. Use CSS-in-JS sparingly; prefer Tailwind utility classes for better performance
 11. Implement proper error boundaries to prevent full app crashes
 12. Maintain performance budgets:

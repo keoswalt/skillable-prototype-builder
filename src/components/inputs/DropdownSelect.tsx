@@ -257,7 +257,10 @@ export const DropdownSelect = forwardRef<HTMLSelectElement, DropdownSelectProps>
           }}
           className={fieldClasses}
         >
-          <span className={currentValue ? undefined : 'text-[var(--components-text-secondary)]'}>
+          <span className={cn(
+            'truncate',
+            currentValue ? undefined : 'text-[var(--components-text-secondary)]'
+          )}>
             {displayText}
           </span>
           <Icon
