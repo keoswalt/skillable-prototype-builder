@@ -4,28 +4,67 @@ globs:
 alwaysApply: false
 ---
 
+Create an interactive prototype from a Figma design
+
 Use this rule to turn static Figma designs into interactive prototypes.
 
 The user will provide you with a screenshot of a Figma design. You will use the design to create a prototype, matching the image as closely as possible following the process and rules outlined below.
 
 ## Process:
 **DO EACH STEP IN THIS EXACT ORDER EVERY TIME. NEVER SKIP A STEP**
+0. Pre-flight checklist:
+   - Verify all required components exist in the design system
+   - Check if any new dependencies will be needed
+   - Assess the complexity level of the design
+   - Determine if the prototype will need state management
 1. Ask the user what to name the prototype
 2. Create a new directory inside @src/app/(prototypes) and name it based on the user's answer to your previous question
 3. Create a new markdown file called "prototype-details.md" inside the directory you just created using @prototype-details-template.mdc
 4. Analyze the provided image thoroughly, identifying key components and layout structure
-5. Identify key implementation details (including but not limited to element positioning, responsiveness, and interactions)
-6. Create a step-by-step plan for implementing the design in code, referencing the rules below and document it in the markdown file you created in step 3
+5. Component Availability Check: Identify any missing components that need to be created or if existing components can be composed
+6. Create a step-by-step implementation plan with performance considerations, referencing the rules below and document it in the markdown file you created in step 3
 7. Generate a new page.tsx file in the directory you created in step 2
 8. Build the interactive prototype inside the page.tsx file
+8.5. Optimize the development environment:
+    - Ensure hot reload is working efficiently
+    - Use React DevTools Profiler to identify performance bottlenecks
+    - Implement proper TypeScript strict mode for better error catching
 9. Start the development server
-10. Test and address any errors
-11. 
+10. Test and address issues:
+    - Test functionality and interactions
+    - Check for console errors and warnings
+    - Validate responsive behavior across breakpoints
+    - Test performance with React DevTools Profiler
+    - Verify accessibility with browser dev tools
+    - Check bundle size impact (if significant)
+11. Once the prototype is complete, tell the user how to open it in their browser (using the running dev server) and point them to the markdown file you made for documentation.
+11.5. Document performance considerations:
+    - Note any performance-critical areas in the markdown file
+    - Document any components that might need optimization in production
+    - Include bundle size impact if the prototype adds significant dependencies
 
 ## Rules:
 **ALWAYS FOLLOW EVERY RULE.**
-1. Always use existing components from @src/components directory for the atomic elements (buttons, inputs, chips, menus, etc.)
+1. Always use existing components from @src/components directory for atomic elements (buttons, inputs, chips, menus, etc.)
+   - Prefer composition over creating new components when possible
+   - Use component variants instead of creating new components for similar use cases
+   - Import only the specific components needed, not entire component libraries
 2. Always use the project's design tokens as defined in @tailwind.config.ts
 3. Use Tailwind CSS for utility classes
 4. If using icons, reference @use-icons.mdc
-5. Use customizable browser alert messages as the default click action on elements
+5. Use appropriate interaction feedback:
+   - Use toast notifications for non-critical feedback
+   - Use browser alerts only for critical confirmations
+   - Implement proper loading states for async operations
+   - Use the project's ToastContext for consistent messaging
+6. Use React.memo() for components that don't need frequent re-renders
+7. Implement lazy loading for heavy components or large datasets
+8. Use useMemo() and useCallback() for expensive computations and event handlers
+9. Implement proper loading states to prevent layout shifts
+10. Use CSS-in-JS sparingly; prefer Tailwind utility classes for better performance
+11. Implement proper error boundaries to prevent full app crashes
+12. Maintain performance budgets:
+    - Keep prototype bundle size under 500KB (gzipped)
+    - Ensure first contentful paint under 1.5 seconds
+    - Limit the number of simultaneous API calls or heavy computations
+    - Use proper code splitting for large prototypes
