@@ -1,0 +1,28 @@
+---
+description: Generate design concepts using components without an existing Figma
+globs: 
+alwaysApply: false
+---
+This rule is used when a user wants to create a new prototype from the components in this project's component library.
+
+Follow these steps when they ask you to create a new prototype:
+1. Ask what they would like to name the prototype
+2. Ask who the primary user will be and what the goals are for the design.
+3. Ask if they have any specific examples or inspiration images they want you to use.
+4. Once they've answered those questions, create a directory for the prototype in the `src/app` directory and create a new file using the title they asked for.
+5. Create a step-by-step plan for building the prototype based on the requirements and any inspiration photos included.
+6. Identify any new components that will need to be created that don't currently exist.
+7. Tell the user what your plan is, and ask if they want you to proceed.
+8. If new components are needed, create them in the page file itself (do not create a separate file or add it to the `/components` directory).
+9. Assemble the prototype for the screen they requested on the page using components from the `src/components` folder as well as any components you created in the page file already.
+10. Share the prototype with the user, along with instructions on how to adjust the component properties if needed.
+11. Ask the user if they would like to extract any components you created into separate, reusable components. If they say yes, use [create-component.mdc](mdc:.cursor/rules/create-component.mdc) to set up the component (subtituting the design you've already created for the reference image usually required by that flow).
+
+Be sure to follow all of these rules every time:
+* Use any components from the project library that are needed for the prototype.
+* When creating new components on the page, remember to use design tokens from [tailwind.config.ts](mdc:tailwind.config.ts) and any existing components from the `/components` directory for things you may need, such as icons, typography, colors, buttons, inputs, etc.
+* Use the design tokens defined in [tailwind.config.ts](mdc:tailwind.config.ts) and the `src/app/theme` folder for all designs.
+* Use Tailwind CSS, Next JS, and Typescript to create the prototype.
+* DO NOT use any external libraries.
+* If the user gives you images with inspiration, don't pay attention to their styling. Just look at them for big-picture layout, content, structure, and context.
+* Use your best judgment to adjust the properties and variants used for each component in the design.
