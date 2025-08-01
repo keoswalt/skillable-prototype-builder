@@ -1,6 +1,4 @@
 ---
-description: Generate design concepts using components without an existing Figma
-globs: 
 alwaysApply: false
 ---
 This rule is used when a user wants to create a new prototype from the components in this project's component library.

@@ -1,9 +1,6 @@
 ---
-description: Create an interactive prototype from a Figma design
-globs:
 alwaysApply: false
 ---
-
 Create an interactive prototype from a Figma design
 
 Use this rule to turn static Figma designs into interactive prototypes.

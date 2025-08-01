@@ -1,6 +1,4 @@
 ---
-description: Add new component to design system
-globs: 
 alwaysApply: false
 ---
 # Creating New Components
