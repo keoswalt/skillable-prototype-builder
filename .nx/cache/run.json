@@ -1,0 +1,9 @@
+{
+  "run": {
+    "command": "nx serve skillable-prototypes",
+    "startTime": "2025-08-01T20:16:41.794Z",
+    "endTime": "2025-08-01T20:22:36.146Z",
+    "inner": false
+  },
+  "tasks": []
+}

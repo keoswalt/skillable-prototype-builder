@@ -1,0 +1,45 @@
+{
+  "name": "skillable-prototypes",
+  "projectType": "application",
+  "sourceRoot": "apps/skillable-prototypes/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/skillable-prototypes",
+        "outputPath": "dist/apps/skillable-prototypes"
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "skillable-prototypes:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "skillable-prototypes:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "skillable-prototypes:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "skillable-prototypes:build:production"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": ["scope:prototypes", "type:app"]
+}

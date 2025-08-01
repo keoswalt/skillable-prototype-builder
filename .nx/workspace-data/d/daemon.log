@@ -1,0 +1,661 @@
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.259Z - Started listening on: /var/folders/00/lgk6lhz56n98vydq2jwvrtwm0000gp/T/feebc74105f947c30e0a/d.sock
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.268Z - [WATCHER]: Subscribed to changes within: /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds (native)
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.269Z - Established a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.270Z - Established a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.270Z - Closed a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.271Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.275Z - Time taken for 'loadSpecifiedNxPlugins' 0.6301249999999925ms
+Time for 'plugin worker 98508 code loading' 3.136875
+Time for 'plugin worker 98507 code loading' 3.1572920000000018
+Time for 'plugin worker 98506 code loading' 3.4190830000000005
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.468Z - Time taken for 'Load Nx Plugin: /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/node_modules/nx/src/plugins/package-json' 195.93554099999997ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.469Z - Time taken for 'Load Nx Plugin: /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 196.11783400000002ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.533Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.533Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.533Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.534Z - No files changed, but no in-memory cached project graph found. Recomputing it...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.536Z - Time taken for 'loadDefaultNxPlugins' 260.359834ms
+Time for 'nx/core/project-json:createNodes' 2.0325829999999883
+Time for 'nx/core/package-json:createNodes' 2.2788749999999993
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 8.776208999999994
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.576Z - Time taken for 'build-project-configs' 30.672459000000003ms
+Time for 'build typescript dependencies' 1.272874999999999
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.603Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.603Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.603Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.604Z - Time taken for 'total for creating and serializing project graph' 331.963792ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.605Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.605Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 332. Response time: 2.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.609Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.609Z - Done responding to the client handleRunPreTasksExecution
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.609Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.609Z - Time taken for 'preTasksExecution' 0.3109160000000202ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.784Z - Reusing in-memory cached project graph because no files changed.
+DEBUG nx::native::tasks::task_hasher: plan length: 1
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Adding "1867017717006394117" (".gitignore") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Adding "1718713062467436366" ("nx.json") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Hash Value: "8014422398351602494"
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.793Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.793Z - Done responding to the client handleHashTasks
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.793Z - Handled HASH_TASKS. Handling time: 9. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.859Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.859Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:41.859Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 18. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.337Z - Established a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.338Z - Closed a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.338Z - Established a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.339Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.339Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.339Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.340Z - Time taken for 'total for creating and serializing project graph' 0.2159999999998945ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.341Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:44.341Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.003Z - Established a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.007Z - Closed a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.007Z - Established a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.008Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.008Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.008Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.009Z - Time taken for 'total for creating and serializing project graph' 0.1877089999998134ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.011Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.011Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.257Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.258Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.258Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.258Z - Time taken for 'total for creating and serializing project graph' 0.18945799999983137ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.260Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:47.260Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.250Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.251Z - [WATCHER]: apps/skillable-prototypes/.next/cache/.rscinfo was created or restored
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.353Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.353Z - [REQUEST]: apps/skillable-prototypes/.next/cache/.rscinfo
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.353Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.354Z - Time taken for 'hash changed files from watcher' 0.34245800000007875ms
+Time for 'nx/core/package-json:createNodes' 0.2820830000000569
+Time for 'nx/core/project-json:createNodes' 0.34175000000050204
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.9212500000003274
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.364Z - Time taken for 'build-project-configs' 7.554250000000138ms
+Time for 'build typescript dependencies' 0.6900839999998425
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.377Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.377Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.377Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.377Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.377Z - Time taken for 'total execution time for createProjectGraph()' 10.85412499999984ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.531Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.531Z - [WATCHER]: apps/skillable-prototypes/.next/package.json was created or restored
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.631Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.632Z - [REQUEST]: apps/skillable-prototypes/.next/package.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.632Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.634Z - Time taken for 'hash changed files from watcher' 0.46320899999955145ms
+Time for 'nx/core/package-json:createNodes' 0.4667920000001686
+Time for 'nx/core/project-json:createNodes' 0.3817909999997937
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 5.665125000000444
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.647Z - Time taken for 'build-project-configs' 11.102499999999964ms
+Time for 'build typescript dependencies' 0.9555419999996957
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.663Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.663Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.663Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.663Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.663Z - Time taken for 'total execution time for createProjectGraph()' 12.851584000000003ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.827Z - [WATCHER]: 19 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.828Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.928Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.929Z - [REQUEST]: apps/skillable-prototypes/.next/server/pages-manifest.json,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/server/next-font-manifest.json,apps/skillable-prototypes/.next/build-manifest.json,apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/server/interception-route-rewrite-manifest.js,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/static/chunks/polyfills.js,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/server/middleware-manifest.json,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/static/development/_ssgManifest.js,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/trace
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.929Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.930Z - Time taken for 'hash changed files from watcher' 0.8009579999998095ms
+Time for 'nx/core/project-json:createNodes' 0.16837500000019645
+Time for 'nx/core/package-json:createNodes' 0.27870900000016263
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.1042919999999867
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.938Z - Time taken for 'build-project-configs' 6.57220899999993ms
+Time for 'build typescript dependencies' 0.6741669999992155
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.953Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.953Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.953Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.953Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:48.953Z - Time taken for 'total execution time for createProjectGraph()' 11.64983299999949ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.072Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.073Z - [WATCHER]: 0 file(s) created or restored, 15 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.074Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.074Z - Recomputing project graph because of 15 updated and 0 deleted files.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.076Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.076Z - [REQUEST]: apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/build-manifest.json,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/server/pages-manifest.json,apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/static/development/_ssgManifest.js,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/server/next-font-manifest.json,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/server/server-reference-manifest.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.076Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.077Z - Time taken for 'hash changed files from watcher' 1.9706249999999272ms
+Time for 'nx/core/project-json:createNodes' 0.13850000000002183
+Time for 'nx/core/package-json:createNodes' 0.22658400000000256
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.0257080000001224
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.085Z - Time taken for 'build-project-configs' 6.454499999999825ms
+Time for 'build typescript dependencies' 0.008084000000053493
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.096Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.096Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.096Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.096Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.096Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.097Z - Time taken for 'total for creating and serializing project graph' 22.552999999999884ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.098Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.098Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 22. Response time: 2.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.124Z - [WATCHER]: 0 file(s) created or restored, 8 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.124Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.224Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.224Z - [REQUEST]: apps/skillable-prototypes/.next/server/middleware-manifest.json,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/server/pages-manifest.json,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/server/interception-route-rewrite-manifest.js,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/server/server-reference-manifest.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.224Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.225Z - Time taken for 'hash changed files from watcher' 0.3040419999997539ms
+Time for 'nx/core/project-json:createNodes' 0.13516700000036508
+Time for 'nx/core/package-json:createNodes' 0.18545799999992596
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 2.9930840000006356
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.233Z - Time taken for 'build-project-configs' 6.042625000000044ms
+Time for 'build typescript dependencies' 0.015041999999994005
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.246Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.246Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.246Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.246Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:49.246Z - Time taken for 'total execution time for createProjectGraph()' 9.914292000000387ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.098Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.098Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.198Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.198Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.198Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.199Z - Time taken for 'hash changed files from watcher' 0.34858299999905284ms
+Time for 'nx/core/package-json:createNodes' 0.22808299999996962
+Time for 'nx/core/project-json:createNodes' 0.323208000001614
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.488500000001295
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.208Z - Time taken for 'build-project-configs' 6.66754199999923ms
+Time for 'build typescript dependencies' 0.9994999999998981
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.221Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.221Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.222Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.222Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:16:50.222Z - Time taken for 'total execution time for createProjectGraph()' 10.052499999999782ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.048Z - [WATCHER]: 4 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.048Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.151Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.151Z - [REQUEST]: apps/skillable-prototypes/.next/server/app/page.js,apps/skillable-prototypes/.next/types/app/layout.ts,apps/skillable-prototypes/.next/types/app/page.ts,apps/skillable-prototypes/.next/server/vendor-chunks/next.js,apps/skillable-prototypes/.next/server/vendor-chunks/@swc.js,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/server/webpack-runtime.js,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/server/vendor-chunks/lucide-react.js,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/server/pages-manifest.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.151Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.152Z - Time taken for 'hash changed files from watcher' 1.8504589999938617ms
+Time for 'nx/core/package-json:createNodes' 0.5652499999996508
+Time for 'nx/core/project-json:createNodes' 1.019957999989856
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.998749999998836
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.162Z - Time taken for 'build-project-configs' 7.793707999997423ms
+Time for 'build typescript dependencies' 0.7461250000051223
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.177Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.177Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.178Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.178Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:55.178Z - Time taken for 'total execution time for createProjectGraph()' 13.090833000009297ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.356Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.356Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.466Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.466Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.466Z - [REQUEST]: 
+Time for 'nx/core/package-json:createNodes' 0.24841600000218023
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.503Z - [WATCHER]: 22 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.503Z - [WATCHER]: Processing file changes in outputs
+Time for 'nx/core/project-json:createNodes' 1.013542000000598
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.504Z - Time taken for 'hash changed files from watcher' 10.373374999995576ms
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.7231659999961266
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.512Z - Time taken for 'build-project-configs' 7.03925000000163ms
+Time for 'build typescript dependencies' 0.8623749999969732
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.524Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.524Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.525Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.525Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.525Z - Time taken for 'total execution time for createProjectGraph()' 9.868124999993597ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.603Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.603Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.603Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.604Z - Time taken for 'hash changed files from watcher' 0.11133300000801682ms
+Time for 'nx/core/project-json:createNodes' 0.16475000001082662
+Time for 'nx/core/package-json:createNodes' 0.23233299999265
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.1259589999972377
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.612Z - Time taken for 'build-project-configs' 6.2320419999887235ms
+Time for 'build typescript dependencies' 0.013542000000597909
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.624Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.624Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.624Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.624Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.624Z - Time taken for 'total execution time for createProjectGraph()' 8.725124999997206ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.864Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.864Z - [WATCHER]: 7 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.985Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.985Z - [REQUEST]: apps/skillable-prototypes/.next/server/app/page_client-reference-manifest.js,apps/skillable-prototypes/.next/static/webpack/7b892d71e69d621e.webpack.hot-update.json,apps/skillable-prototypes/.next/static/css/app/layout.css,apps/skillable-prototypes/.next/static/chunks/app/layout.js,apps/skillable-prototypes/.next/static/webpack/webpack.7b892d71e69d621e.hot-update.js,apps/skillable-prototypes/.next/static/webpack/app/layout.7b892d71e69d621e.hot-update.js,apps/skillable-prototypes/.next/static/chunks/webpack.js,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/build-manifest.json,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.json,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/static/development/_ssgManifest.js
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:56.985Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.001Z - Time taken for 'hash changed files from watcher' 20.979291999989073ms
+Time for 'nx/core/package-json:createNodes' 0.2334170000103768
+Time for 'nx/core/project-json:createNodes' 0.22158399999898393
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.6487080000079004
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.011Z - Time taken for 'build-project-configs' 7.360750000007101ms
+Time for 'build typescript dependencies' 1.7721669999882579
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.033Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.033Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.033Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.033Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.033Z - Time taken for 'total execution time for createProjectGraph()' 16.195749999998952ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.151Z - [WATCHER]: 1 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.151Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.254Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.254Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.254Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.255Z - Time taken for 'hash changed files from watcher' 2.0141250000015134ms
+Time for 'nx/core/project-json:createNodes' 0.13733399999910034
+Time for 'nx/core/package-json:createNodes' 0.2178330000024289
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 2.9130000000004657
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.262Z - Time taken for 'build-project-configs' 5.78087499999674ms
+Time for 'build typescript dependencies' 0.7095830000034766
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.274Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.274Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.274Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.274Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.274Z - Time taken for 'total execution time for createProjectGraph()' 9.038249999997788ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.346Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.347Z - [WATCHER]: 4 file(s) created or restored, 10 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.449Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.449Z - [REQUEST]: apps/skillable-prototypes/.next/server/app/dashboard/page.js,apps/skillable-prototypes/.next/types/app/dashboard/page.ts,apps/skillable-prototypes/.next/types/app/dashboard/layout.ts,apps/skillable-prototypes/.next/server/vendor-chunks/papaparse.js,apps/skillable-prototypes/.next/types/app/page.ts,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/server/webpack-runtime.js,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/server/pages-manifest.json,apps/skillable-prototypes/.next/server/vendor-chunks/lucide-react.js,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/types/app/layout.ts
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.449Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.450Z - Time taken for 'hash changed files from watcher' 1.2773339999985183ms
+Time for 'nx/core/project-json:createNodes' 0.15033400000538677
+Time for 'nx/core/package-json:createNodes' 0.17629099999612663
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.1110420000040904
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.459Z - Time taken for 'build-project-configs' 6.405417000001762ms
+Time for 'build typescript dependencies' 0.8361250000016298
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.471Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.471Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.472Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.472Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.472Z - Time taken for 'total execution time for createProjectGraph()' 10.095916999998735ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.472Z - [WATCHER]: 7 file(s) created or restored, 11 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.472Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.565Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.565Z - [WATCHER]: 3 file(s) created or restored, 10 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.574Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.574Z - [REQUEST]: apps/skillable-prototypes/.next/static/webpack/9b6aeb386a07acde.webpack.hot-update.json,apps/skillable-prototypes/.next/static/chunks/app/dashboard/layout.js,apps/skillable-prototypes/.next/static/webpack/webpack.9b6aeb386a07acde.hot-update.js,apps/skillable-prototypes/.next/static/chunks/app/dashboard/error.js,apps/skillable-prototypes/.next/static/chunks/app/dashboard/loading.js,apps/skillable-prototypes/.next/server/app/dashboard/page_client-reference-manifest.js,apps/skillable-prototypes/.next/static/chunks/app/dashboard/page.js,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.json,apps/skillable-prototypes/.next/static/development/_ssgManifest.js,apps/skillable-prototypes/.next/build-manifest.json,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/server/app/page_client-reference-manifest.js,apps/skillable-prototypes/.next/static/chunks/webpack.js,apps/skillable-prototypes/.next/types/app/dashboard/layout.ts,apps/skillable-prototypes/.next/types/app/dashboard/page.ts,apps/skillable-prototypes/.next/server/app/favicon.ico/route.js,apps/skillable-prototypes/.next/server/webpack-runtime.js,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/types/app/layout.ts,apps/skillable-prototypes/.next/server/vendor-chunks/next.js,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/types/app/page.ts,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/server/pages-manifest.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.574Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.575Z - Time taken for 'hash changed files from watcher' 1.7395419999957085ms
+Time for 'nx/core/package-json:createNodes' 0.2041659999958938
+Time for 'nx/core/project-json:createNodes' 0.13362499998765998
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.1578339999978198
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.583Z - Time taken for 'build-project-configs' 6.366125000000466ms
+Time for 'build typescript dependencies' 0.7981670000008307
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.608Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.608Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.608Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.608Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:57.608Z - Time taken for 'total execution time for createProjectGraph()' 12.501625000004424ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.642Z - [WATCHER]: apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz_ was modified
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.642Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.842Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.842Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.842Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.843Z - Time taken for 'hash changed files from watcher' 0.3351669999974547ms
+Time for 'nx/core/project-json:createNodes' 0.12983299999905284
+Time for 'nx/core/package-json:createNodes' 0.19383299999753945
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.082290999998804
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.851Z - Time taken for 'build-project-configs' 6.367624999998952ms
+Time for 'build typescript dependencies' 0.9032089999964228
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.864Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.864Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.864Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.864Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.864Z - Time taken for 'total execution time for createProjectGraph()' 9.337333000003127ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.998Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:58.998Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.404Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.405Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz,apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.405Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.407Z - Time taken for 'hash changed files from watcher' 5.4455830000079ms
+Time for 'nx/core/package-json:createNodes' 0.481792000005953
+Time for 'nx/core/project-json:createNodes' 0.3684999999968568
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 6.966874999998254
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.424Z - Time taken for 'build-project-configs' 14.265749999991385ms
+Time for 'build typescript dependencies' 1.1332499999989523
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.444Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.444Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.444Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.444Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:17:59.444Z - Time taken for 'total execution time for createProjectGraph()' 16.190457999997307ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.683Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.683Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.802Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.802Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/2.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.802Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.803Z - Time taken for 'hash changed files from watcher' 18.21249999999418ms
+Time for 'nx/core/package-json:createNodes' 0.3352909999957774
+Time for 'nx/core/project-json:createNodes' 0.5203330000222195
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 4.010917000006884
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.816Z - Time taken for 'build-project-configs' 8.005375000007916ms
+Time for 'build typescript dependencies' 0.7520409999997355
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.833Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.833Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.833Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.833Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.833Z - Time taken for 'total execution time for createProjectGraph()' 15.966000000014901ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.834Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.834Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.907Z - [WATCHER]: apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz_ was created or restored
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.908Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.936Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.936Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.936Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.937Z - Time taken for 'hash changed files from watcher' 0.9971669999940787ms
+Time for 'nx/core/project-json:createNodes' 0.12633400000049733
+Time for 'nx/core/package-json:createNodes' 0.21745799999916926
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.424749999976484
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.946Z - Time taken for 'build-project-configs' 6.97483399999328ms
+Time for 'build typescript dependencies' 1.0620840000046883
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.962Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.962Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.962Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.962Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.962Z - Time taken for 'total execution time for createProjectGraph()' 13.197209000005387ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.973Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 4 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:57.973Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.076Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.076Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz.old,apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/2.pack.gz
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.076Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/2.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.077Z - Time taken for 'hash changed files from watcher' 2.2074590000265744ms
+Time for 'nx/core/project-json:createNodes' 0.13983300002291799
+Time for 'nx/core/package-json:createNodes' 0.23912499999278225
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.180500000016764
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.085Z - Time taken for 'build-project-configs' 6.382166999974288ms
+Time for 'build typescript dependencies' 1.0286659999983385
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.099Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.099Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.099Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.099Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:18:58.099Z - Time taken for 'total execution time for createProjectGraph()' 10.994000000006054ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.149Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.149Z - Done responding to the client handleRecordTaskRuns
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.149Z - Handled RECORD_TASK_RUNS. Handling time: 0. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.150Z - Closed a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.151Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.151Z - Done responding to the client handleGetFlakyTasks
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.151Z - Handled GET_FLAKY_TASKS. Handling time: 1. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.178Z - Closed a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.234Z - [WATCHER]: apps/skillable-prototypes/.next/trace was modified
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.235Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.307Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.307Z - Done responding to the client handleRunPostTasksExecution
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.307Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.307Z - Time taken for 'postTasksExecution' 0.22433300002012402ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.313Z - Closed a connection. Number of open connections: 0
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.435Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.435Z - [REQUEST]: apps/skillable-prototypes/.next/trace
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.435Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.437Z - Time taken for 'hash changed files from watcher' 0.9831250000279397ms
+Time for 'nx/core/package-json:createNodes' 0.2611250000190921
+Time for 'nx/core/project-json:createNodes' 0.9421659999643452
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 4.122166000015568
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.448Z - Time taken for 'build-project-configs' 8.625166999991052ms
+Time for 'build typescript dependencies' 1.5959589999984019
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.464Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.465Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.465Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.465Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:36.465Z - Time taken for 'total execution time for createProjectGraph()' 12.270290999964345ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.854Z - Established a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.855Z - Closed a connection. Number of open connections: 0
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.855Z - Established a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.856Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.856Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.856Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.857Z - Time taken for 'total for creating and serializing project graph' 0.20512500003678724ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.858Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.858Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.860Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.860Z - Done responding to the client handleRunPreTasksExecution
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.860Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.860Z - Time taken for 'preTasksExecution' 0.14395900000818074ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.938Z - Reusing in-memory cached project graph because no files changed.
+DEBUG nx::native::tasks::task_hasher: plan length: 1
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Adding "1867017717006394117" (".gitignore") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Adding "1718713062467436366" ("nx.json") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Hash Value: "8014422398351602494"
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.946Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.946Z - Done responding to the client handleHashTasks
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.946Z - Handled HASH_TASKS. Handling time: 9. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.997Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.997Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:54.997Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.722Z - Established a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.723Z - Closed a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.724Z - Established a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.725Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.725Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.725Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.725Z - Time taken for 'total for creating and serializing project graph' 0.16504100000020117ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.726Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:55.726Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.687Z - Established a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.689Z - Closed a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.689Z - Established a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.691Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.691Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.691Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.691Z - Time taken for 'total for creating and serializing project graph' 0.17837500001769513ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.694Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.694Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.893Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.893Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.893Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.894Z - Time taken for 'total for creating and serializing project graph' 0.2778340000077151ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.898Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:56.898Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 5.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.336Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.337Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 63 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.439Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.439Z - [REQUEST]: apps/skillable-prototypes/.next/package.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.439Z - [REQUEST]: apps/skillable-prototypes/.next/types/app/page.ts,apps/skillable-prototypes/.next/static/chunks/app/layout.js,apps/skillable-prototypes/.next/static/media/36008747766f78c6-s.woff2,apps/skillable-prototypes/.next/static/chunks/app-pages-internals.js,apps/skillable-prototypes/.next/server/app/page.js,apps/skillable-prototypes/.next/server/vendor-chunks/papaparse.js,apps/skillable-prototypes/.next/static/css/app/layout.css,apps/skillable-prototypes/.next/server/app/favicon.ico/route.js,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/server/next-font-manifest.json,apps/skillable-prototypes/.next/types/app/dashboard/page.ts,apps/skillable-prototypes/.next/build-manifest.json,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/static/chunks/app/dashboard/page.js,apps/skillable-prototypes/.next/static/chunks/app/dashboard/loading.js,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/static/media/97e0cb1ae144a2a9-s.woff2,apps/skillable-prototypes/.next/server/middleware-manifest.json,apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/static/media/6d38f9d4e0f4772b-s.woff2,apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/server/vendor-chunks/next.js,apps/skillable-prototypes/.next/server/app/page_client-reference-manifest.js,apps/skillable-prototypes/.next/static/media/55c55f0601d81cf3-s.woff2,apps/skillable-prototypes/.next/static/chunks/polyfills.js,apps/skillable-prototypes/.next/static/webpack/webpack.9b6aeb386a07acde.hot-update.js,apps/skillable-prototypes/.next/static/webpack/app/layout.7b892d71e69d621e.hot-update.js,apps/skillable-prototypes/.next/static/media/26a46d62cd723877-s.woff2,apps/skillable-prototypes/.next/server/app/dashboard/page.js,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/static/webpack/633457081244afec._.hot-update.json,apps/skillable-prototypes/.next/static/media/6c654496b1569cf8-s.woff2,apps/skillable-prototypes/.next/static/chunks/app/dashboard/layout.js,apps/skillable-prototypes/.next/static/webpack/9b6aeb386a07acde.webpack.hot-update.json,apps/skillable-prototypes/.next/server/app/dashboard/page_client-reference-manifest.js,apps/skillable-prototypes/.next/static/media/03b436aa846269de-s.woff2,apps/skillable-prototypes/.next/static/chunks/app/page.js,apps/skillable-prototypes/.next/trace,apps/skillable-prototypes/.next/static/chunks/main-app.js,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/static/webpack/webpack.7b892d71e69d621e.hot-update.js,apps/skillable-prototypes/.next/server/vendor-chunks/lucide-react.js,apps/skillable-prototypes/.next/static/chunks/webpack.js,apps/skillable-prototypes/.next/types/app/layout.ts,apps/skillable-prototypes/.next/static/media/581909926a08bbc8-s.woff2,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/static/media/cd56370bb165aad7-s.woff2,apps/skillable-prototypes/.next/static/media/df0a9ae256c0569c-s.woff2,apps/skillable-prototypes/.next/static/media/8e9860b6e62d6359-s.woff2,apps/skillable-prototypes/.next/static/webpack/7b892d71e69d621e.webpack.hot-update.json,apps/skillable-prototypes/.next/server/webpack-runtime.js,apps/skillable-prototypes/.next/server/interception-route-rewrite-manifest.js,apps/skillable-prototypes/.next/static/development/_ssgManifest.js,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/types/app/dashboard/layout.ts,apps/skillable-prototypes/.next/static/chunks/app/dashboard/error.js,apps/skillable-prototypes/.next/static/media/76fe8e18136e2e68-s.woff2,apps/skillable-prototypes/.next/static/media/383c2ab2a767fb58-s.p.woff2,apps/skillable-prototypes/.next/server/vendor-chunks/@swc.js,apps/skillable-prototypes/.next/server/pages-manifest.json,apps/skillable-prototypes/.next/static/media/e4af272ccee01ff0-s.p.woff2
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.440Z - Time taken for 'hash changed files from watcher' 0.9884169999859296ms
+Time for 'nx/core/package-json:createNodes' 0.22258300002431497
+Time for 'nx/core/project-json:createNodes' 0.29037499998230487
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.1234580000163987
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.450Z - Time taken for 'build-project-configs' 7.776374999957625ms
+Time for 'build typescript dependencies' 0.018542000034358352
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.466Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.466Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.466Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.466Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.466Z - Time taken for 'total execution time for createProjectGraph()' 12.496708999969997ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.498Z - [WATCHER]: 19 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.498Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.599Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.599Z - [REQUEST]: apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/server/interception-route-rewrite-manifest.js,apps/skillable-prototypes/.next/server/pages-manifest.json,apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/server/middleware-manifest.json,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/static/chunks/polyfills.js,apps/skillable-prototypes/.next/trace,apps/skillable-prototypes/.next/static/development/_ssgManifest.js,apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/build-manifest.json,apps/skillable-prototypes/.next/server/next-font-manifest.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.599Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.600Z - Time taken for 'hash changed files from watcher' 0.6087079999851994ms
+Time for 'nx/core/project-json:createNodes' 0.12754199997289106
+Time for 'nx/core/package-json:createNodes' 0.22524999995948747
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.04420800000662
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.608Z - Time taken for 'build-project-configs' 6.187375000037719ms
+Time for 'build typescript dependencies' 1.0850419999915175
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.621Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.622Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.622Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.622Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.622Z - Time taken for 'total execution time for createProjectGraph()' 10.277375000005122ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.732Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.732Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.732Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.733Z - Time taken for 'total for creating and serializing project graph' 0.18787500000325963ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.733Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.733Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.753Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.754Z - [WATCHER]: 17 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.855Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.855Z - [REQUEST]: apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/server/pages-manifest.json,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.json,apps/skillable-prototypes/.next/static/development/_ssgManifest.js,apps/skillable-prototypes/.next/server/interception-route-rewrite-manifest.js,apps/skillable-prototypes/.next/build-manifest.json,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/server/middleware-manifest.json,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/types/package.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.855Z - [REQUEST]: 
+Time for 'nx/core/project-json:createNodes' 0.15208299999358132
+Time for 'nx/core/package-json:createNodes' 0.24845800001639873
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.857Z - Time taken for 'hash changed files from watcher' 0.9989170000189915ms
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.1221250000526197
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.863Z - Time taken for 'build-project-configs' 5.783625000040047ms
+Time for 'build typescript dependencies' 0.006290999997872859
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.874Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.874Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.875Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.875Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:57.875Z - Time taken for 'total execution time for createProjectGraph()' 8.086833000008482ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.790Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.790Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.892Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.892Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz,apps/skillable-prototypes/.next/cache/webpack/client-development/1.pack.gz,apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz.old
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.892Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/1.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.894Z - Time taken for 'hash changed files from watcher' 0.5992499999701977ms
+Time for 'nx/core/project-json:createNodes' 0.21795899997232482
+Time for 'nx/core/package-json:createNodes' 0.3448750000097789
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 4.544209000014234
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.905Z - Time taken for 'build-project-configs' 8.816249999974389ms
+Time for 'build typescript dependencies' 0.7609589999774471
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.921Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.921Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.922Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.922Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:22:58.922Z - Time taken for 'total execution time for createProjectGraph()' 13.065375000005588ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.263Z - [WATCHER]: 9 file(s) created or restored, 6 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.264Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.366Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.366Z - [REQUEST]: apps/skillable-prototypes/.next/types/app/dashboard/layout.ts,apps/skillable-prototypes/.next/server/webpack-runtime.js,apps/skillable-prototypes/.next/server/vendor-chunks/@swc.js,apps/skillable-prototypes/.next/server/app/dashboard/page.js,apps/skillable-prototypes/.next/types/app/dashboard/page.ts,apps/skillable-prototypes/.next/types/app/layout.ts,apps/skillable-prototypes/.next/server/vendor-chunks/next.js,apps/skillable-prototypes/.next/server/vendor-chunks/papaparse.js,apps/skillable-prototypes/.next/server/vendor-chunks/lucide-react.js,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/server/pages-manifest.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.366Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.367Z - Time taken for 'hash changed files from watcher' 1.7343329999712296ms
+Time for 'nx/core/package-json:createNodes' 0.22083300002850592
+Time for 'nx/core/project-json:createNodes' 0.12995800003409386
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.0144579999614507
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.376Z - Time taken for 'build-project-configs' 6.201957999961451ms
+Time for 'build typescript dependencies' 0.693916000018362
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.389Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.389Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.389Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.389Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:04.389Z - Time taken for 'total execution time for createProjectGraph()' 10.711500000033993ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.208Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.209Z - [WATCHER]: 25 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.313Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.313Z - [REQUEST]: apps/skillable-prototypes/.next/static/chunks/app/dashboard/error.js,apps/skillable-prototypes/.next/static/media/581909926a08bbc8-s.woff2,apps/skillable-prototypes/.next/static/media/8e9860b6e62d6359-s.woff2,apps/skillable-prototypes/.next/server/app/dashboard/page_client-reference-manifest.js,apps/skillable-prototypes/.next/static/media/6c654496b1569cf8-s.woff2,apps/skillable-prototypes/.next/static/chunks/app/dashboard/loading.js,apps/skillable-prototypes/.next/static/media/df0a9ae256c0569c-s.woff2,apps/skillable-prototypes/.next/static/chunks/app/dashboard/layout.js,apps/skillable-prototypes/.next/static/media/03b436aa846269de-s.woff2,apps/skillable-prototypes/.next/static/media/cd56370bb165aad7-s.woff2,apps/skillable-prototypes/.next/static/media/55c55f0601d81cf3-s.woff2,apps/skillable-prototypes/.next/static/webpack/633457081244afec._.hot-update.json,apps/skillable-prototypes/.next/static/media/383c2ab2a767fb58-s.p.woff2,apps/skillable-prototypes/.next/static/media/6d38f9d4e0f4772b-s.woff2,apps/skillable-prototypes/.next/static/chunks/app/layout.js,apps/skillable-prototypes/.next/static/media/e4af272ccee01ff0-s.p.woff2,apps/skillable-prototypes/.next/static/css/app/layout.css,apps/skillable-prototypes/.next/static/chunks/main-app.js,apps/skillable-prototypes/.next/static/media/36008747766f78c6-s.woff2,apps/skillable-prototypes/.next/static/media/97e0cb1ae144a2a9-s.woff2,apps/skillable-prototypes/.next/static/media/76fe8e18136e2e68-s.woff2,apps/skillable-prototypes/.next/static/media/26a46d62cd723877-s.woff2,apps/skillable-prototypes/.next/static/chunks/webpack.js,apps/skillable-prototypes/.next/static/chunks/app-pages-internals.js,apps/skillable-prototypes/.next/static/chunks/app/dashboard/page.js,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.json,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/build-manifest.json,apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/static/development/_ssgManifest.js
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.313Z - [REQUEST]: 
+Time for 'nx/core/package-json:createNodes' 0.19891700003063306
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.315Z - Time taken for 'hash changed files from watcher' 2.4662499999976717ms
+Time for 'nx/core/project-json:createNodes' 0.5213329999824055
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.378000000026077
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.323Z - Time taken for 'build-project-configs' 6.861250000016298ms
+Time for 'build typescript dependencies' 0.6609169999719597
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.336Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.336Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.336Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.336Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.336Z - Time taken for 'total execution time for createProjectGraph()' 9.886249999981374ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.619Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.619Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.707Z - [WATCHER]: 9 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.707Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.723Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.723Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/4.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/2.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/3.pack.gz_,apps/skillable-prototypes/.next/static/webpack/webpack.daba74628172ea3c.hot-update.js,apps/skillable-prototypes/.next/static/css/app/layout.css,apps/skillable-prototypes/.next/static/webpack/daba74628172ea3c.webpack.hot-update.json,apps/skillable-prototypes/.next/static/webpack/app/layout.daba74628172ea3c.hot-update.js,apps/skillable-prototypes/.next/server/app/dashboard/page_client-reference-manifest.js,apps/skillable-prototypes/.next/static/chunks/webpack.js,apps/skillable-prototypes/.next/static/chunks/app/layout.js,apps/skillable-prototypes/.next/app-build-manifest.json,apps/skillable-prototypes/.next/static/development/_buildManifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.js,apps/skillable-prototypes/.next/react-loadable-manifest.json,apps/skillable-prototypes/.next/static/development/_ssgManifest.js,apps/skillable-prototypes/.next/server/middleware-build-manifest.js,apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js,apps/skillable-prototypes/.next/server/next-font-manifest.json,apps/skillable-prototypes/.next/build-manifest.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.723Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.724Z - Time taken for 'hash changed files from watcher' 3.1824580000247806ms
+Time for 'nx/core/project-json:createNodes' 0.114166000043042
+Time for 'nx/core/package-json:createNodes' 0.18829199997708201
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 2.9754590000375174
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.733Z - Time taken for 'build-project-configs' 6.215375000028871ms
+Time for 'build typescript dependencies' 0.760500000033062
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.745Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.745Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.746Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.746Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.746Z - Time taken for 'total execution time for createProjectGraph()' 10.091582999972161ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.822Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.822Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.881Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 5 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.881Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.924Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.924Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz.old,apps/skillable-prototypes/.next/cache/webpack/server-development/3.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/2.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/4.pack.gz
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.924Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/2.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/3.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/4.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.926Z - Time taken for 'hash changed files from watcher' 2.0039579999865964ms
+Time for 'nx/core/package-json:createNodes' 0.2905419999733567
+Time for 'nx/core/project-json:createNodes' 0.16258299996843562
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 4.642375000054017
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.939Z - Time taken for 'build-project-configs' 9.001457999984268ms
+Time for 'build typescript dependencies' 0.9146250000339933
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.963Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.963Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.964Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.964Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:05.964Z - Time taken for 'total execution time for createProjectGraph()' 20.477624999999534ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.001Z - [WATCHER]: 1 file(s) created or restored, 11 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.001Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.102Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.102Z - [REQUEST]: apps/skillable-prototypes/.next/server/app/favicon.ico/route.js,apps/skillable-prototypes/.next/types/cache-life.d.ts,apps/skillable-prototypes/.next/types/app/dashboard/layout.ts,apps/skillable-prototypes/.next/server/server-reference-manifest.js,apps/skillable-prototypes/.next/types/package.json,apps/skillable-prototypes/.next/types/app/layout.ts,apps/skillable-prototypes/.next/server/vendor-chunks/next.js,apps/skillable-prototypes/.next/server/server-reference-manifest.json,apps/skillable-prototypes/.next/server/app-paths-manifest.json,apps/skillable-prototypes/.next/server/webpack-runtime.js,apps/skillable-prototypes/.next/server/pages-manifest.json,apps/skillable-prototypes/.next/types/app/dashboard/page.ts
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.102Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.104Z - Time taken for 'hash changed files from watcher' 1.34050000004936ms
+Time for 'nx/core/project-json:createNodes' 0.12162499997066334
+Time for 'nx/core/package-json:createNodes' 0.18233300000429153
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 2.87358299997868
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.113Z - Time taken for 'build-project-configs' 8.055792000028305ms
+Time for 'build typescript dependencies' 0.8484170000301674
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.125Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.125Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.125Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.125Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.125Z - Time taken for 'total execution time for createProjectGraph()' 9.292459000018425ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.815Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.815Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.866Z - [WATCHER]: apps/skillable-prototypes/.next/cache/webpack/client-development/2.pack.gz_ was created or restored
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.867Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.917Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.917Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/2.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/3.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.917Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.918Z - Time taken for 'hash changed files from watcher' 1.2419159999699332ms
+Time for 'nx/core/package-json:createNodes' 0.20533399999840185
+Time for 'nx/core/project-json:createNodes' 0.16162500000791624
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.821165999979712
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.927Z - Time taken for 'build-project-configs' 6.976458000019193ms
+Time for 'build typescript dependencies' 0.6345000000437722
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.938Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.938Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.938Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.938Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:06.939Z - Time taken for 'total execution time for createProjectGraph()' 8.62108300003456ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.128Z - [WATCHER]: 4 file(s) created or restored, 1 file(s) modified, 4 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.128Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.232Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.232Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/2.pack.gz,apps/skillable-prototypes/.next/cache/webpack/client-development/3.pack.gz,apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz,apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz.old,apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.232Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/2.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/client-development/3.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.233Z - Time taken for 'hash changed files from watcher' 3.117541000014171ms
+Time for 'nx/core/project-json:createNodes' 0.12575000000651926
+Time for 'nx/core/package-json:createNodes' 0.19162500003585592
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.4152080000494607
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.242Z - Time taken for 'build-project-configs' 6.5289580000098795ms
+Time for 'build typescript dependencies' 0.6479580000159331
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.253Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.253Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.254Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.254Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:23:07.254Z - Time taken for 'total execution time for createProjectGraph()' 8.987957999983337ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.131Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.131Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.231Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.231Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/3.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/5.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.231Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.232Z - Time taken for 'hash changed files from watcher' 0.21266700001433492ms
+Time for 'nx/core/project-json:createNodes' 0.14212500001303852
+Time for 'nx/core/package-json:createNodes' 0.22279099997831509
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 4.201209000020754
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.242Z - Time taken for 'build-project-configs' 7.81716699997196ms
+Time for 'build typescript dependencies' 0.009374999965075403
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.256Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.257Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.257Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.257Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.257Z - Time taken for 'total execution time for createProjectGraph()' 10.742208999989089ms
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.272Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.273Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 4 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.374Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.375Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz.old,apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/3.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/5.pack.gz,apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.375Z - [REQUEST]: apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/5.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz_,apps/skillable-prototypes/.next/cache/webpack/server-development/3.pack.gz_
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.376Z - Time taken for 'hash changed files from watcher' 1.545916999981273ms
+Time for 'nx/core/project-json:createNodes' 0.12883300002431497
+Time for 'nx/core/package-json:createNodes' 0.2408329999889247
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 3.0304579999647103
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.383Z - Time taken for 'build-project-configs' 5.755124999966938ms
+Time for 'build typescript dependencies' 0.9102920000441372
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.397Z - Wrote project graph cache to /Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/.nx/workspace-data/project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.397Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.397Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.397Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-08-01T20:24:06.397Z - Time taken for 'total execution time for createProjectGraph()' 9.418249999987893ms

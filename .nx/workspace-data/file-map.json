@@ -1,0 +1,994 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.3.11",
+  "pathMappings": {
+    "@/*": [
+      "apps/skillable-prototypes/src/*"
+    ],
+    "@skillable/design-system": [
+      "libs/design-system/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".cursor/rules/create-design.mdc",
+        "hash": "13658234295789579963"
+      },
+      {
+        "file": ".cursor/rules/prototype-details-template.mdc",
+        "hash": "1773362864215370239"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "11397543015392399988"
+      },
+      {
+        "file": "nx.json",
+        "hash": "1718713062467436366"
+      },
+      {
+        "file": ".cursor/rules/use-icons.mdc",
+        "hash": "9094223592758394768"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3752522426161915471"
+      },
+      {
+        "file": ".cursor/rules/create-prototype.mdc",
+        "hash": "9727866051004638466"
+      },
+      {
+        "file": "README.md",
+        "hash": "18216521206707370279"
+      },
+      {
+        "file": ".cursor/rules/create-component.mdc",
+        "hash": "12868832795727419563"
+      },
+      {
+        "file": "package.json",
+        "hash": "7685354762372505230"
+      },
+      {
+        "file": ".cursor/docs/nx-workspace-transition.md",
+        "hash": "17035976171144329225"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "1537231796928696646"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "11349616980964601162"
+      },
+      {
+        "file": ".vscode/css_custom_data.json",
+        "hash": "16012001332552715016"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "1867017717006394117"
+      },
+      {
+        "file": ".cursor/rules/process-task-list.mdc",
+        "hash": "16329970768462447047"
+      }
+    ],
+    "projectFileMap": {
+      "skillable-prototypes": [
+        {
+          "file": "apps/skillable-prototypes/.next/app-build-manifest.json",
+          "hash": "3042302675813257105"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/build-manifest.json",
+          "hash": "5125768831124365349"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/.rscinfo",
+          "hash": "3155937669925740823"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz",
+          "hash": "5023605563759223968"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/client-development/1.pack.gz",
+          "hash": "18358156793737442712"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/client-development/2.pack.gz",
+          "hash": "16822602062744277092"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/client-development/3.pack.gz",
+          "hash": "17227506434382172707"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz",
+          "hash": "9813583506794620722"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/client-development/index.pack.gz.old",
+          "hash": "13110992547573475829"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/server-development/0.pack.gz",
+          "hash": "14369687340502456899"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/server-development/1.pack.gz",
+          "hash": "17745834717289066434"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/server-development/2.pack.gz",
+          "hash": "10347631301459797356"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/server-development/3.pack.gz",
+          "hash": "12234981440887324102"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/server-development/4.pack.gz",
+          "hash": "8361214275385373824"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/server-development/5.pack.gz",
+          "hash": "686104183207534030"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz",
+          "hash": "13628890020928351918"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/cache/webpack/server-development/index.pack.gz.old",
+          "hash": "13547412131956894369"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/package.json",
+          "hash": "11338307439248427064"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/react-loadable-manifest.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/app-paths-manifest.json",
+          "hash": "5547175644725689750"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/app/dashboard/page.js",
+          "hash": "10799639316250978234"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/app/dashboard/page_client-reference-manifest.js",
+          "hash": "7693660147910011075"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/app/favicon.ico/route.js",
+          "hash": "13760336001510724029"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/interception-route-rewrite-manifest.js",
+          "hash": "10484309360224763022"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/middleware-build-manifest.js",
+          "hash": "10146558356613894909"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/middleware-manifest.json",
+          "hash": "9889576824779923310"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/middleware-react-loadable-manifest.js",
+          "hash": "9185069726031651908"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/next-font-manifest.js",
+          "hash": "15774307360858159360"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/next-font-manifest.json",
+          "hash": "14137771621258350492"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/pages-manifest.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/server-reference-manifest.js",
+          "hash": "13062913855343812063"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/server-reference-manifest.json",
+          "hash": "16727372571129113637"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/vendor-chunks/@swc.js",
+          "hash": "4256815035476632396"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/vendor-chunks/lucide-react.js",
+          "hash": "6265390460095883253"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/vendor-chunks/next.js",
+          "hash": "842306378965871762"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/vendor-chunks/papaparse.js",
+          "hash": "8041063037518476160"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/server/webpack-runtime.js",
+          "hash": "8585000627109614661"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/app-pages-internals.js",
+          "hash": "3320666085938202050"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/app/dashboard/error.js",
+          "hash": "1509975833430323009"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/app/dashboard/layout.js",
+          "hash": "16666309233934735875"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/app/dashboard/loading.js",
+          "hash": "17622838151735693822"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/app/dashboard/page.js",
+          "hash": "18212167797991107469"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/app/layout.js",
+          "hash": "1477103430483477056"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/main-app.js",
+          "hash": "4586161477172319158"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/polyfills.js",
+          "hash": "8152964857117933876"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/chunks/webpack.js",
+          "hash": "6167454567297927149"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/css/app/layout.css",
+          "hash": "13199637354164516415"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/development/_buildManifest.js",
+          "hash": "13063724784290855366"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/development/_ssgManifest.js",
+          "hash": "17018243955171961484"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/03b436aa846269de-s.woff2",
+          "hash": "13521095246535127570"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/26a46d62cd723877-s.woff2",
+          "hash": "5820468924505243925"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/36008747766f78c6-s.woff2",
+          "hash": "15552949772046357677"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/383c2ab2a767fb58-s.p.woff2",
+          "hash": "14323527553862154940"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/55c55f0601d81cf3-s.woff2",
+          "hash": "8658726349192049551"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/581909926a08bbc8-s.woff2",
+          "hash": "7544503975621241373"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/6c654496b1569cf8-s.woff2",
+          "hash": "4469722386912264529"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/6d38f9d4e0f4772b-s.woff2",
+          "hash": "9659055701875166401"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/76fe8e18136e2e68-s.woff2",
+          "hash": "9186158244706883566"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/8e9860b6e62d6359-s.woff2",
+          "hash": "6250587600893442431"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/97e0cb1ae144a2a9-s.woff2",
+          "hash": "17550776652030238473"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/cd56370bb165aad7-s.woff2",
+          "hash": "823833442427024595"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/df0a9ae256c0569c-s.woff2",
+          "hash": "13559920167712985880"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "hash": "17280332816367325500"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/webpack/633457081244afec._.hot-update.json",
+          "hash": "10481436618516908015"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/webpack/app/layout.daba74628172ea3c.hot-update.js",
+          "hash": "10623665167896809492"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/webpack/daba74628172ea3c.webpack.hot-update.json",
+          "hash": "8773209185785337189"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/static/webpack/webpack.daba74628172ea3c.hot-update.js",
+          "hash": "9608602543694255400"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/trace",
+          "hash": "2301324832908904192"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/types/app/dashboard/layout.ts",
+          "hash": "17522238114533406986"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/types/app/dashboard/page.ts",
+          "hash": "7657262003365126444"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/types/app/layout.ts",
+          "hash": "2852051374114407275"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/types/cache-life.d.ts",
+          "hash": "12858368115349027927"
+        },
+        {
+          "file": "apps/skillable-prototypes/.next/types/package.json",
+          "hash": "6094546126370684104"
+        },
+        {
+          "file": "apps/skillable-prototypes/next.config.ts",
+          "hash": "18063800393739477013"
+        },
+        {
+          "file": "apps/skillable-prototypes/postcss.config.mjs",
+          "hash": "1886002347757770194"
+        },
+        {
+          "file": "apps/skillable-prototypes/project.json",
+          "hash": "3957984735762741035"
+        },
+        {
+          "file": "apps/skillable-prototypes/public/data/lab-instance-seed-data.csv",
+          "hash": "2801645929324342222"
+        },
+        {
+          "file": "apps/skillable-prototypes/public/data/lab-profile-seed-data.csv",
+          "hash": "866808284425816070"
+        },
+        {
+          "file": "apps/skillable-prototypes/public/data/lab-series-seed-data.csv",
+          "hash": "8970267498196675152"
+        },
+        {
+          "file": "apps/skillable-prototypes/public/data/template-seed-data.csv",
+          "hash": "16046533828899079165"
+        },
+        {
+          "file": "apps/skillable-prototypes/public/images/skillable-logo-white.svg",
+          "hash": "5775479127322927917"
+        },
+        {
+          "file": "apps/skillable-prototypes/public/images/skillable-logo.svg",
+          "hash": "4712262544162628474"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/(demo)/design-system-demo/page.tsx",
+          "hash": "4320280059867752390"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/(editor)/instructions-editor/page.tsx",
+          "hash": "4534897533466202085"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/(prototypes)/lab-profile/page.tsx",
+          "hash": "10216674971670676125"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/(prototypes)/lab-profile/prototype-details.md",
+          "hash": "11896806168455931764"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/dashboard/error.tsx",
+          "hash": "9894258266670689159"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/dashboard/layout.tsx",
+          "hash": "16197486840395047271"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/dashboard/loading.tsx",
+          "hash": "12772115225838416916"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/dashboard/page.tsx",
+          "hash": "16686844790390705634"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/globals.css",
+          "hash": "14233344576988379848"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/layout.tsx",
+          "hash": "14247999726001131618"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/page.tsx",
+          "hash": "1916203350188819318"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/theme/ThemeInitializer.tsx",
+          "hash": "12503996730526310540"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/theme/base.css",
+          "hash": "3756586989556467979"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/theme/dark.css",
+          "hash": "8175591462970371489"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/theme/index.css",
+          "hash": "11430659665065967010"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/app/theme/theme.ts",
+          "hash": "1249011291959599332"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/Icon.tsx",
+          "hash": "9347051837600339535"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/buttons/Button.tsx",
+          "hash": "16809058046640287445"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/buttons/ButtonExample.tsx",
+          "hash": "14750297632278321993"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/buttons/SplitButton.tsx",
+          "hash": "10866886516804709578"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/buttons/SplitButtonExample.tsx",
+          "hash": "4331860607650878488"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/cards/dashboard/DashboardCard.tsx",
+          "hash": "3212036448995019027"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/cards/dashboard/DashboardCardExample.tsx",
+          "hash": "2502022010603660784"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/cards/dashboard/InstanceCard.tsx",
+          "hash": "8947931498542666039"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/cards/dashboard/ProfileCard.tsx",
+          "hash": "10924026771700254367"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/cards/dashboard/README.md",
+          "hash": "18361698300045382685"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/cards/dashboard/SeriesCard.tsx",
+          "hash": "4166901952870119303"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/cards/dashboard/TemplateCard.tsx",
+          "hash": "2430482070798150084"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/cards/dashboard/index.ts",
+          "hash": "891195363208346652"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/content/Accordion.tsx",
+          "hash": "8365528476334483550"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/content/AccordionExample.tsx",
+          "hash": "1873439832153447995"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dashboard/DashboardGrid.tsx",
+          "hash": "9153631900351991752"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dashboard/DashboardHeader.tsx",
+          "hash": "1161233465840524219"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dashboard/FilterControls.tsx",
+          "hash": "2048917316440462816"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dashboard/PaginationControls.tsx",
+          "hash": "17429612601412013096"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dashboard/SortControls.tsx",
+          "hash": "2291732194832734827"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dashboard/index.ts",
+          "hash": "2480379322375481847"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/data/DataTable.tsx",
+          "hash": "8735775420463324040"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/data/DataTableExample.tsx",
+          "hash": "16815746322676758236"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/data/TabNavigation.tsx",
+          "hash": "12773363617032998408"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/data/TableContent.tsx",
+          "hash": "6787841477584271283"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/data/TableFooter.tsx",
+          "hash": "14827536392142805324"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/data/index.ts",
+          "hash": "9349453091391610647"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/data/types.ts",
+          "hash": "5652572807768536415"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/data/utils.ts",
+          "hash": "8340642053923357168"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dialogs/BasicDialog.tsx",
+          "hash": "12641738899137233084"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dialogs/BasicDialogExample.tsx",
+          "hash": "3198299117753438547"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dividers/Divider.tsx",
+          "hash": "15710021146307066975"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dividers/DividerExample.tsx",
+          "hash": "13298510826548895113"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/dividers/index.ts",
+          "hash": "791324565945047636"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/FormattingToolbar.tsx",
+          "hash": "6181155690654396065"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/FormattingToolbarExample.tsx",
+          "hash": "14853309515299623875"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/InstructionsEditorFooter.tsx",
+          "hash": "4692496595684978512"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/InstructionsEditorHeader.tsx",
+          "hash": "7062184283745577484"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/RichTextEditor.tsx",
+          "hash": "13830651021494988350"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/commands.ts",
+          "hash": "2469612503443414072"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/extensions/SlashCommand.ts",
+          "hash": "203632387897116282"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/extensions/SlashCommandList.tsx",
+          "hash": "14054201994877447521"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/index.ts",
+          "hash": "3418922007301874655"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/prose-theme.css",
+          "hash": "1413711156162377298"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/slashCommands.ts",
+          "hash": "14125925191116500522"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/types.ts",
+          "hash": "17056092278711543154"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/utils/commands.ts",
+          "hash": "12496488773060522019"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/editor/utils/slashCommands.ts",
+          "hash": "14050362897180281055"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/Alert.tsx",
+          "hash": "12601282916821823619"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/AlertExample.tsx",
+          "hash": "4256880922290700563"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/Chip.tsx",
+          "hash": "2403225141023731949"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/ChipExample.tsx",
+          "hash": "14036994190820277625"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/ToastContainer.tsx",
+          "hash": "2261793882517413004"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/ToastContext.tsx",
+          "hash": "12801267437984142811"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/Tooltip.tsx",
+          "hash": "6927040901633255381"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/TooltipExample.tsx",
+          "hash": "3199768275176117349"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/info/index.ts",
+          "hash": "8197792482877848939"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/CheckboxItem.tsx",
+          "hash": "16079660035921665520"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/CheckboxItemExample.tsx",
+          "hash": "7709673897433662445"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/DropdownSelect.tsx",
+          "hash": "10323921689420053500"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/DropdownSelectExample.tsx",
+          "hash": "1669351119687074551"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/RadioList.tsx",
+          "hash": "7635529252550556332"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/RadioListExample.tsx",
+          "hash": "17779429428696270664"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/Switch.tsx",
+          "hash": "7204526443312577491"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/SwitchExample.tsx",
+          "hash": "547368180845354443"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/TextField.tsx",
+          "hash": "17452388033130673045"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/TextFieldExample.tsx",
+          "hash": "13750975446803651096"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/inputs/index.ts",
+          "hash": "14021643344375301365"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/menu/AdvancedMenu.tsx",
+          "hash": "14779030022141982844"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/menu/AdvancedMenuExample.tsx",
+          "hash": "11706818060230859119"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/menu/FilterMenu.tsx",
+          "hash": "14359485844497891251"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/menu/FilterMenuExample.tsx",
+          "hash": "16468331690671552083"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/menu/Menu.tsx",
+          "hash": "11693621674888922719"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/menu/UserMenu.tsx",
+          "hash": "13846752420186506981"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/menu/useScrollLock.ts",
+          "hash": "3268769694845587706"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/navigation/PrimaryNav.tsx",
+          "hash": "7999539052947839821"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/navigation/StateToggle.tsx",
+          "hash": "6147247701427352034"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/navigation/StateToggleExample.tsx",
+          "hash": "8191653400043273886"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/navigation/Stepper.tsx",
+          "hash": "1979764475937140678"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/navigation/StepperExample.tsx",
+          "hash": "2664719362566121632"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/navigation/Tabs.tsx",
+          "hash": "3666836749342410408"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/navigation/TabsExample.tsx",
+          "hash": "6127616474781397508"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/navigation/index.ts",
+          "hash": "13587100492707610481"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/EmptyState.tsx",
+          "hash": "9488566946919816790"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/EmptyStateExample.tsx",
+          "hash": "11409435038342143009"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/ErrorBoundary.tsx",
+          "hash": "1171862730541873250"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/ErrorState.tsx",
+          "hash": "9154156242086081980"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/ErrorStateExample.tsx",
+          "hash": "2924726775580823550"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/LoadingSpinner.tsx",
+          "hash": "7267668092948508731"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/LoadingSpinnerExample.tsx",
+          "hash": "13240485736737645289"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/LoadingState.tsx",
+          "hash": "9856085792739404561"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/LoadingStateExample.tsx",
+          "hash": "14157525761698685626"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/components/ui/index.ts",
+          "hash": "3863351627895124102"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/config/constants.ts",
+          "hash": "11316648845876716393"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/config/filtering.ts",
+          "hash": "15528967689109962273"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/config/index.ts",
+          "hash": "3228824926814689493"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/config/navigation.ts",
+          "hash": "9102844918605452963"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/config/sorting.ts",
+          "hash": "12286215356278383927"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/config/tabs.ts",
+          "hash": "2168871824781444918"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/data/index.ts",
+          "hash": "4225469844351070979"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/data/mockData.ts",
+          "hash": "16107502808751114632"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/index.ts",
+          "hash": "16876130240433009209"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useCSVData.ts",
+          "hash": "3642789628737867729"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useDashboardState.ts",
+          "hash": "1864387503260369529"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useDataTransformation.ts",
+          "hash": "4329686410007748449"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useFiltering.ts",
+          "hash": "1089249841253605961"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useLocalStorage.ts",
+          "hash": "8656013618882546204"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/usePagination.ts",
+          "hash": "7016087025333780387"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/usePersistentState.ts",
+          "hash": "591286760111848879"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useSorting.ts",
+          "hash": "14173114515797598874"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useStateSynchronization.ts",
+          "hash": "16164287257307719545"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useStateSynchronizationExample.tsx",
+          "hash": "583913498713959314"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useTabManagement.ts",
+          "hash": "7806033416101943944"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/hooks/useToast.ts",
+          "hash": "11713263616938905633"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/types/csv.ts",
+          "hash": "1493116800181824197"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/types/dashboard.ts",
+          "hash": "18017095035171790959"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/types/errors.ts",
+          "hash": "6831907900831961659"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/types/generic.ts",
+          "hash": "6968494158423795937"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/types/index.ts",
+          "hash": "15471237211630927126"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/types/sorting.ts",
+          "hash": "15486432298855928859"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/utils/csvParser.ts",
+          "hash": "17862851015198220494"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/utils/dataTransformers.ts",
+          "hash": "8413528490339016272"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/utils/index.ts",
+          "hash": "9441075243356276031"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/utils/sortingUtils.ts",
+          "hash": "6673623875280621798"
+        },
+        {
+          "file": "apps/skillable-prototypes/src/utils/typeGuards.ts",
+          "hash": "2034600485745099276"
+        },
+        {
+          "file": "apps/skillable-prototypes/tailwind.config.ts",
+          "hash": "2057066977248938829"
+        },
+        {
+          "file": "apps/skillable-prototypes/tsconfig.json",
+          "hash": "14295789571577807518"
+        }
+      ]
+    }
+  }
+}

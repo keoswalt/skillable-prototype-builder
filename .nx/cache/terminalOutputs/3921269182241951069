@@ -1,0 +1,15 @@
+   [1m[38;2;173;127;168m▲ Next.js 15.3.3[39m[22m
+   - Local:        http://localhost:4200
+   - Network:      http://192.168.1.147:4200
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.7s
+<w> [1m[33m[webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/kim.oswalt/Library/CloudStorage/OneDrive-Skillable/Documents/GitHub/skillable-ds/apps/skillable-prototypes/.next/cache/webpack/client-development/0.pack.gz'[39m[22m
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 5s (1075 modules)
+ GET / [32m200[39m in 5345ms
+ [32m[1m✓[22m[39m Compiled in 90ms (442 modules)
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 494ms (1138 modules)
+ GET /favicon.ico [32m200[39m in 559ms
+ GET /dashboard [32m200[39m in 613ms
+^C

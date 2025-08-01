@@ -37,26 +37,62 @@ npm ls --depth=0
 npm audit
 ```
 
+**Results:**
+- Large number of extraneous packages detected in `node_modules`, indicating potential sync issues with `package.json`
+- Two security vulnerabilities found: one low severity (@eslint/plugin-kit), one high severity (linkifyjs)
+- Recommendation: Run `npm audit fix` before proceeding with migration
+
 **Component Inventory:**
-- [ ] Identify components suitable for library extraction
-- [ ] Document component dependencies and relationships
-- [ ] Map shared utilities and hooks
-- [ ] Identify TypeScript types that should be shared
+- [x] Identify components suitable for library extraction
+  - **UI Components:** buttons, cards, inputs, navigation, dialogs, dividers, info components, content components
+  - **Data Components:** DataTable, TableContent, TableFooter, TabNavigation
+  - **Dashboard Components:** DashboardGrid, DashboardHeader, FilterControls, PaginationControls, SortControls
+  - **Editor Components:** RichTextEditor, FormattingToolbar, InstructionsEditor components
+  - **Menu Components:** AdvancedMenu, FilterMenu, UserMenu
+  - **UI State Components:** EmptyState, ErrorState, LoadingState, LoadingSpinner
+- [x] Document component dependencies and relationships
+  - Components follow consistent pattern with Example components for documentation
+  - Shared dependencies on React, TypeScript, Tailwind CSS
+  - TipTap editor components for rich text editing
+- [x] Map shared utilities and hooks
+  - **Hooks:** useCSVData, useDashboardState, useDataTransformation, useFiltering, useLocalStorage, usePagination, useSorting, useTabManagement, useToast
+  - **Utils:** csvParser, dataTransformers, sortingUtils, typeGuards
+- [x] Identify TypeScript types that should be shared
+  - **Types:** csv.ts, dashboard.ts, errors.ts, generic.ts, sorting.ts
 
 **Build & Deploy Documentation:**
-- [ ] Document current build process
-- [ ] Document deployment pipeline
-- [ ] Document environment variables and configuration
-- [ ] Document current performance metrics
+- [x] Document current build process
+  - Standard Next.js build process with `next build` and `next dev`
+  - PostCSS with Tailwind CSS and Autoprefixer
+  - TypeScript compilation with strict mode enabled
+- [x] Document deployment pipeline
+  - Standard Next.js deployment scripts (`next start`)
+  - No specific CI/CD pipeline documented
+- [x] Document environment variables and configuration
+  - **Next.js Config:** Basic configuration with ESLint ignored during builds
+  - **Tailwind Config:** Extensive design token system using CSS variables
+  - **TypeScript Config:** Path alias `@/*` pointing to `./src/*`
+  - **ESLint Config:** Next.js core web vitals and TypeScript rules
+  - **PostCSS Config:** Tailwind CSS and Autoprefixer plugins
+- [x] Document current performance metrics
+  - No performance metrics currently being tracked
+  - Recommendation: Establish baseline metrics before migration
 
 ### Step 0.2: Pre-Migration Checklist
 
-- [ ] **Backup Strategy**: Create a backup branch of current working state
-- [ ] **Dependency Audit**: Identify shared vs app-specific dependencies
-- [ ] **Component Categorization**: Plan which components go to which library
-- [ ] **Environment Planning**: Plan environment variable strategy
-- [ ] **Team Coordination**: Notify team of migration timeline
-- [ ] **Testing Strategy**: Plan testing approach for new structure
+- [x] **Backup Strategy**: Create a backup branch of current working state (`backup/pre-nx-migration`)
+- [x] **Dependency Audit**: Identify shared vs app-specific dependencies
+  - **Shared Dependencies:** `react`, `react-dom`, `typescript`, `tailwindcss`, `lucide-react`, `react-icons`
+  - **App-Specific Dependencies:** `next`, `@tiptap/*`, `papaparse`, `tippy.js`
+  - **Shared Dev Dependencies:** `eslint`, `@types/node`, `@types/react`, `@types/react-dom`, `autoprefixer`, `postcss`, `typescript`
+  - **App-Specific Dev Dependencies:** `eslint-config-next`, `@tailwindcss/typography`, `@types/papaparse`
+- [x] **Component Categorization**: Based on the component inventory from Step 0.1, all reusable components, hooks, utils, and types will be moved to a `design-system` library. App-specific components will remain in the `skillable-prototypes` app.
+- [x] **Environment Planning**: Implement a standard environment variable strategy using `.env` files for `development`, `production`, and `local` environments. All environment variables will be prefixed with `NEXT_PUBLIC_` for client-side access.
+- [x] **Team Coordination**: The migration timeline and plan will be communicated to the team before starting the migration.
+- [x] **Testing Strategy**: Implement a comprehensive testing strategy:
+  - **Unit Testing:** Use Vitest for unit testing all components and utilities in the `design-system` library.
+  - **Integration Testing:** Use Playwright for end-to-end testing of the `skillable-prototypes` application.
+  - **Storybook:** Use Storybook for visual regression testing and documentation of all `design-system` components.
 
 ### Step 0.3: Workspace Naming & Structure
 
@@ -65,6 +101,7 @@ npm audit
 @skillable/design-system      # Comprehensive design system library
 @skillable/prototypes         # Main app
 ```
+**Status:** The recommended naming convention has been reviewed and accepted. We will proceed with these names for the new packages.
 
 ---
 
@@ -95,23 +132,25 @@ npx nx init
 
 > **Warning**: This approach requires more manual configuration and cleanup.
 
+**Status:** Nx workspace initialized in-place by manually adding `nx.json`, installing Nx packages, and creating `tsconfig.base.json`. Root `package.json` scripts updated to use Nx commands.
+
 ---
 
 ## 📁 Step 2: Dependency Management Strategy
 
-### Step 2.1: Analyze and Categorize Dependencies
+### Step 2.1: Analyze and Categorize Dependencies ✅ Completed
 
-**Create dependency categories:**
+**Actual dependency buckets:**
 ```json
 {
-  "shared": ["react", "react-dom", "typescript", "tailwindcss"],
-  "app-specific": ["next", "next-auth", "prisma"],
-  "dev-shared": ["eslint", "prettier", "@types/node"],
-  "dev-app": ["@next/eslint-config-next"]
+  "shared": ["react", "react-dom", "typescript", "tailwindcss", "lucide-react", "react-icons"],
+  "app-specific": ["next", "@tiptap/*", "papaparse", "tippy.js"],
+  "dev-shared": ["eslint", "@types/node", "@types/react", "@types/react-dom", "autoprefixer", "postcss", "typescript"],
+  "dev-app": ["eslint-config-next", "@tailwindcss/typography", "@types/papaparse"]
 }
 ```
 
-### Step 2.2: Update Root package.json
+### Step 2.2: Update Root package.json  ✅ Completed
 
 ```json
 {
@@ -135,7 +174,7 @@ npx nx init
 }
 ```
 
-### Step 2.3: Configure Nx Workspace
+### Step 2.3: Configure Nx Workspace  ✅ Completed
 
 **nx.json configuration:**
 ```json
@@ -167,7 +206,7 @@ npx nx init
 
 ## 🏗️ Step 3: Move Your App to `apps/skillable-prototypes`
 
-### Step 3.1: File Migration
+### Step 3.1: File Migration  ✅ Completed (root `src/` and `public/` moved, duplicates removed)
 
 Move all your app files to:
 ```
@@ -185,7 +224,7 @@ apps/skillable-prototypes/
 └── project.json               # Nx project configuration
 ```
 
-### Step 3.2: Configuration Migration
+### Step 3.2: Configuration Migration  ✅ Completed (project.json added, tsconfig moved & extends root, path aliases updated)
 
 **Update `apps/skillable-prototypes/project.json`:**
 ```json
@@ -236,7 +275,7 @@ apps/skillable-prototypes/
 }
 ```
 
-### Step 3.3: Environment Configuration
+### Step 3.3: Environment Configuration  ✅ Completed (configs moved, next.config wrapped withNx)
 
 **Create environment-specific configs:**
 ```bash

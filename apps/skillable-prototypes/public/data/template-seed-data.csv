@@ -1,0 +1,103 @@
+﻿lab_profile,series,organization,created,last_modified,platform
+Introduction to Data Science,Advanced Developer Series,AI Nexus,"March 15, 2022","March 20, 2022",ESX
+Agile Project Management,Cloud Mastery Series,CyberCore,"April 29, 2021","August 2, 2021",Docker
+Cybersecurity Essentials,Cybersecurity Pathway,CyberCore,"March 1, 2020","February 12, 2021",None | AWS
+Introduction to Data Science,Web Development Journey,DevForge,"May 26, 2020","April 20, 2021",Hyper-V | Azure
+Data Visualization with Python,Foundations of Technology,NextGen Labs,"February 15, 2022","September 10, 2022",ESX | Azure
+Big Data Analytics,Foundations of Technology,InnoSoft,"July 13, 2021","June 17, 2022",Hyper-V | AWS
+Web Development with JavaScript,Cloud Mastery Series,CodeCrafters,"February 13, 2021","December 26, 2021",ESX | AWS
+Networking Concepts,AI and Machine Learning Track,SecureNet,"October 11, 2023","August 10, 2024",ESX
+Building Secure Web Applications,DevOps Essentials,CloudSphere,"August 23, 2021","September 30, 2021",Docker
+AI for Beginners,Data Science Bootcamp,DataMinds,"August 14, 2021","November 27, 2021",None | Azure
+Database Design and Management,Data Science Bootcamp,CyberCore,"September 30, 2020","February 22, 2021",Hyper-V | Azure
+Data Visualization with Python,Data Science Bootcamp,CodeCrafters,"August 9, 2023","June 24, 2024",ESX | Azure
+Linux Command Line Basics,Mobile Development Series,CodeCrafters,"February 29, 2020","November 21, 2020",Hyper-V | AWS
+Cloud Computing Basics,Advanced Developer Series,AI Nexus,"September 25, 2020","May 24, 2021",ESX | AWS
+Linux Command Line Basics,DevOps Essentials,AI Nexus,"November 26, 2021","July 24, 2022",Hyper-V
+Natural Language Processing,Cybersecurity Pathway,NextGen Labs,"December 12, 2021","June 1, 2022",None | AWS
+Web Development with JavaScript,Mobile Development Series,CyberCore,"December 5, 2022","September 6, 2023",None | Azure
+Web Development with JavaScript,Cybersecurity Pathway,CloudSphere,"May 4, 2023","September 12, 2023",Hyper-V | Azure
+Introduction to Data Science,DevOps Essentials,CodeCrafters,"December 28, 2021","July 11, 2022",None
+Blockchain Fundamentals,Web Development Journey,NextGen Labs,"May 23, 2023","September 23, 2023",Hyper-V | AWS
+Big Data Analytics,Cybersecurity Pathway,DataMinds,"May 7, 2023","January 3, 2024",Hyper-V
+Building Secure Web Applications,Web Development Journey,DataMinds,"January 23, 2022","August 21, 2022",None | Azure
+IoT and Embedded Systems,Advanced Developer Series,TechNova,"May 17, 2023","June 25, 2023",Hyper-V
+Agile Project Management,Cloud Mastery Series,TechNova,"September 7, 2023","October 24, 2023",Docker
+Advanced Python Programming,Web Development Journey,CyberCore,"May 30, 2020","September 20, 2020",Docker
+Web Development with JavaScript,Foundations of Technology,DataMinds,"June 21, 2023","September 29, 2023",ESX
+Advanced Python Programming,AI and Machine Learning Track,CyberCore,"May 8, 2022","April 15, 2023",Hyper-V
+Big Data Analytics,Cybersecurity Pathway,InnoSoft,"July 24, 2023","December 30, 2023",ESX
+Linux Command Line Basics,Advanced Developer Series,DevForge,"February 5, 2021","October 10, 2021",Hyper-V
+AI for Beginners,Web Development Journey,CloudSphere,"July 25, 2023","December 11, 2023",Hyper-V | Azure
+Blockchain Fundamentals,Cloud Mastery Series,NextGen Labs,"January 24, 2020","July 24, 2020",Docker
+Advanced Python Programming,Mobile Development Series,TechNova,"August 21, 2023","June 29, 2024",ESX | AWS
+Big Data Analytics,Web Development Journey,CodeCrafters,"December 10, 2023","September 27, 2024",Hyper-V
+Data Visualization with Python,DevOps Essentials,DataMinds,"December 17, 2020","December 11, 2021",Hyper-V
+Web Development with JavaScript,Foundations of Technology,InnoSoft,"December 30, 2021","June 15, 2022",Hyper-V
+Networking Concepts,Web Development Journey,AI Nexus,"February 23, 2023","September 26, 2023",Hyper-V | Azure
+Introduction to Data Science,Mobile Development Series,CyberCore,"September 24, 2020","August 28, 2021",ESX
+Advanced Python Programming,Networking Academy,AI Nexus,"June 29, 2021","July 2, 2021",Hyper-V | Azure
+AI for Beginners,Foundations of Technology,DevForge,"December 4, 2020","January 12, 2021",None
+Web Development with JavaScript,Foundations of Technology,NextGen Labs,"February 15, 2021","October 24, 2021",None
+Version Control with Git,Networking Academy,CloudSphere,"August 11, 2020","June 17, 2021",Hyper-V
+Machine Learning Fundamentals,Foundations of Technology,CloudSphere,"December 19, 2020","August 11, 2021",Hyper-V
+Advanced Python Programming,Advanced Developer Series,CodeCrafters,"September 29, 2022","August 6, 2023",None
+Mobile App Development,Cloud Mastery Series,SecureNet,"August 21, 2022","August 4, 2023",Hyper-V | Azure
+Networking Concepts,Mobile Development Series,AI Nexus,"July 30, 2022","October 25, 2022",ESX
+Data Visualization with Python,Cybersecurity Pathway,CloudSphere,"July 24, 2023","April 26, 2024",Hyper-V | Azure
+Blockchain Fundamentals,DevOps Essentials,CloudSphere,"June 3, 2022","March 22, 2023",ESX
+Cloud Computing Basics,DevOps Essentials,NextGen Labs,"August 2, 2021","February 12, 2022",ESX
+DevOps Practices and Tools,Advanced Developer Series,DataMinds,"November 16, 2020","December 2, 2020",ESX
+Data Visualization with Python,Mobile Development Series,NextGen Labs,"October 26, 2022","October 1, 2023",Hyper-V | Azure
+Blockchain Fundamentals,Web Development Journey,DataMinds,"July 26, 2023","July 12, 2024",Hyper-V | Azure
+Networking Concepts,Cybersecurity Pathway,SecureNet,"September 25, 2022","March 22, 2023",Hyper-V | Azure
+Data Visualization with Python,Cybersecurity Pathway,TechNova,"April 24, 2020","March 26, 2021",Hyper-V | Azure
+Cybersecurity Essentials,Networking Academy,InnoSoft,"May 29, 2021","July 12, 2021",Hyper-V | Azure
+Agile Project Management,Networking Academy,DevForge,"April 6, 2021","June 7, 2021",Hyper-V
+Data Visualization with Python,Advanced Developer Series,CloudSphere,"April 5, 2020","April 13, 2020",ESX | AWS
+Introduction to Data Science,AI and Machine Learning Track,AI Nexus,"February 25, 2020","October 4, 2020",Hyper-V | AWS
+DevOps Practices and Tools,Web Development Journey,CyberCore,"November 8, 2021","July 7, 2022",Hyper-V | Azure
+Natural Language Processing,Networking Academy,SecureNet,"January 17, 2022","October 7, 2022",Hyper-V
+Database Design and Management,Cloud Mastery Series,CodeCrafters,"April 21, 2023","November 10, 2023",ESX
+Networking Concepts,DevOps Essentials,DataMinds,"April 15, 2020","August 31, 2020",Hyper-V
+Introduction to Data Science,Cloud Mastery Series,TechNova,"July 4, 2023","July 6, 2023",Hyper-V
+Database Design and Management,Foundations of Technology,DataMinds,"April 9, 2022","May 25, 2022",Hyper-V | Azure
+Version Control with Git,Networking Academy,NextGen Labs,"February 8, 2020","June 30, 2020",Hyper-V
+Web Development with JavaScript,Networking Academy,CodeCrafters,"May 25, 2023","February 1, 2024",ESX
+Advanced Python Programming,DevOps Essentials,CodeCrafters,"January 5, 2021","April 16, 2021",ESX
+Advanced Python Programming,Mobile Development Series,CodeCrafters,"February 27, 2022","May 19, 2022",ESX
+Cloud Computing Basics,Web Development Journey,DevForge,"March 26, 2021","February 13, 2022",ESX | AWS
+Machine Learning Fundamentals,Mobile Development Series,TechNova,"March 5, 2022","June 29, 2022",Hyper-V
+Building Secure Web Applications,Data Science Bootcamp,DataMinds,"December 30, 2023","January 31, 2024",ESX
+Introduction to Data Science,Foundations of Technology,DataMinds,"August 6, 2020","December 10, 2020",ESX
+Big Data Analytics,Networking Academy,CodeCrafters,"January 12, 2021","February 19, 2021",ESX
+Mobile App Development,Mobile Development Series,CloudSphere,"November 23, 2021","June 17, 2022",ESX
+Linux Command Line Basics,Cybersecurity Pathway,TechNova,"September 19, 2022","April 4, 2023",ESX
+Natural Language Processing,Advanced Developer Series,CloudSphere,"October 15, 2022","April 9, 2023",ESX
+Big Data Analytics,AI and Machine Learning Track,AI Nexus,"January 31, 2023","August 17, 2023",ESX
+Database Design and Management,Cloud Mastery Series,CyberCore,"December 22, 2020","December 21, 2021",ESX
+Cybersecurity Essentials,Networking Academy,CloudSphere,"May 28, 2023","June 20, 2023",ESX
+Data Visualization with Python,AI and Machine Learning Track,CloudSphere,"March 25, 2020","June 4, 2020",ESX
+DevOps Practices and Tools,AI and Machine Learning Track,CloudSphere,"December 1, 2020","June 26, 2021",ESX
+Networking Concepts,Advanced Developer Series,TechNova,"October 24, 2022","November 8, 2022",ESX
+Building Secure Web Applications,Web Development Journey,CodeCrafters,"December 13, 2022","September 20, 2023",Hyper-V
+Networking Concepts,Cybersecurity Pathway,CodeCrafters,"November 3, 2022","December 12, 2022",ESX
+Advanced Python Programming,Advanced Developer Series,TechNova,"March 3, 2022","December 20, 2022",ESX
+Database Design and Management,DevOps Essentials,CyberCore,"March 4, 2023","July 20, 2023",Hyper-V | Azure
+AI for Beginners,Data Science Bootcamp,TechNova,"December 31, 2022","May 29, 2023",Hyper-V | Azure
+Networking Concepts,Cloud Mastery Series,SecureNet,"November 1, 2021","April 27, 2022",Hyper-V | Azure
+Introduction to Data Science,Data Science Bootcamp,AI Nexus,"November 1, 2020","August 4, 2021",ESX
+Web Development with JavaScript,AI and Machine Learning Track,CloudSphere,"December 9, 2022","November 4, 2023",ESX
+Cloud Computing Basics,Networking Academy,CodeCrafters,"April 3, 2020","February 16, 2021",ESX
+Networking Concepts,Advanced Developer Series,AI Nexus,"April 9, 2022","April 10, 2022",ESX
+Agile Project Management,DevOps Essentials,CloudSphere,"September 23, 2021","March 12, 2022",ESX
+Version Control with Git,Advanced Developer Series,SecureNet,"March 4, 2022","June 3, 2022",ESX
+Agile Project Management,Foundations of Technology,SecureNet,"January 25, 2021","April 10, 2021",ESX
+Big Data Analytics,Data Science Bootcamp,DevForge,"February 26, 2020","May 22, 2020",ESX
+Introduction to Data Science,Cybersecurity Pathway,SecureNet,"June 18, 2022","July 24, 2022",ESX
+Blockchain Fundamentals,Mobile Development Series,InnoSoft,"August 30, 2021","December 12, 2021",ESX
+Agile Project Management,Cloud Mastery Series,SecureNet,"April 27, 2021","January 23, 2022",ESX
+Version Control with Git,Foundations of Technology,CloudSphere,"May 28, 2023","April 22, 2024",ESX
+Version Control with Git,Web Development Journey,CloudSphere,"April 20, 2023","September 9, 2023",ESX
+Cybersecurity Essentials,Cloud Mastery Series,CyberCore,"May 6, 2021","March 7, 2022",ESX
+Linux Command Line Basics,Data Science Bootcamp,CloudSphere,"February 11, 2021","September 17, 2021",ESX
