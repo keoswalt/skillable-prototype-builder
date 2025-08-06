@@ -24,8 +24,8 @@ const SeriesCardComponent: React.FC<SeriesCardProps> = React.memo((props) => {
   // Define default actions for series cards
   const defaultActions: CardAction[] = [
     {
-      icon: 'edit',
-      label: 'Edit',
+      icon: 'settings',
+      label: 'Edit Series',
       onClick: () => {
         alert('Opens edit series page');
       },

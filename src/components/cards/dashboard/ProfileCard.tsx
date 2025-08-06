@@ -25,23 +25,16 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = React.memo((props) => {
   const defaultActions: CardAction[] = [
     {
       icon: 'externalLink',
-      label: 'Open',
+      label: 'Launch',
       onClick: () => {
         alert('Launches lab client (if multiple instruction sets, shows dropdown to choose)');
       },
     },
     {
-      icon: 'gradCap',
+      icon: 'pencil',
       label: 'Edit Instructions',
       onClick: () => {
         alert('If 1 instruction set, opens edit instructions page. If multiple, shows dropdown to choose instruction set.');
-      },
-    },
-    {
-      icon: 'edit',
-      label: 'Edit',
-      onClick: () => {
-        alert('Opens edit profile page');
       },
     },
     {
@@ -49,6 +42,13 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = React.memo((props) => {
       label: 'Clone',
       onClick: () => {
         alert('Default: Navigates to edit profile page, opens "save as" dialog. If user has permission to create templates, show dropdown with 1) Save as new lab and 2) Save as template [checks box on profile, shows toast to user]');
+      },
+    },
+    {
+      icon: 'settings',
+      label: 'Edit Profile',
+      onClick: () => {
+        alert('Opens edit profile page');
       },
     },
     {

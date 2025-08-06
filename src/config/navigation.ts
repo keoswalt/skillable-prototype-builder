@@ -17,9 +17,9 @@ export const FIND_MENU_ITEMS: MenuItem[] = [
 ];
 
 export const CREATE_MENU_ITEMS: MenuItem[] = [
-  { label: 'Create lab profile', onClick: () => alert('Opens template gallery to start lab profile creation') },
-  { label: 'Create lab series', onClick: () => alert('Opens create lab series page') },
-  { label: 'Create VM profile', onClick: () => alert('Opens create new VM page') },
-  { label: 'Create removable media', onClick: () => alert('Opens create removable media page') },
-  { label: 'Create script template', onClick: () => alert('Opens create new script template page') },
+  { label: 'Lab profile', onClick: () => alert('Opens template gallery to start lab profile creation') },
+  { label: 'Lab series', onClick: () => alert('Opens create lab series page') },
+  { label: 'VM profile', onClick: () => alert('Opens create new VM page') },
+  { label: 'Removable media', onClick: () => alert('Opens create removable media page') },
+  { label: 'Script template', onClick: () => alert('Opens create new script template page') },
 ]; 

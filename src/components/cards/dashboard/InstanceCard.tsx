@@ -34,16 +34,34 @@ export type InstanceCardProps = (InstanceItemProps | Omit<InstanceData, 'variant
 
 const InstanceCardComponent: React.FC<InstanceCardProps> = React.memo((props) => {
   // Define default actions for instance cards
-  const defaultActions: CardAction[] = [
-    {
-      icon: 'externalLink',
-      label: 'Open',
-      onClick: () => {
-        // Default implementation - can be overridden by passing custom actions
-        alert('Opening lab instance');
-      },
+  const getDefaultActions = (): CardAction[] => {
+    const actions: CardAction[] = [
+      {
+        icon: 'info',
+        label: 'Details',
+        onClick: () => {
+          // Default implementation - can be overridden by passing custom actions
+          alert('Opens lab instance details page');
+        },
+      }
+    ];
+
+    // Only show "Open" action for running instances
+    if (props.state === 'Running') {
+      actions.push({
+        icon: 'externalLink',
+        label: 'Launch',
+        onClick: () => {
+          // Default implementation - can be overridden by passing custom actions
+          alert('Launches running lab instance');
+        },
+      });
     }
-  ];
+
+    return actions;
+  };
+
+  const defaultActions = getDefaultActions();
 
   // Define default metalinks for instance cards
   const defaultMetaLinks: Record<string, MetaLinkConfig> = {
@@ -69,7 +87,7 @@ const InstanceCardComponent: React.FC<InstanceCardProps> = React.memo((props) =>
   const finalOnClick = props.onClick || defaultOnClick;
 
   // Extract props and handle field mapping
-  const { actions, metaLinks, ...restProps } = props;
+  const { ...restProps } = props;
   
   // Check if this is an InstanceItem (has instructionSet) or InstanceData (has instructions)
   const hasInstructionSet = 'instructionSet' in restProps;

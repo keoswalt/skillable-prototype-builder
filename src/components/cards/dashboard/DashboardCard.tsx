@@ -13,6 +13,7 @@
 import React from 'react';
 import { Icon, IconName, Icons } from '../../Icon';
 import { Chip, ChipVariant } from '../../info/Chip';
+import { Tooltip } from '../../info/Tooltip';
 
 /*************************
  * Type & Prop Definitions
@@ -403,14 +404,15 @@ export const DashboardCard: React.FC<DashboardCardProps> = (props) => {
             {actions.map(({ icon, label, onClick }) => {
               const ActionIcon = Icons[icon];
               return (
-                <button
-                  key={label}
-                  onClick={onClick}
-                  aria-label={label}
-                  className="text-primary-main opacity-80 hover:opacity-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-main/40"
-                >
-                  <Icon icon={ActionIcon} className="w-4 h-4" />
-                </button>
+                <Tooltip key={label} content={label} direction="top">
+                  <button
+                    onClick={onClick}
+                    aria-label={label}
+                    className="text-primary-main opacity-80 hover:opacity-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-main/40"
+                  >
+                    <Icon icon={ActionIcon} className="w-4 h-4" />
+                  </button>
+                </Tooltip>
               );
             })}
           </div>

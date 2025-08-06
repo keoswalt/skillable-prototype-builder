@@ -24,6 +24,13 @@ const TemplateCardComponent: React.FC<TemplateCardProps> = React.memo((props) =>
   // Define default actions for template cards
   const defaultActions: CardAction[] = [
     {
+      icon: 'info',
+      label: 'Details',
+      onClick: () => {
+        alert('Opens lab manual (what shows from template gallery when you click "details")');
+      },
+    },
+    {
       icon: 'eye',
       label: 'Preview',
       onClick: () => {
@@ -31,24 +38,17 @@ const TemplateCardComponent: React.FC<TemplateCardProps> = React.memo((props) =>
       },
     },
     {
-      icon: 'circleQuestionMark',
-      label: 'Details',
-      onClick: () => {
-        alert('Opens lab manual (what shows from template gallery when you click "details")');
-      },
-    },
-    {
-      icon: 'edit',
-      label: 'Edit',
-      onClick: () => {
-        alert('Only shows for users with edit permissions. Opens edit profile page.');
-      },
-    },
-    {
       icon: 'squarePlus',
-      label: 'Create',
+      label: 'Use Template',
       onClick: () => {
         alert('Opens creation dialog with template selected');
+      },
+    },
+    {
+      icon: 'settings',
+      label: 'Edit Template',
+      onClick: () => {
+        alert('Only shows for users with edit permissions. Opens edit profile page.');
       },
     },
     {

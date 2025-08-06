@@ -31,7 +31,7 @@ export function DashboardHeader({ findMenuItems, createMenuItems }: DashboardHea
         <SplitButton
           icon={<Icon icon={Icons.search} className="size-4" />}
           label="Find"
-          onClick={() => alert('Opens find lab instances page')}
+          onClick={() => alert('Opens find lab profiles page')}
           menuItems={findMenuItems}
         />
         <SplitButton
