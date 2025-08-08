@@ -228,6 +228,7 @@ export default function DashboardPage() {
         ]}
         value={mineToggleValue}
         onChange={handleMineToggleChange}
+        size="small"
       />
     );
   }, [currentCardType, mineToggleValue, handleMineToggleChange]);

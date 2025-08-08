@@ -53,6 +53,8 @@ export interface StateToggleProps {
   label?: React.ReactNode;
   /** Extra wrapper className */
   className?: string;
+  /** Size variant to align with Button/DropdownSelect heights */
+  size?: 'small' | 'medium';
 }
 
 // Utility – quick conditional concat
@@ -67,6 +69,7 @@ const StateToggle = React.forwardRef<HTMLDivElement, StateToggleProps>(({
   onChange,
   label,
   className = '',
+  size = 'medium',
 }, ref) => {
   const isControlled = value !== undefined;
   const [internalValue, setInternalValue] = useState<string | undefined>(defaultValue ?? options[0]?.id);
@@ -91,8 +94,13 @@ const StateToggle = React.forwardRef<HTMLDivElement, StateToggleProps>(({
     select(options[nextIndex].id);
   };
 
+  // Size-aware styles
+  const wrapperGap = size === 'small' ? 'gap-2' : 'gap-3';
+  const groupSizing = size === 'small' ? 'h-7 p-0.5' : 'h-8 p-1';
+  const buttonSizing = size === 'small' ? 'h-full px-2 text-body-xs' : 'h-full px-3 text-body-xs';
+
   return (
-    <div ref={ref} className={cn('inline-flex items-center gap-3', className)}>
+    <div ref={ref} className={cn('inline-flex items-center', wrapperGap, className)}>
       {label && (
         <span id={`${groupId}-label`} className="font-primary text-body-sm select-none">
           {label}
@@ -102,7 +110,10 @@ const StateToggle = React.forwardRef<HTMLDivElement, StateToggleProps>(({
       <div
         role="group"
         aria-labelledby={label ? `${groupId}-label` : undefined}
-        className="inline-flex rounded-[5px] border border-text-primary p-1 gap-1 bg-softgrey-light"
+        className={cn(
+          'inline-flex rounded-[5px] border border-_components-text-primary gap-1 bg-softgrey-light',
+          groupSizing,
+        )}
       >
         {options.map((opt, idx) => {
           const isSelected = opt.id === selectedId;
@@ -116,7 +127,8 @@ const StateToggle = React.forwardRef<HTMLDivElement, StateToggleProps>(({
               aria-pressed={isSelected}
               tabIndex={isSelected ? 0 : -1}
               className={cn(
-                'px-2 py-1 font-primary text-body-xs transition-colors rounded-[5px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-main',
+                'font-primary transition-colors rounded-[5px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-main',
+                buttonSizing,
                 isSelected
                   ? 'bg-primary-main text-primary-contrast'
                   : 'text-_components-text-primary hover:bg-softgrey-light',

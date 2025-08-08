@@ -18,18 +18,23 @@ export default function StateToggleExample() {
   ];
 
   return (
-    <div className="space-y-6 space-x-4">
-      {/* Uncontrolled */}
-      <StateToggle label="Label" options={twoOptions} defaultValue="on" />
+    <div className="space-y-6">
+      {/* Uncontrolled – small size */}
+      <div className="flex items-center gap-4">
+        <StateToggle label="Label" options={twoOptions} defaultValue="on" size="small" />
+        <span className="text-body-xs text-_components-text-secondary">Small size</span>
+      </div>
 
-      {/* Controlled */}
-      <StateToggle
-        label="Status"
-        options={threeOptions}
-        value={selected}
-        onChange={setSelected}
-      />
-      <p className="text-body-sm text-_components-text-secondary">Selected: {selected}</p>
+      {/* Controlled – default (medium) size */}
+      <div className="flex items-center gap-4">
+        <StateToggle
+          label="Status"
+          options={threeOptions}
+          value={selected}
+          onChange={setSelected}
+        />
+        <span className="text-body-xs text-_components-text-secondary">Selected: {selected}</span>
+      </div>
     </div>
   );
 } 
