@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useCallback } from 'react';
+import { useMemo, useCallback, useState, useEffect } from 'react';
 import { DashboardHeader } from '@/components/dashboard/DashboardHeader';
 import { DashboardGrid } from '@/components/dashboard/DashboardGrid';
 import { StateToggle } from '@/components/navigation';
@@ -91,7 +91,18 @@ export default function DashboardPage() {
   // Get current sort and filter configuration - MUST be called before any conditional returns
   const currentCardType = getCurrentCardType();
   const sortOptions = useMemo(() => getSortOptions(currentCardType), [currentCardType]);
-  const filterColumns = useMemo(() => getFilterOptions(currentCardType), [currentCardType]);
+
+  // Instance view mode (All | Mine) – only meaningful for instances tab
+  const [instanceViewMode, setInstanceViewMode] = useState<'all' | 'mine'>('all');
+
+  // Available filter columns for UI – hide student field when in Mine mode on instances
+  const uiFilterColumns = useMemo(() => {
+    const cols = getFilterOptions(currentCardType);
+    if (currentCardType === 'instance' && instanceViewMode === 'mine') {
+      return cols.filter((c) => c.value !== 'student');
+    }
+    return cols;
+  }, [currentCardType, instanceViewMode]);
 
   // Get current tab data for pagination - MUST be called before any conditional returns
   const processedTabData = useMemo(() => {
@@ -119,11 +130,18 @@ export default function DashboardPage() {
     
     // Use synchronized sort and filter configurations
     const synchronizedSortConfig = getSynchronizedSortConfig(cardType, data);
-    const synchronizedFilterConfig = getSynchronizedFilterConfig(cardType, data);
+    let synchronizedFilterConfig = getSynchronizedFilterConfig(cardType, data);
+    // When in Mine mode on instances, apply base student filter invisibly
+    if (cardType === 'instance' && instanceViewMode === 'mine') {
+      synchronizedFilterConfig = [
+        ...synchronizedFilterConfig.filter((f) => !(f.column === 'student' && f.operator === 'equals')),
+        { column: 'student', operator: 'equals', value: 'Kim Oswalt' },
+      ];
+    }
     
     // Pass cardType to sortItems for proper type-aware sorting
     return applyFilters(sortItems(data, synchronizedSortConfig, cardType), synchronizedFilterConfig);
-  }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getSynchronizedSortConfig, getSynchronizedFilterConfig, sortItems, applyFilters]);
+  }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getSynchronizedSortConfig, getSynchronizedFilterConfig, sortItems, applyFilters, instanceViewMode]);
 
   const totalItems = useMemo(() => processedTabData.length, [processedTabData]);
 
@@ -188,35 +206,46 @@ export default function DashboardPage() {
     [getCurrentFilterConfig, currentCardType]
   );
 
+  // Filters shown in UI – remove student filter when in Mine mode on instances
+  const uiFilters = useMemo(() => {
+    if (currentCardType !== 'instance' || instanceViewMode !== 'mine') return currentFilters;
+    return currentFilters.filter((f) => f.column !== 'student');
+  }, [currentFilters, currentCardType, instanceViewMode]);
+
   // Mine toggle state is derived from current filters when on the instances tab
   const mineToggleValue = useMemo(() => {
     if (currentCardType !== 'instance') return 'all';
-    const isMineActive = currentFilters.some(
-      (f) => f.column === 'student' && f.operator === 'equals' && String(f.value).toLowerCase() === 'kim oswalt'
-    );
-    return isMineActive ? 'mine' : 'all';
-  }, [currentCardType, currentFilters]);
+    return instanceViewMode;
+  }, [currentCardType, instanceViewMode]);
 
   // Handle toggle changes to add/remove the "Mine" filter for instances
   const handleMineToggleChange = useCallback(
     (id: string) => {
       if (currentCardType !== 'instance') return;
-      // Remove any existing student==Kim filters first
-      let newFilters = currentFilters.filter(
-        (f) => !(f.column === 'student' && f.operator === 'equals')
-      );
+      setInstanceViewMode(id as 'all' | 'mine');
+      // When switching to Mine, remove any user-added student filters to avoid conflicts
       if (id === 'mine') {
-        newFilters = [
-          ...newFilters,
-          { column: 'student', operator: 'equals', value: 'Kim Oswalt' },
-        ];
+        const nonStudentFilters = currentFilters.filter((f) => f.column !== 'student');
+        updateFilterConfig('instance', nonStudentFilters);
       }
-      // Persist on the instances card type and reset pagination
-      updateFilterConfig('instance', newFilters);
+      // Reset to first page
       updateTabPagination(currentTabId, { currentPage: 1 });
     },
     [currentCardType, currentFilters, updateFilterConfig, updateTabPagination, currentTabId]
   );
+
+  // One-time migration: if an old stored base filter (student === Kim Oswalt) exists, move it to Mine mode
+  useEffect(() => {
+    if (currentCardType !== 'instance') return;
+    const hasLegacyMine = currentFilters.some(
+      (f) => f.column === 'student' && f.operator === 'equals' && String(f.value).toLowerCase() === 'kim oswalt'
+    );
+    if (hasLegacyMine) {
+      setInstanceViewMode('mine');
+      const nonStudent = currentFilters.filter((f) => f.column !== 'student');
+      updateFilterConfig('instance', nonStudent);
+    }
+  }, [currentCardType, currentFilters, updateFilterConfig]);
 
   const extraControls = useMemo(() => {
     if (currentCardType !== 'instance') return null;
@@ -282,8 +311,8 @@ export default function DashboardPage() {
         currentSortConfig={getCurrentSortConfig(currentCardType)}
         onSortFieldChange={handleSortFieldChange}
         onSortDirectionChange={handleSortDirectionChange}
-        filterColumns={filterColumns}
-        currentFilters={currentFilters}
+        filterColumns={uiFilterColumns}
+        currentFilters={uiFilters}
         onFiltersChange={handleFiltersChange}
         operatorsByType={OPERATORS_BY_TYPE}
         tabItems={tabItems}
