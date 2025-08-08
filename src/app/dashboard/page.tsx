@@ -3,6 +3,7 @@
 import { useMemo, useCallback } from 'react';
 import { DashboardHeader } from '@/components/dashboard/DashboardHeader';
 import { DashboardGrid } from '@/components/dashboard/DashboardGrid';
+import { StateToggle } from '@/components/navigation';
 import { FIND_MENU_ITEMS, CREATE_MENU_ITEMS } from '@/config/navigation';
 import { getSortOptions } from '@/config/sorting';
 import { getFilterOptions, OPERATORS_BY_TYPE } from '@/config/filtering';
@@ -26,18 +27,11 @@ export default function DashboardPage() {
     toggleStar,
     // Per-tab pagination methods
     getCurrentTabId,
-    getCurrentTabPagination,
-    updateCurrentTabPagination,
     updateTabPagination,
     getTabPagination,
-    resetCurrentTabPagination,
-    resetAllTabPagination,
     // Shared page size methods
     sharedPageSize,
     updateSharedPageSize,
-    // Backward compatibility
-    paginationState,
-    updatePagination,
     getCurrentCardType,
     isLoaded: isDashboardStateLoaded,
   } = useDashboardState();
@@ -129,12 +123,12 @@ export default function DashboardPage() {
     
     // Pass cardType to sortItems for proper type-aware sorting
     return applyFilters(sortItems(data, synchronizedSortConfig, cardType), synchronizedFilterConfig);
-  }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getSynchronizedSortConfig, getSynchronizedFilterConfig, sortItems]);
+  }, [currentTabConfig, mockInstances, mockProfiles, mockSeries, mockTemplates, getSynchronizedSortConfig, getSynchronizedFilterConfig, sortItems, applyFilters]);
 
   const totalItems = useMemo(() => processedTabData.length, [processedTabData]);
 
   // Calculate pagination using per-tab pagination hook - MUST be called before any conditional returns
-  const { paginatedData, validCurrentPage, totalPages } = usePerTabPagination({
+  const { paginatedData, validCurrentPage } = usePerTabPagination({
     data: processedTabData,
     tabId: currentTabId,
     getTabPagination,
@@ -193,6 +187,50 @@ export default function DashboardPage() {
     () => getCurrentFilterConfig(currentCardType),
     [getCurrentFilterConfig, currentCardType]
   );
+
+  // Mine toggle state is derived from current filters when on the instances tab
+  const mineToggleValue = useMemo(() => {
+    if (currentCardType !== 'instance') return 'all';
+    const isMineActive = currentFilters.some(
+      (f) => f.column === 'student' && f.operator === 'equals' && String(f.value).toLowerCase() === 'kim oswalt'
+    );
+    return isMineActive ? 'mine' : 'all';
+  }, [currentCardType, currentFilters]);
+
+  // Handle toggle changes to add/remove the "Mine" filter for instances
+  const handleMineToggleChange = useCallback(
+    (id: string) => {
+      if (currentCardType !== 'instance') return;
+      // Remove any existing student==Kim filters first
+      let newFilters = currentFilters.filter(
+        (f) => !(f.column === 'student' && f.operator === 'equals')
+      );
+      if (id === 'mine') {
+        newFilters = [
+          ...newFilters,
+          { column: 'student', operator: 'equals', value: 'Kim Oswalt' },
+        ];
+      }
+      // Persist on the instances card type and reset pagination
+      updateFilterConfig('instance', newFilters);
+      updateTabPagination(currentTabId, { currentPage: 1 });
+    },
+    [currentCardType, currentFilters, updateFilterConfig, updateTabPagination, currentTabId]
+  );
+
+  const extraControls = useMemo(() => {
+    if (currentCardType !== 'instance') return null;
+    return (
+      <StateToggle
+        options={[
+          { id: 'all', label: 'All' },
+          { id: 'mine', label: 'Mine' },
+        ]}
+        value={mineToggleValue}
+        onChange={handleMineToggleChange}
+      />
+    );
+  }, [currentCardType, mineToggleValue, handleMineToggleChange]);
 
   // NOW we can have conditional logic and early returns
   if (!isDashboardStateLoaded || !isSortingLoaded || !isFilteringLoaded) {
@@ -253,6 +291,7 @@ export default function DashboardPage() {
         totalItems={totalItems}
         onPageChange={handlePageChange}
         onPageSizeChange={handlePageSizeChange}
+        extraControls={extraControls}
       />
     </main>
   );

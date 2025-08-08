@@ -32,6 +32,8 @@ interface DashboardGridProps {
   onPageChange: (page: number) => void;
   onPageSizeChange: (pageSize: number) => void;
   paginationDisabled?: boolean;
+  /** Optional area to render additional controls to the right of FilterControls */
+  extraControls?: React.ReactNode;
 }
 
 export function DashboardGrid({
@@ -53,6 +55,7 @@ export function DashboardGrid({
   onPageChange,
   onPageSizeChange,
   paginationDisabled = false,
+  extraControls,
 }: DashboardGridProps) {
   const activeTabContent = tabItems[activeTabIndex]?.content;
 
@@ -86,6 +89,7 @@ export function DashboardGrid({
               onFiltersChange={onFiltersChange}
               operatorsByType={operatorsByType}
             />
+            {extraControls}
           </div>
         </div>
         
